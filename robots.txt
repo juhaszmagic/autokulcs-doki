@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://autokulcsdoki.hu
+Sitemap: https://autokulcsdoki.hu/sitemap.xml

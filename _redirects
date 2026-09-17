@@ -1,0 +1,20 @@
+# Netlify / Cloudflare Pages átirányítások
+# (Apache tárhelyen a .htaccess fájl az érvényes — ez csak alternatíva.)
+/about-us               /rolunk/                                 301
+/about-us/              /rolunk/                                 301
+/services               /szolgaltatasok/                         301
+/services/              /szolgaltatasok/                         301
+/contacts               /kapcsolat/                              301
+/contacts/              /kapcsolat/                              301
+/autobanfelejtettkulcs  /szolgaltatasok/serulesmentes-autonyitas/ 301
+/autobanfelejtettkulcs/ /szolgaltatasok/serulesmentes-autonyitas/ 301
+/szolgaltatasok/autonyitas   /szolgaltatasok/serulesmentes-autonyitas/ 301
+/szolgaltatasok/autonyitas/  /szolgaltatasok/serulesmentes-autonyitas/ 301
+/eveszettautokulcs      /szolgaltatasok/elveszett-autokulcs/     301
+/eveszettautokulcs/     /szolgaltatasok/elveszett-autokulcs/     301
+/elvesztettkulcs        /szolgaltatasok/elveszett-autokulcs/     301
+/elvesztettkulcs/       /szolgaltatasok/elveszett-autokulcs/     301
+/potkulcs               /szolgaltatasok/autokulcs-masolas/       301
+/potkulcs/              /szolgaltatasok/autokulcs-masolas/       301
+/autokulcstanitas       /szolgaltatasok/autokulcs-programozas/   301
+/autokulcstanitas/      /szolgaltatasok/autokulcs-programozas/   301
