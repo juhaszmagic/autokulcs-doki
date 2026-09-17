@@ -163,9 +163,25 @@ megoldás nem a törlés kipipálása volt, hanem a cikk visszaemelése a
 `config/content.ts`-be, szó szerinti szöveggel. Ilyenkor előbb kérdezz
 rá a tulajdonosnál, mert lehet, hogy nála megvan az eredeti forrás.
 
-Ugyanígy figyelj arra, ha a `git fetch` „forced update" üzenetet ír a
-`gh-pages` ágra: valaki a README force-push receptjével élesített, és
-ezzel felülírta az ág előzményét.
+⚠️ **Ha a `git fetch` „forced update" üzenetet ír a `gh-pages` ágra**,
+valaki a README force-push receptjével élesített a saját gépéről. Ez nem
+csak az ág előzményét írja felül: **ha az illető forráskódja elavult, a
+deploy csendben visszaállítja a régi tartalmat az egész oldalon.**
+
+Megtörtént eset, 2026-09-17: a Google-értékelések száma 77-ről 80-ra lett
+javítva és ki is ment élesbe. Nem sokkal később valaki force-pushsal
+élesített egy új blogcikket, de a gépén lévő forrás még a régi értéket
+tartalmazta, így az oldal **minden** aldalán visszaállt a 77. A következő
+élesítés állította helyre. A hiba ránézésre nem látszik, mert a friss
+tartalom közben rendben megjelenik, és a Google eközben is crawlolhat,
+tehát a téves adat be is indexelődhet.
+
+Ez bármelyik adattal megtörténhet: árral, telefonszámmal, szöveggel.
+Ellenszer: élesítés előtt mindig friss `main`-ből buildelni
+(`git fetch origin main && git checkout main && git pull`), és a deploy
+előtt átnézni a `git status --short` kimenetét. Ha egy változás
+megmagyarázhatatlanul „visszaállt" az élő oldalon, először ezt nézd meg:
+`git log origin/gh-pages` és a gyanús commit tartalmát.
 
 Két fájl nem a buildből jön, hanem a deploy során kerül bele és ezek
 nélkül az oldal leáll:
