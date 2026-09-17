@@ -1314,8 +1314,9 @@ export function ServiceAreaSection() {
                 <strong className="font-semibold text-white">
                   Nem tudja, belefér-e?
                 </strong>{" "}
-                Hívjon, mondja meg a jármű típusát és évjáratát, őszintén
-                megmondjuk, mit tudunk vállalni.
+                Nincs zsákbamacska. Hívjon, mondja meg a jármű típusát és
+                évjáratát, őszintén megmondjuk, hogy mennyibe fog kerülni a
+                kulcskészítés.
               </p>
             </div>
             <CallButton size="lg" label="Beszéljünk a részletekről" className="mt-6 w-full sm:w-auto" />
