@@ -12,7 +12,8 @@ import { jsonLdGraph, breadcrumbSchema, type Crumb } from "@/lib/schema";
  * ADATKEZELÉSI TÁJÉKOZTATÓ
  *
  * A GDPR 13. cikke írja elő: a kapcsolati űrlap személyes adatot gyűjt
- * (név, telefonszám, üzenet), ezért tájékoztatni kell az érintettet.
+ * (név, telefonszám, e-mail cím, üzenet), ezért tájékoztatni kell az
+ * érintettet.
  *
  * Két dolgot mondunk ki nyíltan, mert ez a becsületes:
  *  1. Az űrlap adatai egy külső szolgáltatón (FormSubmit) haladnak át.
@@ -110,6 +111,10 @@ export default function PrivacyPage() {
                 {[
                   ["Név", "hogy tudjuk, kit hívunk vissza, kötelező"],
                   ["Telefonszám", "hogy vissza tudjuk hívni, kötelező"],
+                  [
+                    "E-mail cím",
+                    "hogy írásban is tudjunk válaszolni, nem kötelező",
+                  ],
                   [
                     "Az autó márkája, modellje, évjárata",
                     "ebből tudunk árat mondani, nem kötelező",

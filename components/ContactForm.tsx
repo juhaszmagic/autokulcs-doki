@@ -184,6 +184,32 @@ export function ContactForm() {
           </div>
         </div>
 
+        {/* ---- E-mail cím ----
+            A mező neve szándékosan „email”: a FormSubmit ezt a nevet
+            ismeri fel, és a beérkező levél válaszcímét (Reply-To) erre
+            állítja. Így a megkeresés nemcsak megmutatja az ügyfél
+            e-mail címét, hanem a levélre nyomott „Válasz” is egyenesen
+            hozzá megy. Nem kötelező: a visszahívás a telefonszámon
+            történik, egy kötelező e-mail mező viszont elriaszthatná azt,
+            aki sürgős helyzetben, telefonról tölti ki az űrlapot. */}
+        <div>
+          <Label htmlFor="email">E-mail cím</Label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            maxLength={120}
+            autoComplete="email"
+            inputMode="email"
+            placeholder="kovacs.peter@example.com"
+            aria-describedby="email-hint"
+            className={`mt-1.5 ${inputBase}`}
+          />
+          <p id="email-hint" className="mt-1.5 text-xs text-ink-500">
+            Ha megadja, e-mailben is tudunk válaszolni.
+          </p>
+        </div>
+
         {/* ---- Jármű adatai ---- */}
         <fieldset>
           <legend className="text-sm font-semibold text-ink-800">
