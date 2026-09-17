@@ -322,7 +322,9 @@ export function ContactForm() {
                            hogy a végpont cseréjekor se essen ki) */}
             {usesFormsubmit && (
               <>
-                <input type="hidden" name="_cc" value={site.formRecipients.cc} />
+                {site.formRecipients.cc ? (
+                  <input type="hidden" name="_cc" value={site.formRecipients.cc} />
+                ) : null}
                 <input type="hidden" name="_template" value="box" />
                 <input type="hidden" name="_captcha" value="false" />
                 <input

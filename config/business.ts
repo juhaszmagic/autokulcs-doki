@@ -453,7 +453,11 @@ export const site = {
    */
   formRecipients: {
     to: "juhaszmagic@gmail.com",
-    cc: "iranyimate@gmail.com",
+    /**
+     * Masolati cim. Ha ures, a _cc mezo be sem kerul az urlapba,
+     * tehat a bekuldes csak a `to` cimre megy.
+     */
+    cc: "",
   },
 } as const;
 
