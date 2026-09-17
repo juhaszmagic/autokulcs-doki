@@ -9,6 +9,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqList } from "@/components/Faq";
 import {
   RelatedServices,
+  RelatedWork,
   CtaBand,
   PageHero,
   RealWorkGallery,
@@ -231,6 +232,8 @@ export default async function ServicePage({ params }: Params) {
           </div>
         </Container>
       </Section>
+
+      <RelatedWork serviceSlug={service.slug} />
 
       <RelatedServices slugs={service.related} />
 

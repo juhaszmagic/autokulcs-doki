@@ -14,7 +14,7 @@ import { business, absoluteUrl, site } from "@/config/business";
 import { Container, Section, CallButton, Button, Tag } from "@/components/ui";
 import { AssetImage } from "@/components/AssetImage";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { CtaBand } from "@/components/sections";
+import { CtaBand, ArticleCardGrid } from "@/components/sections";
 import { FaqList } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
 import {
@@ -232,41 +232,7 @@ export default async function ArticlePage({ params }: Params) {
             <h2 id="tovabbi-cikkek" className="text-h2">
               További hasznos tartalmak
             </h2>
-            <ul className="mt-9 grid gap-6 md:grid-cols-2">
-              {related.map((post) => (
-                <li
-                  key={post.slug}
-                  className="group relative flex flex-col overflow-hidden rounded-media bg-white shadow-card ring-1 ring-ink-200/70 transition-shadow hover:shadow-card-hover"
-                >
-                  <div className="media-zoom overflow-hidden">
-                    <AssetImage
-                      src={post.image.src}
-                      alt={post.image.alt}
-                      ratio="16/9"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      tone="dark"
-                      hideSlotLabel
-                    />
-                  </div>
-                  <div className="flex flex-1 flex-col p-6">
-                    <Tag tone="green" className="self-start">
-                      {categoryLabel(post.category)}
-                    </Tag>
-                    <h3 className="mt-3.5 text-[1.125rem] font-bold leading-snug">
-                      <Link
-                        href={`/tudasbazis/${post.slug}`}
-                        className="after:absolute after:inset-0 after:content-[''] focus:outline-none"
-                      >
-                        {post.title}
-                      </Link>
-                    </h3>
-                    <p className="mt-2.5 flex-1 text-[0.9375rem] leading-relaxed text-ink-600">
-                      {post.excerpt}
-                    </p>
-                  </div>
-                </li>
-              ))}
-            </ul>
+            <ArticleCardGrid posts={related} />
           </Container>
         </Section>
       )}

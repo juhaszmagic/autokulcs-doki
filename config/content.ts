@@ -697,6 +697,21 @@ export function relatedArticles(article: Article, count = 2): Article[] {
   return [...sameCategory, ...rest].slice(0, count);
 }
 
+/**
+ * Egy szolgáltatás-oldalhoz tartozó cikkek, legfrissebb elöl.
+ *
+ * A párosítás forrása a cikkek `relatedServices` mezője, tehát külön
+ * nyilvántartást nem kell vezetni: ha egy új cikkbe felveszed a
+ * szolgáltatás slugját, a cikk magától megjelenik annak az oldalnak az
+ * alján is. Így a belső linkelés mindkét irányban működik, ami a
+ * keresőnek is jelzi, hogy a két oldal összetartozik.
+ */
+export function articlesForService(serviceSlug: string, count = 2): Article[] {
+  return articlesByDate()
+    .filter((a) => a.relatedServices.includes(serviceSlug))
+    .slice(0, count);
+}
+
 /** Magyar dátumformátum, pl. „2026. szeptember 7.” */
 export function formatDate(iso: string): string {
   return new Date(iso).toLocaleDateString("hu-HU", {
