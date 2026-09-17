@@ -85,7 +85,7 @@ export function Hero() {
 
             <h1 className="text-display">
               <span className="text-brand-600">Elhagyta</span> autókulcsát?
-              Pótoljuk Budapesten és környékén.
+              Pótoljuk Budapesten és környékén
             </h1>
 
             <p className="text-lead mt-6 max-w-xl text-ink-600">
