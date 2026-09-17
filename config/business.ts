@@ -333,15 +333,17 @@ export const business = {
 
     /**
      * Értékelések száma.
-     * ✅ ELLENŐRIZVE 2026-09-07-én, közvetlenül a Google Cégprofilból
-     *    kiolvasva: 4,9 csillag, 77 vélemény.
+     * ✅ FRISSÍTVE 2026-09-17-én, a tulajdonos tájékoztatása alapján: 80 vélemény.
+     *    (Korábban: 77, a Google Cégprofilból ellenőrizve 2026-09-07-én.)
      *
-     *    Ha a Google-ben változik, ide kell átírni — a weboldal és a Google
-     *    között nem lehet eltérés. Ha valaha ismeretlenné válik, állítsd
-     *    vissza null-ra: akkor a darabszám sehol nem jelenik meg, és az
-     *    aggregateRating is kimarad a strukturált adatokból.
+     *    Ez az érték NEM frissül magától: az oldal statikus, nincs
+     *    élő kapcsolat a Google-lel. Ha a Google-ben változik, ide kell
+     *    átírni, majd újra kell buildelni és élesíteni — a weboldal és a
+     *    Google között nem lehet eltérés. Ha valaha ismeretlenné válik,
+     *    állítsd vissza null-ra: akkor a darabszám sehol nem jelenik meg,
+     *    és az aggregateRating is kimarad a strukturált adatokból.
      */
-    reviewCount: 77 as number | null,
+    reviewCount: 80 as number | null,
 
     /**
      * VALÓDI Google-vélemények.

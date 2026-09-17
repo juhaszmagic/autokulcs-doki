@@ -82,17 +82,16 @@ git checkout -- package-lock.json public/
 
 ## Élesítés (deploy)
 
-⚠️ **A legfontosabb csapda: a `SITE_URL`.** A `config/business.ts`-ben
-az alapértelmezés a **régi** domain:
+A `SITE_URL` adja a canonical URL-eket, a sitemapet és az og:image
+abszolút címét. 2026-09-17 óta az alapértelmezése az **éles** domain
+(`https://autokulcsdoki.hu`), tehát ha elfelejted beállítani, akkor is
+helyes kimenet születik. Korábban a régi `autokulcsmasolo.com` volt az
+alapértelmezés, ami néma SEO-hibát okozott; ezt a 8d78f13 commit
+javította. Kiírva továbbra sem árt:
 
-```ts
-url: process.env.SITE_URL ?? "https://autokulcsmasolo.com"
+```bash
+SITE_URL=https://autokulcsdoki.hu npm run build:site
 ```
-
-Ha `SITE_URL` nélkül buildelsz, akkor **minden canonical URL, a teljes
-sitemap és az og:image a régi domainre fog mutatni** — ez SEO-katasztrófa
-lenne, és ránézésre nem is látszik az oldalon. A `README.md` deploy-
-receptje ezt sajnos nem említi. Mindig állítsd be.
 
 A `gh-pages` ág egy külön, előzmény nélküli repóból megy fel force-
 pushsal (a README-ben van a pontos recept). Két fájl **nem** a buildből
