@@ -4,3 +4,4 @@ out/
 .env.local
 .source-images/
 .DS_Store
+tsconfig.tsbuildinfo
