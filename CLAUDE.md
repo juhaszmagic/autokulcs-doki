@@ -153,6 +153,20 @@ cd - && git worktree remove /tmp/ghp --force
 A `git status --short` kimenetét **mindig nézd meg** a commit előtt: ha
 csak egy szöveget írtál át, ott is csak a várt fájlok szerepelhetnek.
 
+⚠️ **Ha `D` (törlés) sort látsz, állj meg.** Az azt jelenti, hogy az élő
+oldalon van valami, ami a forráskódban nincs meg, tehát az élesítés
+letörölné. 2026-09-17-én pontosan ez történt: a „Bent maradt az
+autókulcs a kocsiban" cikk fel volt töltve a `gh-pages` ágra, de a
+forrásba soha nem került be, így a következő élesítés törölte volna a
+cikket, a listaoldali hivatkozását és a sitemap-bejegyzését is. A
+megoldás nem a törlés kipipálása volt, hanem a cikk visszaemelése a
+`config/content.ts`-be, szó szerinti szöveggel. Ilyenkor előbb kérdezz
+rá a tulajdonosnál, mert lehet, hogy nála megvan az eredeti forrás.
+
+Ugyanígy figyelj arra, ha a `git fetch` „forced update" üzenetet ír a
+`gh-pages` ágra: valaki a README force-push receptjével élesített, és
+ezzel felülírta az ág előzményét.
+
 Két fájl nem a buildből jön, hanem a deploy során kerül bele és ezek
 nélkül az oldal leáll:
 

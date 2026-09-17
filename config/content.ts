@@ -74,6 +74,154 @@ export interface Article {
    ================================================================== */
 
 export const articles: Article[] = [
+  /**
+   * Ez a cikk 2026-09-17-én már élt a weboldalon, de a forráskódba nem
+   * került be: csak a legenerált gh-pages ágra volt feltöltve. Emiatt a
+   * következő élesítés letörölte volna. A szöveget szó szerint, változtatás
+   * nélkül emeltük vissza az élő oldalról. A tömbben azért áll elöl, mert a
+   * tudásbázis listaoldala az első elemet mutatja kiemelt cikként.
+   */
+  {
+    slug: "bent-maradt-az-autokulcs",
+    title: "Bent maradt az autókulcs a kocsiban – mit tegyen, és mit ne?",
+    excerpt:
+      "A kulcs az ülésen, az ajtó zárva. Végigvesszük, mit érdemes elsőként végigpróbálni, mikor kell azonnal segítséget hívni, és melyek azok a „házi” módszerek, amik többe kerülnek, mint a nyitás.",
+    category: "autonyitas",
+    date: "2026-09-17",
+    image: {
+      src: "/images/autonyitas.jpg",
+      alt: "Nyitott ajtajú autó az utcán, mellette kiterített nyitószerszámok",
+    },
+    metaTitle: "Bent maradt az autókulcs a kocsiban – mi a teendő?",
+    metaDescription:
+      "Bezárta az autókulcsot a kocsiba? Elmondjuk, mit próbáljon meg elsőként, mikor hívjon azonnal segítséget, és mit ne csináljon semmiképp.",
+    readingMinutes: 4,
+    lead:
+      "Ez néhány másodperc alatt megtörténik: becsapja az ajtót, és abban a pillanatban " +
+      "megpillantja az autókulcsot az ülésen. A helyzet kellemetlen, de önmagában nem " +
+      "veszélyes – és jellemzően úgy megoldható, hogy az autón nyoma sem marad. A sorrend " +
+      "viszont számít.",
+    sections: [
+      {
+        heading: "Először nyugodjon meg, és nézzen körbe",
+        paragraphs: [
+          "Mielőtt bárkit hív, érdemes végigpróbálni néhány dolgot. Nem ritka, hogy az autó " +
+            "mégsem teljesen zárt: próbálja meg mind a négy ajtót és a csomagtartót külön-külön. " +
+            "Egy kombinál vagy ferdehátúnál a csomagtér felől a hátsó ülés ledönthető, és így " +
+            "hozzá lehet jutni a kulcshoz.",
+          "Gondolja át azt is, hol van a második autókulcs. Ha otthon, a munkahelyén vagy egy " +
+            "családtagnál megvan, sokszor egyszerűbb érte menni vagy elkérni, mint bármi más. " +
+            "Ha viszont nincs második kulcs – vagy megvan, de messze –, akkor jön a hívás.",
+          "Amit érdemes még a hívás előtt tisztázni: hol áll pontosan az autó, mi a márkája, " +
+            "a típusa és az évjárata. Ezekből a telefonban meg tudjuk mondani, mire számíthat.",
+        ],
+      },
+      {
+        heading: "Van, amikor nem szabad várni",
+        paragraphs: [
+          "Egy eset van, ahol nem a nyitási módszer a kérdés, hanem az idő: ha gyerek vagy házi " +
+            "állat maradt a lezárt autóban. Zárt autó belseje napsütésben rövid idő alatt is " +
+            "életveszélyesen felmelegszik, és ez nem csak nyáron igaz.",
+          "Ilyenkor azonnal hívja a 112-es segélyhívót. Ez nem szakmai kérdés és nem kényelmi " +
+            "kérdés – ilyen helyzetben a katasztrófavédelem és a mentők érkeznek elsőként, és ők " +
+            "döntenek arról, hogyan nyitják ki a járművet. A gyors nyitás ilyenkor mindennél " +
+            "előbbre való, akkor is, ha kár keletkezik.",
+        ],
+      },
+      {
+        heading: "Amit semmiképp ne tegyen",
+        paragraphs: [
+          "Az interneten és a videómegosztókon keringő „házi” módszerek modern autókon nem " +
+            "működnek, viszont könnyen kárt okoznak. A leggyakoribb következmény a meggyűrődött " +
+            "ajtókeret, a felsértett lakk, a szakadt ajtótömítés és a megsérült " +
+            "ablakemelő-mechanika.",
+          "A dolog kellemetlen része az, hogy a kár nem mindig derül ki rögtön. A szakadt " +
+            "ajtótömítés első esőben vagy autópályán jelentkezik: beázik az ajtó, fütyül a " +
+            "menetszél. Ennek a javítása jóval többe kerül, mint maga a szakszerű nyitás.",
+        ],
+        list: [
+          "Ne feszítsen éket, vonalzót vagy csavarhúzót az ajtó és a keret közé.",
+          "Ne próbálkozzon dróttal vagy akasztóval a gumitömítés alatt.",
+          "A teniszlabdás „trükk” nem működik – ilyen módon egyetlen központi zár sem nyílik.",
+          "Ne törjön ablakot, amíg nem életveszélyes a helyzet: az üveg cseréje és a szilánkok " +
+            "eltakarítása sokkal nagyobb munka, mint gondolná.",
+          "Ne engedje, hogy egy arra járó „ismerős szakember” feszegetni kezdje az autót.",
+        ],
+      },
+      {
+        heading: "Mi történik, amikor kiérkezünk?",
+        paragraphs: [
+          "A nyitás erre a célra fejlesztett szerszámokkal, roncsolásmentesen történik: nem törik " +
+            "ablak, nem feszül ki az ajtókeret, és nem kell zárat cserélni. Maga a nyitás " +
+            "általában néhány perc; a teljes időt nagyrészt a kiérkezés adja, ami Budapesten " +
+            "belül jellemzően 20–30 perc.",
+          "Ha a helyszínen az derül ki, hogy a jármű zárja már a hívás előtt hibás volt, vagy " +
+            "valaki korábban megpróbálta felfeszíteni, azt munka előtt elmondjuk. Nem kezdünk " +
+            "bele úgy, hogy Ön ne tudná, mire számíthat.",
+          "Dolgozunk éjjel és hétvégén is, a hét minden napján. A bezárt autókulcs jellemzően " +
+            "nem munkaidőben történik meg.",
+        ],
+      },
+      {
+        heading: "Bent maradt kulcs vagy elveszett kulcs?",
+        paragraphs: [
+          "Ez a két helyzet kívülről hasonlít, de nem ugyanaz. Ha a kulcs bent van és jó, akkor " +
+            "a nyitással a történet véget ér: kinyitjuk az autót, Ön elveszi a kulcsot, és mehet " +
+            "tovább.",
+          "Ha viszont a kulcs elveszett vagy eltört, a nyitás csak az első lépés. Utána jön a zár " +
+            "adatainak kiolvasása, az új autókulcs elkészítése és a programozás – ezt jellemzően " +
+            "ugyanabban a kiszállásban meg tudjuk oldani, ha a hívásnál jelzi.",
+          "Külön eset a keyless rendszer: ott előfordul, hogy a kulcs az autóban van, a jármű " +
+            "mégis bezárja magát. Ilyenkor gyakran a kulcs elemével van a gond, nem magával a " +
+            "kulccsal. Erről is érdemes szólni telefonban.",
+        ],
+      },
+      {
+        heading: "Hogy ne fordulhasson elő újra",
+        paragraphs: [
+          "A bezárt autókulcs azért kellemetlen, mert mindig rosszkor történik. Két egyszerű " +
+            "dolog van, ami szinte teljesen kiveszi a képletből.",
+          "Az első: legyen egy második, működő autókulcs, és ne ugyanabban a zsebben vagy " +
+            "táskában hordja, mint az elsőt. A pótkulcs mindig olcsóbb addig, amíg van egy " +
+            "működő kulcs, amiről másolni lehet.",
+          "A második: szokja meg, hogy mindig a kulccsal a kezében csapja be az ajtót – nem " +
+            "azután. Apróság, de ez az a pillanat, ahol a baj megtörténik.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Be kell törni az ablakot, ha bent maradt az autókulcs?",
+        a:
+          "A szokásos esetekben nem. A járművek túlnyomó részénél a nyitás roncsolásmentesen " +
+          "megoldható, erre a célra készült szerszámokkal. Ablaktörésre csak akkor kerül sor, " +
+          "ha életveszély áll fenn – például gyerek vagy állat maradt a lezárt autóban –, és " +
+          "ilyenkor a 112-t kell hívni.",
+      },
+      {
+        q: "Éjjel vagy hétvégén is kijönnek?",
+        a:
+          "Igen, a hét minden napján, a nap 24 órájában. Hívja a megadott számot, vagy írjon " +
+          "WhatsAppon vagy Viberen.",
+      },
+      {
+        q: "Mit kérdeznek majd telefonban?",
+        a:
+          "Azt, hogy hol áll az autó, mi a márkája, a típusa és az évjárata, és hogy a kulcs " +
+          "bent maradt-e, vagy elveszett. Ebből tudunk időt és árat mondani még a kiszállás " +
+          "előtt.",
+      },
+      {
+        q: "Igazolnom kell, hogy az enyém az autó?",
+        a:
+          "Igen, és ez az Ön érdeke. A munka előtt megkérjük a forgalmi engedélyt és a " +
+          "személyazonosító okmányát – pontosan azért, hogy ne lehessen más autójához így " +
+          "hozzájutni.",
+      },
+    ],
+    relatedServices: ["serulesmentes-autonyitas", "elveszett-autokulcs", "autokulcs-masolas"],
+  },
+
   {
     slug: "elveszett-osszes-autokulcs",
     title: "Elveszett az összes autókulcs – mi történik ilyenkor?",
