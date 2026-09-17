@@ -1,24 +1,61 @@
 @AGENTS.md
 
-# Autókulcs Doki — munkajegyzet
+# Autókulcs Doki, munkajegyzet
 
-A tulajdonos (Juhász Marcell) autós kulcsmásoló / immobilizer szakember,
+A tulajdonos (Juhász Marcell) autós kulcsmásoló és immobilizer szakember,
 **nem fejlesztő**. A technikai részt rá ne terheljük: a kérés általában
-„írd át ezt a szöveget / árat / telefonszámot", és a mi dolgunk a
-módosítás → ellenőrzés → élesítés teljes menete.
+„írd át ezt a szöveget, árat, telefonszámot" és a mi dolgunk a
+módosítás, ellenőrzés, élesítés teljes menete.
 
 Az általános leírás a `README.md`-ben van. Ez a fájl azt rögzíti, ami
-azon felül kell, és azokat a csapdákat, amikbe bele lehet futni.
+azon felül kell: a kötelező tartalmi szabályokat és azokat a csapdákat,
+amikbe bele lehet futni.
 
-## Ágak — ezt olvasd el, mielőtt bármihez nyúlnál
+## Tartalmi szabályok, ezek kötelezőek
+
+**Ez egy valódi vállalkozás oldala, nem demó.** Amit ide leírunk, azt az
+ügyfelek elhiszik és az alapján hívnak fel. Ezért SOHA ne találj ki:
+
+- **árat.** Ár kizárólag a `config/business.ts` `pricing` értékeiből jöhet.
+- **ügyfélvéleményt, értékelésszámot, csillagot.**
+- **évszámot, tapasztalati évet, elvégzett munkák számát.**
+- **tanúsítványt, díjat, partnercéget, statisztikát.**
+- **ellátási területet vagy kiérkezési időt.**
+
+Ha egy állításhoz forrás kellene és nincs, **az állítás kimarad**.
+Bizonytalanság esetén kérdezz, ne pótold becsléssel. Egy hiányzó mondat
+javítható, egy kitalált adat viszont az ügyfél bizalmába kerül és a
+Google is bünteti.
+
+A galéria fotói valódi munkákról készültek, a vélemények valódi
+ötcsillagos Google-véleményekből származnak. **Ezt a készletet ne bővítsd
+kitalált elemmel.** Új vélemény csak akkor kerülhet be, ha a tulajdonos
+szó szerint bemásolja a Google Cégprofilból.
+
+A számszerű adatok (értékelésszám, csillag, árak) nem frissülnek
+maguktól: az oldal statikus, nincs élő kapcsolata a Google-lel. Ezeket a
+tulajdonos jelzésére kell átírni a `config/business.ts`-ben, majd újra
+buildelni és élesíteni.
+
+## Stílus
+
+- **Ne használj hosszú kötőjelet.** Helyette vessző vagy kettőspont.
+  (A számtartományok, például 0–24, maradhatnak.)
+- **„és" előtt nincs vessző.**
+- **Magyar, magázó hangnem.**
+- Mindig **„autókulcs"**, ne csak „kulcs".
+
+Ezek a szabályok az oldal szövegeire vonatkoznak és erre a jegyzetre is.
+
+## Ágak, ezt olvasd el, mielőtt bármihez nyúlnál
 
 | Ág | Mi ez |
 |---|---|
 | `main` | **A forráskód. Itt kell dolgozni.** |
-| `gh-pages` | A legenerált, kész oldal — ezt szolgálja ki a GitHub Pages. **Kézzel SOHA ne szerkeszd**, a következő build úgyis felülírja. |
+| `gh-pages` | A legenerált, kész oldal, ezt szolgálja ki a GitHub Pages. **Kézzel SOHA ne szerkeszd**, a következő build úgyis felülírja. |
 
 ⚠️ **Csapda, amibe már belefutottam:** a munkakörnyezet klónjában
-előfordul, hogy **csak a `gh-pages` ág van lehúzva**, és a `main` nem
+előfordul, hogy **csak a `gh-pages` ág van lehúzva** és a `main` nem
 látszik a `git branch -a` kimenetében. Ilyenkor úgy tűnik, mintha nem
 lenne forráskód, csak legenerált HTML. Ez téves. Mindig ezzel kezdd:
 
@@ -40,10 +77,10 @@ git fetch origin main && git checkout main
 | `config/content.ts` | tudásbázis cikkek |
 | `config/legal.ts` | impresszum, adatkezelési adatok |
 
-Konkrét értékeket (telefonszám, árak) **ne másolj ide ebbe a fájlba** —
-a `config/business.ts` az egyetlen igazságforrás, a másolat elavulna.
-A telefonszám és az árak egyetlen helyen vannak definiálva, és onnan
-kerülnek minden oldalra: nincs kézi végigvezetés.
+Konkrét értékeket (telefonszám, árak, értékelésszám) **ne másolj ide
+ebbe a fájlba**: a `config/` az egyetlen igazságforrás, a másolat
+elavulna. Ezek az értékek egyetlen helyen vannak definiálva és onnan
+kerülnek minden oldalra, nincs kézi végigvezetés.
 
 Az oldal szerkezete: `app/` (route-onként egy `page.tsx`, záró perjeles
 URL-ek), `components/` (újrahasznált elemek), `lib/schema.ts` (JSON-LD
@@ -56,9 +93,9 @@ npm install                                  # csak egyszer
 SITE_URL=https://autokulcsdoki.hu npm run build:site
 ```
 
-A `build:site` négy lépés: képoptimalizálás (`sharp` → AVIF/WebP) →
-`next build` (statikus export a `out/` mappába) → `strip-js.mjs`
-(kiszedi az összes kliensoldali JS-t, ettől lesz 0 kB) → `audit.mjs`
+A `build:site` négy lépés: képoptimalizálás (`sharp`, AVIF/WebP), majd
+`next build` (statikus export az `out/` mappába), majd `strip-js.mjs`
+(kiszedi az összes kliensoldali JS-t, ettől lesz 0 kB), végül `audit.mjs`
 (ellenőrzi: title, description, canonical, H1, alt szövegek, törött
 belső linkek, gyanús tel: linkek, JSON-LD érvényessége).
 
@@ -83,19 +120,41 @@ git checkout -- package-lock.json public/
 ## Élesítés (deploy)
 
 A `SITE_URL` adja a canonical URL-eket, a sitemapet és az og:image
-abszolút címét. 2026-09-17 óta az alapértelmezése az **éles** domain
-(`https://autokulcsdoki.hu`), tehát ha elfelejted beállítani, akkor is
-helyes kimenet születik. Korábban a régi `autokulcsmasolo.com` volt az
-alapértelmezés, ami néma SEO-hibát okozott; ezt a 8d78f13 commit
-javította. Kiírva továbbra sem árt:
+abszolút címét. A `config/business.ts`-ben az alapértelmezése már az
+**éles** domain:
 
-```bash
-SITE_URL=https://autokulcsdoki.hu npm run build:site
+```ts
+url: process.env.SITE_URL ?? "https://autokulcsdoki.hu"
 ```
 
-A `gh-pages` ág egy külön, előzmény nélküli repóból megy fel force-
-pushsal (a README-ben van a pontos recept). Két fájl **nem** a buildből
-jön, hanem a deploy során kerül bele — ezek nélkül az oldal leáll:
+Tehát a `SITE_URL` nélküli build sem okoz SEO-kárt. Korábban a régi
+`autokulcsmasolo.com` volt itt, ami néma hibát okozott: minden canonical
+link, a sitemap és a megosztási kép a régi domainre mutatott. Ezt a
+8d78f13 commit javította. Kiírva továbbra is helyes.
+
+A `README.md` receptje egy előzmény nélküli repóból, force-pushsal
+küldi ki az oldalt. A gyakorlatban ehelyett **megtartjuk a `gh-pages` ág
+előzményét**, mert így visszakövethető, mikor mi került ki és szükség
+esetén vissza lehet állni. Az eredmény az oldalon ugyanaz:
+
+```bash
+git fetch origin gh-pages
+git worktree add /tmp/ghp origin/gh-pages --detach
+find /tmp/ghp -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+cp -R out/. /tmp/ghp/
+touch /tmp/ghp/.nojekyll
+echo "autokulcsdoki.hu" > /tmp/ghp/CNAME
+cd /tmp/ghp && git add -A && git status --short   # ellenőrzés a commit előtt
+git commit -m "Frissites: <mi valtozott>"
+git push origin HEAD:gh-pages
+cd - && git worktree remove /tmp/ghp --force
+```
+
+A `git status --short` kimenetét **mindig nézd meg** a commit előtt: ha
+csak egy szöveget írtál át, ott is csak a várt fájlok szerepelhetnek.
+
+Két fájl nem a buildből jön, hanem a deploy során kerül bele és ezek
+nélkül az oldal leáll:
 
 - `CNAME` → `autokulcsdoki.hu` (enélkül az egyedi domain megszűnik)
 - `.nojekyll` (enélkül a GitHub Pages kihagyja a `_next/` mappát)
@@ -103,33 +162,33 @@ jön, hanem a deploy során kerül bele — ezek nélkül az oldal leáll:
 A repónak **publikusnak kell maradnia**, különben az ingyenes GitHub
 Pages nem szolgálja ki az egyedi domaint.
 
-### A build reprodukálhatósága — ellenőrizve
+### A build reprodukálhatósága, ellenőrizve
 
 2026-09-17-én a `main`-ből készült build **minden HTML fájlja bájtra
 azonos** volt az élő `gh-pages` tartalommal. Egyedül a `sitemap.xml`
-tér el, ott is csak a `lastmod` időbélyegekben, illetve a képek AVIF/
+tér el, ott is csak a `lastmod` időbélyegekben, illetve a képek AVIF és
 WebP változatai (a `sharp` kódolása nem determinisztikus). Vagyis az
 élő oldal pontosan a forráskódot tükrözi, nincs kézi módosítás a
 `gh-pages`-en. Ha egyszer ez nem így lenne, az azt jelenti, hogy valaki
-kézzel nyúlt az élő ághoz — akkor állj meg és kérdezz rá.
+kézzel nyúlt az élő ághoz: akkor állj meg és kérdezz rá.
 
 ## Amit tudni érdemes
 
 - **0 kB kliensoldali JavaScript.** Ezt a `strip-js.mjs` biztosítja a
   build végén. Ha valaha olyan funkció kell, ami tényleg JS-t igényel
-  (pl. interaktív elem), az ezzel a lépéssel ütközik — ilyenkor előbb
+  (például interaktív elem), az ezzel a lépéssel ütközik: ilyenkor előbb
   egyeztetni kell, nem csak beletenni.
-- **Kapcsolati űrlap:** statikus oldal, szerver nélkül — a beküldés egy
+- **Kapcsolati űrlap:** statikus oldal, szerver nélkül. A beküldés egy
   külső továbbítón (FormSubmit) megy a `juhaszmagic@gmail.com` címre
   (`config/business.ts` → `site.formRecipients`).
 - **Új oldal létrehozásakor** a `sitemap.ts` generálja a sitemapet, tehát
-  külön nem kell karbantartani — de az audit ellenőrzi, hogy van-e
-  egyedi title/description/canonical.
+  külön nem kell karbantartani, de az audit ellenőrzi, hogy van-e
+  egyedi title, description és canonical.
 - A `public/_redirects` és a gh-pages-en lévő `.htaccess` a régi
   `autokulcsmasolo.com` URL-jeinek 301-es átirányításait tartalmazza.
-  **GitHub Pages egyiket sem olvassa**, tehát ezek jelenleg nem élnek —
-  csak akkor lennének hasznosak, ha az oldal Apache/Netlify tárhelyre
-  kerülne.
+  **GitHub Pages egyiket sem olvassa**, tehát ezek jelenleg nem élnek.
+  Csak akkor lennének hasznosak, ha az oldal Apache vagy Netlify
+  tárhelyre kerülne.
 - A `package.json`-ban a `deploy:preview` script egy másik GitHub-
-  felhasználó (`matteocammisa8`) előnézeti címére mutat — ez az eredeti
+  felhasználó (`matteocammisa8`) előnézeti címére mutat: ez az eredeti
   fejlesztő maradványa, éles deploynál nem használjuk.
