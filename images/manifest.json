@@ -1,0 +1,520 @@
+{
+  "/images/autokulcs-keszites-reszlet.jpg": {
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAwABABoJQBWABk6iVJ+XcAA/u7CPpnxzrVfqlpvdUzpn+vns5563hgm8aBq5JvvV2+Sc4Vnpu3XAqtF+hMUc5OYRl0zqoIAAA=="
+  },
+  "/images/autokulcs-keszites.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQAAkABABoJYwC7AD0tYF/LAAA/uyeA+1mR08dZrxMjabFr++PVV1dRsDySwSMAAA="
+  },
+  "/images/autokulcs-masolas-reszlet.jpg": {
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAwABABoJZQAAxbLuGGBLcAA/vQ6faxjd+Nu2OtaVZyWiAXQr0obVvi3DsDxf0GYOmzy61Q5vrZhXXh05B5RzCxELurYAAA="
+  },
+  "/images/autokulcs-masolas.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAkABABoJYwCdAEDQyqAAP7sj45gtypWfmoUT9as3lZ6MTOgu+epCUr2alPGJFSm54rxMiBE7PZYCvGEwMbwAAA="
+  },
+  "/images/autokulcs-programozas-reszlet.jpg": {
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAACwAQCdASoQAAwABABoJaQAAvhBKMUAAP7ytSQLgj4tf43rI0pJN+2ugl02xUcYq/ssQAAA"
+  },
+  "/images/autokulcs-programozas.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRjwAAABXRUJQVlA4IDAAAACQAQCdASoQAAkABABoJZQAAupNrIAA/vWd2+Rmj40ycC7SYOiqG6+JmJt8djpAAAA="
+  },
+  "/images/autonyitas-reszlet.jpg": {
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQAAwABABoJZwAAsb8t5IswAD+7IS+Y7+DGO0W9qusZaDydL0SYmaL84h4W9owJGIDTrM6HJQgAA=="
+  },
+  "/images/autonyitas.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoQAAkABABoJQBOgB7DIh4AAP7swIqLXZJ3AbdDrtHrygo02opMJyWjwLvAR3rPrK2KVDYAAAA="
+  },
+  "/images/blog/elveszett-autokulcs.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAkABABoJZQCdACbsgQAAP7Rc+HgPgJHGUHKG2R33ifVsM4tQVBfdHDgYr9xfWhwZXzjQ+yM4pESg8xngAAA"
+  },
+  "/images/blog/immobilizer-programozas.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQAAkABABoJZwAAscQk+7jtAAA/vWCq3RjUq0s1miRuxkiLoYaIR/kgL6PygoAAAA="
+  },
+  "/images/blog/potkulcs-keszites.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoQAAkABABoJZwAAxXXf9KAAP7mQvHx0hDTypoZmpCyA80xSHwm3DtlePzUyt3+awgAAA=="
+  },
+  "/images/cta.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJQBOgB4+5uigAP7xe0wDo5OMSWuDRUgZaZQtHn9Tz2pvumQrovT+9Wqo4aC4xm1mBIBJl+fgAA=="
+  },
+  "/images/elveszett-autokulcs-reszlet.jpg": {
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAwABABoJQBOgCFfPVhhkAD+6aV4oElnqyLdyv0fac1sarakQ8COyZaZz/9Xmy/I3J4Qjyf9ZPfAgyur2Vat3VYbwo2JfangAAAA"
+  },
+  "/images/elveszett-autokulcs.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAkABABoJYwCdAEPR8IcoWgA/uN+6dIIDxoWccyWarlhxV+dejIiYO/IW4ouulY/nrT1HbiKhaLkAAA="
+  },
+  "/images/furgon-belso.jpg": {
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAsABABoJYwCdADZm9d0bwAA/qoPG/ZHb7ovC5dxs2Nl0zrxClmuAp8zN8bF2zhHgER6VQjK9aIW4js9iSNBmwTjjfK8wJQAAA=="
+  },
+  "/images/furgon.jpg": {
+    "width": 1536,
+    "height": 1024,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADwAQCdASoQAAsABABoJYwCdADvc89+jYAA/ojelaUFSz3fW82G3GH4WwaK/3RKO6KJLGFTwVisrp4+yFz1wUgG5yQxp0zCKNq4XPj1V10YN9XAAAA="
+  },
+  "/images/gallery-01.jpg": {
+    "width": 1254,
+    "height": 1254,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAAAwAgCdASoQABAABABoJQBYdiB0mY4Y4ym8AAD+prrsh5uaBRJ83Hcgzz6o3d0FhzWQsTAQCEpuip1Rk+/3NqpARqWVVILWq7wQ9rgAAAA="
+  },
+  "/images/gallery-02.jpg": {
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADwAQCdASoQAAwABABoJYwCsAYvDvUytAAA/umdgRSHDb3ivPpcIT8SeMPDswfOm3WgSuhOT7fbQLltvuvJ7DcGtrrJBnmjtL/Tbu4/6A+IVCyqw9k4AA=="
+  },
+  "/images/gallery-03.jpg": {
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAwABABoJZQAAvrdqewoqAAA/u8Y8t4xDs/1yebc9mS5AyFNvCiE3W4fAx+e67PKeVG6cvrK+GSVZXRwAA=="
+  },
+  "/images/gallery-04.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAkABABoJYwCdADDP5WPAAAA/vECzuQtWVB/HdKgPGFV3hEkxKwciAb44sfpQR/JlZNiGVHq7BGAAAA="
+  },
+  "/images/gallery-05.jpg": {
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADQAQCdASoQAAwABABoJQBOgCIfNY7WkAD+6VWv5Kkdrptwg2+lUBVG4uO3MzagiDFawwZ7VU+3tP3J/1xxHscCXJnnaGgnm9zzK/wy7u/gAA=="
+  },
+  "/images/gallery-06.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQAAkABABoJYwC7AD0tYF/LAAA/uyeA+1mR08dZrxMjabFr++PVV1dRsDySwSMAAA="
+  },
+  "/images/hero.jpg": {
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAwABABoJaQAAsf8oap9wAAA/vFJPR7lSXAbLDQNFOH6NkMvZXwMSgTEB5RoMrb4n9x9G2DIJMgA"
+  },
+  "/images/kapcsolat.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoQAAkABABoJZQAAaSDq18QAP7Q58Mvhu5difI3xvGbz6N9pp8KjND+aB+qApzKpIJZiGzsgJT8k+AA"
+  },
+  "/images/logo-full.png": {
+    "width": 420,
+    "height": 306,
+    "widths": [
+      420
+    ],
+    "blur": "data:image/webp;base64,UklGRkgBAABXRUJQVlA4WAoAAAAQAAAADwAACwAAQUxQSMEAAAAAAAAAAQAafq6rcA8AAQAAAAAAAQAah6DBw5Z+CwABAAAAAAMAdDWgco2DRWAAAwAAAAEACHsAnLvLdwt2AAAAAAABAAZ8BhXZugAcdQABAAABAQMAb0oAu40AZlcABAEBAQECAAyEQ7GQT4IBAQAAAAoOBg0bIoJHOl4NDAIZFhCQpWuFinifkrFpf6Ndm53OTEhWTjFicIJodXNWV1RQVS40NSE/qWKWaZpRNCU0NiUmOTM1M0AwPzdBQywzMDUZAFZQOCBgAAAAkAEAnQEqEAAMAAQAaCWkAA+NJTQAAPzxn5uAOU8e+eKBe1ArQU8mV63iER3nvfn0kVKhQfmcAcPTpnYXS7kGRkf/5uzeeqBVleF5/iqSE1a87ruFWLNOI34WuUbkAAAA"
+  },
+  "/images/logo-mark.png": {
+    "width": 192,
+    "height": 192,
+    "widths": [
+      192
+    ],
+    "blur": "data:image/webp;base64,UklGRpQBAABXRUJQVlA4WAoAAAAQAAAADwAADwAAQUxQSOsAAAABkGPbtmlb4+zzbNu2Qtu2kdmogW2F9ste6vdt27ZtVCIiEiSBcIiLc5AQEoAgY/vw+trhzVQEIDF1trK0IL+o7OwwEoLhLZW131eu/55X3upGEH5a1ejd78S83290NU4Gw1IFVk8zlZWLnplSN43mEQvMXn+Iyvj6wgCbfTXHXWXk7d+bu783QP2Ihe2+Cuiu/Pw1ogGah01VDjmhSO2R20Eo4LOjwHgrqtSfuOiKEv194HjZD6qOX/MC/0uWCPJuBdBw8kEQIXfSEcikXm+N39lxn7yehAwIjDotrG30WoyR+S9jaYQkgQAAAFZQOCCCAAAAEAIAnQEqEAAQAAQAaCWkAA+Bz10wFo3pUAD9++Eg7blLnJgdJkYKyoKxkF2ELcabcvN0vcQ3OOTt4OKoByJl/jyJVKxZsJxzyHuBS460OOjW0HZL28m4RT9K/NdedTuwVTI815jhDqz06lrFPC464ibLLnp5DrVyg78wsNux+wAAAA=="
+  },
+  "/images/muhely.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADQAQCdASoQAAkABABoJZwAAl3PNkjNAADOEFZQhO8WOXGibBYYyE55saOuttBTCdihd4cMSqdetAyJhpbu7mqgQAA="
+  },
+  "/images/munkak/bmw-helyszini.jpg": {
+    "width": 1350,
+    "height": 1800,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAABQBACdASoQABUAPxFysFAsJqSisAgBgCIJQBdgMY7TK61BP2XKE3Mf75wAAOJQCKjtLmserV06Xz2nqiEHuzQ0JH3rWMZynypxAqEPuQgvPaWIUjNj75pO1nQZ8KDh0R3Mt10C9y5WNLtfh7jn4h6agjUoRSu3r/5+EixCy/PsiR5l/Y9gaCRUw4l32sT7ljOIl9xyYkdJRq/aZYbnmAAA"
+  },
+  "/images/munkak/helyszini-kulcsmaras.jpg": {
+    "width": 1800,
+    "height": 1350,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBACdASoQABUAPxFysFAsJqSisAgBgCIJQBhRxAAFSxlTyM1uG61/V4AA/kQ2hjUb1NoUkEondT2+k8yynI0s7rlgvxKtJ070yK8Bur6YI/EqEGFk6v0eP3PMj89dSP7V+0PqAK99Dz0bdE49VMH04lGEaqMytcIohWpNoYyV0Dm3KVZNxgoAAAA="
+  },
+  "/images/munkak/immobilizer-key-learn.jpg": {
+    "width": 1800,
+    "height": 1350,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAADQAwCdASoQABUAPxFwsFAsJiSisAgBgCIJaACdMoACwZ6msxQNs4AA/u6bu7PBN61Yld2Iz2eGPZ3POyfaUs9uLWoyyOgWtMPDuGbQktIXl6Yuwp8FKjuQhFLWcTiGAh/hlfAyDnou43wu73p47PDlY2pNWGu4EyXNwJkHKwQXif1DgIo5CsIAAAA="
+  },
+  "/images/munkak/immobilizer-kiolvasas.jpg": {
+    "width": 1350,
+    "height": 1800,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAQBACdASoQABUAPxFysFAsJqSisAgBgCIJZACdABnkphb/coXxTu00AAD85X+CwY4kFthnjG49mmTb1LiCHhziYREUorGlBTAAkMb01RZzA26nOp6N1o4AaaJ+Pg0hH+sN1JeBVZxFyNyG2UajI8sSFcByP4Y5Tm55DMH8pU3LPKNnG0wTGldjRytnZC+T3AAAAA=="
+  },
+  "/images/munkak/mini-kulcs.jpg": {
+    "width": 1800,
+    "height": 1350,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRo4AAABXRUJQVlA4IIIAAAAQBACdASoQABUAPxFysFAsJqSisAgBgCIJZACsMoADTfNLBuQcSX0AAAD6YOB9dwExmQfcpwiDoOz5E3vbq7oZx+5V5PWsKQKgzfKllI8DBEFnyLPOPwJ64GPHI7XVJkt+p/VLLvBjEhEhwNohWvQAgehkdfnorwJ/TXjxwc6nkAAA"
+  },
+  "/images/munkak/mobil-muhely.jpg": {
+    "width": 1350,
+    "height": 1800,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAADwAwCdASoQABUAPxFysFAsJqSisAgBgCIJQBOgBDVX/WTVxIyNb/bgAMruv98EhWsu2aCbBA+Ju0av5hzeGfpjg4ZGFzUsYvcvya3ia+wms/ffFDBcOpLZ18CYy3detkfKvowUW1N6biUgPZR5mNGhuffhehzA4yfBWqyH5wRzQVWFJAA="
+  },
+  "/images/munkak/muhely-kulcshaz.jpg": {
+    "width": 1800,
+    "height": 1350,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAQBACdASoQABUAPxFysFAsJqSisAgBgCIJagCxGwAB3oV0ABUnLlRNAAD+wVt0NghSKtoThZwcVz1qLFuqWNQVlz7DnMo6jHOJoEwDB/7CdrmHx9ahZgFpozlYFrXDWdc+kcyIxzpAPSSoSoijMu5ICDGDKZ/72Ho6svntSYkV0Ot5QnNsrPR+T9TighD7dqewAA=="
+  },
+  "/images/munkak/muhely-kulcsjavitas.jpg": {
+    "width": 1350,
+    "height": 1800,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAABQAwCdASoQABUAPxFysFAsJqSisAgBgCIJQBdgAkfaN42oAAD+q63OcKOnPrGg8fyL6APS4X/ho5Q/oHnDVHi7Q159ijQMNdKt4gGnkgymCJcTEfRAjjYBAQiKyUWQM1p8b5b8gK2LX7j0HByBd49UKCquhrUR9gAljfVAOlBvFfimAAA="
+  },
+  "/images/munkak/skoda-immo-diagnosztika.jpg": {
+    "width": 1350,
+    "height": 1800,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAAAwBACdASoQABUAPxFysFAsJqSisAgBgCIJQApgY4ABKLYyytGYF/8ZyvwA/ra4EuSTgtTkgeaLAAOV7d807OHllQe892FcLMWtDy466fwtz4MdTp01fy+zGmFUhkRPjM0hfa7v+4r7Oibgg1z7qIwsEP3tZzPRw37i69Z2StjenD5lP9dwOMH2cqPO+ukZzTJESWken8/QYAAA"
+  },
+  "/images/munkak/skoda-ket-kulcs.jpg": {
+    "width": 1350,
+    "height": 1800,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACwAwCdASoQABUAPxFwsFAsJiSisAgBgCIJQBOgBAzaO8hTImHkAAD7I0awfWwzuQ6MNsmPE7J/kPgijxRpIXQz/ucetu/I7wSkx/S6Nacr0gPumDpR5mNEGf9FJiEj8IO+2B8g4UFherTNSAJDzuHQgWP7xc/K9RNcT/hFjhX7uxNJGrXdwfbZejKrKS0AAAA="
+  },
+  "/images/munkak/skoda-octavia-kulcs.jpg": {
+    "width": 1800,
+    "height": 1350,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAADwAwCdASoQABUAPxFysFAsJqSisAgBgCIJZAB3AARdBp7dTuuPj6UAAP60xWXS9I9+VFZSUV1W2xETtKbidJvfpamkVo0PA6tugaPVNELPogMxuF4SJ0NQlsYSPryrjz0NPLnVWP+avxDyMDw0cQ9BIPXF3miAFe+AqstEC2RDM4i2MGVaY8V24jr/5fl/watCaqAAAAA="
+  },
+  "/images/munkak/suzuki-jimny-potkulcs.jpg": {
+    "width": 1800,
+    "height": 1350,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRpAAAABXRUJQVlA4IIQAAAAQBACdASoQABUAPxFysFAsJqSisAgBgCIJQBOmUAnAAjU2BacqOf+MAAD+11EdOV2WRU50FDgEgbPqqHQFTGPrPYuUI5dcwyQylz4Dob/qkRLWcN668lvigmLCYfxPhPiOEbjQ29EFv11bBQUJnqF8bpP+8tlDZgz0HiHZuno3vJG2YAA="
+  },
+  "/images/munkak/toyota-helyszini.jpg": {
+    "width": 1800,
+    "height": 1350,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRpoAAABXRUJQVlA4II4AAAAQBACdASoQABUAPxFysFAsJqSisAgBgCIJYwDCgCPNki3f96+gofN3AADcmEMAu+4DBC4eNLelN3/hdyb8jFOew1KjHTGmYYnOwNz7aOOeZe9handJomzexeCN/cXbw5dUr/cs1mQh9mP34AAgOsflDhQnlQ5nrjPCr8gWPnW+wMVxrg7+G2DwD2BeIAAA"
+  },
+  "/images/munkak/toyota-ket-kulcs.jpg": {
+    "width": 1800,
+    "height": 1106,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACQBACdASoQABoAPxFysFAsJqSisAgBgCIJYgDCgCLKXydNFY+tvUV/EbHTtoAA/uC71bGENzfe7xCe3b1HkzA/vdBANTTrYuuxghSJiDNO9zm9gwfRFev9rbLUaws7ay9IF1VNBtDsapR0tXmfYi+hXpfOiI+J5SdNByTpVoPh4o/ZX/QmUHeZayrZKqVvTKs38lfKH3oB8PI0Y3XshQG3p8msffal9wAAAA=="
+  },
+  "/images/munkak/volvo-ket-kulcs.jpg": {
+    "width": 1350,
+    "height": 1800,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAACQAwCdASoQABUAPxFwsFAsJiSisAgBgCIJYwAAHJ5ZfRm3MXEAAPxjodTEBFi4LkQaH7MdWOD/22xOIu4b94nzXFLdbnQZFMXFFAE7H+o1GMCzVS0PxW2Z2ANBl/j/uH40PV537xPUDAeGaUpGMM22vaO484P/mcvgrELCZxmbhkwQOtxxSwAA"
+  },
+  "/images/munkak/vw-kulcsprogramozas.jpg": {
+    "width": 1800,
+    "height": 1350,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRpQAAABXRUJQVlA4IIgAAADwAwCdASoQABUAPxFysFAsJqSisAgBgCIJaAAjwACvgVREPog9N2zQAPk9BBhckPNqdwqznambpw7WZC9mUBlVwB7oSXzpK1QyPQFLjTSKPCiyS9jh0dgSEoleMHrFdXGyxJyAtF2k32c9jaUb/cW94FAexiDQi/BEvJCp9IRRxYBQyWKKFtAA"
+  },
+  "/images/serulesmentes-autonyitas-reszlet.jpg": {
+    "width": 1448,
+    "height": 1086,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAwABABoJZQAAjuqa7akIAD+7JyqaSbhBtzlxD7jBrPeXYWzVvqJb0RXGYPldCjs9I9XwTZNjTjOhq4v2qvkhRSm8VTcAAA="
+  },
+  "/images/serulesmentes-autonyitas.jpg": {
+    "width": 1672,
+    "height": 941,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADQAQCdASoQAAkABABoJZwAAxbemwUQQAD+gf3gUqzxNlXSAOqoOKp0tv6MZrlIg3t7nd1luHllwZwmFgQIAA=="
+  },
+  "/images/szakerto.jpg": {
+    "width": 1122,
+    "height": 1402,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRngAAABXRUJQVlA4IGwAAABwAwCdASoQABQAPxFysFAsJqSisAgBgCIJQAAKO4GzfaU0UgAA/uN/4bfNI6AAFavKxBniQ6jWSQENDu3B8hefu8p9ZMIOvhvLemoaEfak8y3fmVeqKfj1zSFdRFpXc0BDTmUPxfuVDr2AAAA="
+  },
+  "/images/tiktok/tiktok-01.jpg": {
+    "width": 1080,
+    "height": 1920,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAAAwBACdASoQABwAPxF0slCsJqSisAgBgCIJagC+SGVvrHOLxmzcrg0qfgAA/uNNT1fe/ljTNyUJ6oyz8VVCqFwj2h4p0QYqvzyDWLC0MHBPaoKb1yu/yMwtxPxyv6qHaV6R/+2wNoiSMEc3NtIf7oXax0c/Dj8hMwQJVfcQN1Ml5D64ns05auEa+d0/80KgF++viEoaYBChJ5rT9ExtQhOAOBuzz4VEGxqkp6AA"
+  },
+  "/images/tiktok/tiktok-02.jpg": {
+    "width": 576,
+    "height": 1024,
+    "widths": [
+      576
+    ],
+    "blur": "data:image/webp;base64,UklGRpwAAABXRUJQVlA4IJAAAACwBACdASoQABwAPxFysFAsJqSisAgBgCIJbACdOUAKkxb9ZRbossckYGBaubjAAPfCjeVQTHM08lFURiwVQ0C2eiNSNSuQU5v+qROWsm3jlIElMYpECz2auH7XT68Yn3DiqMWIRxfjeVy3dx1Prd9MXEQg2VzJf2LqPKhGIpDOqx94RK/2VykZrqQVJX+kAAA="
+  },
+  "/images/tiktok/tiktok-03.jpg": {
+    "width": 576,
+    "height": 1026,
+    "widths": [
+      576
+    ],
+    "blur": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAADwBACdASoQABwAPxFysFAsJqSisAgBgCIJbACdMoRwAdEM1T3mvwcUvNZ1POTAMIAA996x5RnJurRYzXRHR4h5dPlTXpWZOX/yo0BApWsB0/4flRZQJSCY9zb+dnTYlEz7AufGVFANKInN+gLLyTerdmonWo8fm8o2B7bvPKSh/LkhNd1bEQN5+A62ZbZ38j1v7S+Htc/zj7Q7nvvq/hOMZt1oHUlxoYFIpMr0KgBBJfmyFIS9Z7ClxC7F/vyA1AAAAA=="
+  },
+  "/images/tiktok/tiktok-04.jpg": {
+    "width": 576,
+    "height": 1024,
+    "widths": [
+      576
+    ],
+    "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAADwAwCdASoQABwALtGIxGIkLCwsDADQS2AE6AIusBSPl9q+X7b8cakAAP6M23sDaB05k/RBTDuiSuOqAFT/edCPZP+76KL8jmDVaG9hgslySMKRAoSZxDqIXHWgWjidVhT/yo1mnsa0IT9zkNDVqdK3yIuBRTVRP2AAAA=="
+  },
+  "/images/tiktok/tiktok-05.jpg": {
+    "width": 1080,
+    "height": 1920,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQBACdASoQABwAPxF6tFAsKCUisAgBgCIJaQABGv0LbbZcUfHHuP+jYAD++dO8IHJ9C/eDcOh/8wpkDFIJsivr/r2d/CLuCZA5g61CGjS9ilYgAAA="
+  },
+  "/images/tiktok/tiktok-06.jpg": {
+    "width": 720,
+    "height": 1280,
+    "widths": [
+      640
+    ],
+    "blur": "data:image/webp;base64,UklGRoYAAABXRUJQVlA4IHoAAAAQBACdASoQABwAPxFysFAsJqSisAgBgCIJaAAATv5YYvkRw0m8u1n8AAD+qT1tIYURjBxSYtfh5j0dSW77qajnJKMKLY2+hat+Za7WMSKmZmIDAZAI5F8yzsag63V6EntsK9unU7mTCsjcQTci0as2r39JlWOs/i5wAA=="
+  },
+  "/images/tiktok/tiktok-07.jpg": {
+    "width": 1014,
+    "height": 1473,
+    "widths": [
+      640
+    ],
+    "blur": "data:image/webp;base64,UklGRpIAAABXRUJQVlA4IIYAAADQAwCdASoQABcAPxF0sFCsJqSisAgBgCIJYgAAYX4VzqE/r1R4kIgAyUYZQ4NKZlyEIeRYVEcf8EgBxaw1fPwX3z0NF2mSVvYU6V21ljVJkCrYCx1jOdORRrUPJcEMiSdBasZaHJuN287+uoXtIH//7fiJgtMomzGADslyvc8Ou44V+sLAAA=="
+  },
+  "/images/tiktok/tiktok-08.jpg": {
+    "width": 1014,
+    "height": 1473,
+    "widths": [
+      640
+    ],
+    "blur": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAACwBACdASoQABcAPxFysFAsJqSisAgBgCIJbACdMoEUkgYu9q1Vt7TXd/x31T6AAP7MEPiRAlfC393UCb2+ztS2BDEZHUI0NJrzwXJU1b8TumfTFq6rivVMWbAYpmW4rVkrOze5nTspM/YAC/QT0xnTEMk4YAd2ZnNX3LFUvJVhwYd0AHeB5MmGzqq/q/fVLZt1ufmY9aG1cH7abaaO21/pKTb+Tef5WjQgAA=="
+  },
+  "/images/tiktok/tiktok-09.jpg": {
+    "width": 1014,
+    "height": 1473,
+    "widths": [
+      640
+    ],
+    "blur": "data:image/webp;base64,UklGRpYAAABXRUJQVlA4IIoAAAAwBACdASoQABcAPxFysFAsJqSisAgBgCIJYwC06CHhqu94R/oHpkTkVgAAywgOVA1gNbva7yhgV7yslgiKNUBRUWPVUilBCok14Xn4RmUJskhPNASKlDDf+xd3YLblvwJTMM8iV4NUrIh65t+SxiRzEqvr3+C27+wxXluiYdWRmrH1J2wkPUBAAAA="
+  },
+  "/images/tiktok/tiktok-10.jpg": {
+    "width": 1080,
+    "height": 1920,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRqIAAABXRUJQVlA4IJYAAABwBACdASoQABwAPxF0sFCsJqSisAgBgCIJQBhQZYChfcPIZnZFDYLB/06qAAD++MVAEn9BVQfg3lRIv0xBPQ/XdA3cnnfsMOPehGuizHcekZleV4N/Djk/4Z9yCegBzEHi/4RYUEAYjuv0KsJgJBQFfng8aVvhplHHJqCYqee2ppPwfaLhkxXW9iD3hV4e1kcbdhjQAAA="
+  }
+}
