@@ -426,9 +426,15 @@ export const site = {
    * címét kell használni, élesben pedig a saját domaint.
    *
    *   előnézet:  SITE_URL=https://matteocammisa8.github.io/autokulcs-doki
-   *   éles:      (nincs SITE_URL) -> https://autokulcsmasolo.com
+   *   éles:      (nincs SITE_URL) -> az alábbi alapértelmezés
+   *
+   * Az alapértelmezés SZÁNDÉKOSAN az éles domain. Korábban a régi
+   * autokulcsmasolo.com volt itt: ha valaki SITE_URL nélkül buildelt,
+   * minden canonical link, a sitemap és a megosztási kép a régi domainre
+   * mutatott — és ez az oldalon ránézésre egyáltalán nem látszott.
+   * Így a felejtés legrosszabb következménye is helyes kimenet.
    */
-  url: process.env.SITE_URL ?? "https://autokulcsmasolo.com",
+  url: process.env.SITE_URL ?? "https://autokulcsdoki.hu",
   locale: "hu_HU",
   lang: "hu",
 
