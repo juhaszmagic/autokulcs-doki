@@ -179,7 +179,7 @@ export function ContactForm() {
               className={`mt-1.5 ${inputBase}`}
             />
             <p id="telefon-hint" className="mt-1.5 text-xs text-ink-500">
-              Erre a számra hívjuk vissza.
+              Ezen a számon hívjuk vissza.
             </p>
           </div>
         </div>
