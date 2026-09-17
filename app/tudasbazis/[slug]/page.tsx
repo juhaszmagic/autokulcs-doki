@@ -148,6 +148,17 @@ export default async function ArticlePage({ params }: Params) {
                       ))}
                     </ul>
                   )}
+
+                  {section.image && (
+                    <AssetImage
+                      src={section.image.src}
+                      alt={section.image.alt}
+                      ratio="16/9"
+                      sizes="(max-width: 1024px) 100vw, 48rem"
+                      tone="green"
+                      wrapperClassName="mt-7 rounded-card shadow-media"
+                    />
+                  )}
                 </section>
               ))}
 

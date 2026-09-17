@@ -43,6 +43,12 @@ export interface ArticleSection {
   heading: string;
   paragraphs?: string[];
   list?: string[];
+  /**
+   * Szakaszon belüli fotó, a szöveg után. Csak valódi munkáról készült
+   * kép kerülhet ide, illusztráció nem. A fejlécképpel ellentétben nem
+   * kötelező: ha nincs megadva, a szakasz csak szöveget mutat.
+   */
+  image?: { src: string; alt: string };
 }
 
 export interface Article {
@@ -74,6 +80,159 @@ export interface Article {
    ================================================================== */
 
 export const articles: Article[] = [
+  /**
+   * A szöveget és a fotókat a tulajdonos adta, egy 2026 szeptemberi
+   * valódi munkáról. A megfogalmazáson csak az oldal stílusszabályai
+   * szerint igazítottunk (hosszú kötőjel helyett vessző vagy kettőspont,
+   * „és” előtt nincs vessző, „kulcs” helyett „autókulcs”), a tartalmi
+   * állításokhoz nem nyúltunk.
+   */
+  {
+    slug: "volkswagen-mqb-keyless-kulcsprogramozas",
+    /**
+     * A tulajdonos eredeti címe ennél jóval hosszabb volt („…: márkakereskedési
+     * minőség, gyorsabban és kedvezőbb áron”). Hat sorban tördelődött a
+     * cikkfejlécben és a listakártyán is, ezért a többi cikk hosszához
+     * igazítottuk. A teljes állítás a szövegben és a meta leírásban megmaradt.
+     */
+    title: "Volkswagen MQB 5C Keyless gyári autókulcs programozása",
+    excerpt:
+      "Egy ügyfelünk Volkswagenjéhez elveszett az egyik Keyless autókulcs. Gyári kulcsot programoztunk hozzá, az elveszett autókulcsot pedig töröltük a járműhöz engedélyezett kulcsok közül.",
+    category: "programozas",
+    date: "2026-09-17",
+    image: {
+      src: "/images/blog/volkswagen-keyless-autokulcs-programozas.jpg",
+      alt: "Két gyári Volkswagen Keyless autókulcs a jármű utasterében, a programozás után",
+    },
+    metaTitle: "Volkswagen MQB 5C Keyless gyári autókulcs programozása",
+    metaDescription:
+      "Elveszett egy Volkswagen Keyless autókulcs? Gyári kulcsot programozunk az MQB 5C rendszerhez, az elveszett autókulcsot pedig töröljük a jármű rendszeréből.",
+    readingMinutes: 5,
+    lead:
+      "Egy újabb Volkswagen autókulcsának elvesztése ma már jóval összetettebb probléma, " +
+      "mint egy hagyományos autókulcs egyszerű lemásolása. Az MQB 5C rendszerrel és Keyless " +
+      "Go funkcióval szerelt Volkswagen modelleknél az autókulcs az autó elektronikus " +
+      "biztonsági rendszerének szerves része, ezért a megfelelő kulcs elkészítéséhez " +
+      "professzionális eszközökre, naprakész szakmai tudásra és megfelelő programozási " +
+      "eljárásra van szükség.",
+    sections: [
+      {
+        heading: "Gyári Volkswagen autókulcs, kompromisszumok nélkül",
+        paragraphs: [
+          "Nemrég egy ügyfelünk pontosan ilyen problémával keresett meg minket: Volkswagen " +
+            "gépjárművéhez elveszett az egyik Keyless autókulcs, ezért nem egyszerűen egy " +
+            "másolatot szeretett volna, hanem egy teljes értékű, az autóhoz megfelelő gyári " +
+            "kulcsot, valamint azt, hogy az elveszett autókulcs többé ne legyen használható " +
+            "az autóhoz.",
+          "Az adott járműhöz gyári Volkswagen autókulcsot tudtunk biztosítani és " +
+            "felprogramozni. Ez azért fontos, mert az ügyfél így nem egy gyengébb minőségű " +
+            "utángyártott megoldást kapott, hanem olyan autókulcsot, amely minőségében, " +
+            "működésében és használati élményében megfelel az eredeti kulcsnak.",
+          "A Keyless funkciók, a távirányítás és az immobilizer megfelelő működése egyaránt " +
+            "megmaradt. Az elkészült autókulcs tehát nem csupán elindítja az autót: teljes " +
+            "értékű kulcsként működik a járművel.",
+          "Mindezt úgy tudtuk megoldani, hogy az ügyfél számára a teljes folyamat jóval " +
+            "kedvezőbb költséget jelentett, mint egy hagyományos márkakereskedési " +
+            "kulcsrendelés, miközben gyári kulcsot kapott.",
+        ],
+      },
+      {
+        heading: "Mi történik az elveszett autókulccsal?",
+        paragraphs: [
+          "Kulcselvesztésnél számunkra nem csak az a fontos, hogy az új autókulcs működjön.",
+          "Az elveszett autókulcsot a programozási folyamat során töröltük a járműhöz " +
+            "engedélyezett kulcsok közül, így az már nem maradt aktív, használható kulcsként " +
+            "az autó rendszerében.",
+          "Ez biztonsági szempontból különösen fontos. Ha valaki később megtalálja az " +
+            "elveszett autókulcsot, ne maradjon ugyanolyan jogosultsága az autóhoz, mint " +
+            "korábban.",
+          "A programozás során a jármű kulcsadatait és a kulcsazonosításhoz kapcsolódó " +
+            "adatokat is megfelelően rendeztük, így az autó rendszere a ténylegesen meglévő " +
+            "kulcsállománynak megfelelő állapotba került.",
+          "A művelet után az autó diagnosztikai és kulcskezelési szempontból is rendezett " +
+            "állapotban marad: nem egyszerűen hozzáadunk még egy autókulcsot, hanem " +
+            "szakszerűen kezeljük a korábbi és az új kulcsok jogosultságát is.",
+        ],
+        image: {
+          src: "/images/blog/volkswagen-muszerfal-key-mode.jpg",
+          alt: "A Volkswagen műszerfali kijelzője a programozás után, a Key mode 2-2 kijelzéssel",
+        },
+      },
+      {
+        heading:
+          "CASCO és biztosítás szempontjából is fontos az elveszett autókulcs törlése",
+        paragraphs: [
+          "Egy elveszett autókulcs biztosítási szempontból sem elhanyagolható.",
+          "Éppen ezért fontos, hogy kulcselvesztés esetén ne csak készüljön egy új " +
+            "autókulcs, hanem az elveszett kulcs jogosultságát is megfelelően kezeljük és " +
+            "szükség esetén a munkavégzés dokumentálható legyen.",
+          "Az adott biztosító vagy CASCO-szerződés feltételei eltérhetnek, ezért egy " +
+            "esetleges káreseménynél mindig az adott biztosítási feltételek az irányadók. " +
+            "Szakszerű kulcspótlással azonban az autó tényleges kulcsállománya rendezhető, " +
+            "az elveszett autókulcs pedig törölhető a rendszerből.",
+          "Ez jelentős különbség egy egyszerű kulcsmásoláshoz képest.",
+        ],
+      },
+      {
+        heading: "Miért érdemes hozzánk fordulni a márkakereskedés helyett?",
+        paragraphs: [
+          "Az új generációs Volkswagen autókulcsok programozása speciális terület. Mi napi " +
+            "szinten foglalkozunk autókulcsokkal, immobilizer-rendszerekkel és elveszett " +
+            "kulcsok pótlásával, ezért az ügyfélnek nem kell heteket töltenie azzal, hogy " +
+            "különböző megoldásokat keressen.",
+          "Ebben az esetben is az volt a célunk, hogy az ügyfél gyorsan, professzionálisan " +
+            "és a lehető legkevesebb kellemetlenséggel kapja vissza az autójához a megfelelő " +
+            "számú működő autókulcsot.",
+        ],
+        list: [
+          "Gyári Volkswagen autókulcs az autóhoz.",
+          "Az MQB 5C és a Keyless rendszer szakszerű programozása.",
+          "Az elveszett autókulcs törlése a jogosult kulcsok közül.",
+          "A kulcsadatok megfelelő rendezése.",
+          "Az eredeti funkciók megtartása.",
+          "Gyorsabb ügyintézés.",
+          "Kedvezőbb ár a márkakereskedési megoldáshoz képest.",
+          "Professzionális, autókulcsokra specializálódott szolgáltatás.",
+        ],
+      },
+      {
+        heading:
+          "Elveszett Volkswagen Keyless autókulcs? Nem feltétlenül a márkakereskedés az egyetlen megoldás",
+        paragraphs: [
+          "Sokan még mindig úgy gondolják, hogy egy modern Volkswagen MQB vagy MQB 5C " +
+            "rendszerű autó kulcsának elvesztése esetén kizárólag a márkaszerviz tud " +
+            "segíteni. Ez nem feltétlenül igaz.",
+          "Megfelelő szakmai háttérrel és technológiával számos esetben gyári minőségű, " +
+            "teljes értékű megoldást tudunk biztosítani, ráadásul lényegesen gyorsabban és " +
+            "kedvezőbb áron.",
+          "Az ügyfél ebben az esetben is úgy távozott, hogy ismét rendelkezett a szükséges " +
+            "működő autókulcsokkal, az elveszett kulcsot pedig eltávolítottuk a használható " +
+            "kulcsok közül.",
+          "Ha Volkswagen MQB 5C Keyless autókulcsát elvesztette, pótkulcsot szeretne, vagy " +
+            "teljes kulcsvesztés történt, érdemes először minket keresnie.",
+          "Nem egy univerzális kulcsot próbálunk „ráprogramozni” az autóra: az adott " +
+            "járműhöz megfelelő megoldást választjuk, szakszerűen programozzuk és a " +
+            "kulcsrendszert rendezett állapotban adjuk át.",
+        ],
+      },
+      {
+        heading: "Autókulcs Doki: modern autókhoz modern kulcsmegoldások",
+        paragraphs: [
+          "Gyári autókulcs, professzionális programozás, gyors ügyintézés, kedvezőbb ár.",
+          "Volkswagen MQB, MQB 5C és Keyless Go kulcspótlás, elveszett autókulcs pótlása és " +
+            "autókulcs-programozás Budapesten és környékén.",
+          "Elveszett a Volkswagen autókulcsa? Keressen minket még azelőtt, hogy heteket " +
+            "várna egy márkakereskedési kulcsrendelésre.",
+        ],
+      },
+    ],
+    relatedServices: [
+      "autokulcs-programozas",
+      "elveszett-autokulcs",
+      "autokulcs-keszites",
+    ],
+  },
+
   /**
    * Ez a cikk 2026-09-17-én már élt a weboldalon, de a forráskódba nem
    * került be: csak a legenerált gh-pages ágra volt feltöltve. Emiatt a

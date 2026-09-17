@@ -105,6 +105,26 @@
     ],
     "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAACwAQCdASoQAAkABABoJZwAAxXXf9KAAP7mQvHx0hDTypoZmpCyA80xSHwm3DtlePzUyt3+awgAAA=="
   },
+  "/images/blog/volkswagen-keyless-autokulcs-programozas.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADQAQCdASoQAAkABABoJQBOgCIgVvL1gAD+0i3f7lbndEYMUmowSStCMN9Ogi41StvRqgirMH0x1NN8JegyRDACgAQJ0Gcu8dJAAA=="
+  },
+  "/images/blog/volkswagen-muszerfal-key-mode.jpg": {
+    "width": 1700,
+    "height": 956,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAkABABoJQBdgCK3nuXdlIAA/oODY9KEvnyYaPc6n/Qnrqa3VYQYOt1aZPAqyB2Qp8B6Sa2A3x8AAAA="
+  },
   "/images/cta.jpg": {
     "width": 1672,
     "height": 941,
