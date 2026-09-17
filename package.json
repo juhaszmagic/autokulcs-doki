@@ -5,8 +5,14 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "images": "node scripts/optimize-images.mjs",
+    "build:full": "npm run images && next build",
+    "lint": "eslint",
+    "serve": "npx --yes serve@latest out -l 4321",
+    "audit": "node scripts/audit.mjs",
+    "build:site": "npm run images && next build && node scripts/strip-js.mjs && node scripts/audit.mjs",
+    "og": "node scripts/make-og.mjs",
+    "deploy:preview": "SITE_URL=https://matteocammisa8.github.io/autokulcs-doki PREVIEW_BASE_PATH=/autokulcs-doki npm run images && SITE_URL=https://matteocammisa8.github.io/autokulcs-doki PREVIEW_BASE_PATH=/autokulcs-doki next build && node scripts/strip-js.mjs"
   },
   "dependencies": {
     "next": "16.3.4",
@@ -20,6 +26,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.3.4",
+    "sharp": "^0.35.4",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

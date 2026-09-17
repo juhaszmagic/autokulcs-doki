@@ -1,26 +1,534 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* ==========================================================================
+   DESIGN SYSTEM — Autókulcsmásoló Doktor
+   --------------------------------------------------------------------------
+   Márkaidentitás: GRAFIT + TOMPÍTOTT AUTÓIPARI ZÖLD + ELEGÁNS NARANCS
+
+   A három szín nem dekoráció, hanem szerkezet:
+     • grafit  → fejléc, lábléc, sötét szekciók, tipográfia
+     • zöld    → szekcióhátterek, bizalmi elemek, másodlagos gombok
+     • narancs → KIZÁRÓLAG konverzió: hívás, fő CTA, aktív állapot
+   ========================================================================== */
+
+@theme {
+  /* ---- GRAFIT (elsődleges) ------------------------------------------
+     Enyhén zöldes árnyalatú sötét — nem hideg kék-szürke. Ez adja a
+     weboldal komoly, autóipari alaphangját.                            */
+  --color-ink-950: #12150f;
+  --color-ink-900: #1f2421; /* ← a márka alap grafitja */
+  --color-ink-850: #262c28;
+  --color-ink-800: #2c332e;
+  --color-ink-700: #3d453f;
+  --color-ink-600: #566159;
+  --color-ink-500: #68736b; /* 4,94:1 fehéren — a 13px-es szövegek is megfelelnek */
+  --color-ink-400: #97a09a;
+  --color-ink-300: #c2c8c3;
+  --color-ink-200: #dfe3df;
+  --color-ink-100: #edefeb;
+  --color-ink-50: #f5f6f3; /* ← meleg, világos háttér */
+
+  /* ---- ZÖLD (másodlagos) -------------------------------------------- */
+  --color-brand-950: #16221a;
+  --color-brand-900: #1e2e24;
+  --color-brand-800: #2a4133;
+  --color-brand-700: #35513f;
+  --color-brand-600: #3f5f4a; /* ← a márka alap zöldje */
+  --color-brand-500: #4e7259;
+  --color-brand-400: #7a9b85;
+  --color-brand-300: #a8c0b0;
+  --color-brand-200: #c8dbcf;
+  --color-brand-100: #dce7df;
+  --color-brand-50: #edf3ee;
+
+  /* ---- NARANCS (akcentus / konverzió) -------------------------------
+     Az accent-600 fehér szöveggel 4,73:1 — megfelel a WCAG AA szintnek.
+     A CTA gomb az oldal legfontosabb eleme, ennek olvashatónak kell
+     lennie napfényben, az autó mellett állva is.                        */
+  --color-accent-900: #6f2903;
+  --color-accent-800: #8d3404;
+  --color-accent-700: #a83f05;
+  --color-accent-600: #c44e07; /* ← a márka alap narancsa */
+  --color-accent-500: #e06a18;
+  --color-accent-400: #f5a05f; /* 5,30:1 zöld háttéren — a 12px-es eyebrow is megfelel */
+  --color-accent-200: #f8cfb0;
+  --color-accent-100: #fbe3d2;
+  --color-accent-50: #fdf3eb;
+
+  --color-star: #f0a72c;
+
+  /* ---- FIGYELMEZTETŐ VÖRÖS ---------------------------------------
+     Szándékosan kilóg a márkapalettáról: kizárólag ott használjuk, ahol
+     a tulajdonos kifejezetten kiemelést kért (árak tájékoztató jellege).
+     A #b91c1c a halvány vörös alapon 6,9:1 kontrasztot ad — bőven a
+     WCAG AA fölött, tehát nem csak feltűnő, olvasható is.              */
+  --color-danger: #b91c1c;
+  --color-danger-50: #fef2f2;
+
+  /* ---- Tipográfia ---------------------------------------------------- */
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* Folyékony méretezés: mobilon olvasható, asztalin magabiztos.
+     A clamp() miatt nincs ugrálás a töréspontoknál.                     */
+  --text-display: clamp(2.5rem, 1.35rem + 4.6vw, 4.25rem); /* 40 → 68px */
+  --text-h1: clamp(2.125rem, 1.25rem + 3.6vw, 3.5rem); /*  34 → 56px */
+  --text-h2: clamp(1.75rem, 1.15rem + 2.4vw, 2.875rem); /*  28 → 46px */
+  --text-h3: clamp(1.25rem, 1.05rem + 0.8vw, 1.625rem); /*  20 → 26px */
+  --text-lead: clamp(1.0625rem, 1rem + 0.35vw, 1.25rem); /*  17 → 20px */
+
+  /* ---- Forma ---------------------------------------------------------- */
+  --radius-card: 0.875rem;
+  --radius-media: 1.25rem;
+  --radius-feature: 1.75rem;
+
+  /* ---- Árnyékok — finomak, sosem „lebegő" ---------------------------- */
+  --shadow-card: 0 1px 2px rgb(18 21 15 / 0.04), 0 2px 8px rgb(18 21 15 / 0.05);
+  --shadow-card-hover: 0 2px 6px rgb(18 21 15 / 0.06),
+    0 16px 36px rgb(18 21 15 / 0.12);
+  --shadow-media: 0 4px 12px rgb(18 21 15 / 0.08),
+    0 24px 56px rgb(18 21 15 / 0.14);
+  --shadow-header: 0 1px 0 rgb(18 21 15 / 0.08);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ==========================================================================
+   ALAPOK
+   --------------------------------------------------------------------------
+   FONTOS: ezek `@layer base`-ben vannak.
+   A rétegen kívül írt CSS ERŐSEBB, mint a rétegbe sorolt — így egy sima
+   `h2 { color }` szabály felülírná az összes Tailwind szövegszín-osztályt
+   a címsorokon, és a sötét szekciók fehér címsorai feketén jelennének meg.
+   ========================================================================== */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem; /* a fix fejléc ne takarja a horgonyt */
+    -webkit-text-size-adjust: 100%;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+
+  body {
+    background-color: var(--color-ink-50);
+    color: var(--color-ink-800);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Hely a mobil ragadós hívássávnak. */
+  @media (max-width: 767px) {
+    body {
+      padding-bottom: calc(4.75rem + env(safe-area-inset-bottom));
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-ink-900);
+    letter-spacing: -0.025em;
+    line-height: 1.08;
+    text-wrap: balance;
+  }
+
+  h3,
+  h4 {
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  /* ---- FÓKUSZ — mindig látható, mindenhol egységes ---- */
+  :focus-visible {
+    outline: 3px solid var(--color-accent-600);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+
+  :focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Ugrás a tartalomra — csak billentyűzettel válik láthatóvá.
+     (Fontos: enélkül a link a lap tetején jelenne meg minden látogatónak.) */
+  .skip-link {
+    position: absolute;
+    left: 0.5rem;
+    top: -100px;
+    z-index: 100;
+    background: var(--color-ink-900);
+    color: #fff;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0 0 0.75rem 0.75rem;
+    font-weight: 600;
+    transition: top 0.15s ease-in-out;
+  }
+  .skip-link:focus {
+    top: 0;
+  }
+
+  /* Sötét háttéren a narancs fókuszgyűrű nem elég erős — világosítunk. */
+  .on-dark :focus-visible {
+    outline-color: var(--color-accent-400);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ==========================================================================
+   TIPOGRÁFIAI SEGÉDOSZTÁLYOK
+   ========================================================================== */
+
+@layer components {
+  .text-display {
+    font-size: var(--text-display);
+    font-weight: 800;
+    letter-spacing: -0.032em;
+    line-height: 1.02;
+  }
+
+  .text-h1 {
+    font-size: var(--text-h1);
+    font-weight: 800;
+    letter-spacing: -0.028em;
+  }
+
+  .text-h2 {
+    font-size: var(--text-h2);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+  }
+
+  .text-h3 {
+    font-size: var(--text-h3);
+    font-weight: 700;
+  }
+
+  .text-lead {
+    font-size: var(--text-lead);
+    line-height: 1.6;
+  }
+
+  /* Kis, nagybetűs címke a szekciók fölött („eyebrow"). */
+  .eyebrow {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+
+  /* Nagy, halvány sorszám a folyamat-lépésekhez. */
+  .step-number {
+    font-size: clamp(3rem, 2rem + 4vw, 4.5rem);
+    font-weight: 800;
+    line-height: 0.85;
+    letter-spacing: -0.04em;
+  }
+}
+
+/* ==========================================================================
+   ANIMÁCIÓ — visszafogott, csak belépő halványodás
+   ========================================================================== */
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* ==========================================================================
+   TÁVIRÁNYÍTÓ ANIMÁCIÓ  (components/RemoteAnimation.tsx)
+   --------------------------------------------------------------------------
+   Egy 5,5 másodperces ciklus:
+     0–8%    a gomb lenyomódik
+     8–30%   három jelhullám indul ki, egymást követve
+     26–56%  a fényszórók kétszer felvillannak
+     56–100% nyugalom, majd újraindul
+
+   Csak `transform` és `opacity` animálódik — ezeket a böngésző a GPU-n
+   rajzolja, tehát nem okoz újraszámolást (layout/paint) az oldalon.
+   A `prefers-reduced-motion` kezelését a @layer base intézi globálisan.
+   ========================================================================== */
+
+.remote-anim {
+  color: var(--color-ink-300);
+}
+
+/* ---- A gomb lenyomása ---- */
+.remote-anim .fob-button {
+  fill: var(--color-accent-600);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: fob-press 5.5s cubic-bezier(0.34, 1.4, 0.5, 1) infinite;
+}
+
+@keyframes fob-press {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  4% {
+    transform: scale(0.78);
+  }
+  12% {
+    transform: scale(1);
+  }
+}
+
+/* ---- Jelhullámok ---- */
+.remote-anim .wave {
+  color: var(--color-accent-500);
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: left center;
+  animation: wave-out 5.5s ease-out infinite;
+}
+.remote-anim .wave-2 {
+  animation-delay: 0.13s;
+}
+.remote-anim .wave-3 {
+  animation-delay: 0.26s;
+}
+
+@keyframes wave-out {
+  0%,
+  4% {
+    opacity: 0;
+    transform: translateX(-6px) scaleX(0.7);
+  }
+  10% {
+    opacity: 0.95;
+  }
+  26% {
+    opacity: 0;
+    transform: translateX(10px) scaleX(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ---- Fényszórók ---- */
+.remote-anim .lamp {
+  fill: var(--color-ink-300);
+  animation: lamp-flash 5.5s ease-in-out infinite;
+}
+.remote-anim .lamp-r {
+  animation-delay: 0.04s;
+}
+
+@keyframes lamp-flash {
+  0%,
+  25% {
+    fill: var(--color-ink-300);
+  }
+  30%,
+  38% {
+    fill: var(--color-star);
+  }
+  43%,
+  47% {
+    fill: var(--color-ink-300);
+  }
+  52%,
+  58% {
+    fill: var(--color-star);
+  }
+  64%,
+  100% {
+    fill: var(--color-ink-300);
+  }
+}
+
+/* ---- Fényglória a lámpák körül ---- */
+.remote-anim .glow {
+  fill: var(--color-star);
+  opacity: 0;
+  filter: blur(9px);
+  animation: glow-flash 5.5s ease-in-out infinite;
+}
+.remote-anim .glow-r {
+  animation-delay: 0.04s;
+}
+
+@keyframes glow-flash {
+  0%,
+  27% {
+    opacity: 0;
+  }
+  32%,
+  38% {
+    opacity: 0.5;
+  }
+  44%,
+  49% {
+    opacity: 0;
+  }
+  54%,
+  58% {
+    opacity: 0.5;
+  }
+  64%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Sötét háttéren a vonalrajz világosabb. */
+.on-dark .remote-anim,
+.remote-anim.on-dark {
+  color: var(--color-ink-500);
+}
+
+/* ==========================================================================
+   MOBIL MENÜ — CSS-only (nincs hozzá JavaScript)
+   ========================================================================== */
+
+/*
+  A <summary> megjelenítését SZÁNDÉKOSAN nem írjuk felül.
+
+  iOS Safariban, ha a summary `display: flex` (vagy grid) értéket kap,
+  elveszti az alapértelmezett `list-item` megjelenítést, és vele együtt a
+  megbízható koppintás-aktiválást: az elem csak hosszú nyomásra nyílik.
+  Ezért a nyílhegyet csak elrejtjük, a doboz-modellhez nem nyúlunk, és a
+  vizuális elrendezés mindig egy belső elembe kerül.
+*/
+details.nav-drawer > summary,
+details.faq > summary {
+  list-style: none;
+  cursor: pointer;
+  /* Kikapcsolja a mobil böngészők dupla-koppintásra zoomoló késleltetését. */
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+details.nav-drawer > summary::-webkit-details-marker,
+details.faq > summary::-webkit-details-marker {
+  display: none;
+}
+details.nav-drawer[open] .icon-open {
+  display: none;
+}
+details.nav-drawer:not([open]) .icon-close {
+  display: none;
+}
+
+/* ==========================================================================
+   GYIK harmonika — natív <details>
+   ========================================================================== */
+
+details.faq[open] .faq-chevron {
+  transform: rotate(180deg);
+}
+.faq-chevron {
+  transition: transform 0.2s ease;
+}
+
+/* ==========================================================================
+   GALÉRIA LIGHTBOX — CSS-only, :target alapú
+   ========================================================================== */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 90;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgb(18 21 15 / 0.94);
+  padding: 1.5rem;
+}
+.lightbox:target {
+  display: flex;
+}
+.lightbox img {
+  max-width: 100%;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  cursor: zoom-out;
+}
+
+/* ==========================================================================
+   KÉPKEZELÉS
+   ========================================================================== */
+
+/* Sötét fotó-átfedés, hogy a ráírt fehér szöveg mindig olvasható legyen.
+   Alulról erősebb, felül szinte átlátszó — így a kép is látszik. */
+.media-scrim::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgb(18 21 15 / 0.88) 0%,
+    rgb(18 21 15 / 0.55) 38%,
+    rgb(18 21 15 / 0.12) 70%,
+    rgb(18 21 15 / 0) 100%
+  );
+  pointer-events: none;
+}
+
+/* Egyenletes sötétítés — a nagy CTA-blokkok háttérképéhez. */
+.media-scrim-even::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgb(18 21 15 / 0.72);
+  pointer-events: none;
+}
+
+/* Finom nagyítás a kártyákra mutatva. */
+.media-zoom img,
+.media-zoom .photo-slot {
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.group:hover .media-zoom img,
+.group:hover .media-zoom .photo-slot {
+  transform: scale(1.045);
+}
+
+/* ==========================================================================
+   NYOMTATÁS
+   ========================================================================== */
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    padding-bottom: 0;
+  }
+  a[href^="tel:"]::after {
+    content: " (" attr(href) ")";
+  }
 }

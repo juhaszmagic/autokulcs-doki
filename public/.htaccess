@@ -1,0 +1,139 @@
+# =============================================================================
+#  Apache konfiguráció — autokulcsmasolo.com
+# =============================================================================
+#  Ez a fájl a weboldal gyökerébe kerül (oda, ahol az index.html van).
+#  A jelenlegi tárhely Apache-ot futtat, ezért ez a formátum a mérvadó.
+#
+#  Két dolgot csinál:
+#    1. ÁTIRÁNYÍTJA a régi URL-eket az újakra (301), hogy a Google-ben
+#       meglévő helyezések és a máshol elhelyezett linkek ne vesszenek el.
+#    2. Gyorsítótárazást és tömörítést állít be a sebesség érdekében.
+# =============================================================================
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # ---------------------------------------------------------------------------
+  #  1. RÉGI URL-EK ÁTIRÁNYÍTÁSA  (301 = végleges, ez adja át a SEO-értéket)
+  # ---------------------------------------------------------------------------
+  #  Forrás: a régi autokulcsmasolo.com oldaltérképe.
+  #  Minden régi, indexelt oldalnak van itt megfelelője — egyik sem vezet 404-re.
+  #
+  #  FONTOS: a /arak/ URL NEM szerepel itt, mert az új oldalon is /arak/ maradt.
+  # ---------------------------------------------------------------------------
+
+  # Rólunk
+  RewriteRule ^about-us/?$                /rolunk/ [R=301,L]
+
+  # Szolgáltatások gyűjtőoldal
+  RewriteRule ^services/?$                /szolgaltatasok/ [R=301,L]
+
+  # Kapcsolat
+  RewriteRule ^contacts/?$                /kapcsolat/ [R=301,L]
+
+  # „Autóban felejtett kulcs" → sérülésmentes autónyitás
+  RewriteRule ^autobanfelejtettkulcs/?$   /szolgaltatasok/serulesmentes-autonyitas/ [R=301,L]
+
+  # A korábbi külön „Autónyitás" oldal megszűnt: a tartalma a
+  # sérülésmentes autónyitás oldalon él tovább. Enélkül 404 lenne
+  # annak, aki a Google találati listájából érkezik.
+  RewriteRule ^szolgaltatasok/autonyitas/?$ /szolgaltatasok/serulesmentes-autonyitas/ [R=301,L]
+
+  # Elveszett kulcs — a régi oldalon kétféle, elgépelt URL is élt
+  RewriteRule ^eveszettautokulcs/?$       /szolgaltatasok/elveszett-autokulcs/ [R=301,L]
+  RewriteRule ^elvesztettkulcs/?$         /szolgaltatasok/elveszett-autokulcs/ [R=301,L]
+
+  # Pótkulcs → autókulcs másolás
+  RewriteRule ^potkulcs/?$                /szolgaltatasok/autokulcs-masolas/ [R=301,L]
+
+  # Kulcstanítás / immobilizer → autókulcs programozás
+  RewriteRule ^autokulcstanitas/?$        /szolgaltatasok/autokulcs-programozas/ [R=301,L]
+
+  # ---------------------------------------------------------------------------
+  #  2. EGYSÉGES URL-ALAK
+  # ---------------------------------------------------------------------------
+  #  A weboldal záró perjeles URL-eket használ (/arak/). Ha valaki perjel
+  #  nélkül érkezik, átirányítjuk — így nem lesz két URL ugyanarra a tartalomra.
+  #  (A már létező fájlokat és mappákat ez nem érinti.)
+
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,5}$
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteRule ^(.*)$ /$1/ [R=301,L]
+
+  # ---------------------------------------------------------------------------
+  #  www eltávolítása (egységes kanonikus domain)
+  #  Ha a www-s változatot szeretné elsődlegesnek, cserélje meg a szabályt.
+  # ---------------------------------------------------------------------------
+  RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+</IfModule>
+
+# =============================================================================
+#  HIBAOLDAL
+# =============================================================================
+ErrorDocument 404 /404.html
+
+# =============================================================================
+#  TÖMÖRÍTÉS
+# =============================================================================
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE application/xml image/svg+xml
+</IfModule>
+
+# =============================================================================
+#  GYORSÍTÓTÁRAZÁS
+# =============================================================================
+#  A képek, betűtípusok és a CSS tartalom-alapú néven érkeznek (a fájlnév
+#  változik, ha a tartalom változik), ezért hosszan cache-elhetők.
+#
+#  A HTML-t viszont SOHA nem cache-eljük hosszan: különben egy telefonon
+#  beragadna a régi verzió, és a tulajdonos hiába frissítené az oldalt.
+# =============================================================================
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Statikus, ujjlenyomatos állományok — egy év
+  ExpiresByType image/jpeg                 "access plus 1 year"
+  ExpiresByType image/png                  "access plus 1 year"
+  ExpiresByType image/webp                 "access plus 1 year"
+  ExpiresByType image/avif                 "access plus 1 year"
+  ExpiresByType image/svg+xml              "access plus 1 year"
+  ExpiresByType font/woff2                 "access plus 1 year"
+  ExpiresByType text/css                   "access plus 1 year"
+  ExpiresByType application/javascript     "access plus 1 year"
+
+  # HTML — mindig ellenőrizze a szerveren, hogy van-e újabb
+  ExpiresByType text/html                  "access plus 0 seconds"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # HTML: ne ragadjon be a régi verzió a böngészőkben
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  # Ujjlenyomatos statikus fájlok: hosszú, megváltoztathatatlan cache
+  <FilesMatch "\.(css|js|woff2|jpg|jpeg|png|webp|avif|svg)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+
+  # sitemap és robots: napi frissesség
+  <FilesMatch "(sitemap\.xml|robots\.txt)$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+
+  # ---- Alapvető biztonsági fejlécek ----
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+</IfModule>
+
+# =============================================================================
+#  KARAKTERKÓDOLÁS — a magyar ékezetek miatt fontos
+# =============================================================================
+AddDefaultCharset UTF-8
