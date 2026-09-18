@@ -87,6 +87,143 @@ export interface Article {
 export const articles: Article[] = [
   /**
    * A szöveget és a fotókat a tulajdonos adta, egy 2026 szeptemberi valódi
+   * munkáról. A tartalmi állításokhoz nem nyúltunk, csak a megfogalmazáson
+   * és a szerkezeten:
+   *
+   *  • A cím és a címsorok a tényleges keresési kifejezésekre épülnek. A
+   *    cikk két keresési szándékot fed le: a márkásat („Kia kulcs
+   *    programozás”) és a problémásat („használt autót vettem egy
+   *    kulccsal”), ezért mindkettő szerepel benne.
+   *  • A gyakori kérdések kizárólag a tulajdonos fentebbi állításait
+   *    fogalmazzák újra. Az árra vonatkozó válasz az oldal egységes
+   *    megfogalmazását használja (config/business.ts).
+   *  • A négy beküldött fotóból kettő került be. A másik kettő szintén a
+   *    diagnosztikai kijelzőt mutatja, de erős tükröződéssel és ferdén,
+   *    ezért kimaradtak.
+   */
+  {
+    slug: "kia-ceed-kulcs-programozas",
+    title: "Kia Ceed pótkulcs készítés egy kulccsal vásárolt autóhoz",
+    excerpt:
+      "Egy ügyfelünk egyetlen kulccsal vásárolt Kia Ceedet. A helyszínen elkészítettük és felprogramoztuk a második autókulcsot, a meg nem kapott korábbi kulcsot pedig töröltük a jármű rendszeréből.",
+    category: "kulcsmasolas",
+    date: "2026-09-18",
+    image: {
+      src: "/images/blog/kia-ceed-potkulcs-keszites.jpg",
+      alt: "Két Kia autókulcs a Ceed utasterében, a második kulcs elkészítése és programozása után",
+    },
+    metaTitle: "Kia Ceed kulcs programozás és pótkulcs Budapesten",
+    metaDescription:
+      "Használt Kia Ceedet vett egyetlen kulccsal? A helyszínen készítünk és programozunk pótkulcsot, a hiányzó korábbi autókulcsot pedig töröljük a rendszerből.",
+    readingMinutes: 3,
+    lead:
+      "Használt autó vásárlásakor gyakori, hogy csak egyetlen autókulcs kerül az új " +
+      "tulajdonoshoz. Ilyenkor két kérdés merül fel egyszerre: hogyan legyen tartalék " +
+      "kulcs, és mi lesz azzal a kulccsal, ami nem került át. Egy friss Kia Ceed " +
+      "munkánkon keresztül megmutatjuk, hogyan oldható meg mindkettő.",
+    sections: [
+      {
+        heading: "Egy kulccsal vásárolt Kia Ceed",
+        paragraphs: [
+          "Egy ügyfelünk nemrég vásárolt egy Kia Ceed gépjárművet, amelyhez mindössze " +
+            "egyetlen autókulcsot kapott. Szeretett volna egy második, teljes értékű " +
+            "kulcsot, ezért Kia Ceed kulcs programozás és pótkulcs készítés miatt keresett " +
+            "meg minket.",
+          "A munkát helyszíni kiszállással végeztük. Elkészítettük az autóhoz megfelelő " +
+            "második autókulcsot, felprogramoztuk a járműhöz, majd minden szükséges " +
+            "funkció működését ellenőriztük. Az új kulcs tökéletesen működött, így az " +
+            "ügyfél ismét két használható kulccsal rendelkezett.",
+        ],
+        image: {
+          src: "/images/blog/kia-ceed-kulcs-programozas-kijelzo.jpg",
+          alt: "A programozó készülék kijelzője a Kia Ceed munkánál, sikeresen felprogramozott két autókulccsal",
+        },
+      },
+      {
+        heading: "Mi lett a meg nem kapott kulccsal?",
+        paragraphs: [
+          "Az ügyfélnek volt egy külön kérése is. Mivel az autót csak egy kulccsal " +
+            "vásárolta, nem tudta, hogy a korábbi második autókulcs hol lehet és kinél " +
+            "maradhatott.",
+          "Érthető módon nyugtalanította a gondolat, hogy valahol létezhet egy korábban " +
+            "az autóhoz programozott kulcs. Ezért azt kérte tőlünk, hogy a meg nem kapott " +
+            "kulcsot töröljük az autó rendszeréből.",
+          "A programozás során ezt is elvégeztük, így a hiányzó korábbi autókulcs már nem " +
+            "maradt használható kulcsként az autó rendszerében. Ez a lépés az, ami egy " +
+            "egyszerű pótkulcs készítésnél még nem történik meg.",
+        ],
+      },
+      {
+        heading: "Használt autót vásárolt egyetlen kulccsal?",
+        paragraphs: [
+          "Használt autó vásárlásakor érdemes arra is figyelni, hogy hány autókulcsot " +
+            "kapunk a járműhöz. Ha csak egyetlen kulcs áll rendelkezésre, célszerű még " +
+            "annak elvesztése vagy meghibásodása előtt elkészíttetni a pótkulcsot.",
+          "Ha pedig nem ismert, hogy a korábban meglévő másik kulcs hol található, érdemes " +
+            "foglalkozni annak biztonsági kérdésével is. Nemcsak egy új autókulcs " +
+            "elkészítése lehet fontos, hanem szükség esetén a hiányzó kulcs törlése is.",
+        ],
+        list: [
+          "Vásárlás előtt kérdezze meg, hány autókulcs tartozik a járműhöz.",
+          "Ha csak egy kulcs van, készíttessen pótkulcsot, amíg az az egy működik.",
+          "Ha a korábbi kulcs hollétét nem tudni, kérje annak törlését a jármű rendszeréből.",
+        ],
+      },
+      {
+        heading: "Kia Ceed kulcs programozás gyorsan és professzionálisan",
+        paragraphs: [
+          "Ebben az esetben pontosan ezt tettük. Az ügyfél egy kulccsal vásárolta meg a " +
+            "Kia Ceedjét, mi pedig a helyszínen elkészítettük és felprogramoztuk a második " +
+            "autókulcsot, valamint kérésére töröltük a meg nem kapott korábbi kulcsot.",
+          "Ha Kia Ceed autójához pótkulcsot szeretne, csak egy kulcsot kapott az autó " +
+            "megvásárlásakor, vagy elveszett valamelyik autókulcsa, forduljon hozzánk " +
+            "bizalommal.",
+          "Kia Ceed kulcs programozás, Kia pótkulcs készítés, elveszett autókulcs pótlása " +
+            "és helyszíni autókulcs készítés Budapesten és környékén.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Lehet pótkulcsot készíteni, ha csak egy autókulcsom van?",
+        a:
+          "Igen. Amíg van egy működő autókulcs, a második elkészítése és programozása " +
+          "egyszerűbb feladat. Ebben a munkában is így történt: az ügyfél egyetlen " +
+          "kulccsal vásárolta az autót, mi pedig a helyszínen elkészítettük és " +
+          "felprogramoztuk a másodikat.",
+      },
+      {
+        q: "Törölhető az a kulcs, amit nem kaptam meg az autóval?",
+        a:
+          "Ebben a munkában igen: a programozás során a meg nem kapott korábbi kulcsot " +
+          "töröltük, így az már nem maradt használható kulcsként az autó rendszerében. " +
+          "Hogy az Ön autójánál mi a helyzet, azt a típus és az évjárat alapján telefonon " +
+          "tudjuk megmondani.",
+      },
+      {
+        q: "Ki kell vinnem az autót valahová?",
+        a:
+          "Ezt a munkát helyszíni kiszállással végeztük. Hogy az Ön esetében a XI. " +
+          "kerületi telephelyünk vagy a kiszállás a jobb megoldás, azt a hívásnál " +
+          "egyeztetjük.",
+      },
+      {
+        q: "Mennyibe kerül egy Kia pótkulcs?",
+        a:
+          "Az ár az autó márkájától, típusától, évjáratától és a kulcs fajtájától függ. " +
+          "A pontos árat telefonon, WhatsAppon vagy Viberen egyeztetjük, még a kiszállás " +
+          "előtt. Készítse elő a típust és az évjáratot, ebből tudunk pontos árat mondani.",
+      },
+    ],
+    relatedServices: [
+      "autokulcs-masolas",
+      "autokulcs-programozas",
+      "autokulcs-keszites",
+    ],
+  },
+
+  /**
+   * A szöveget és a fotókat a tulajdonos adta, egy 2026 szeptemberi valódi
    * munkáról. A tartalmi állításokhoz nem nyúltunk, csak a megfogalmazáson:
    *
    *  • A szakzsargon („MQB 5C”) az eredetiben 12-szer, illetve 10-szer

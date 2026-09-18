@@ -95,6 +95,26 @@
     ],
     "blur": "data:image/webp;base64,UklGRkIAAABXRUJQVlA4IDYAAADwAQCdASoQAAkABABoJZwAAscQk+7jtAAA/vWCq3RjUq0s1miRuxkiLoYaIR/kgL6PygoAAAA="
   },
+  "/images/blog/kia-ceed-kulcs-programozas-kijelzo.jpg": {
+    "width": 1750,
+    "height": 984,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAADwAQCdASoQAAkABABoJbACdAEN8oEONAAA/pNzQIhhpwyuMmYwjldXLk7lhaSJsuBMBnt5rSo26pxKyC3ngAAA"
+  },
+  "/images/blog/kia-ceed-potkulcs-keszites.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAkABABoJZACdAB3MGIxAAD8rH5aI7U1Y4gXOq6oFv20ufXa8XajdE2TeRswh9M/AyKPxBxyUr80PBCR8titCadm+ajPj+DAAAAA"
+  },
   "/images/blog/potkulcs-keszites.jpg": {
     "width": 1672,
     "height": 941,
