@@ -40,12 +40,42 @@ buildelni és élesíteni.
 ## Stílus
 
 - **Ne használj hosszú kötőjelet.** Helyette vessző vagy kettőspont.
-  (A számtartományok, például 0–24, maradhatnak.)
 - **„és" előtt nincs vessző.**
 - **Magyar, magázó hangnem.**
 - Mindig **„autókulcs"**, ne csak „kulcs".
 
 Ezek a szabályok az oldal szövegeire vonatkoznak és erre a jegyzetre is.
+
+### A szavak közé tett vonal takarítása
+
+A tulajdonos kifejezett kérése: **ha két szó között olyan vonal áll, ami
+nem illik oda, vedd ki, akkor is, ha nem kérte külön.** Ez a jellegzetes
+gépi szokás, magyarul nem így írunk. Tehát ha egy fájlon dolgozol és
+ilyet látsz benne, javítsd menet közben.
+
+**Ki kell venni** a mondat közepén írásjelként álló gondolatjelet és
+nagykötőjelet:
+
+> „nem veszélyes – és jellemzően megoldható" → „nem veszélyes és
+> jellemzően megoldható"
+> „nem szakmai kérdés – ilyen helyzetben…" → „nem szakmai kérdés: ilyen
+> helyzetben…"
+
+**Nem szabad kivenni** ezt a kettőt:
+
+- **Számtartomány:** 0–24, 20–30 perc, 2–3 másodperc. Ez helyes magyar
+  írásmód és nem szavak között áll.
+- **Összetett szavak kötőjele:** e-mail, CASCO-szerződés,
+  ablakemelő-mechanika, immobilizer-rendszer, autókulcs-programozás.
+  Ezek a magyar helyesírás szerint kötőjelesek, kivenni hiba lenne.
+
+⚠️ **Soha ne csináld gépi kereséssel és cserével.** Minden helyre más
+írásjel illik (vessző, kettőspont, néha külön mondat), és arra is
+figyelni kell, hogy a csere ne hozzon létre „és" előtti vesszőt.
+
+**Állapot:** a tudásbázis öt cikke 2026-09-18-án megtisztítva. Az oldal
+többi részén ekkor még kb. 107 ilyen vonal volt (galéria, főoldal, az öt
+szolgáltatás-oldal, árak), ezek fokozatosan takarítandók.
 
 ## Ágak, ezt olvasd el, mielőtt bármihez nyúlnál
 
