@@ -279,7 +279,7 @@ export const articles: Article[] = [
    */
   {
     slug: "bent-maradt-az-autokulcs",
-    title: "Bent maradt az autókulcs a kocsiban – mit tegyen, és mit ne?",
+    title: "Bent maradt az autókulcs a kocsiban: mit tegyen és mit ne?",
     excerpt:
       "A kulcs az ülésen, az ajtó zárva. Végigvesszük, mit érdemes elsőként végigpróbálni, mikor kell azonnal segítséget hívni, és melyek azok a „házi” módszerek, amik többe kerülnek, mint a nyitás.",
     category: "autonyitas",
@@ -288,14 +288,14 @@ export const articles: Article[] = [
       src: "/images/autonyitas.jpg",
       alt: "Nyitott ajtajú autó az utcán, mellette kiterített nyitószerszámok",
     },
-    metaTitle: "Bent maradt az autókulcs a kocsiban – mi a teendő?",
+    metaTitle: "Bent maradt az autókulcs a kocsiban: mi a teendő?",
     metaDescription:
       "Bezárta az autókulcsot a kocsiba? Elmondjuk, mit próbáljon meg elsőként, mikor hívjon azonnal segítséget, és mit ne csináljon semmiképp.",
     readingMinutes: 4,
     lead:
       "Ez néhány másodperc alatt megtörténik: becsapja az ajtót, és abban a pillanatban " +
       "megpillantja az autókulcsot az ülésen. A helyzet kellemetlen, de önmagában nem " +
-      "veszélyes – és jellemzően úgy megoldható, hogy az autón nyoma sem marad. A sorrend " +
+      "veszélyes és jellemzően úgy megoldható, hogy az autón nyoma sem marad. A sorrend " +
       "viszont számít.",
     sections: [
       {
@@ -307,7 +307,7 @@ export const articles: Article[] = [
             "hozzá lehet jutni a kulcshoz.",
           "Gondolja át azt is, hol van a második autókulcs. Ha otthon, a munkahelyén vagy egy " +
             "családtagnál megvan, sokszor egyszerűbb érte menni vagy elkérni, mint bármi más. " +
-            "Ha viszont nincs második kulcs – vagy megvan, de messze –, akkor jön a hívás.",
+            "Ha viszont nincs második kulcs, vagy megvan, de messze van, akkor jön a hívás.",
           "Amit érdemes még a hívás előtt tisztázni: hol áll pontosan az autó, mi a márkája, " +
             "a típusa és az évjárata. Ezekből a telefonban meg tudjuk mondani, mire számíthat.",
         ],
@@ -319,7 +319,7 @@ export const articles: Article[] = [
             "állat maradt a lezárt autóban. Zárt autó belseje napsütésben rövid idő alatt is " +
             "életveszélyesen felmelegszik, és ez nem csak nyáron igaz.",
           "Ilyenkor azonnal hívja a 112-es segélyhívót. Ez nem szakmai kérdés és nem kényelmi " +
-            "kérdés – ilyen helyzetben a katasztrófavédelem és a mentők érkeznek elsőként, és ők " +
+            "kérdés: ilyen helyzetben a katasztrófavédelem és a mentők érkeznek elsőként, és ők " +
             "döntenek arról, hogyan nyitják ki a járművet. A gyors nyitás ilyenkor mindennél " +
             "előbbre való, akkor is, ha kár keletkezik.",
         ],
@@ -338,7 +338,7 @@ export const articles: Article[] = [
         list: [
           "Ne feszítsen éket, vonalzót vagy csavarhúzót az ajtó és a keret közé.",
           "Ne próbálkozzon dróttal vagy akasztóval a gumitömítés alatt.",
-          "A teniszlabdás „trükk” nem működik – ilyen módon egyetlen központi zár sem nyílik.",
+          "A teniszlabdás „trükk” nem működik, ilyen módon egyetlen központi zár sem nyílik.",
           "Ne törjön ablakot, amíg nem életveszélyes a helyzet: az üveg cseréje és a szilánkok " +
             "eltakarítása sokkal nagyobb munka, mint gondolná.",
           "Ne engedje, hogy egy arra járó „ismerős szakember” feszegetni kezdje az autót.",
@@ -365,7 +365,7 @@ export const articles: Article[] = [
             "a nyitással a történet véget ér: kinyitjuk az autót, Ön elveszi a kulcsot, és mehet " +
             "tovább.",
           "Ha viszont a kulcs elveszett vagy eltört, a nyitás csak az első lépés. Utána jön a zár " +
-            "adatainak kiolvasása, az új autókulcs elkészítése és a programozás – ezt jellemzően " +
+            "adatainak kiolvasása, az új autókulcs elkészítése és a programozás, ezt jellemzően " +
             "ugyanabban a kiszállásban meg tudjuk oldani, ha a hívásnál jelzi.",
           "Külön eset a keyless rendszer: ott előfordul, hogy a kulcs az autóban van, a jármű " +
             "mégis bezárja magát. Ilyenkor gyakran a kulcs elemével van a gond, nem magával a " +
@@ -380,7 +380,7 @@ export const articles: Article[] = [
           "Az első: legyen egy második, működő autókulcs, és ne ugyanabban a zsebben vagy " +
             "táskában hordja, mint az elsőt. A pótkulcs mindig olcsóbb addig, amíg van egy " +
             "működő kulcs, amiről másolni lehet.",
-          "A második: szokja meg, hogy mindig a kulccsal a kezében csapja be az ajtót – nem " +
+          "A második: szokja meg, hogy mindig a kulccsal a kezében csapja be az ajtót, nem " +
             "azután. Apróság, de ez az a pillanat, ahol a baj megtörténik.",
         ],
       },
@@ -391,8 +391,8 @@ export const articles: Article[] = [
         a:
           "A szokásos esetekben nem. A járművek túlnyomó részénél a nyitás roncsolásmentesen " +
           "megoldható, erre a célra készült szerszámokkal. Ablaktörésre csak akkor kerül sor, " +
-          "ha életveszély áll fenn – például gyerek vagy állat maradt a lezárt autóban –, és " +
-          "ilyenkor a 112-t kell hívni.",
+          "ha életveszély áll fenn, például gyerek vagy állat maradt a lezárt autóban. " +
+          "Ilyenkor a 112-t kell hívni.",
       },
       {
         q: "Éjjel vagy hétvégén is kijönnek?",
@@ -411,7 +411,7 @@ export const articles: Article[] = [
         q: "Igazolnom kell, hogy az enyém az autó?",
         a:
           "Igen, és ez az Ön érdeke. A munka előtt megkérjük a forgalmi engedélyt és a " +
-          "személyazonosító okmányát – pontosan azért, hogy ne lehessen más autójához így " +
+          "személyazonosító okmányát, pontosan azért, hogy ne lehessen más autójához így " +
           "hozzájutni.",
       },
     ],
@@ -420,7 +420,7 @@ export const articles: Article[] = [
 
   {
     slug: "elveszett-osszes-autokulcs",
-    title: "Elveszett az összes autókulcs – mi történik ilyenkor?",
+    title: "Elveszett az összes autókulcs: mi történik ilyenkor?",
     excerpt:
       "Ha egyetlen kulcs sem maradt, az autót előbb ki kell nyitni, majd a zár adataiból új kulcsot építeni. Végigvesszük, mi zajlik lépésről lépésre és mit érdemes előkészíteni.",
     category: "elveszett-kulcs",
@@ -429,13 +429,13 @@ export const articles: Article[] = [
       src: "/images/blog/elveszett-autokulcs.jpg",
       alt: "Új autókulcs készítése és programozása elveszett kulcs pótlásakor",
     },
-    metaTitle: "Elveszett az összes autókulcs – mi a teendő?",
+    metaTitle: "Elveszett az összes autókulcs: mi a teendő?",
     metaDescription:
       "Nincs meg egyetlen autókulcsa sem? Elmagyarázzuk, hogyan készül új kulcs meglévő kulcs nélkül, mennyi ideig tart és mit vigyen magával.",
     readingMinutes: 4,
     lead:
       "Ez az a helyzet, amitől mindenki tart: nincs meg a kulcs és nincs pótkulcs sem. " +
-      "A jó hír az, hogy ez megoldható – és jellemzően anélkül, hogy az autót el kellene vontatni. " +
+      "A jó hír az, hogy ez megoldható és jellemzően anélkül, hogy az autót el kellene vontatni. " +
       "Nézzük meg, mi történik valójában.",
     sections: [
       {
@@ -446,7 +446,7 @@ export const articles: Article[] = [
             "ablak, nem feszül ki az ajtó és nem kell zárat cserélni.",
           "Fontos: ilyenkor a legrosszabb, amit tehet, hogy saját maga próbálkozik. A neten " +
             "keringő ékes-drótos módszerek modern autókon nem működnek, viszont könnyen " +
-            "megsértik az ajtótömítést vagy az ablakemelő-mechanikát – és annak a javítása " +
+            "megsértik az ajtótömítést vagy az ablakemelő-mechanikát, aminek a javítása " +
             "többe kerül, mint maga a nyitás.",
         ],
       },
@@ -472,7 +472,7 @@ export const articles: Article[] = [
       {
         heading: "Mit készítsen elő?",
         paragraphs: [
-          "Új kulcs készítéséhez igazolni kell, hogy Ön jogosult a járműhöz – ez az Ön autójának " +
+          "Új kulcs készítéséhez igazolni kell, hogy Ön jogosult a járműhöz, ez az Ön autójának " +
             "védelmét szolgálja. Készítse elő a forgalmi engedélyt és a személyazonosító okmányát.",
           "Segít, ha tudja az autó pontos típusát és évjáratát is: ebből már a telefonban meg " +
             "tudjuk mondani, mire számíthat.",
@@ -482,7 +482,7 @@ export const articles: Article[] = [
         heading: "És ha a kulcs nem elveszett, hanem eltört?",
         paragraphs: [
           "A zárba tört kulcsdarab eltávolítása külön feladat, de rutinmunka. A darabot kiszedjük, " +
-            "majd elkészítjük az új kulcsot – a zárat jellemzően nem kell cserélni.",
+            "majd elkészítjük az új kulcsot, a zárat jellemzően nem kell cserélni.",
         ],
       },
     ],
@@ -504,7 +504,7 @@ export const articles: Article[] = [
         q: "A régi kulcs letiltható?",
         a:
           "A jármű típusától függ, hogy a korábbi kulcs érvényteleníthető-e a rendszerben. Ha ez " +
-          "fontos – például mert a kulcs idegen kézbe kerülhetett –, jelezze a hívásnál.",
+          "fontos, például mert a kulcs idegen kézbe kerülhetett, jelezze a hívásnál.",
       },
     ],
     relatedServices: ["elveszett-autokulcs", "autokulcs-keszites", "serulesmentes-autonyitas"],
@@ -514,7 +514,7 @@ export const articles: Article[] = [
     slug: "potkulcs-mielott-elveszik",
     title: "Miért a pótkulcs a legolcsóbb autókulcs, amit valaha csináltat?",
     excerpt:
-      "Amíg van egy működő kulcsa, a másolás egyszerű művelet. Ha az utolsó is elvész, nulláról kell felépíteni a kulcsot – több munka, több idő, magasabb költség.",
+      "Amíg van egy működő kulcsa, a másolás egyszerű művelet. Ha az utolsó is elvész, nulláról kell felépíteni a kulcsot: több munka, több idő, magasabb költség.",
     category: "kulcsmasolas",
     date: "2026-09-07",
     image: {
@@ -545,7 +545,7 @@ export const articles: Article[] = [
         paragraphs: [
           "Egyetlen kulccsal az autó folyamatosan egy hajszálon lóg. Ha az a kulcs elvész, " +
             "eltörik, vagy egyszerűen tönkremegy benne az elektronika, azonnal a drágább " +
-            "forgatókönyvben találja magát – jellemzően a legrosszabbkor.",
+            "forgatókönyvben találja magát, jellemzően a legrosszabbkor.",
           "Egy kopott kulcsszár ráadásul figyelmeztet is: ha egyre nehezebben fordul, ha " +
             "„keresgélni” kell vele a zárban, az annak a jele, hogy hamarosan eltörik.",
         ],
@@ -555,7 +555,7 @@ export const articles: Article[] = [
         paragraphs: [
           "Egy modern autókulcs két külön dolgot tud. A szár mechanikusan nyitja az ajtót és " +
             "elfordul a gyújtáskapcsolóban. A benne lévő chip pedig az indításgátlóval kommunikál.",
-          "Ha csak a szárat másolják le, a kulcs kinyitja az ajtót, de az autó nem indul el – vagy " +
+          "Ha csak a szárat másolják le, a kulcs kinyitja az ajtót, de az autó nem indul el, vagy " +
             "beindul, majd pár másodperc után leáll. A chipet is programozni kell a járműhöz.",
         ],
       },
@@ -573,7 +573,7 @@ export const articles: Article[] = [
       {
         q: "Mennyibe kerül egy pótkulcs?",
         a:
-          "Az autó márkájától, típusától, évjáratától és a kulcs fajtájától függ – egy egyszerű " +
+          "Az autó márkájától, típusától, évjáratától és a kulcs fajtájától függ: egy egyszerű " +
           "kulcs és egy chipes, távirányítós kulcs között jelentős a különbség. Hívjon minket, " +
           "mondja meg az autó típusát és évjáratát és konkrét árat mondunk.",
       },
@@ -589,7 +589,7 @@ export const articles: Article[] = [
 
   {
     slug: "immobilizer-mit-jelent",
-    title: "Az autó nem indul a másolt kulccsal – az immobilizer a magyarázat",
+    title: "Az autó nem indul a másolt kulccsal: az immobilizer a magyarázat",
     excerpt:
       "A kulcs elfordul, a motor forog, de az autó mégsem indul be. A hiba jellemzően nem a kulcsszárral van, hanem a benne lévő chippel és az indításgátlóval.",
     category: "programozas",
@@ -603,8 +603,8 @@ export const articles: Article[] = [
       "A kulcs elfordul, de az autó nem indul? Elmagyarázzuk, mi az immobilizer, miért kell a chipet programozni és mikor elég a távirányító újratanítása.",
     readingMinutes: 3,
     lead:
-      "Ha a kulcs mechanikusan tökéletesen működik – kinyitja az ajtót, elfordul a " +
-      "gyújtáskapcsolóban –, de az autó mégsem indul el, akkor szinte biztosan az " +
+      "Ha a kulcs mechanikusan tökéletesen működik, kinyitja az ajtót, elfordul a " +
+      "gyújtáskapcsolóban, de az autó mégsem indul el, akkor szinte biztosan az " +
       "elektronikával van dolgunk, nem a fémmel.",
     sections: [
       {
@@ -612,7 +612,7 @@ export const articles: Article[] = [
         paragraphs: [
           "Az immobilizer az autó gyári indításgátlója. A feladata egyszerű: csak akkor engedi " +
             "elindítani a motort, ha felismeri a kulcsban lévő chip kódját. Ez a lopás elleni " +
-            "védelem egyik legfontosabb eleme – és pontosan ezért nem lehet egy autókulcsot " +
+            "védelem egyik legfontosabb eleme, ezért nem lehet egy autókulcsot " +
             "egyszerűen „lemásolni”.",
           "Amikor elfordítja a kulcsot, a jármű és a chip néhány ezredmásodperc alatt " +
             "kommunikál egymással. Ha a kód nem stimmel, a motorvezérlő nem engedi az indítást.",
@@ -650,7 +650,7 @@ export const articles: Article[] = [
         heading: "Használt autóhoz kapott második kulcs",
         paragraphs: [
           "Gyakori eset: az autóvásárláskor kapott második kulcs fizikailag illeszkedik, de nem " +
-            "indítja a járművet. Ilyenkor szinte mindig a chip programozása hiányzik – a kulcsot " +
+            "indítja a járművet. Ilyenkor szinte mindig a chip programozása hiányzik, a kulcsot " +
             "egyszerűen nem tanították meg ehhez az autóhoz. Ez pótolható.",
         ],
       },
@@ -661,7 +661,7 @@ export const articles: Article[] = [
         a:
           "A gyakorlatban az autók nagy részénél igen, de a márka, a típus és az évjárat " +
           "meghatározza, milyen eljárás szükséges. Ezért kérjük mindig az autó típusát és " +
-          "évjáratát a telefonban – így őszintén meg tudjuk mondani, mit tudunk vállalni.",
+          "évjáratát a telefonban, így őszintén meg tudjuk mondani, mit tudunk vállalni.",
       },
       {
         q: "Elemcsere után elromlott a távirányítóm. Javítható?",
