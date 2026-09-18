@@ -11,7 +11,7 @@ import { jsonLdGraph, breadcrumbSchema, type Crumb } from "@/lib/schema";
 import { ArrowRightIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Tudásbázis – autókulcs tippek és útmutatók",
+  title: "Tudásbázis: autókulcs tippek és útmutatók",
   description:
     "Hasznos tudnivalók autókulcsról: elveszett kulcs, pótkulcs, immobilizer és programozás. Érthetően elmagyarázva, valós ügyfélkérdések alapján.",
   alternates: { canonical: "/tudasbazis" },
@@ -33,7 +33,7 @@ export default function KnowledgeBasePage() {
       <PageHero
         eyebrow="Tudásbázis"
         title="Friss munkák és hasznos tippek"
-        lead="Gyakori helyzetek, érthetően elmagyarázva – hogy tudja, mi vár Önre, mielőtt telefonál."
+        lead="Gyakori helyzetek, érthetően elmagyarázva, hogy tudja, mi vár Önre, mielőtt telefonál."
       >
         <CallButton size="lg" label="Kérdezzen telefonon" />
       </PageHero>

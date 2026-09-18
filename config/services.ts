@@ -72,8 +72,8 @@ export const services: Service[] = [
   {
     slug: "elveszett-autokulcs",
     nav: "Elveszett autókulcs",
-    h1: "Elveszett autókulcs – mi a teendő?",
-    metaTitle: "Elveszett autókulcs Budapest – kulcspótlás 0–24",
+    h1: "Elveszett autókulcs: mi a teendő?",
+    metaTitle: "Elveszett autókulcs Budapest: kulcspótlás 0–24",
     metaDescription:
       "Elveszett az autókulcsa és nincs pótkulcs? Kinyitjuk az autót és a helyszínen új kulcsot készítünk. Budapest, 0–24.",
     icon: "search",
@@ -92,7 +92,7 @@ export const services: Service[] = [
     ],
     sections: [
       {
-        heading: "Hogyan készül új kulcs meglévő kulcs nélkül? – lépésről lépésre",
+        heading: "Hogyan készül új kulcs meglévő kulcs nélkül, lépésről lépésre",
         list: [
           "1. Nyitás: először sérülésmentesen kinyitjuk a járművet, hogy hozzáférjünk.",
           "2. Kiolvasás: kiolvassuk az autó zárjának paramétereit, amelyekből a kulcs elkészíthető.",
@@ -162,13 +162,13 @@ export const services: Service[] = [
   {
     slug: "autokulcs-masolas",
     nav: "Autókulcs másolás",
-    h1: "Autókulcs másolás Budapesten – pótkulcs a helyszínen",
-    metaTitle: "Autókulcs másolás Budapest – pótkulcs helyszínen",
+    h1: "Autókulcs másolás Budapesten: pótkulcs a helyszínen",
+    metaTitle: "Autókulcs másolás Budapest: pótkulcs helyszínen",
     metaDescription:
-      "Autókulcs másolás és pótkulcs készítés Budapesten, akár a helyszínen – immobilizer-programozással és távirányító-tanítással.",
+      "Autókulcs másolás és pótkulcs készítés Budapesten, akár a helyszínen, immobilizer-programozással és távirányító-tanítással.",
     icon: "key",
     cardText:
-      "Van még működő kulcsa? Készítünk róla másolatot – a programozással együtt.",
+      "Van még működő kulcsa? Készítünk róla másolatot, a programozással együtt.",
     lead:
       "A legolcsóbb és leggyorsabb eset az, amikor még van egy működő kulcsa. Ilyenkor a meglévő " +
       "kulcsról tudunk másolatot készíteni: kimarjuk a kulcsszárat és felprogramozzuk a benne lévő " +
@@ -257,8 +257,8 @@ export const services: Service[] = [
   {
     slug: "autokulcs-keszites",
     nav: "Autókulcs készítés",
-    h1: "Autókulcs készítés – új kulcs minden gyakori járműtípushoz",
-    metaTitle: "Autókulcs készítés Budapest – új kulcs, pótkulcs",
+    h1: "Autókulcs készítés: új kulcs minden gyakori járműtípushoz",
+    metaTitle: "Autókulcs készítés Budapest: új kulcs, pótkulcs",
     metaDescription:
       "Autókulcs készítés Budapesten: chipes, távirányítós és kihajtható kulcsok, programozással. Személyautó, kisteherautó, teherautó.",
     icon: "cut",
@@ -344,7 +344,7 @@ export const services: Service[] = [
     slug: "autokulcs-programozas",
     nav: "Autókulcs programozás",
     h1: "Autókulcs programozás és immobilizer tanítás",
-    metaTitle: "Autókulcs programozás Budapest – immobilizer",
+    metaTitle: "Autókulcs programozás Budapest: immobilizer",
     metaDescription:
       "Autókulcs programozás, immobilizer tanítás és távirányító beállítás Budapesten. Nem indít a kulcs? A helyszínen megoldjuk.",
     icon: "chip",
@@ -429,13 +429,13 @@ export const services: Service[] = [
   {
     slug: "serulesmentes-autonyitas",
     nav: "Sérülésmentes autónyitás",
-    h1: "Sérülésmentes autónyitás – hogyan dolgozunk?",
+    h1: "Sérülésmentes autónyitás: hogyan dolgozunk?",
     metaTitle: "Sérülésmentes autónyitás Budapesten",
     metaDescription:
       "Hogyan zajlik a sérülésmentes autónyitás? Milyen szerszámmal dolgozunk és miért nem sérül a zár vagy a tömítés? Budapest, 0–24.",
     icon: "shield",
     cardText:
-      "Roncsolásmentes technika, erre kifejlesztett szerszámokkal – az ajtó, a zár és a tömítés sértetlen marad.",
+      "Roncsolásmentes technika, erre kifejlesztett szerszámokkal, az ajtó, a zár és a tömítés sértetlen marad.",
     lead:
       "A „sérülésmentes” nálunk nem marketingszó, hanem munkamódszer. Az a cél, hogy a nyitás után " +
       "az autón semmi ne emlékeztessen arra, hogy ki volt zárva belőle: ne legyen karc a lakkon, " +

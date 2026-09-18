@@ -61,7 +61,7 @@ export const metadata: Metadata = {
         url: "/og.jpg",
         width: 1200,
         height: 630,
-        alt: `${business.name} – autókulcs másolás és autónyitás Budapesten, ${business.phone.primary.display}`,
+        alt: `${business.name}: autókulcs másolás és autónyitás Budapesten, ${business.phone.primary.display}`,
         type: "image/jpeg",
       },
     ],

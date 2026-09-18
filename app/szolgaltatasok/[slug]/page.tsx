@@ -224,7 +224,7 @@ export default async function ServicePage({ params }: Params) {
         <Container>
           <div className="mx-auto max-w-3xl">
             <h2 id={`gyik-${service.slug}`} className="text-h2">
-              Gyakori kérdések – {service.nav.toLowerCase()}
+              Gyakori kérdések: {service.nav.toLowerCase()}
             </h2>
             <div className="mt-8">
               <FaqList faqs={service.faqs} />

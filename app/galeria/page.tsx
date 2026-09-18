@@ -13,7 +13,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { jsonLdGraph, breadcrumbSchema, type Crumb } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Galéria – munkáink és eszközeink",
+  title: "Galéria: munkáink és eszközeink",
   description:
     "Fotók a munkánkról: sérülésmentes autónyitás, helyszíni kulcsmásolás, autókulcs programozás és a hozzájuk használt eszközök.",
   alternates: { canonical: "/galeria" },
@@ -32,7 +32,7 @@ export default function GalleryPage() {
       <PageHero
         eyebrow="Galéria"
         title="Így dolgozunk"
-        lead="Fotók a valódi munkáinkról – nyitás, kulcskészítés, programozás és az ezekhez használt eszközök."
+        lead="Fotók a valódi munkáinkról: nyitás, kulcskészítés, programozás és az ezekhez használt eszközök."
         image={images.workshop}
       >
         <div className="flex flex-col gap-3 sm:flex-row">

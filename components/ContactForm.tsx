@@ -336,7 +336,7 @@ export function ContactForm() {
             <input
               type="hidden"
               name="_subject"
-              value={`Új megkeresés – ${business.name} weboldal`}
+              value={`Új megkeresés: ${business.name} weboldal`}
             />
 
             {/* ---- FormSubmit-specifikus beállítások ----

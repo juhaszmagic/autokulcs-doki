@@ -12,7 +12,7 @@ import { jsonLdGraph, breadcrumbSchema, faqSchema, type Crumb } from "@/lib/sche
 import { PhoneIcon, CheckIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Autókulcs másolás ára – árajánlat Budapesten",
+  title: "Autókulcs másolás ára: árajánlat Budapesten",
   description:
     "Mitől függ az autókulcs másolás és az autónyitás ára? Konkrét árat telefonon adunk, még a kiszállás előtt. Hívjon minket!",
   alternates: { canonical: "/arak" },
@@ -49,7 +49,7 @@ const priceFactors = [
   },
   {
     title: "A kulcs típusa",
-    text: "Egyszerű mechanikus kulcs, chipes (transzponderes) kulcs, távirányítós vagy kihajtható kulcs – az alkatrész és a munka is más.",
+    text: "Egyszerű mechanikus kulcs, chipes (transzponderes) kulcs, távirányítós vagy kihajtható kulcs, az alkatrész és a munka is más.",
   },
   {
     title: "Van-e még működő kulcs",
@@ -83,7 +83,7 @@ const priceFaqs = [
     q: "Mikor tudom meg a pontos árat?",
     a:
       "A telefonhívás során. Ha megmondja az autó márkáját, típusát, évjáratát és azt, hogy van-e " +
-      "még működő kulcsa, abból már konkrét árat tudunk mondani – mielőtt elindulnánk.",
+      "még működő kulcsa, abból már konkrét árat tudunk mondani, mielőtt elindulnánk.",
   },
   {
     q: "Változhat az ár a helyszínen?",
@@ -97,7 +97,7 @@ const priceFaqs = [
     a:
       "Úgy, hogy nem várja meg, amíg az utolsó kulcs is elvész. Amíg van egy működő kulcsa, a " +
       "másolás egyszerű és gyors. Elveszett kulcs esetén előbb ki kell nyitni az autót és ki kell " +
-      "olvasni a zár paramétereit – ez több munka és magasabb költség.",
+      "olvasni a zár paramétereit, ez több munka és magasabb költség.",
   },
 ];
 
@@ -109,7 +109,7 @@ export default function PricingPage() {
       <PageHero
         eyebrow="Árak"
         title="Áraink 25 000 Ft-tól indulnak"
-        lead="Ez tájékoztató kiindulóár. A végleges összeg az autó márkájától, évjáratától és a kulcs típusától függ – ezért a pontos árat telefonon, WhatsAppon vagy Viberen mondjuk meg, még a kiszállás előtt."
+        lead="Ez tájékoztató kiindulóár. A végleges összeg az autó márkájától, évjáratától és a kulcs típusától függ, ezért a pontos árat telefonon, WhatsAppon vagy Viberen mondjuk meg, még a kiszállás előtt."
       >
         <div className="flex flex-col gap-3 sm:flex-row">
           <CallButton size="lg" label="Pontos árat kérek" />
@@ -367,7 +367,7 @@ export default function PricingPage() {
               Ha most egyetlen kulcsa van, érdemes mellé egy tartalékot
               készíttetni. Amíg van működő kulcs, a másolás egyszerű művelet. Ha
               viszont az az egy is elvész, előbb ki kell nyitni az autót, ki kell
-              olvasni a zár paramétereit és nulláról kell felépíteni az autókulcsot –
+              olvasni a zár paramétereit és nulláról kell felépíteni az autókulcsot,
               ez lényegesen több munka és magasabb költség.
             </p>
             <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">
@@ -400,8 +400,8 @@ export default function PricingPage() {
                 Ha viszont elhagyta vagy elvesztette az autókulcsát,{" "}
                 <strong className="font-semibold text-ink-900">
                   kérjük, inkább telefonáljon
-                </strong>{" "}
-                – az űrlapra nem tudunk azonnal válaszolni.
+                </strong>
+                , az űrlapra nem tudunk azonnal válaszolni.
               </p>
 
               <Card className="mt-7">

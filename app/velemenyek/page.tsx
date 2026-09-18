@@ -10,7 +10,7 @@ import { jsonLdGraph, breadcrumbSchema, type Crumb } from "@/lib/schema";
 import { MapPinIcon, StarIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Vélemények – Google értékeléseink",
+  title: "Vélemények: Google értékeléseink",
   description: `Ügyfeleink véleménye a Google Cégprofilunkban. Jelenlegi értékelésünk: ${formattedRating()} csillag. Olvassa el az értékeléseket, vagy írjon Ön is.`,
   alternates: { canonical: "/velemenyek" },
 };
@@ -28,7 +28,7 @@ export default function ReviewsPage() {
       <PageHero
         eyebrow="Vélemények"
         title="Ügyfeleink véleménye"
-        lead="Nem gépelünk át véleményeket a weboldalra. Az értékeléseink a Google Cégprofilunkban nyilvánosak – ott látja, ki írta, mikor és mit."
+        lead="Nem gépelünk át véleményeket a weboldalra. Az értékeléseink a Google Cégprofilunkban nyilvánosak, ott látja, ki írta, mikor és mit."
       >
         <div className="flex flex-col gap-3 sm:flex-row">
           <Button
@@ -56,7 +56,7 @@ export default function ReviewsPage() {
               </h2>
               <p className="mt-3 leading-relaxed text-ink-600">
                 Ha elégedett volt a munkánkkal, egy rövid Google-értékelés
-                sokat segít – és másoknak is támpontot ad, akik épp az autójuk
+                sokat segít és másoknak is támpontot ad, akik épp az autójuk
                 mellett állnak és nem tudják, kit hívjanak.
               </p>
               <Button

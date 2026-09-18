@@ -10,7 +10,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { jsonLdGraph, breadcrumbSchema, type Crumb } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Rólunk – autónyitó és kulcsmásoló csapat Budapesten",
+  title: "Rólunk: autónyitó és kulcsmásoló csapat Budapesten",
   description:
     "Sérülésmentes autónyitás, helyszíni kulcskészítés és modern diagnosztika Budapesten és környékén, a nap 24 órájában.",
   alternates: { canonical: "/rolunk" },
@@ -28,7 +28,7 @@ export default function AboutPage() {
 
       <PageHero
         eyebrow="Rólunk"
-        title="Autónyitás és kulcskészítés – ott, ahol az autó áll"
+        title="Autónyitás és kulcskészítés ott, ahol az autó áll"
         lead="Telephelyünk Budapest XI. kerületében (Újbuda) van. A legtöbb munkát itt végezzük: hozza el az autót és általában 20–25 perc alatt elkészül az új autókulcs. Ha az összes kulcsa elveszett, vagy egyszerűen nem tud jönni, kimegyünk Önhöz Budapestre és annak vonzáskörzetébe."
       >
         <CallButton size="lg" label="Beszéljünk a részletekről" />

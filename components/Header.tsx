@@ -35,7 +35,7 @@ export function Header() {
                 <strong className="font-semibold text-white">
                   {business.hours.short}
                 </strong>{" "}
-                – {business.hours.display}
+                · {business.hours.display}
               </span>
             </p>
             <p className="flex items-center gap-5">

@@ -11,7 +11,7 @@ import { jsonLdGraph, breadcrumbSchema, type Crumb } from "@/lib/schema";
 import { PhoneIcon, MapPinIcon, ClockIcon, CarIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Kapcsolat – hívjon minket 0–24 | Budapest",
+  title: "Kapcsolat: hívjon minket 0–24 | Budapest",
   description: `${business.name} elérhetőség: ${business.phone.primary.display}. Non-stop, a hét minden napján. Cím: ${business.address.full}. Budapest és környéke.`,
   alternates: { canonical: "/kapcsolat" },
 };
@@ -28,7 +28,7 @@ export default function ContactPage() {
 
       <PageHero
         eyebrow="Kapcsolat"
-        title="Hívjon minket – a nap 24 órájában"
+        title="Hívjon minket a nap 24 órájában"
         lead="A leggyorsabb út a megoldáshoz a telefonhívás. Mondja meg az autó típusát és évjáratát, egyeztessünk időpontot, és hozza el az autót a XI. kerületi telephelyünkre. Ha nem tud jönni, kimegyünk Önhöz."
       >
         <div className="flex flex-col gap-3 sm:flex-row">

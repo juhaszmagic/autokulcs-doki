@@ -7,7 +7,7 @@ import { business } from "@/config/business";
 export const metadata: Metadata = {
   title: "A keresett oldal nem található (404)",
   description:
-    "A keresett oldal nem található. Ha sürgős a helyzet, hívjon minket – autónyitás és kulcskészítés Budapesten, 0–24.",
+    "A keresett oldal nem található. Ha sürgős a helyzet, hívjon minket, autónyitás és kulcskészítés Budapesten, 0–24.",
   /** Hibaoldal: ne kerüljön be a keresőbe, de a linkjeit kövesse. */
   robots: { index: false, follow: true },
 };
@@ -24,18 +24,18 @@ export default function NotFound() {
       <Container>
         <div className="mx-auto max-w-2xl text-center">
           <p className="text-sm font-semibold uppercase tracking-wider text-brand-700">
-            404 – Hiba
+            404-es hiba
           </p>
           <h1 className="mt-3 text-3xl font-bold sm:text-4xl">
             Ezt az oldalt nem találjuk
           </h1>
           <p className="mt-4 text-lg leading-relaxed text-ink-600">
             Lehet, hogy a link elavult, vagy elgépelés történt. Ha sürgős a
-            helyzet, ne keresgéljen tovább – hívjon minket és megoldjuk.
+            helyzet, ne keresgéljen tovább, hívjon minket és megoldjuk.
           </p>
 
           <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <CallButton size="lg" label="Segítünk – egyeztessünk" />
+            <CallButton size="lg" label="Segítünk, egyeztessünk" />
             <Button href="/" variant="secondary" size="lg">
               Vissza a kezdőlapra
             </Button>

@@ -367,7 +367,7 @@ export function LostKeyBanner() {
             <p className="mt-4 border-t border-white/25 pt-4 text-center text-[0.8125rem] leading-relaxed text-white">
               <strong className="font-bold text-white">
                 {business.pricing.fromLabel}
-              </strong> – tájékoztató kiindulóár. A pontosat telefonon, WhatsAppon vagy
+              </strong>, tájékoztató kiindulóár. A pontosat telefonon, WhatsAppon vagy
               Viberen mondjuk meg, még a kiszállás előtt.
             </p>
           </div>
@@ -767,7 +767,7 @@ export function RealWorkGallery({
                   href={`#${id}`}
                   className="flex h-full flex-col overflow-hidden rounded-media bg-white shadow-card ring-1 ring-ink-200/70 transition-shadow duration-300 hover:shadow-card-hover"
                 >
-                  <span className="sr-only">{item.alt} – nagyítás</span>
+                  <span className="sr-only">{item.alt}, nagyítás</span>
                   <span className="media-zoom relative block overflow-hidden">
                     <AssetImage
                       src={item.src}
@@ -1309,7 +1309,7 @@ export function ServiceAreaSection() {
               tone="dark"
               className="mt-7"
               items={[
-                "Személygépkocsi – minden gyakori márka és évjárat",
+                "Személygépkocsi, minden gyakori márka és évjárat",
                 "Kisbusz és furgon",
                 "Teherautó",
                 "Kisteherautó",

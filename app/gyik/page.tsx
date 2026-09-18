@@ -9,7 +9,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { jsonLdGraph, breadcrumbSchema, faqSchema, type Crumb } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Gyakori kérdések – autókulcs és autónyitás",
+  title: "Gyakori kérdések: autókulcs és autónyitás",
   description:
     "Mennyibe kerül az autókulcs másolás? Mennyi idő alatt érkeznek? Elveszett az összes kulcsom, mit tegyek? Válaszok a leggyakoribb kérdésekre.",
   alternates: { canonical: "/gyik" },
@@ -28,7 +28,7 @@ export default function FaqPage() {
       <PageHero
         eyebrow="GYIK"
         title="Gyakori kérdések"
-        lead="Összeszedtük, amit a leggyakrabban kérdeznek tőlünk telefonon. Ha nem találja a választ, hívjon – a telefonban minden kérdésre válaszolunk."
+        lead="Összeszedtük, amit a leggyakrabban kérdeznek tőlünk telefonon. Ha nem találja a választ, hívjon, a telefonban minden kérdésre válaszolunk."
       >
         <CallButton size="lg" label="Kérdezzen telefonon" />
       </PageHero>

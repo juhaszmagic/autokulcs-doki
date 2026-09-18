@@ -10,7 +10,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { jsonLdGraph, breadcrumbSchema, type Crumb } from "@/lib/schema";
 
 export const metadata: Metadata = {
-  title: "Szolgáltatásaink – autónyitás, kulcsmásolás Budapest",
+  title: "Szolgáltatásaink: autónyitás, kulcsmásolás Budapest",
   description:
     "Autónyitás, autókulcs másolás és programozás, elveszett kulcs pótlása, kulcskészítés Budapesten és környékén, 0–24 órában.",
   alternates: { canonical: "/szolgaltatasok" },
@@ -29,7 +29,7 @@ export default function ServicesIndexPage() {
       <PageHero
         eyebrow="Szolgáltatások"
         title="Autókulcs és autónyitás szolgáltatásaink"
-        lead="A nyitástól a kész, működő kulcsig minden egy helyen. Válassza ki, ami az Ön helyzetére illik – vagy egyszerűen hívjon és elmondjuk, mi a teendő."
+        lead="A nyitástól a kész, működő kulcsig minden egy helyen. Válassza ki, ami az Ön helyzetére illik, vagy egyszerűen hívjon és elmondjuk, mi a teendő."
       >
         <div className="flex flex-col gap-3 sm:flex-row">
           <CallButton size="lg" label="Kérjen árajánlatot telefonon" />

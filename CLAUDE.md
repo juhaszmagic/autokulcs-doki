@@ -73,9 +73,14 @@ nagykötőjelet:
 írásjel illik (vessző, kettőspont, néha külön mondat), és arra is
 figyelni kell, hogy a csere ne hozzon létre „és" előtti vesszőt.
 
-**Állapot:** a tudásbázis öt cikke 2026-09-18-án megtisztítva. Az oldal
-többi részén ekkor még kb. 107 ilyen vonal volt (galéria, főoldal, az öt
-szolgáltatás-oldal, árak), ezek fokozatosan takarítandók.
+**Állapot:** 2026-09-18-án az **egész oldal** megtisztítva, előbb az öt
+cikk (26 csere), majd a többi oldal (45 csere a `config/`, `components/`
+és `app/` fájlokban). Ellenőrizve: a legenerált oldalakon egyetlen szavak
+közötti vonal maradt, egy TikTok-videó címében.
+
+Az a TikTok-cím szándékosan maradt: az a videó valódi, a tulajdonos által
+írt címe (`config/media.ts`), tehát idézet, nem gépi szokás. Idézetet nem
+írunk át. Ha új ilyen kerül be, ugyanígy hagyd.
 
 ## Ágak, ezt olvasd el, mielőtt bármihez nyúlnál
 
