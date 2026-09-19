@@ -9,6 +9,7 @@
  */
 
 import type { ServiceFaq } from "./services";
+import { business } from "./business";
 
 /** A kezdőoldalon megjelenő, legfontosabb kérdések. */
 export const homeFaqs: ServiceFaq[] = [
@@ -76,8 +77,12 @@ export const faqGroups: Array<{ title: string; faqs: ServiceFaq[] }> = [
       {
         q: "Mennyi idő alatt készül el egy autókulcs?",
         a:
-          "Ha van meglévő, működő kulcs, a másolás és a programozás jellemzően egy kiszállás alatt, " +
-          "a helyszínen elvégezhető. Ha nincs meg egyetlen kulcs sem, a folyamat hosszabb: nyitás, " +
+          `Ha elhozza az autót a XI. kerületi telephelyünkre (${business.address.street}), ` +
+          "az új autókulcs átlagosan 20-25 perc alatt elkészül és meg is tudja várni. A parkolás " +
+          "ingyenes. Mivel egyeztetett időpontra érkezik, nem kell sorban állnia: egyből az Ön " +
+          "autójával foglalkozunk és 20-25 perc múlva már mehet is tovább. Kiszállásnál, ha van " +
+          "meglévő működő kulcs, a másolás és a programozás jellemzően egy kiszállás alatt, a " +
+          "helyszínen elvégezhető. Ha egyetlen autókulcs sem maradt, a folyamat hosszabb: nyitás, " +
           "a zár paramétereinek kiolvasása, kulcskészítés, majd programozás. A reális időt a jármű " +
           "típusa és évjárata alapján a telefonban tudjuk megmondani.",
       },
