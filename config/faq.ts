@@ -16,12 +16,11 @@ export const homeFaqs: ServiceFaq[] = [
   {
     q: "Elvigyem az autót, vagy kijönnek hozzám?",
     a:
-      "A legtöbb esetben érdemesebb elhozni. A XI. kerületi telephelyünkön egy " +
-      "autókulcs átlagosan 20-25 perc alatt elkészül, utána már mehet is tovább. " +
-      "A parkolás ingyenes. Érkezés előtt mindig egyeztessen időpontot telefonon, " +
-      "hogy ne kelljen várnia. Ha nem tud jönni, kimegyünk Önhöz, ennek díja " +
-      "10 000 Ft kiszállási felár. Ha az összes autókulcsa elveszett, mindig " +
-      "kimegyünk, hiszen olyankor az autó nem tud eljönni.",
+      "Ha el tudja hozni, azzal jár jobban: a XI. kerületi telephelyünkön nincs " +
+      "kiszállási díj, ingyenesen tud parkolni és általában 20-25 perc alatt végzünk. " +
+      "Ha nem tud jönni, kimegyünk Önhöz, ennek díja 10 000 Ft kiszállási felár. Ha " +
+      "az összes autókulcsa elveszett, mindig kimegyünk, hiszen olyankor az autó nem " +
+      "tud eljönni.",
   },
   {
     q: "Mennyibe kerül az autókulcs másolás?",
@@ -78,9 +77,9 @@ export const faqGroups: Array<{ title: string; faqs: ServiceFaq[] }> = [
         q: "Mennyi idő alatt készül el egy autókulcs?",
         a:
           `Ha elhozza az autót a XI. kerületi telephelyünkre (${business.address.street}), ` +
-          "az új autókulcs átlagosan 20-25 perc alatt elkészül és meg is tudja várni. A parkolás " +
-          "ingyenes. Mivel egyeztetett időpontra érkezik, nem kell sorban állnia: egyből az Ön " +
-          "autójával foglalkozunk és 20-25 perc múlva már mehet is tovább. Kiszállásnál, ha van " +
+          "az új autókulcs átlagosan 20-25 perc alatt elkészül és meg is tudja várni. Egyeztetett " +
+          "időpontra érkezik, így nem kell sorban állnia: egyből az Ön autójával foglalkozunk, " +
+          "utána pedig már mehet is tovább. Kiszállásnál, ha van " +
           "meglévő működő kulcs, a másolás és a programozás jellemzően egy kiszállás alatt, a " +
           "helyszínen elvégezhető. Ha egyetlen autókulcs sem maradt, a folyamat hosszabb: nyitás, " +
           "a zár paramétereinek kiolvasása, kulcskészítés, majd programozás. A reális időt a jármű " +
