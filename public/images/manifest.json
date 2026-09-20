@@ -85,6 +85,26 @@
     ],
     "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAACwAQCdASoQAAkABABoJZQCdACbsgQAAP7Rc+HgPgJHGUHKG2R33ifVsM4tQVBfdHDgYr9xfWhwZXzjQ+yM4pESg8xngAAA"
   },
+  "/images/blog/fiat-500-kulcs-programozas-helyszinen.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAQCdASoQAAkABABoJZQAD5AuLB/9edgA+pH8uQgQl5CdgYykJ+6wZOQupvT3g5Gggv5MfZsUTTj6su9r+zIXwECexOH5el8//jZUCgAAAA=="
+  },
+  "/images/blog/fiat-500-potkulcs-keszites.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAAAQAgCdASoQAAkABABoJYgCdAYtzGJQUqMAAPa7dnnvibjW1nOkD9g8XMBFbSashxTCZoTanDu2dew8YxV81s3ZPy6QgQ0voNRLTNy9PsfbymDAAAA="
+  },
   "/images/blog/immobilizer-programozas.jpg": {
     "width": 1672,
     "height": 941,

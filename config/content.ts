@@ -87,6 +87,154 @@ export interface Article {
 export const articles: Article[] = [
   /**
    * A szöveget és a fotókat a tulajdonos adta, egy 2026 szeptemberi valódi
+   * munkáról. A tartalmi állításokhoz nem nyúltunk.
+   *
+   * ⚠️ ADATVÉDELEM: a beküldött három fotóból kettő került be. A harmadikon,
+   *    és a bent maradt fotó alsó részén is, OLVASHATÓAN látszott az ügyfél
+   *    autójának immobilizer-jelszava és a kulcsazonosítói (Password, Key 1
+   *    ID, Key 2 ID). Ez az ügyfél járművének biztonsági adata, nyilvános
+   *    oldalra nem kerülhet. A bent maradt fotó úgy van vágva, hogy csak a
+   *    készülék fejléce („Read immobilizer data”) látszik, a számok nem.
+   *    Ha új munkafotó érkezik, ezt mindig ellenőrizni kell.
+   *
+   * Megfogalmazás: a „-e” kérdőszócska kötőjelet kapott („meg lehet-e
+   * javítani”), mert a magyar helyesírás így írja.
+   */
+  {
+    slug: "fiat-500-potkulcs-keszites",
+    title: "Fiat 500 pótkulcs készítés egy mosógépben járt autókulcs után",
+    excerpt:
+      "Egy Fiat 500 pótkulcsa a mosógépben kötött ki, és utána már csak néha működött. Megmutatjuk, miért nem javítunk kimosott autókulcsot és hogyan készült helyette új, felprogramozott pótkulcs.",
+    category: "kulcsmasolas",
+    date: "2026-09-20",
+    image: {
+      src: "/images/blog/fiat-500-potkulcs-keszites.jpg",
+      alt: "Két Fiat 500 autókulcs a jármű utasterében, az új pótkulcs elkészítése után",
+    },
+    metaTitle: "Fiat 500 pótkulcs készítés és kulcs programozás Budapesten",
+    metaDescription:
+      "Kimosott Fiat 500 autókulcs helyett új pótkulcsot készítettünk és programoztunk a helyszínen. A hibás régi kulcsot töröltük az autó rendszeréből.",
+    readingMinutes: 4,
+    lead:
+      "Egy Fiat 500 tulajdonosa azzal keresett meg minket, hogy a pótkulcsa véletlenül a " +
+      "ruhákkal együtt bekerült a mosógépbe. A mosás után az autókulcs nem ment teljesen " +
+      "tönkre: volt, amikor működött, máskor viszont egyáltalán nem reagált. Ez különösen " +
+      "kellemetlen helyzet, hiszen egy ilyen kulcsra már nem lehet biztosan számítani.",
+    sections: [
+      {
+        heading: "Meg lehet-e javítani a kimosott Fiat 500 autókulcsot?",
+        paragraphs: [
+          "A tulajdonos első kérdése természetesen ez volt. Bár egy beázott vagy kimosott " +
+            "autókulcs tisztítás után akár ismét működhet is, mi ilyen esetben nem javasoljuk " +
+            "a javítást.",
+          "A probléma nem feltétlenül azonnal jelentkezik. A kulcs belsejébe került víz és " +
+            "mosószer károsíthatja az elektronikai alkatrészeket, illetve idővel korrózió " +
+            "alakulhat ki. Emiatt előfordulhat, hogy a kulcs a javítás után napokig vagy akár " +
+            "hosszabb ideig megfelelően működik, majd később ismét meghibásodik.",
+          "Egy autókulcsnál pedig a megbízhatóság különösen fontos. Nem sokat ér egy " +
+            "megjavított pótkulcs, ha pont akkor mondja fel a szolgálatot, amikor szükség " +
+            "lenne rá. Ezért ebben az esetben is egy új Fiat 500 kulcs elkészítését " +
+            "javasoltuk.",
+        ],
+      },
+      {
+        heading: "Fiat 500 kulcs programozás a helyszínen",
+        paragraphs: [
+          "A munkát ezúttal is helyszíni kiszállással végeztük el. A Fiat 500 immobilizer " +
+            "rendszeréből kiolvastuk a szükséges adatokat, majd az új autókulcsot " +
+            "hozzáprogramoztuk az autóhoz.",
+          "A programozás után természetesen ellenőriztük az indítást és a távirányító " +
+            "megfelelő működését is. A fotón maga a programozási folyamat látható, a " +
+            "fejlécképen pedig a végeredmény: az elkészült új Fiat 500 pótkulcs a meglévő " +
+            "kulcs mellett.",
+        ],
+        image: {
+          src: "/images/blog/fiat-500-kulcs-programozas-helyszinen.jpg",
+          alt: "Diagnosztikai készülék a Fiat 500 utasterében, az immobilizer adatainak kiolvasása közben",
+        },
+      },
+      {
+        heading: "A bizonytalan régi autókulcsot töröltük az autóból",
+        paragraphs: [
+          "A kimosott és már kiszámíthatatlanul működő kulcsot nem hagytuk aktívként az autó " +
+            "rendszerében. Az új kulcs programozása során a régi, problémás autókulcsot " +
+            "töröltük az autóból, így az immobilizer szempontjából már nem használható az " +
+            "autó indítására.",
+          "Ez a kulcsprogramozásnak akkor is fontos része lehet, amikor egy kulcs nem " +
+            "meghibásodik, hanem például elveszik vagy ellopják. Ilyenkor az elveszett " +
+            "autókulcs törlésével jelentősen csökkenthető annak kockázata, hogy a korábbi " +
+            "kulccsal később elindítsák az autót.",
+        ],
+      },
+      {
+        heading: "Mit tegyen, ha víz éri az autókulcsot?",
+        paragraphs: [
+          "Ha egy autókulcs vízbe esik vagy bekerül a mosógépbe, érdemes minél hamarabb " +
+            "kivenni belőle az elemet és nem folyamatosan próbálgatni, hogy működik-e még. " +
+            "Attól, hogy a kulcs közvetlenül a beázás után működik, még nem biztos, hogy " +
+            "hosszú távon megbízható marad.",
+          "Ennél a Fiat 500-nál ezért nem egy bizonytalan javítást választottunk. A " +
+            "tulajdonos végül egy új, felprogramozott és működő pótkulccsal használhatta " +
+            "tovább az autót.",
+        ],
+        list: [
+          "Vegye ki az elemet, amilyen hamar csak tudja.",
+          "Ne próbálgassa folyamatosan, hogy működik-e még.",
+          "Ne bízzon abban, hogy ami ma működik, az fél év múlva is fog.",
+          "Amíg van egy megbízható autókulcs, készíttessen mellé egy másikat.",
+        ],
+      },
+      {
+        heading: "Fiat 500 pótkulcs készítés Budapesten és környékén",
+        paragraphs: [
+          "Fiat 500 kulcs másolásra, pótkulcs készítésre vagy elveszett autókulcs pótlására " +
+            "van szüksége? Forduljon hozzánk bizalommal. A legtöbb munkát a XI. kerületi " +
+            "műhelyünkben végezzük, ahol nincs kiszállási díj, de ha az autó nem tud " +
+            "eljönni, helyszíni kiszállással is tudunk segíteni.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Meg lehet javítani a kimosott autókulcsot?",
+        a:
+          "Műszakilag előfordul, hogy tisztítás után ismét működik, mi mégsem javasoljuk. A " +
+          "kulcs belsejébe került víz és mosószer károsíthatja az elektronikát, idővel pedig " +
+          "korrózió alakulhat ki, tehát a kulcs napok vagy hónapok múlva újra meghibásodhat. " +
+          "Egy autókulcsnál a megbízhatóság a lényeg, ezért inkább újat készítünk.",
+      },
+      {
+        q: "Miért fontos törölni a régi autókulcsot?",
+        a:
+          "Mert amíg benne van a jármű rendszerében, addig elindítható vele az autó. Ebben a " +
+          "munkában a kimosott, kiszámíthatatlanul működő kulcsot töröltük, így az " +
+          "immobilizer szempontjából már nem használható. Ugyanez a lépés elveszett vagy " +
+          "ellopott kulcsnál is fontos.",
+      },
+      {
+        q: "Mit tegyek, ha az autókulcs vízbe esett?",
+        a:
+          "Vegye ki belőle az elemet, amilyen hamar csak tudja. Ne próbálgassa " +
+          "folyamatosan, hogy működik-e még. Attól, hogy közvetlenül a beázás után működik, " +
+          "még nem biztos, hogy hosszú távon megbízható marad.",
+      },
+      {
+        q: "Mennyibe kerül egy Fiat 500 pótkulcs?",
+        a:
+          "Az ár az autó márkájától, típusától, évjáratától és a kulcs fajtájától függ. " +
+          "A pontos árat telefonon, WhatsAppon vagy Viberen egyeztetjük, még a kiszállás " +
+          "előtt. Készítse elő a típust és az évjáratot, ebből tudunk pontos árat mondani.",
+      },
+    ],
+    relatedServices: [
+      "autokulcs-masolas",
+      "autokulcs-programozas",
+      "autokulcs-keszites",
+    ],
+  },
+
+  /**
+   * A szöveget és a fotókat a tulajdonos adta, egy 2026 szeptemberi valódi
    * munkáról. A tartalmi állításokhoz nem nyúltunk, csak a megfogalmazáson
    * és a szerkezeten:
    *
