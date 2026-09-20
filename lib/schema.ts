@@ -43,6 +43,24 @@ export function localBusinessSchema() {
     name: business.name,
     description: business.description,
     url: site.url,
+
+    /**
+     * Ezt a képet mutatja a Google a találat mellett.
+     *
+     * Korábban egyik kép sem volt megadva, ezért a Google maga választott
+     * a lapon lévők közül, és a széles, króm hatású `logo-full.png`-t
+     * szedte ki. Az bélyegképméretben elmosódott és a felirata
+     * olvashatatlan volt.
+     *
+     * Az `icon-512.png` a sötét alapú, négyzetes márkajel, ugyanaz, ami a
+     * fejlécben is szerepel: nagy a kontrasztja, kicsiben is felismerhető.
+     *
+     * ⚠️ A Google nem azonnal frissíti a bélyegképet, az újraindexeléstől
+     *    függ, ez napokig vagy hetekig is eltarthat.
+     */
+    image: `${site.url}/icon-512.png`,
+    logo: `${site.url}/icon-512.png`,
+
     telephone: phone.primary.e164,
     address: {
       "@type": "PostalAddress",
