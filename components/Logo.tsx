@@ -63,8 +63,9 @@ export function LogoLockup({ className = "h-24" }: { className?: string }) {
     <img
       src={withBase("/images/logo-full.png")}
       alt={`${business.name} logó`}
+      /* A kép 420×318, ez ugyanaz az arány 1200 pixel szélességre átszámolva. */
       width={1200}
-      height={873}
+      height={909}
       className={`w-auto object-contain ${className}`}
     />
   );
