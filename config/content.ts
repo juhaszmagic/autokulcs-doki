@@ -486,8 +486,8 @@ export const articles: Article[] = [
         paragraphs: [
           "A nyitás erre a célra fejlesztett szerszámokkal, roncsolásmentesen történik: nem törik " +
             "ablak, nem feszül ki az ajtókeret, és nem kell zárat cserélni. Maga a nyitás " +
-            "általában néhány perc; a teljes időt nagyrészt a kiérkezés adja, ami Budapesten " +
-            "belül jellemzően 20–30 perc.",
+            "általában néhány perc, a teljes időt nagyrészt a kiérkezés adja. Ennek pontos " +
+            "idejét a hívásnál mondjuk meg, az aktuális forgalom ismeretében.",
           "Ha a helyszínen az derül ki, hogy a jármű zárja már a hívás előtt hibás volt, vagy " +
             "valaki korábban megpróbálta felfeszíteni, azt munka előtt elmondjuk. Nem kezdünk " +
             "bele úgy, hogy Ön ne tudná, mire számíthat.",

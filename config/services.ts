@@ -494,8 +494,8 @@ export const services: Service[] = [
       {
         q: "Mennyi ideig tart maga a nyitás?",
         a:
-          "A nyitás maga általában néhány perc. A teljes idő nagyobb részét a kiérkezés teszi ki, " +
-          "ami Budapesten belül jellemzően 20–30 perc.",
+          "A nyitás maga általában néhány perc. A teljes időt nagyrészt a kiérkezés adja, ennek " +
+          "pontos idejét a hívásnál mondjuk meg, az aktuális forgalom ismeretében.",
       },
     ],
     image: {

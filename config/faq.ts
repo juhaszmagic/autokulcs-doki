@@ -34,8 +34,9 @@ export const homeFaqs: ServiceFaq[] = [
   {
     q: "Mennyi idő alatt érnek ki Budapesten?",
     a:
-      "Budapesten belül a hívástól számítva általában 20–30 perc. A pontos időt a telefonban " +
-      "mondjuk meg, a helyszín és az aktuális forgalom ismeretében.",
+      "Budapest egész területére kimegyünk, az agglomerációba is. A pontos időt a telefonban " +
+      "mondjuk meg, a helyszín és az aktuális forgalom ismeretében. Ha el tudja hozni az " +
+      "autót a XI. kerületi műhelyünkbe, azzal jár a leggyorsabban és kiszállási díj sincs.",
   },
   {
     q: "Ki tudják nyitni az autót sérülésmentesen?",

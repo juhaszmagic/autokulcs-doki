@@ -61,8 +61,7 @@ export default function ThankYouPage() {
                   </strong>
                   <span className="mt-1 block text-[0.9375rem] leading-relaxed text-ink-700">
                     Ha most áll az autó mellett, hívjon, {business.hours.short}{" "}
-                    elérhetők vagyunk és Budapesten belül jellemzően 20–30 perc
-                    alatt kiérünk.
+                    elérhetők vagyunk és megmondjuk, mikor tudunk ott lenni.
                   </span>
                 </span>
               </p>

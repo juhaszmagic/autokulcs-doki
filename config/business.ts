@@ -300,13 +300,20 @@ export const business = {
   },
 
   // ——————————————————————————————————————————————————————————————
-  //  KIÉRKEZÉSI IDŐ  —  forrás: a jelenlegi weboldal
-  //  „30 percen belül érkezünk Budapesten belül” (Rólunk)
-  //  „Kiérkezésünk Budapesten belül általában 20-25 percet vesz igénybe”
+  //  KIÉRKEZÉS
+  //
+  //  ⚠️ Itt SZÁNDÉKOSAN nincs konkrét perc. Korábban „általában 20–30 perc”
+  //     szerepelt, de a kiérkezés a forgalomtól és az aktuális leterheltségtől
+  //     függ, tehát nem a vállalkozáson múlik. Egy kiírt szám ígéretnek
+  //     számít, és egy forgalmas napon visszaüt.
+  //
+  //     A konkrét szám ott marad, ahol tartható: a műhelyben végzett munka
+  //     ideje (workshopDuration), mert oda időpontra érkezik az ügyfél.
+  //     A kiérkezés pontos idejét telefonon mondjuk meg.
   // ——————————————————————————————————————————————————————————————
   responseTime: {
-    display: "Általában 20–30 perc",
-    context: "Budapesten belül, a hívástól számítva",
+    display: "Gyors kiszállás",
+    context: "Budapest egész területén",
   },
 
   // ——————————————————————————————————————————————————————————————

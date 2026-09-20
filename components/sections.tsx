@@ -213,7 +213,7 @@ export function Hero() {
 export function TrustStrip() {
   const items = [
     { icon: ClockIcon, value: "0–24", label: "Non-stop elérhetőség" },
-    { icon: CarIcon, value: "20–30 perc", label: "Budapesten belül" },
+    { icon: CarIcon, value: "20–25 perc", label: "Műhelyünkben átlagosan" },
     { icon: ToolsIcon, value: "Helyszínen", label: "Ahol megoldható" },
     { icon: SearchIcon, value: "Kulcs nélkül is", label: "Új kulcs nulláról" },
   ];
@@ -488,18 +488,21 @@ export function ExpertiseSection() {
             />
 
             <p className="mt-5 leading-relaxed text-ink-600">
-              A kiszállás nálunk nem mellékes szolgáltatás, hanem az alap. Nem
-              várjuk el, hogy egy nem induló autót elvontasson hozzánk, a
-              kulcsmásoló gép és az OBD-diagnosztika velünk együtt érkezik a
-              helyszínre.
+              Kétféleképpen tudunk dolgozni. A munkák nagy részét a XI. kerületi
+              műhelyünkben végezzük: ott minden eszköz kéznél van, nincs
+              kiszállási díj és egy pótkulcs általában 20-25 perc alatt
+              elkészül. Ha viszont az autó nem tud eljönni, például mert
+              egyetlen autókulcs sem maradt, kimegyünk a helyszínre. A
+              kulcsmásoló gép és az OBD-diagnosztika a szervizautóval együtt
+              érkezik.
             </p>
 
             <CheckList
               className="mt-8"
               items={[
-                "Helyszíni munkavégzés, ahol ez megoldható",
+                "XI. kerületi műhely, pótkulcs általában 20-25 perc alatt",
                 "Modern diagnosztikai technológia és kulcsmásoló gép",
-                "Gyors segítség, Budapesten belül általában 20–30 perc",
+                "Kiszállás oda, ahol az autó áll, ha nem tudja elhozni",
                 "Budapest mind a 23 kerülete és az agglomeráció",
               ]}
             />
@@ -530,12 +533,12 @@ export function HowItWorks() {
     },
     {
       number: "02",
-      title: "Egyeztetjük a helyszínt",
-      text: "Megbeszéljük, hol van az autó és mikor tudunk ott lenni. Budapesten belül ez jellemzően 20–30 perc.",
+      title: "Műhely vagy kiszállás",
+      text: "Megbeszéljük, hogy elhozza az autót a XI. kerületi műhelyünkbe, vagy kimenjünk Önhöz. A pontos időt a telefonban mondjuk meg.",
     },
     {
       number: "03",
-      title: "Megoldjuk a helyszínen",
+      title: "Elkészítjük az autókulcsot",
       text: "Kinyitjuk az autót, elkészítjük vagy beprogramozzuk az autókulcsot és együtt kipróbáljuk, hogy minden működik.",
     },
   ];
@@ -1160,7 +1163,7 @@ export function WhyUs() {
     {
       icon: ClockIcon,
       title: "Gyors reagálás",
-      text: `${business.responseTime.display} ${business.responseTime.context.toLowerCase()}. Nem holnapra adunk időpontot, elveszett kulcsnál ez a lényeg.`,
+      text: `${business.responseTime.display} ${business.responseTime.context}. Nem holnapra adunk időpontot, elveszett kulcsnál ez a lényeg.`,
     },
     {
       icon: ShieldIcon,
@@ -1169,8 +1172,8 @@ export function WhyUs() {
     },
     {
       icon: CarIcon,
-      title: "Helyszíni munkavégzés",
-      text: "Hozza el az autót a XI. kerületi telephelyre és általában 20–25 perc alatt elkészül. Ha nem tud jönni, kiszállunk Önhöz.",
+      title: "Műhely vagy kiszállás",
+      text: "Hozza el az autót a XI. kerületi műhelyünkbe és általában 20–25 perc alatt elkészül. Ha nem tud jönni, kimegyünk Önhöz.",
     },
     {
       icon: ToolsIcon,
