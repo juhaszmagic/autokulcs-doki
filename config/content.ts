@@ -89,6 +89,128 @@ export const articles: Article[] = [
    * A szöveget és a fotókat a tulajdonos adta, egy 2026 szeptemberi valódi
    * munkáról. A tartalmi állításokhoz nem nyúltunk.
    *
+   * ⚠️ ADATVÉDELEM: a négy beküldött fotóból három került be. A programozó
+   *    képernyőjét mutató fotó alján OLVASHATÓAN látszott az ügyfél
+   *    járművének alvázszáma (VIN). A kép úgy van vágva, hogy a „Remote
+   *    control learning finished” üzenet látszik, az alvázszám nem.
+   *
+   * Megfogalmazás: a záró bekezdés tegezett volt („szeretnél”), az oldal
+   * viszont végig magázódik, ezért magázóra írtuk át.
+   */
+  {
+    slug: "passat-b6-kulcsprogramozas",
+    title: "Passat B6 kulcsprogramozás hajnali 1-kor, 20 perc alatt",
+    excerpt:
+      "Hajnali 1 óra körül csörgött a telefon: egy Volkswagen Passat B6 autókulcsán elromlott a záró gomb, az autót nem lehetett bezárni éjszakára. Javítás helyett új kulcs készült, 20 perc alatt.",
+    category: "programozas",
+    date: "2026-09-21",
+    image: {
+      src: "/images/blog/passat-b6-kulcsprogramozas.jpg",
+      alt: "Két Volkswagen Passat B6 autókulcs a műhelyben, a régi kopott és az új kulcs egymás mellett",
+    },
+    metaTitle: "Passat B6 kulcsprogramozás és új autókulcs Budapesten",
+    metaDescription:
+      "Hajnali 1-kor hívtak: a Passat B6 autókulcsán elromlott a záró gomb. Javítás helyett új kulcsot készítettünk és programoztunk, 20 perc alatt.",
+    readingMinutes: 3,
+    lead:
+      "Hajnali 1 óra körül csörgött a telefonunk. Egy Volkswagen Passat B6 tulajdonosa " +
+      "keresett minket, mert váratlanul elromlott az autókulcsán a záró gomb. Az autó " +
+      "működött, viszont éjszakára már nem tudta rendesen bezárni.",
+    sections: [
+      {
+        heading: "Hajnali 1 óra, az autó pedig nem záródik",
+        paragraphs: [
+          "Ez az a helyzet, amit nem lehet reggelig halasztani. Az autó a közterületen áll, " +
+            "nyitva, a tulajdonos pedig nem tud mit kezdeni vele. Ilyenkor nem az a kérdés, " +
+            "hogy kényelmes-e éjszaka telefonálni, hanem hogy van-e, aki felveszi.",
+          "A műszerfal kijelzőjén jól látszik a helyzet: 1 óra 13 perc, a jármű pedig nyitott " +
+            "állapotot jelez.",
+        ],
+        image: {
+          src: "/images/blog/passat-b6-muszerfal-hajnalban.jpg",
+          alt: "A Passat B6 műszerfali kijelzője hajnali 1 óra 13 perckor, nyitott jármű jelzéssel",
+        },
+      },
+      {
+        heading: "Miért nem érdemes javítani a Passat B6 autókulcsát?",
+        paragraphs: [
+          "A Passat B6 kulcsoknál viszonylag gyakori probléma, hogy hosszú használat után " +
+            "valamelyik nyomógomb meghibásodik. Ezeknél a kulcsoknál a javítás ráadásul nem " +
+            "mindig jó megoldás.",
+          "A gyári kulcsház össze van rögzítve, ezért a szétszedéséhez meg kell bontani a " +
+            "házat, ami közben akár a belső elektronika is megsérülhet. Egy hajnali " +
+            "helyzetben pedig különösen rossz ötlet olyan megoldást választani, ami tovább " +
+            "ronthat az állapoton.",
+        ],
+      },
+      {
+        heading: "Új Passat B6 autókulcs 20 perc alatt",
+        paragraphs: [
+          "Mivel az ügyfélnek azonnali és megbízható megoldásra volt szüksége, még az " +
+            "éjszaka folyamán eljött hozzánk. A régi kulcs kockázatos javítása helyett új " +
+            "autókulcsot készítettünk és programoztunk a Passat B6-hoz.",
+          "Körülbelül 20 perc alatt elkészültünk. Az új kulccsal működött a központi zár, a " +
+            "távirányító és természetesen az autó indítása is. Így a hajnali telefonhívástól " +
+            "számítva rövid időn belül megoldódott a probléma, a tulajdonos pedig már " +
+            "nyugodtan, bezárva hagyhatta az autóját éjszakára.",
+        ],
+        image: {
+          src: "/images/blog/passat-b6-taviranyito-tanitas.jpg",
+          alt: "A programozó készülék a Passat B6 utasterében, a távirányító tanítása után",
+        },
+      },
+      {
+        heading: "Ne várja meg, amíg az utolsó autókulcs is felmondja",
+        paragraphs: [
+          "Ha egy Passat B6 autókulcs meghibásodik, vagy szeretne még időben pótkulcsot " +
+            "készíttetni, érdemes nem megvárni, amíg az egyetlen működő kulcs is felmondja a " +
+            "szolgálatot. Egy kopott gomb előbb-utóbb végleg abbahagyja.",
+          "Amíg van működő autókulcs, a pótlás egyszerűbb feladat. Volkswagen Passat B6 " +
+            "kulcsprogramozás, pótkulcs készítés és elveszett autókulcs pótlása Budapesten " +
+            "és környékén, a hét minden napján, a nap 24 órájában.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Tényleg hívhatom Önöket éjszaka is?",
+        a:
+          "Igen, a hét minden napján, a nap 24 órájában. Ez a munka is hajnali 1 óra körüli " +
+          "telefonhívással indult, még aznap éjjel elkészült az új autókulcs.",
+      },
+      {
+        q: "Meg lehet javítani a Passat B6 kulcs elromlott gombját?",
+        a:
+          "Nem mindig éri meg. A gyári kulcsház össze van rögzítve, a szétszedéshez meg kell " +
+          "bontani, közben pedig a belső elektronika is megsérülhet. Ezért ebben a munkában is " +
+          "új kulcs készült a bizonytalan javítás helyett.",
+      },
+      {
+        q: "Mennyi idő alatt készül el egy Passat B6 autókulcs?",
+        a:
+          "Ebben az esetben körülbelül 20 perc volt, a programozással és a működés " +
+          "ellenőrzésével együtt. A reális időt a jármű típusa és évjárata alapján telefonon " +
+          "tudjuk megmondani.",
+      },
+      {
+        q: "Mennyibe kerül egy Passat B6 pótkulcs?",
+        a:
+          "Az ár az autó márkájától, típusától, évjáratától és a kulcs fajtájától függ. " +
+          "A pontos árat telefonon, WhatsAppon vagy Viberen egyeztetjük, még a munka " +
+          "megkezdése előtt.",
+      },
+    ],
+    relatedServices: [
+      "autokulcs-programozas",
+      "autokulcs-masolas",
+      "autokulcs-keszites",
+    ],
+  },
+
+  /**
+   * A szöveget és a fotókat a tulajdonos adta, egy 2026 szeptemberi valódi
+   * munkáról. A tartalmi állításokhoz nem nyúltunk.
+   *
    * ⚠️ ADATVÉDELEM: a beküldött három fotóból kettő került be. A harmadikon,
    *    és a bent maradt fotó alsó részén is, OLVASHATÓAN látszott az ügyfél
    *    autójának immobilizer-jelszava és a kulcsazonosítói (Password, Key 1

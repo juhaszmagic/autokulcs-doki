@@ -135,6 +135,36 @@
     ],
     "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAkABABoJZACdAB3MGIxAAD8rH5aI7U1Y4gXOq6oFv20ufXa8XajdE2TeRswh9M/AyKPxBxyUr80PBCR8titCadm+ajPj+DAAAAA"
   },
+  "/images/blog/passat-b6-kulcsprogramozas.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkABABoJaACdADOBwkNAAD+6fxw7/RISJezGu2pFXa4Ihddz41hrTUsr/3M+SqeHTCWo0exe70d2xlscnL4ZG2VOmvAAAA="
+  },
+  "/images/blog/passat-b6-muszerfal-hajnalban.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAAAQAgCdASoQAAkABABoJbACsAEf3U49Fh6AAP712jm2vSox4JI61vqcmtCK628ayoSPYcBPvjKZi5whhqo5zAVphimdAAAA"
+  },
+  "/images/blog/passat-b6-taviranyito-tanitas.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoQAAkABABoJbACdADE/ZYAAP71f3UCfte697mo3NXe2+96CvVGwDRGOT8lIky660WtcVYJoAA="
+  },
   "/images/blog/potkulcs-keszites.jpg": {
     "width": 1672,
     "height": 941,
