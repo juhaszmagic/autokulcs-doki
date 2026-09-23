@@ -135,6 +135,36 @@
     ],
     "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADQAQCdASoQAAkABABoJZACdAB3MGIxAAD8rH5aI7U1Y4gXOq6oFv20ufXa8XajdE2TeRswh9M/AyKPxBxyUr80PBCR8titCadm+ajPj+DAAAAA"
   },
+  "/images/blog/kia-sportage-helyszini-kulcsprogramozas.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAkABABoJQAAYvdrOppWQAD+hY8Z6FKJ+/XieoL4VX6nCUcu24VKsz8MC1IzG6J+d7/g2B7q4e7ehMnWi/qLnzmXteLxt0vBuzuAAAA="
+  },
+  "/images/blog/kia-sportage-keyless-kulcs-keszites.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAACwAQCdASoQAAkABABoJZgCdADBHv4AAPa6y1dc6fYAdumZrsMbxsyOCJmo9IuGOjEUng30eCw/gBfhI2TxZJfRiEBp3fAumLMBoAAA"
+  },
+  "/images/blog/kia-sportage-smart-key-programozas.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQAAkABABoJQBOgBxFhxutcAD8K0FuE820hAEvbBhmfI9gT/y/HambaVzAHl5bjfgAAA=="
+  },
   "/images/blog/passat-b6-kulcsprogramozas.jpg": {
     "width": 1932,
     "height": 1087,
@@ -316,6 +346,51 @@
       1600
     ],
     "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoQAAkABABoJZQAAaSDq18QAP7Q58Mvhu5difI3xvGbz6N9pp8KjND+aB+qApzKpIJZiGzsgJT8k+AA"
+  },
+  "/images/kulcshaz-csere-gombok.jpg": {
+    "width": 1206,
+    "height": 678,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAkABABoJbACdAD0YDnMAAD+lL0khr3pR64XjWtj//khKdst/Fj93tm07iEPeXQXklnbxKCzCS8nqrVu8zJOvf/mjyZCAtmZ+RQNCcghqYAA"
+  },
+  "/images/kulcshaz-csere-kopott.jpg": {
+    "width": 1206,
+    "height": 678,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkABABoJaACdACzhgnKsAD+sPH8eMkJAHsgaJAHK3cDi4kFKy/RptB513sS3hDMLImwrkQ9QQp+uDoAAA=="
+  },
+  "/images/kulcshaz-csere-mini.jpg": {
+    "width": 1206,
+    "height": 678,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAkABABoJagCdADG3CNtEAD+S4FVQMHOqBx8bhbbcH63WcBPS9H32ySmcvFRvew5KTBXORAIW7bd16zkUWTXXtGQtsSWQGzY9EjWZRwz4U7pviAAAA=="
+  },
+  "/images/kulcshaz-csere-reszlet.jpg": {
+    "width": 1206,
+    "height": 905,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAwABABoJaQAAgfEKpps0AD4wiJVBGqV1B3G37K29rJqL4bM8l43PYgU4DELxMIa3VeNwPVrn0Wkqj4pz2xKyL6iqSbWAiYh3fYQAAA="
+  },
+  "/images/kulcshaz-csere.jpg": {
+    "width": 1206,
+    "height": 678,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQAAkABABoJZwAAuhIjtjevOAA/aa9qUV8akT98+YCqVEL35C5Tslr1ljmX3ZfDnYgSms72VbYAA=="
   },
   "/images/logo-full.png": {
     "width": 420,

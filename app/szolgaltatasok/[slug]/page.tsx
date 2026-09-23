@@ -184,6 +184,17 @@ export default async function ServicePage({ params }: Params) {
                       ))}
                     </ul>
                   )}
+
+                  {section.image && (
+                    <AssetImage
+                      src={section.image.src}
+                      alt={section.image.alt}
+                      ratio="16/9"
+                      sizes="(max-width: 1024px) 100vw, 44rem"
+                      tone="green"
+                      wrapperClassName="mt-7 rounded-card shadow-media"
+                    />
+                  )}
                 </div>
               ))}
             </div>

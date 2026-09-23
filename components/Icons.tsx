@@ -88,6 +88,19 @@ export function CutIcon(props: Props) {
   );
 }
 
+/**
+ * Csavarkulcs — a kulcsház csere és a kulcsjavítás jele.
+ * Azért kapott saját ikont, mert ez az egyetlen szolgáltatás, ami
+ * javítás: a meglévő kulcsot hozzuk helyre, nem újat készítünk.
+ */
+export function WrenchIcon(props: Props) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M15.4 3.6a5 5 0 0 0-5.9 6.4l-6 6a1.8 1.8 0 0 0 2.5 2.5l6-6a5 5 0 0 0 6.4-5.9l-2.8 2.8-2.5-.7-.7-2.5z" />
+    </svg>
+  );
+}
+
 /* ---- Felület-ikonok ----------------------------------------------------- */
 
 export function PhoneIcon(props: Props) {
@@ -249,6 +262,7 @@ const serviceIcons: Record<IconName, (p: Props) => React.ReactElement> = {
   chip: ChipIcon,
   search: SearchIcon,
   cut: CutIcon,
+  wrench: WrenchIcon,
 };
 
 export function ServiceIcon({

@@ -12,6 +12,10 @@
  *  ⚠️ Minden állítás a jelenlegi autokulcsmasolo.com tartalmából származik.
  *     Ár SEHOL nem szerepel, mert a régi oldalon sem szerepelt egyetlen ár sem.
  *
+ *     KIVÉTEL: a KULCSHÁZ CSERE a tulajdonos saját közléséből és saját
+ *     munkafotóiból készült (2026-09-23), nem a régi oldalról. Az ehhez
+ *     tartozó megjegyzés a szolgáltatás felett olvasható.
+ *
  *  ── A SORREND SZÁNDÉKOS ────────────────────────────────────────────
  *  Az ELVESZETT AUTÓKULCS áll az élen, mert üzletileg ez a legértékesebb
  *  munka: nyitás + a zár kiolvasása + új kulcs + programozás. A puszta
@@ -27,7 +31,8 @@ export type IconName =
   | "key"
   | "chip"
   | "search"
-  | "cut";
+  | "cut"
+  | "wrench";
 
 export interface ServiceFaq {
   q: string;
@@ -38,6 +43,12 @@ export interface ServiceSection {
   heading: string;
   paragraphs?: string[];
   list?: string[];
+  /**
+   * Szakaszon belüli fotó, a szöveg után. Csak valódi munkáról készült
+   * kép kerülhet ide, illusztráció nem. Nem kötelező: ha nincs megadva,
+   * a szakasz csak szöveget mutat.
+   */
+  image?: { src: string; alt: string };
 }
 
 export interface Service {
@@ -425,6 +436,181 @@ export const services: Service[] = [
     related: ["autokulcs-masolas", "autokulcs-keszites", "elveszett-autokulcs"],
   },
   // ────────────────────────────────────────────────────────────────
+  /**
+   * KULCSHÁZ CSERE
+   *
+   * Forrás: a tulajdonos közlése és öt saját munkafotója, 2026-09-23.
+   * Ez az EGYETLEN szolgáltatás, ami nem a régi autokulcsmasolo.com
+   * tartalmából származik, ezért itt csak az szerepelhet, amit a
+   * tulajdonos szó szerint megadott:
+   *   • körülbelül 10 perc alatt elkészül
+   *   • minden kulcsház készleten van, tehát nem kell rendelni
+   *   • a régi kulcsszárat lemarjuk, a belsőt átültetjük
+   *   • olcsóbb, mint egy új kulcs
+   *   • a nem működő gombokat is cseréljük
+   *
+   * ⚠️ ÁR: a tulajdonos ehhez a munkához NEM adott meg árat, ezért az
+   *    oldalon egyetlen összeg sem szerepel. A 25 000 Ft-os indulóár itt
+   *    félrevezető lenne, mert az a kulcskészítés kiindulóára, a
+   *    kulcsház csere pedig ennél olcsóbb munka. Amint megkapjuk a
+   *    tényleges árat, ide kerülhet.
+   *
+   * A sorrendben azért áll a sérülésmentes autónyitás ELŐTT, de a
+   * kulcskészítés UTÁN, mert olcsó munka, viszont a műhelybe hozza be az
+   * ügyfelet, tehát nem a lista végére való.
+   */
+  {
+    slug: "kulcshaz-csere",
+    nav: "Kulcsház csere",
+    h1: "Kulcsház csere: eltört autókulcs, 10 perc alatt",
+    metaTitle: "Kulcsház csere Budapesten: eltört autókulcs javítása",
+    metaDescription:
+      "Eltört a kulcsszár vagy kirepedt a kulcsház? Kulcsház cserével a régi elektronika az új házba kerül, körülbelül 10 perc alatt, olcsóbban az új kulcsnál.",
+    icon: "wrench",
+    cardText:
+      "Eltört a szár vagy szétesett a ház? Az elektronikát átültetjük egy új házba, olcsóbban, mint egy új kulcs.",
+    lead:
+      "Ez az a munka, amivel a leggyakrabban keresnek minket telefonon: eltört az autókulcs szára, " +
+      "vagy kirepedt a kulcsház és már csak ragasztószalag tartja össze. Ilyenkor a legtöbbször nem " +
+      "kell új autókulcsot készíteni. A kulcs belső elektronikája általában teljesen ép, csak a ház " +
+      "ment tönkre körülötte, ezt pedig ki lehet cserélni.",
+    bullets: [
+      "Eltört vagy elhajlott kulcsszár cseréje",
+      "Kirepedt, szétesett, ragasztószalaggal összefogott kulcsház cseréje",
+      "A meglévő elektronika és a transzponder chip átültetése az új házba",
+      "A kulcsszár marása a régi kulcs alapján",
+      "Nem működő, beszakadt nyomógombok cseréje",
+      "Kulcsház-elemcsere",
+    ],
+    sections: [
+      {
+        heading: "Mikor elég a kulcsház csere és mikor kell új autókulcs?",
+        paragraphs: [
+          "Egy autókulcs két részből áll. Az egyik a ház, amit a kezében fog és nyomogat, a " +
+            "másik a benne lévő elektronika, ami az autóval kommunikál. A ház az, ami " +
+            "elhasználódik. Zsebben, " +
+            "kulcscsomóban, leejtve évek alatt megreped, a gombok feliratai lekopnak, a szár " +
+            "pedig a sok elfordítástól eltörhet.",
+          "Az elektronika viszont ilyenkor általában sértetlen. Ha a kulcs egyébként működik, " +
+            "tehát nyitja az autót és el is indítja, akkor nincs szükség új kulcsra: elég a házat " +
+            "kicserélni alatta. Ez lényegesen olcsóbb, mint egy teljesen új, felprogramozott " +
+            "autókulcs.",
+          "Új kulcs akkor kell, ha maga az elektronika hibásodott meg, például beázás vagy törés " +
+            "miatt. Ezt a kulcs átnézésekor meg tudjuk mondani.",
+        ],
+        image: {
+          src: "/images/kulcshaz-csere-mini.jpg",
+          alt: "MINI autókulcs kulcsház cseréje: a ragasztószalaggal összefogott régi ház és az elkészült új kulcs",
+        },
+      },
+      {
+        heading: "Kitört a kulcsszár a kulcsházból, mit lehet tenni?",
+        paragraphs: [
+          "Ez az egyik leggyakoribb hívás. A szár a tövénél törik el, vagy kiszakad a házból. " +
+            "A kulcs onnantól használhatatlan. Sokan ilyenkor abban a hitben vannak, hogy az " +
+            "egész kulcsot újra kell csináltatni.",
+          "A megoldás ennél egyszerűbb. Új kulcsházat veszünk, a szárát a régi kulcs alapján " +
+            "kimarjuk, hogy pontosan ugyanúgy nyissa az ajtót, a régi kulcs belsejét pedig " +
+            "átültetjük az új házba. Semmit nem kell újraprogramozni, mert ugyanaz az elektronika " +
+            "marad benne, ami eddig is működött az autóval.",
+          "A végeredmény kívülről egy vadonatúj kinézetű autókulcs, belül a régi, bevált " +
+            "elektronikával.",
+        ],
+        image: {
+          src: "/images/kulcshaz-csere-kopott.jpg",
+          alt: "Ragasztószalaggal körbetekert, elhasználódott kihajtható autókulcs az elkészült új kulcsház mellett",
+        },
+      },
+      {
+        heading: "Nem működnek a gombok az autókulcson",
+        paragraphs: [
+          "A nyomógombok gumibetétje idővel kiszakad, beszakad vagy annyira elhasználódik, hogy " +
+            "már többször kell megnyomni, mire reagál. Ez nem az autó hibája és nem is az " +
+            "elektronikáé, hanem a házé.",
+          "A gombokat ilyenkor cseréljük, a legtöbbször a teljes házzal együtt. A munka végén " +
+            "közösen kipróbáljuk, hogy a nyitás, a zárás és a csomagtér gombja is működik-e.",
+        ],
+        image: {
+          src: "/images/kulcshaz-csere-gombok.jpg",
+          alt: "Kiszakadt gombokkal használhatatlanná vált autókulcs háza és mellette a hibátlan, új ház",
+        },
+      },
+      {
+        heading: "Mennyi idő alatt készül el és kell-e rá várni?",
+        paragraphs: [
+          "A kulcsházak készleten vannak nálunk, ezért nem kell alkatrészt rendelni és nem kell " +
+            "napokat várni. A kulcsház csere körülbelül 10 perc alatt elkészül, tehát meg is " +
+            "tudja várni.",
+          "Érkezés előtt mindig egyeztessen telefonon időpontot, így nem kell sorban állnia. " +
+            "A XI. kerületi műhelyünknél ingyenes a parkolás.",
+        ],
+      },
+      {
+        heading: "Jobb megelőzni a bajt",
+        paragraphs: [
+          "Ha a kulcsháza már repedezik, a gombja akadozik, vagy ragasztószalag tartja össze, " +
+            "érdemes nem megvárni, amíg végleg szétesik. Egy megrepedt ház előbb-utóbb eltörik, " +
+            "rossz esetben pont akkor, amikor épp indulna valahová.",
+          "Amíg a kulcs működik, ez egy rövid, olcsó munka. Ha viszont az elektronika is sérül " +
+            "közben, már új autókulcsot kell készíteni és programozni, ami lényegesen drágább.",
+        ],
+      },
+      {
+        heading: "Mit hozzon magával?",
+        list: [
+          "Az eltört vagy elhasználódott autókulcsot, minden darabjával együtt",
+          "A forgalmi engedélyt",
+          "Személyazonosító okmányt",
+          "Ha van, a másik autókulcsot is",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Mennyi idő alatt készül el egy kulcsház csere?",
+        a:
+          "Körülbelül 10 perc. A kulcsházak készleten vannak nálunk, ezért nem kell alkatrészre " +
+          "várni, a munkát meg is tudja várni. Érkezés előtt egyeztessen telefonon időpontot, " +
+          "így nem kell sorban állnia.",
+      },
+      {
+        q: "Olcsóbb a kulcsház csere, mint egy új autókulcs?",
+        a:
+          "Igen, lényegesen olcsóbb, mert a kulcs elektronikáját nem kell újra megvenni és " +
+          "beprogramozni, csak a ház cserélődik alatta. A pontos árat telefonon, WhatsAppon " +
+          "vagy Viberen mondjuk meg, ehhez elég tudnunk az autó típusát és azt, milyen kulcsról " +
+          "van szó.",
+      },
+      {
+        q: "Újra kell programozni a kulcsot a házcsere után?",
+        a:
+          "Nem. A régi kulcs elektronikája és transzponder chipje kerül át az új házba, tehát " +
+          "az autó ugyanazt a kulcsot látja, mint eddig. Emiatt marad meg a működés programozás " +
+          "nélkül is.",
+      },
+      {
+        q: "Eltört a kulcsszár, meg lehet menteni a kulcsot?",
+        a:
+          "A legtöbb esetben igen. Új házat teszünk alá, a szárat a régi kulcs alapján kimarjuk, " +
+          "a belsejét pedig átültetjük. Kívülről egy vadonatúj kinézetű autókulcsot kap vissza.",
+      },
+      {
+        q: "A nem működő gombokat is ki tudják cserélni?",
+        a:
+          "Igen, a beszakadt vagy akadozó nyomógombokat is cseréljük, jellemzően a teljes házzal " +
+          "együtt. A munka végén közösen kipróbáljuk a nyitást, a zárást és a csomagtér gombját.",
+      },
+    ],
+    image: {
+      src: "/images/kulcshaz-csere.jpg",
+      alt: "BMW autókulcs kulcsház cseréje: a megrepedt, elhasználódott ház és mellette az elkészült új kulcs",
+    },
+    detailImage: {
+      src: "/images/kulcshaz-csere-reszlet.jpg",
+      alt: "Szétszedett Peugeot autókulcs: a kimart kulcsszár, az üres kulcsház és a régi kulcs elektronikája",
+    },
+    related: ["autokulcs-masolas", "autokulcs-keszites", "autokulcs-programozas"],
+  },
   // ────────────────────────────────────────────────────────────────
   {
     slug: "serulesmentes-autonyitas",
