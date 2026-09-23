@@ -422,6 +422,67 @@ export const business = {
           "Excellent Communication. Excellent Work. Very Fast. 5 Star. " +
           "Thank You Marcell Juhász Master Locksmith!",
       },
+
+      /* ----------------------------------------------------------------
+         2026-09-23-án felvéve. A tulajdonos képernyőképeket küldött a
+         Google Cégprofilból, a szövegek onnan származnak, SZÓ SZERINT.
+
+         ⚠️ EZEK IDÉZETEK, NE JAVÍTSD ŐKET.
+            Az oldal stílusszabályai (nincs „és" előtt vessző, a szavak
+            közötti vonalak takarítása) a MI szövegeinkre vonatkoznak.
+            Egy vendég véleményét átírni hamisítás lenne, akkor is, ha
+            elírás van benne. Konkrétan, ami szándékosan maradt:
+              • „0-24-es” rövid kötőjellel (mi „0–24”-et írunk)
+              • „hagyjam ott 1-2 napra az kulcsot” (a vendég elírása)
+              • vessző az „és” előtt több helyen
+              • a 😎 hangulatjel
+
+         ⚠️ DÁTUM: a Google csak azt mutatta, hogy „4 hónapja”, pontos
+            napot nem. A 2026-05-15 ebből SZÁMÍTOTT közelítés, nem
+            leolvasott érték. Az oldalon csak hónap látszik belőle.
+            Ha a tulajdonos megadja a pontos dátumokat, írjuk át.
+         ---------------------------------------------------------------- */
+      {
+        author: "Ruben Varga",
+        rating: 5,
+        date: "2026-05-15",
+        text:
+          "Nagyon meg voltam elégedve a 0-24-es autókulcs másolással! Egyedül jött, " +
+          "mégis gyorsan és precízen dolgozott. Rendes, segítőkész volt, minden elsőre " +
+          "tökéletesen működött. Ritka az ilyen korrekt hozzáállás manapság. " +
+          "Mindenkinek csak ajánlani tudom!",
+      },
+      {
+        author: "Viktor Papp",
+        rating: 5,
+        date: "2026-05-15",
+        text:
+          "Elveszett kulcs pótlásával kapcsolatban kerestem őket. Nagyon normális, " +
+          "korrekt hozzáállással, kommunikációval, a megbeszéltek szerint történt minden. " +
+          "Csak ajánlani tudom! Nekem hatalmas segítség volt! Köszönöm!",
+      },
+      {
+        author: "István",
+        rating: 5,
+        date: "2026-05-15",
+        text:
+          "Nagyon korrekt, profi és gyors szolgáltatás! 8 embert hívtam fel BMW kulcs " +
+          "ügyben, mindenhol azt mondták, hogy hagyjam ott 1-2 napra az kulcsot. Itt " +
+          "viszont azonnal fogadtak Budaörsön, és kb 20 perc alatt meg is oldották a " +
+          "teljes kulcsprogramozást. Az új kulcs tökéletesen működik, a kommunikáció " +
+          "végig normális, kedves és segítőkész volt, az ár pedig teljesen korrekt ezért " +
+          "a munkáért. BMW E70-hez kellett új kulcs, bátran ajánlom mindenkinek, aki " +
+          "gyors és hozzáértő segítséget keres.😎",
+      },
+      {
+        author: "Ildikó Szabó",
+        rating: 5,
+        date: "2026-05-15",
+        text:
+          "Kiváló szakértelem. Precíz munkát végeztek a kulccsal, minden tökéletesen " +
+          "működik. Külön pont jár a hétvégi elérhetőségért, nagy terhet vettek le a " +
+          "vállunkról. Ritka az ilyen megbízható szerviz!",
+      },
     ] as Array<{
       author: string;
       rating: number;
