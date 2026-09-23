@@ -46,6 +46,17 @@ buildelni és élesíteni.
 
 Ezek a szabályok az oldal szövegeire vonatkoznak és erre a jegyzetre is.
 
+### A tulajdonosnak írt minden szöveg magyar
+
+⚠️ **Nem csak a záró beszámoló magyar, hanem minden, amit a tulajdonos
+lát.** Ide tartozik a munka közben kiírt rövid állapotjelzés is, például
+„most megnézem a fotókat", „ez kész, jöhet a build". A tulajdonos nem
+fejlesztő és nem angolul dolgozik: ha munka közben angol mondatok
+jelennek meg, abból nem tudja követni, mi történik az oldalával.
+
+Ez a szabály a commit üzenetekre nem vonatkozik, azok maradnak
+ékezet nélküli magyarok, ahogy eddig is.
+
 ### A szavak közé tett vonal takarítása
 
 A tulajdonos kifejezett kérése: **ha két szó között olyan vonal áll, ami
