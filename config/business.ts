@@ -267,6 +267,36 @@ export const business = {
     }>,
 
     /**
+     * JAVÍTÁS JELLEGŰ MUNKA
+     *
+     * Forrás: a tulajdonos közlése, 2026-09-23.
+     *
+     * ⚠️ Miért áll KÜLÖN a fenti `tiers` tömbtől: a `tiers` az ÚJ
+     *    autókulcs áráról szól, ez pedig a meglévő kulcs javítása.
+     *    Olcsóbb a `fromAmount` indulóárnál, ezért ha egy listába
+     *    kerülne vele, az oldal önmagának mondana ellent.
+     *
+     * A `fromAmount` (25 000 Ft) szándékosan maradt változatlan: az az
+     * új autókulcs kiindulóára, nem a javításé. Ahol az oldalon
+     * „25 000 Ft-tól" szerepel, ott végig új kulcsról van szó.
+     */
+    repairs: [
+      {
+        name: "Kulcsház csere",
+        amount: 10000,
+        to: 15000,
+        text:
+          "Benne van a munkadíj, az új kulcsház és az új kulcsszár marása is. " +
+          "A kulcs elektronikája marad a régi, ezért nem kell újraprogramozni.",
+      },
+    ] as ReadonlyArray<{
+      name: string;
+      amount: number;
+      to?: number;
+      text: string;
+    }>,
+
+    /**
      * MŰKÖDÉSI MODELL — 2026-09-08, a tulajdonos pontosítása.
      *
      * A feltüntetett árak arra az esetre vonatkoznak, amikor az ügyfél

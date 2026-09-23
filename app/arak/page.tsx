@@ -108,8 +108,8 @@ export default function PricingPage() {
 
       <PageHero
         eyebrow="Árak"
-        title="Áraink 25 000 Ft-tól indulnak"
-        lead="Ez tájékoztató kiindulóár. A végleges összeg az autó márkájától, évjáratától és a kulcs típusától függ, ezért a pontos árat telefonon, WhatsAppon vagy Viberen mondjuk meg, még a kiszállás előtt."
+        title="Új autókulcs 25 000 Ft-tól"
+        lead="Ez tájékoztató kiindulóár. A végleges összeg az autó márkájától, évjáratától és a kulcs típusától függ, ezért a pontos árat telefonon, WhatsAppon vagy Viberen mondjuk meg, még a kiszállás előtt. Ha a meglévő autókulcsát csak javítani kell, az ennél olcsóbb."
       >
         <div className="flex flex-col gap-3 sm:flex-row">
           <CallButton size="lg" label="Pontos árat kérek" />
@@ -195,6 +195,52 @@ export default function PricingPage() {
               </li>
             ))}
           </ul>
+
+          {/*
+            JAVÍTÁS — külön blokk, szándékosan a fenti ársávok UTÁN.
+
+            Ez nem új kulcs, hanem a meglévő javítása, és olcsóbb a
+            25 000 Ft-os kiindulóárnál. Ha a fenti listába kerülne,
+            a látogató azt hinné, hogy ennyiért kap új autókulcsot.
+          */}
+          <div className="mt-10 rounded-feature bg-ink-50 p-6 ring-1 ring-ink-200 sm:p-8">
+            <h3 className="text-h3">Ha csak javítani kell a meglévő kulcsot</h3>
+            <p className="mt-3 max-w-2xl text-[0.9375rem] leading-relaxed text-ink-600">
+              Nem minden esetben kell új autókulcsot készíteni. Ha az
+              elektronikája ép, csak a ház ment tönkre körülötte, akkor ez a
+              jóval olcsóbb megoldás.
+            </p>
+
+            <ul className="mt-6 grid gap-5 sm:grid-cols-2">
+              {business.pricing.repairs.map((repair) => (
+                <li
+                  key={repair.name}
+                  className="rounded-card bg-white p-6 shadow-card ring-1 ring-ink-200"
+                >
+                  <h4 className="text-[1.125rem] font-bold text-ink-900">
+                    {repair.name}
+                  </h4>
+                  <p className="mt-3 whitespace-nowrap text-[1.5rem] font-extrabold leading-none tracking-tight text-ink-900 sm:text-[1.75rem]">
+                    {repair.to
+                      ? `${repair.amount.toLocaleString("hu-HU")}–${repair.to.toLocaleString("hu-HU")}`
+                      : repair.amount.toLocaleString("hu-HU")}{" "}
+                    Ft
+                  </p>
+                  <p className="mt-3.5 text-[0.9375rem] leading-relaxed text-ink-600">
+                    {repair.text}
+                  </p>
+                  <Button
+                    href="/szolgaltatasok/kulcshaz-csere"
+                    variant="secondary"
+                    size="md"
+                    className="mt-5"
+                  >
+                    Részletek
+                  </Button>
+                </li>
+              ))}
+            </ul>
+          </div>
 
           {/*
             A tulajdonos kifejezett kérése, hogy ez piros betűvel, kiemelten

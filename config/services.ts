@@ -25,6 +25,20 @@
  * ============================================================================
  */
 
+import { business } from "./business";
+
+/**
+ * Az árat SOHA ne írjuk ki kézzel ebbe a fájlba. A `config/business.ts`
+ * az egyetlen igazságforrás, onnan kell hivatkozni, különben két helyen
+ * kellene karbantartani és az egyik előbb-utóbb elavulna.
+ */
+const kulcshazArResz = business.pricing.repairs.find(
+  (r) => r.name === "Kulcsház csere",
+);
+const kulcshazAr = kulcshazArResz
+  ? `${kulcshazArResz.amount.toLocaleString("hu-HU")}–${kulcshazArResz.to?.toLocaleString("hu-HU")} Ft`
+  : "";
+
 export type IconName =
   | "unlock"
   | "shield"
@@ -465,10 +479,11 @@ export const services: Service[] = [
     h1: "Kulcsház csere: eltört autókulcs, 10 perc alatt",
     metaTitle: "Kulcsház csere Budapesten: eltört autókulcs javítása",
     metaDescription:
-      "Eltört a kulcsszár vagy kirepedt a kulcsház? Kulcsház cserével a régi elektronika az új házba kerül, körülbelül 10 perc alatt, olcsóbban az új kulcsnál.",
+      `Eltört a kulcsszár vagy kirepedt a kulcsház? Kulcsház csere ${kulcshazAr}, ` +
+      "körülbelül 10 perc alatt, a munkadíjjal és az új kulcsszár marásával együtt.",
     icon: "wrench",
     cardText:
-      "Eltört a szár vagy szétesett a ház? Az elektronikát átültetjük egy új házba, olcsóbban, mint egy új kulcs.",
+      `Eltört a szár vagy szétesett a ház? Az elektronikát átültetjük egy új házba, ${kulcshazAr}, körülbelül 10 perc alatt.`,
     lead:
       "Ez az a munka, amivel a leggyakrabban keresnek minket telefonon: eltört az autókulcs szára, " +
       "vagy kirepedt a kulcsház és már csak ragasztószalag tartja össze. Ilyenkor a legtöbbször nem " +
@@ -536,8 +551,11 @@ export const services: Service[] = [
         },
       },
       {
-        heading: "Mennyi idő alatt készül el és kell-e rá várni?",
+        heading: "Mennyibe kerül és mennyi idő alatt készül el?",
         paragraphs: [
+          `A kulcsház csere ${kulcshazAr}. Ebben az összegben benne van a munkadíj, az új ` +
+            "kulcsház, valamint az új kulcsszár marása is. Egy új, felprogramozott autókulcs " +
+            "ennél lényegesen drágább, ezért éri meg a javítás, amíg a kulcs elektronikája ép.",
           "A kulcsházak készleten vannak nálunk, ezért nem kell alkatrészt rendelni és nem kell " +
             "napokat várni. A kulcsház csere körülbelül 10 perc alatt elkészül, tehát meg is " +
             "tudja várni.",
@@ -574,12 +592,12 @@ export const services: Service[] = [
           "így nem kell sorban állnia.",
       },
       {
-        q: "Olcsóbb a kulcsház csere, mint egy új autókulcs?",
+        q: "Mennyibe kerül a kulcsház csere?",
         a:
-          "Igen, lényegesen olcsóbb, mert a kulcs elektronikáját nem kell újra megvenni és " +
-          "beprogramozni, csak a ház cserélődik alatta. A pontos árat telefonon, WhatsAppon " +
-          "vagy Viberen mondjuk meg, ehhez elég tudnunk az autó típusát és azt, milyen kulcsról " +
-          "van szó.",
+          `${kulcshazAr}, amiben benne van a munkadíj, az új kulcsház és az új kulcsszár ` +
+          "marása is. Ez lényegesen olcsóbb egy új autókulcsnál, mert a kulcs elektronikáját " +
+          "nem kell újra megvenni és beprogramozni, csak a ház cserélődik alatta. Ez az ár " +
+          "akkor érvényes, ha elhozza hozzánk az autókulcsot.",
       },
       {
         q: "Újra kell programozni a kulcsot a házcsere után?",
