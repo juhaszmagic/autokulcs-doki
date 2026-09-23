@@ -89,6 +89,167 @@ export const articles: Article[] = [
    * A szöveget és a fotókat a tulajdonos adta, egy 2026 szeptemberi valódi
    * munkáról. A tartalmi állításokhoz nem nyúltunk.
    *
+   * ⚠️ ADATVÉDELEM: a négy beküldött fotóból három került be.
+   *    1. A fejlécképen OLVASHATÓAN látszott az ügyfél autójának
+   *       RENDSZÁMA. A kép azért nem lett átvágva, mert akkor kimaradt
+   *       volna a bikakábel és a hordozható áramforrás, vagyis éppen a
+   *       cikk lényege. Helyette a rendszám elmosással ki van takarva.
+   *    2. Az utastérről készült fotó infotainment kijelzőjén a jármű
+   *       tartózkodási helye (településnév) is látszott. A kép úgy van
+   *       vágva, hogy ez a sáv kimaradjon.
+   *    3. A programozó képernyőjén nincs alvázszám, jelszó vagy
+   *       kulcsazonosító, az a fotó vágás nélkül használható.
+   *    A negyedik fotó (kulcs a kormány előtt) tartalmilag ugyanazt
+   *    mutatja, mint a bent maradt utastéri kép, ezért kimaradt.
+   *
+   * Megfogalmazás: a beküldött szöveg helyenként tegezett, az oldal
+   * viszont végig magázódik, ezért magázóra írtuk át.
+   */
+  {
+    slug: "kia-sportage-keyless-kulcs-keszites",
+    title: "Elveszett az összes Kia Sportage autókulcs: új keyless kulcs",
+    excerpt:
+      "Egy 2021-es Kia Sportage összes autókulcsa elveszett, az autó pedig hosszabb ideje állt lezárva, teljesen lemerült akkumulátorral. Sérülésmentes nyitás, majd új keyless autókulcs, mindez a helyszínen.",
+    category: "elveszett-kulcs",
+    date: "2026-09-23",
+    image: {
+      src: "/images/blog/kia-sportage-keyless-kulcs-keszites.jpg",
+      alt: "Az új keyless autókulcs a 2021-es Kia Sportage előtt, a motorháztető nyitva, a hordozható áramforrás bekötve",
+    },
+    metaTitle: "Kia Sportage keyless autókulcs készítés a helyszínen",
+    metaDescription:
+      "Egy 2021-es Kia Sportage összes autókulcsa elveszett, az autó hetek óta állt lemerült akkumulátorral. Sérülésmentes nyitás és új keyless kulcs a helyszínen.",
+    readingMinutes: 4,
+    lead:
+      "Ez a munka a nehezebb fajtából való volt. Egy 2021-es Kia Sportage tulajdonosa " +
+      "keresett meg minket: az autó összes kulcsa elveszett, a jármű pedig lezárva, " +
+      "hosszabb ideje használaton kívül állt. Nem volt tehát mihez nyúlni, se kulcs, se " +
+      "működő akkumulátor.",
+    sections: [
+      {
+        heading: "Mi a teendő, ha az összes autókulcs elveszett?",
+        paragraphs: [
+          "Ha egyetlen kulcs sem marad, az sokkal többet jelent annál, mint hogy nem lehet " +
+            "elindulni. Az autót kinyitni sem lehet, a jármű rendszerében pedig nem áll " +
+            "rendelkezésre egy meglévő kulcs sem, amiről az újat le lehetne másolni.",
+          "Ilyenkor két külön feladatot kell megoldani. Először be kell jutni az autóba " +
+            "úgy, hogy közben semmi ne sérüljön meg, utána pedig a jármű saját " +
+            "immobilizer-rendszerébe kell betanítani egy teljesen új autókulcsot.",
+          "Ennél a Kia Sportage-nál egy harmadik nehézség is adódott. Az autó " +
+            "hosszabb ideje állt egy helyben, az akkumulátora pedig ezalatt teljesen " +
+            "lemerült.",
+        ],
+      },
+      {
+        heading: "Sérülésmentes autónyitás egyetlen kulcs nélkül",
+        paragraphs: [
+          "Az első lépés a bejutás volt. A Kia Sportage-t sérülésmentesen nyitottuk ki, " +
+            "tehát nem tört ablak, nem feszített ajtó és nem sérült zár árán.",
+          "Ez azért fontos, mert egy modern SUV-nál a durva nyitás következménye sokszor " +
+            "drágább, mint maga a kulcskészítés. Egy megsérült zárszerkezet, egy elgörbült " +
+            "ajtókeret vagy egy betört ablak külön javítás, külön költség, ráadásul a " +
+            "nyomai megmaradnak az autón.",
+        ],
+      },
+      {
+        heading: "Lemerült akkumulátor: kell hozzá új akkumulátor?",
+        paragraphs: [
+          "A tulajdonos a munka előtt pontosan ezt kérdezte: hozzon-e új akkumulátort, " +
+            "vagy készítsen-e oda valamilyen szerszámot. A válasz nem véletlenül nyugtatta " +
+            "meg: nem kellett semmit beszereznie.",
+          "A hosszú állás után az akkumulátor teljesen lemerült, a kulcskészítéshez viszont " +
+            "áram kell a jármű elektronikájában. A szervizautónk ezért hordozható " +
+            "áramforrást is visz magával, a fotón is ez van bekötve a motortérben. Így a " +
+            "Kia Sportage elektronikája végig stabil tápellátást kapott, a programozás " +
+            "pedig nem szakadt meg félúton.",
+          "Egy ilyen helyzetben tehát nem az ügyfél feladata beszerezni az akkumulátort " +
+            "vagy a szerszámot. Az egész munkához szükséges felszerelés velünk érkezik.",
+        ],
+        image: {
+          src: "/images/blog/kia-sportage-helyszini-kulcsprogramozas.jpg",
+          alt: "Az elkészült keyless autókulcs a Kia Sportage utasterében, bekapcsolt műszerfal mellett",
+        },
+      },
+      {
+        heading: "Keyless autókulcs készítés és programozás a helyszínen",
+        paragraphs: [
+          "A 2021-es Kia Sportage keyless rendszerrel működik, tehát a kulcsot nem kell " +
+            "elővenni: elég, ha a sofőrnél van, az autó pedig felismeri és indítógombbal " +
+            "indul. Egy ilyen kulcsot nem lehet egyszerűen lemásolni, mert titkosított " +
+            "kapcsolatban áll a jármű immobilizer-rendszerével.",
+          "Az új kulcsot ezért a jármű saját rendszerébe kellett betanítani. A programozó " +
+            "készülék visszaigazolta, hogy a kulcs tanítása sikeresen lezajlott, ezután " +
+            "pedig a helyszínen ellenőriztük a működést is: a központi zár, a távirányító " +
+            "és az indítás egyaránt rendben volt.",
+          "A teljes munka, a nyitástól az elkészült, működő autókulcsig, a helyszínen " +
+            "zajlott. Az autót nem kellett elvontatni, a tulajdonosnak pedig nem kellett " +
+            "külön szervizbe időpontot kérnie.",
+        ],
+        image: {
+          src: "/images/blog/kia-sportage-smart-key-programozas.jpg",
+          alt: "A programozó készülék visszaigazolja, hogy a Kia Sportage keyless kulcsának tanítása sikeres volt",
+        },
+      },
+      {
+        heading: "Elveszett az összes autókulcsa? Ilyenkor is van megoldás",
+        paragraphs: [
+          "Sokan azt hiszik, hogy ha egyetlen autókulcs sem maradt, akkor már csak a " +
+            "márkaszerviz és a trélerezés marad. A gyakorlatban ez ritkán van így. Az " +
+            "Autókulcs Doki helyszíni autókulcs-készítéssel ilyen helyzetekben is tud " +
+            "segíteni, még akkor is, ha az autó hetek óta áll és az akkumulátora lemerült.",
+          "Kia Sportage kulcsmásolás, keyless autókulcs programozás és elveszett autókulcs " +
+            "pótlása Budapesten és környékén, a hét minden napján, a nap 24 órájában. " +
+            "Hívjon minket, a lehetőségeket még a kiszállás előtt átbeszéljük.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Ki lehet nyitni az autót, ha egyetlen kulcs sincs meg?",
+        a:
+          "Igen. Ebben a munkában is így kezdtük: a Kia Sportage-t sérülésmentesen " +
+          "nyitottuk ki, tehát nem tört ablak és nem sérült zár árán, utána következett " +
+          "az új autókulcs elkészítése.",
+      },
+      {
+        q: "Mi van akkor, ha az autó régóta áll és lemerült az akkumulátora?",
+        a:
+          "Ez önmagában nem akadály. A szervizautónk hordozható áramforrást is visz " +
+          "magával, ezért a jármű elektronikája a programozás alatt végig kap áramot. " +
+          "Ebben az esetben is teljesen lemerült akkumulátorral indultunk neki.",
+      },
+      {
+        q: "Kell nekem bármit beszereznem a munka előtt?",
+        a:
+          "Nem. A tulajdonos itt is rákérdezett, hogy hozzon-e új akkumulátort vagy " +
+          "szerszámot, de erre nem volt szükség. A munkához szükséges felszerelés a " +
+          "szervizautóval együtt érkezik.",
+      },
+      {
+        q: "Keyless autókulcsot is lehet a helyszínen készíteni?",
+        a:
+          "Igen. Ennél a 2021-es Kia Sportage-nál az új keyless kulcs elkészítése és " +
+          "betanítása is a helyszínen történt, az autót nem kellett elszállítani.",
+      },
+      {
+        q: "Mennyibe kerül egy Kia Sportage autókulcs pótlása?",
+        a:
+          "Az ár az autó márkájától, típusától, évjáratától és a kulcs fajtájától függ. " +
+          "A pontos árat telefonon, WhatsAppon vagy Viberen egyeztetjük, még a kiszállás " +
+          "előtt.",
+      },
+    ],
+    relatedServices: [
+      "elveszett-autokulcs",
+      "serulesmentes-autonyitas",
+      "autokulcs-keszites",
+    ],
+  },
+
+  /**
+   * A szöveget és a fotókat a tulajdonos adta, egy 2026 szeptemberi valódi
+   * munkáról. A tartalmi állításokhoz nem nyúltunk.
+   *
    * ⚠️ ADATVÉDELEM: a négy beküldött fotóból három került be. A programozó
    *    képernyőjét mutató fotó alján OLVASHATÓAN látszott az ügyfél
    *    járművének alvázszáma (VIN). A kép úgy van vágva, hogy a „Remote
