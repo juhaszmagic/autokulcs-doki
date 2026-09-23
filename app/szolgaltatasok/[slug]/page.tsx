@@ -3,7 +3,8 @@ import { notFound } from "next/navigation";
 
 import { services, getService } from "@/config/services";
 import { business } from "@/config/business";
-import { Container, Section, CallButton, Button, CheckList } from "@/components/ui";
+import { socialProfiles } from "@/config/media";
+import { Container, Section, CallButton, Button, CheckList, Tag } from "@/components/ui";
 import { AssetImage } from "@/components/AssetImage";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { FaqList } from "@/components/Faq";
@@ -23,7 +24,7 @@ import {
   breadcrumbSchema,
   type Crumb,
 } from "@/lib/schema";
-import { ClockIcon, MapPinIcon, ShieldIcon, ServiceIcon } from "@/components/Icons";
+import { ClockIcon, MapPinIcon, ShieldIcon, ServiceIcon, TikTokIcon } from "@/components/Icons";
 
 /** Statikus exporthoz: minden szolgáltatás-oldal build időben legyártva. */
 export function generateStaticParams() {
@@ -226,6 +227,48 @@ export default async function ServicePage({ params }: Params) {
           </div>
         </Container>
       </Section>
+
+      {/* ---- Kapcsolódó videó a cég TikTok-fiókjából ----
+          Csak ott jelenik meg, ahol a szolgáltatáshoz tartozik videó.
+
+          ⚠️ Nincs benne borítókép és nincs lejátszás jel: a videó valódi
+             képkockáját nem tudjuk lehívni, más fotót pedig nem adunk ki
+             a videó borítójának. Inkább egyértelmű átvezetés a TikTokra,
+             mint egy félrevezető előnézeti kép. */}
+      {service.video && (
+        <Section tone="dark" labelledBy={`video-${service.slug}`}>
+          <Container>
+            <div className="mx-auto max-w-3xl rounded-feature bg-ink-850 p-8 ring-1 ring-white/10 sm:p-10">
+              <Tag tone="onDark">
+                <TikTokIcon className="h-3.5 w-3.5" />
+                {socialProfiles.tiktok.handle}
+              </Tag>
+              <h2
+                id={`video-${service.slug}`}
+                className="mt-5 text-h3 !text-white"
+              >
+                Nézze meg videón: {service.video.title.toLowerCase()}
+              </h2>
+              <p className="mt-3 leading-relaxed text-ink-400">
+                A munka közben készült felvétel a saját TikTok-csatornánkon.
+                A videó ott indul el, a weboldal betöltését nem lassítja.
+              </p>
+              <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+                <Button
+                  href={service.video.url}
+                  variant="primary"
+                  size="lg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <TikTokIcon className="h-5 w-5" />
+                  Megnézem a videót
+                </Button>
+              </div>
+            </div>
+          </Container>
+        </Section>
+      )}
 
       {/* ---- Valódi munkák ---- */}
       <RealWorkGallery heading="Így néz ki a munkánk" />

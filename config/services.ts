@@ -90,6 +90,23 @@ export interface Service {
   detailImage: { src: string; alt: string };
   /** Kapcsolódó szolgáltatások slugjai — belső linkeléshez. */
   related: string[];
+  /**
+   * Egy kapcsolódó videó a cég TikTok-fiókjából.
+   *
+   * ⚠️ SZÁNDÉKOSAN NINCS BENNE BORÍTÓKÉP. A weboldal elve (lásd
+   *    `components/sections.tsx`, TikTok-kártyák): soha nem ígérünk egy
+   *    konkrét videót olyan borítóval, ami nem annak a videónak a
+   *    képkockája. A valódi borítót a TikTok oEmbed API-jából lehetne
+   *    lehívni, ezt a munkakörnyezet hálózati szabálya jelenleg tiltja.
+   *
+   *    Ha a tulajdonos küld egy képernyőképet a videó borítójáról,
+   *    ez a blokk bővíthető rendes előnézeti kártyává.
+   */
+  video?: {
+    url: string;
+    /** Mit mutat a videó. Ez a MI leírásunk, nem a TikTok-felirat. */
+    title: string;
+  };
 }
 
 export const services: Service[] = [
@@ -628,6 +645,19 @@ export const services: Service[] = [
       alt: "Szétszedett Peugeot autókulcs: a kimart kulcsszár, az üres kulcsház és a régi kulcs elektronikája",
     },
     related: ["autokulcs-masolas", "autokulcs-keszites", "autokulcs-programozas"],
+    /**
+     * A tulajdonos saját TikTok-videója, ő küldte a linket 2026-09-23-án:
+     * kulcsház csere és gombcsere közben. A rövidített vm.tiktok.com
+     * link a TikTok hivatalos megosztó linkje, működik.
+     *
+     * A cím a tulajdonos leírása alapján készült, NEM a videó TikTok-
+     * felirata. A feliratot nem tudjuk lehívni, kitalálni pedig nem
+     * szabad, ezért az itt olvasható szöveg tárgyilagos leírás.
+     */
+    video: {
+      url: "https://vm.tiktok.com/ZN8MbJWfP/",
+      title: "Kulcsház csere és gombcsere közben",
+    },
   },
   // ────────────────────────────────────────────────────────────────
   {
