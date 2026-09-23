@@ -265,6 +265,21 @@ kézzel nyúlt az élő ághoz: akkor állj meg és kérdezz rá.
   **GitHub Pages egyiket sem olvassa**, tehát ezek jelenleg nem élnek.
   Csak akkor lennének hasznosak, ha az oldal Apache vagy Netlify
   tárhelyre kerülne.
+
+### ⚠️ A régi domain: NE irányítsd át, ez a tulajdonos döntése
+
+Az `autokulcsmasolo.com` **él és szándékosan külön marad.** A tulajdonos
+2026-09-24-én megerősítette: azért nem kötjük össze a két oldalt, mert
+néha a régi domaint is hirdeti Google Ads-ben, **másik fiókból**, így a
+keresőben megjelenő négy hirdetésből kettő az övé.
+
+Tehát a 301-es átirányítás felvetése **lezárt kérdés, ne javasold újra
+és főleg ne állítsd be.** SEO szempontból a két külön oldal valóban
+gyengébb, mint egy erős, ezt a tulajdonos ismeri, elmondtuk neki, és
+üzleti okból így döntött. Ez az ő döntése, nem hiba, amit javítani kell.
+
+(Ha a tulajdonos egyszer mégis az összevonás mellett dönt, akkor lesz
+értelme elővenni a `_redirects` fájlt és tárhelyet keresni hozzá.)
 - A `package.json`-ban a `deploy:preview` script egy másik GitHub-
   felhasználó (`matteocammisa8`) előnézeti címére mutat: ez az eredeti
   fejlesztő maradványa, éles deploynál nem használjuk.
