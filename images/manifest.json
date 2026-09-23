@@ -347,6 +347,51 @@
     ],
     "blur": "data:image/webp;base64,UklGRkwAAABXRUJQVlA4IEAAAACwAQCdASoQAAkABABoJZQAAaSDq18QAP7Q58Mvhu5difI3xvGbz6N9pp8KjND+aB+qApzKpIJZiGzsgJT8k+AA"
   },
+  "/images/kulcshaz-csere-gombok.jpg": {
+    "width": 1206,
+    "height": 678,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAkABABoJbACdAD0YDnMAAD+lL0khr3pR64XjWtj//khKdst/Fj93tm07iEPeXQXklnbxKCzCS8nqrVu8zJOvf/mjyZCAtmZ+RQNCcghqYAA"
+  },
+  "/images/kulcshaz-csere-kopott.jpg": {
+    "width": 1206,
+    "height": 678,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkABABoJaACdACzhgnKsAD+sPH8eMkJAHsgaJAHK3cDi4kFKy/RptB513sS3hDMLImwrkQ9QQp+uDoAAA=="
+  },
+  "/images/kulcshaz-csere-mini.jpg": {
+    "width": 1206,
+    "height": 678,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAADQAQCdASoQAAkABABoJagCdADG3CNtEAD+S4FVQMHOqBx8bhbbcH63WcBPS9H32ySmcvFRvew5KTBXORAIW7bd16zkUWTXXtGQtsSWQGzY9EjWZRwz4U7pviAAAA=="
+  },
+  "/images/kulcshaz-csere-reszlet.jpg": {
+    "width": 1206,
+    "height": 905,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRmAAAABXRUJQVlA4IFQAAADQAQCdASoQAAwABABoJaQAAgfEKpps0AD4wiJVBGqV1B3G37K29rJqL4bM8l43PYgU4DELxMIa3VeNwPVrn0Wkqj4pz2xKyL6iqSbWAiYh3fYQAAA="
+  },
+  "/images/kulcshaz-csere.jpg": {
+    "width": 1206,
+    "height": 678,
+    "widths": [
+      640,
+      1024
+    ],
+    "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAADwAQCdASoQAAkABABoJZwAAuhIjtjevOAA/aa9qUV8akT98+YCqVEL35C5Tslr1ljmX3ZfDnYgSms72VbYAA=="
+  },
   "/images/logo-full.png": {
     "width": 420,
     "height": 318,
