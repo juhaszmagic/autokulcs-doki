@@ -568,6 +568,30 @@ export const services: Service[] = [
         },
       },
       {
+        heading: "Kicserélhetem otthon a kulcsházat?",
+        paragraphs: [
+          "Ez jogos kérdés, hiszen a kulcsházak olcsón megrendelhetők az interneten. Mi " +
+            "mégis azt javasoljuk, hogy ne próbálja meg otthon. Nem azért, mert különleges " +
+            "kézügyesség kellene hozzá, hanem mert a legtöbb kulcsház nem úgy nyílik, ahogy " +
+            "elsőre látszik.",
+          "Sok kulcsház ugyanis nincs csavarozva: össze van ragasztva, vagy eleve egybe van " +
+            "öntve. Ezeket nem szétpattintani kell, hanem a megfelelő helyen és a megfelelő " +
+            "mélységben felvágni, erre való szerszámmal. Aki ezt otthon, csavarhúzóval vagy " +
+            "késsel próbálja meg, az szinte biztosan megfeszíti vagy megvágja a kulcs " +
+            "belsejét.",
+          "A baj nem a ház törése, az pótolható. A gond az, hogy a ház alatt ott van a kulcs " +
+            "elektronikája, az áramköri lap. Ha ez megsérül, a kulcs nem csak a gombjait " +
+            "veszíti el: az autó egyáltalán nem fog elindulni vele. Ettől a ponttól kezdve úgy " +
+            "áll a helyzet, mintha nem is lenne autókulcsa.",
+          "Ez pedig pontosan az a drága eset, amit a házcserével el akart kerülni. Onnantól " +
+            "ugyanis nem egy rövid műhelymunkáról van szó, hanem új autókulcs készítéséről, " +
+            "sokszor pedig arról is, hogy nekünk kell kimennünk a helyszínre, mert az autó " +
+            "már nem tud eljönni. Gyakran találkozunk ilyennel. Mindig ugyanaz a vége: a " +
+            "spóroláson végül sokkal többet veszít, mint amennyibe az eredeti munka került " +
+            "volna.",
+        ],
+      },
+      {
         heading: "Mennyibe kerül és mennyi idő alatt készül el?",
         paragraphs: [
           `A kulcsház csere ${kulcshazAr}. Ebben az összegben benne van a munkadíj, az új ` +
@@ -613,6 +637,14 @@ export const services: Service[] = [
           "így nem kell sorban állnia.",
       },
       {
+        q: "Kicserélhetem otthon a kulcsházat?",
+        a:
+          "Nem javasoljuk. A legtöbb kulcsház össze van ragasztva vagy egybe van öntve, ezért " +
+          "a felnyitásához erre való szerszám kell. Otthoni próbálkozásnál könnyen megsérül a " +
+          "kulcs áramköri lapja, onnantól pedig az autó el sem indul vele, tehát már új " +
+          "autókulcsot kell készíteni.",
+      },
+      {
         q: "Mennyibe kerül a kulcsház csere?",
         a:
           `${kulcshazAr}, amiben benne van a munkadíj, az új kulcsház és az új kulcsszár ` +
@@ -648,7 +680,17 @@ export const services: Service[] = [
       src: "/images/kulcshaz-csere-reszlet.jpg",
       alt: "Szétszedett Peugeot autókulcs: a kimart kulcsszár, az üres kulcsház és a régi kulcs elektronikája",
     },
-    related: ["autokulcs-masolas", "autokulcs-keszites", "autokulcs-programozas"],
+    /**
+     * Az „elveszett autókulcs" azért van köztük, mert az új, otthoni
+     * házcseréről szóló szakasz épp oda fut ki: ha a próbálkozás közben
+     * megsérül az áramköri lap, a helyzet ugyanaz, mintha nem lenne kulcs.
+     */
+    related: [
+      "autokulcs-masolas",
+      "autokulcs-keszites",
+      "autokulcs-programozas",
+      "elveszett-autokulcs",
+    ],
     /**
      * A tulajdonos saját TikTok-videója, ő küldte a linket 2026-09-23-án:
      * kulcsház csere és gombcsere közben. A rövidített vm.tiktok.com
