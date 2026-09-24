@@ -356,6 +356,16 @@
     ],
     "blur": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoQAAkABABoJbACdAD0YDnMAAD+lL0khr3pR64XjWtj//khKdst/Fj93tm07iEPeXQXklnbxKCzCS8nqrVu8zJOvf/mjyZCAtmZ+RQNCcghqYAA"
   },
+  "/images/kulcshaz-csere-keszlet.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAACwAQCdASoQAAkABABoJQBOj+AA7yAAAP7SYL4hqTFmG0wGF9qTOTRh3evJErxkff0alqCs+96eNy7jIWdvcwpR+xgfSQBRzNeAj2+pkAAAAA=="
+  },
   "/images/kulcshaz-csere-kopott.jpg": {
     "width": 1206,
     "height": 678,

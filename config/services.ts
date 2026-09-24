@@ -579,6 +579,10 @@ export const services: Service[] = [
           "Érkezés előtt mindig egyeztessen telefonon időpontot, így nem kell sorban állnia. " +
             "A XI. kerületi műhelyünknél ingyenes a parkolás.",
         ],
+        image: {
+          src: "/images/kulcshaz-csere-keszlet.jpg",
+          alt: "Két azonos típusú autókulcs egymás mellett, a háttérben a rendszerezett kulcsház-készlet",
+        },
       },
       {
         heading: "Jobb megelőzni a bajt",
