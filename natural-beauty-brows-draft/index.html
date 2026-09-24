@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Natural Beauty Brows – Szempilla lifting, szemöldök styling, UV-mentes barnítás</title>
+<meta name="description" content="Szempilla lifting, szemöldök styling és laminálás, valamint UV-mentes spray tan barnítás. Természetes szépség, személyre szabva.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#faf6f1; --sand:#efe5d9; --powder:#e8d5c8; --nude:#d4b8a3;
+  --brown:#8a6a55; --espresso:#3d2c22; --text:#4a3a30; --muted:#8c7b70;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--cream);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.7;font-size:17px}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--serif);font-weight:500;color:var(--espresso);line-height:1.15}
+h2{font-size:clamp(2rem,4vw,2.8rem);margin-bottom:.4em}
+.eyebrow{font-size:.78rem;letter-spacing:.25em;text-transform:uppercase;color:var(--brown);margin-bottom:.8em;display:block}
+.btn{display:inline-block;padding:14px 32px;border-radius:40px;text-decoration:none;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;transition:.25s}
+.btn-dark{background:var(--espresso);color:var(--cream)}
+.btn-dark:hover{background:var(--brown)}
+.btn-line{border:1px solid var(--espresso);color:var(--espresso)}
+.btn-line:hover{background:var(--espresso);color:var(--cream)}
+section{padding:96px 0}
+.center{text-align:center}
+.lead{max-width:620px;margin:0 auto;color:var(--muted)}
+
+/* nav */
+header{position:sticky;top:0;z-index:50;background:rgba(250,246,241,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--sand)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:var(--serif);font-size:1.5rem;text-decoration:none;color:var(--espresso);letter-spacing:.02em}
+.logo em{color:var(--brown)}
+.nav ul{display:flex;gap:28px;list-style:none}
+.nav ul a{text-decoration:none;font-size:.88rem;letter-spacing:.06em}
+.nav ul a:hover{color:var(--brown)}
+.nav .btn{padding:10px 22px;font-size:.8rem}
+.burger{display:none;background:none;border:0;font-size:1.6rem;color:var(--espresso);cursor:pointer}
+
+/* hero */
+.hero{padding:80px 0 100px;background:linear-gradient(180deg,var(--cream),var(--sand))}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:60px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.4rem);margin-bottom:.35em}
+.hero h1 em{color:var(--brown)}
+.hero p{max-width:480px;margin-bottom:2em;color:var(--muted)}
+.hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+.hero-img{aspect-ratio:4/5;border-radius:220px 220px 16px 16px;overflow:hidden;background:var(--powder)}
+.ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;text-align:center;color:var(--brown);font-family:var(--serif);font-style:italic;font-size:1.1rem;padding:20px;background:repeating-linear-gradient(135deg,var(--powder) 0 14px,#e3cfc1 14px 28px)}
+
+/* services */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:56px}
+.card{background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 10px 40px -20px rgba(61,44,34,.25);display:flex;flex-direction:column}
+.card .img{aspect-ratio:4/3}
+.card .body{padding:30px 28px 34px;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:1.7rem;margin-bottom:.3em}
+.card p{color:var(--muted);font-size:.96rem;flex:1}
+.card ul{margin:16px 0 22px 18px;font-size:.92rem}
+.card a{font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brown);text-decoration:none}
+
+/* why */
+.why{background:var(--espresso);color:var(--sand)}
+.why h2{color:var(--cream)}
+.why .eyebrow{color:var(--nude)}
+.feats{display:grid;grid-template-columns:repeat(4,1fr);gap:36px;margin-top:50px}
+.feat .n{font-family:var(--serif);font-size:2.6rem;color:var(--nude);line-height:1}
+.feat h3{color:var(--cream);font-size:1.35rem;margin:.4em 0}
+.feat p{font-size:.93rem;opacity:.8}
+
+/* prices */
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:50px}
+.plist{background:#fff;border-radius:16px;padding:34px 30px}
+.plist h3{font-size:1.5rem;margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--sand)}
+.row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;font-size:.95rem;border-bottom:1px dashed var(--sand)}
+.row span:last-child{font-weight:500;color:var(--espresso);white-space:nowrap}
+.note{margin-top:26px;font-size:.88rem;color:var(--muted)}
+
+/* about */
+.about .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:70px;align-items:center}
+.about-img{aspect-ratio:1;border-radius:50%;overflow:hidden}
+.about p{margin-bottom:1em}
+.sig{font-family:var(--serif);font-style:italic;font-size:1.6rem;color:var(--brown)}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:46px}
+.gal div{aspect-ratio:1;border-radius:12px;overflow:hidden}
+
+/* faq */
+.faq{background:var(--sand)}
+.faq-list{max-width:780px;margin:46px auto 0}
+details{background:var(--cream);border-radius:12px;margin-bottom:12px;padding:20px 26px}
+summary{cursor:pointer;font-family:var(--serif);font-size:1.3rem;color:var(--espresso);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:'+';color:var(--brown)}
+details[open] summary::after{content:'–'}
+details p{margin-top:12px;color:var(--muted);font-size:.96rem}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.info div{margin-bottom:22px}
+.info b{display:block;font-weight:500;color:var(--espresso);font-size:.8rem;letter-spacing:.15em;text-transform:uppercase}
+form{background:#fff;border-radius:16px;padding:36px}
+label{display:block;font-size:.85rem;margin:14px 0 6px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid var(--powder);border-radius:8px;font:inherit;background:var(--cream)}
+form .btn{margin-top:22px;border:0;cursor:pointer;width:100%}
+
+footer{background:var(--espresso);color:var(--nude);padding:40px 0;font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+footer a{text-decoration:none}
+
+@media(max-width:900px){
+  .nav ul{display:none;position:absolute;top:72px;left:0;right:0;background:var(--cream);flex-direction:column;padding:20px;gap:16px;border-bottom:1px solid var(--sand)}
+  .nav ul.open{display:flex}
+  .burger{display:block}
+  .nav .btn{display:none}
+  .hero .wrap,.about .wrap,.contact .wrap{grid-template-columns:1fr;gap:40px}
+  .hero-img{max-width:420px;margin:0 auto;width:100%}
+  .cards,.prices{grid-template-columns:1fr}
+  .feats{grid-template-columns:1fr 1fr}
+  .gal{grid-template-columns:1fr 1fr}
+  section{padding:70px 0}
+}
+@media(max-width:520px){.feats{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo">Natural <em>Beauty</em> Brows</a>
+    <ul id="menu">
+      <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
+      <li><a href="#arak">Árak</a></li>
+      <li><a href="#rolam">Rólam</a></li>
+      <li><a href="#galeria">Galéria</a></li>
+      <li><a href="#gyik">GYIK</a></li>
+      <li><a href="#kapcsolat">Kapcsolat</a></li>
+    </ul>
+    <a href="#kapcsolat" class="btn btn-dark">Időpontfoglalás</a>
+    <button class="burger" aria-label="Menü" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Szempilla · Szemöldök · Barnítás</span>
+      <h1>Természetes szépség, <em>kiemelve</em></h1>
+      <p>Szempilla lifting, szemöldök styling és UV-mentes spray tan barnítás, hogy smink nélkül is ragyogj. Minden kezelést az arcodhoz és a bőrödhöz igazítok.</p>
+      <div class="ctas">
+        <a href="#kapcsolat" class="btn btn-dark">Időpontot kérek</a>
+        <a href="#szolgaltatasok" class="btn btn-line">Szolgáltatások</a>
+      </div>
+    </div>
+    <div class="hero-img"><div class="ph">Ide jön egy szép portré- vagy munkafotó</div></div>
+  </div>
+</section>
+
+<section id="szolgaltatasok">
+  <div class="wrap center">
+    <span class="eyebrow">Szolgáltatások</span>
+    <h2>Amiben segíthetek</h2>
+    <p class="lead">Három kezelés, egy cél: természetes, ápolt megjelenés minden nap.</p>
+  </div>
+  <div class="wrap cards">
+    <article class="card">
+      <div class="img"><div class="ph">Szempilla lifting fotó</div></div>
+      <div class="body">
+        <h3>Szempilla lifting</h3>
+        <p>A saját pilláidat emeljük meg és ívesítjük, így hosszabbnak és dúsabbnak tűnnek – műszempilla nélkül. Festéssel még látványosabb.</p>
+        <ul><li>Hatás: kb. 6–8 hét</li><li>Időtartam: kb. 60 perc</li><li>Festéssel és ápoló kezeléssel</li></ul>
+        <a href="#arak">Árak →</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img"><div class="ph">Szemöldök styling fotó</div></div>
+      <div class="body">
+        <h3>Szemöldök styling</h3>
+        <p>Az arcformádhoz illő szemöldök: formázás, festés vagy henna, és laminálás, amelytől a szálak dúsak és rendezettek lesznek.</p>
+        <ul><li>Formázás és festés / henna</li><li>Szemöldök laminálás</li><li>Hatás: kb. 4–6 hét</li></ul>
+        <a href="#arak">Árak →</a>
+      </div>
+    </article>
+    <article class="card">
+      <div class="img"><div class="ph">Spray tan fotó</div></div>
+      <div class="body">
+        <h3>UV-mentes spray tan</h3>
+        <p>Egyenletes, természetes barnaság szolárium és napégés nélkül. A bőrtónusodhoz választott árnyalattal, gyors és kímélő eljárással.</p>
+        <ul><li>Teljes test vagy részleges</li><li>Hatás: kb. 7–10 nap</li><li>Időtartam: kb. 20–30 perc</li></ul>
+        <a href="#arak">Árak →</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <span class="eyebrow">Miért engem válassz</span>
+    <h2>A részletekben rejlik a különbség</h2>
+    <div class="feats">
+      <div class="feat"><div class="n">01</div><h3>Természetes hatás</h3><p>Nem átalakítunk, hanem kiemeljük azt, ami már szép benned.</p></div>
+      <div class="feat"><div class="n">02</div><h3>Személyre szabva</h3><p>Minden kezelés előtt átbeszéljük, mit szeretnél, és mi illik hozzád.</p></div>
+      <div class="feat"><div class="n">03</div><h3>Minőségi anyagok</h3><p>Bőrbarát, professzionális termékekkel dolgozom.</p></div>
+      <div class="feat"><div class="n">04</div><h3>Nyugodt légkör</h3><p>Egy óra csak rólad szól – kényelmesen, sietség nélkül.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="arak">
+  <div class="wrap center">
+    <span class="eyebrow">Árlista</span>
+    <h2>Árak</h2>
+    <p class="lead">Átlátható árak, rejtett költségek nélkül. [A pontos összegek hamarosan.]</p>
+  </div>
+  <div class="wrap prices">
+    <div class="plist">
+      <h3>Szempilla</h3>
+      <div class="row"><span>Szempilla lifting</span><span>__ Ft</span></div>
+      <div class="row"><span>Lifting + festés</span><span>__ Ft</span></div>
+      <div class="row"><span>Szempillafestés</span><span>__ Ft</span></div>
+    </div>
+    <div class="plist">
+      <h3>Szemöldök</h3>
+      <div class="row"><span>Formázás</span><span>__ Ft</span></div>
+      <div class="row"><span>Formázás + festés / henna</span><span>__ Ft</span></div>
+      <div class="row"><span>Szemöldök laminálás</span><span>__ Ft</span></div>
+      <div class="row"><span>Lifting + laminálás csomag</span><span>__ Ft</span></div>
+    </div>
+    <div class="plist">
+      <h3>Spray tan</h3>
+      <div class="row"><span>Teljes test</span><span>__ Ft</span></div>
+      <div class="row"><span>Felsőtest / arc</span><span>__ Ft</span></div>
+      <div class="row"><span>Bérlet (3 alkalom)</span><span>__ Ft</span></div>
+    </div>
+  </div>
+  <p class="wrap note center">Az árak forintban értendők. Időpontot legalább 24 órával előtte lehet lemondani.</p>
+</section>
+
+<section class="about" id="rolam">
+  <div class="wrap">
+    <div class="about-img"><div class="ph">Portréfotó</div></div>
+    <div>
+      <span class="eyebrow">Rólam</span>
+      <h2>Szia, [Név] vagyok</h2>
+      <p>[Rövid bemutatkozás: mióta foglalkozol szempillával, szemöldökkel és barnítással, milyen képzéseket végeztél, mi a filozófiád.]</p>
+      <p>Hiszek abban, hogy a szépség a természetességben rejlik. A célom, hogy minden reggel könnyebben és magabiztosabban indulj el.</p>
+      <p class="sig">[Név]</p>
+    </div>
+  </div>
+</section>
+
+<section id="galeria" style="padding-top:0">
+  <div class="wrap center">
+    <span class="eyebrow">Galéria</span>
+    <h2>Munkáim</h2>
+    <p class="lead">Előtte–utána képek a valódi vendégeimről. Még több az Instagramon.</p>
+    <div class="gal">
+      <div><div class="ph">Fotó 1</div></div><div><div class="ph">Fotó 2</div></div>
+      <div><div class="ph">Fotó 3</div></div><div><div class="ph">Fotó 4</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="gyik">
+  <div class="wrap center">
+    <span class="eyebrow">Gyakori kérdések</span>
+    <h2>Mielőtt jössz</h2>
+  </div>
+  <div class="wrap faq-list">
+    <details><summary>Fáj a szempilla lifting?</summary><p>Nem. A kezelés alatt csukott szemmel pihensz, legfeljebb enyhe hűvösséget vagy bizsergést érezhetsz.</p></details>
+    <details><summary>Mire figyeljek a lifting után?</summary><p>Az első 24 órában ne érje víz, gőz és smink a pillákat, és ne dörzsöld a szemed.</p></details>
+    <details><summary>Hogyan készüljek a spray tanre?</summary><p>Előző nap radírozz és borotválj, a kezelés napján ne használj testápolót, dezodort vagy parfümöt. Laza, sötét ruhában érkezz.</p></details>
+    <details><summary>Mennyi ideig nem zuhanyozhatok barnítás után?</summary><p>Az általam használt termék típusától függően általában 6–8 órát érdemes várni. A pontos időt a kezelésnél elmondom.</p></details>
+    <details><summary>Miért jobb az UV-mentes barnítás?</summary><p>Nem ér UV-sugárzás, így nincs napégés és nincs bőröregedés, a szín mégis egyenletes és természetes.</p></details>
+  </div>
+</section>
+
+<section class="contact" id="kapcsolat">
+  <div class="wrap">
+    <div class="info">
+      <span class="eyebrow">Kapcsolat</span>
+      <h2>Foglalj időpontot</h2>
+      <p style="margin-bottom:30px;color:var(--muted)">Hívj, írj üzenetet, vagy töltsd ki az űrlapot, és hamarosan visszajelzek.</p>
+      <div><b>Telefon</b><a href="tel:+36000000000">+36 __ ___ ____</a></div>
+      <div><b>E-mail</b><a href="mailto:info@naturalbeautybrows.com">info@naturalbeautybrows.com</a></div>
+      <div><b>Cím</b>[Irányítószám, város, utca, házszám]</div>
+      <div><b>Nyitvatartás</b>Előzetes bejelentkezéssel</div>
+      <div><b>Közösség</b><a href="#">Instagram</a> · <a href="#">Facebook</a> · <a href="#">TikTok</a></div>
+    </div>
+    <form onsubmit="event.preventDefault();alert('Az űrlap küldését a végleges verzióban kötjük be.')">
+      <label for="n">Név</label><input id="n" required>
+      <label for="t">Telefonszám</label><input id="t" type="tel" required>
+      <label for="s">Szolgáltatás</label>
+      <select id="s"><option>Szempilla lifting</option><option>Szemöldök styling</option><option>Szemöldök laminálás</option><option>UV-mentes spray tan</option><option>Csomag / egyéb</option></select>
+      <label for="m">Üzenet, kért időpont</label><textarea id="m" rows="4"></textarea>
+      <button class="btn btn-dark">Küldés</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Natural Beauty Brows</span>
+    <span><a href="#">Adatkezelési tájékoztató</a> · <a href="#">Impresszum</a></span>
+  </div>
+</footer>
+</body>
+</html>
