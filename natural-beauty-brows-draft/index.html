@@ -61,7 +61,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(250,246,241,.92);backdro
 .card h3{font-size:1.7rem;margin-bottom:.3em}
 .card p{color:var(--muted);font-size:.96rem;flex:1}
 .card ul{margin:16px 0 22px 18px;font-size:.92rem}
-.card a{font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brown);text-decoration:none}
+.card .more-links a{font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brown);text-decoration:none}
+.card a.img{text-decoration:none}
 
 /* why */
 .why{background:var(--espresso);color:var(--sand)}
@@ -126,7 +127,12 @@ footer a{text-decoration:none}
 }
 @media(max-width:520px){.feats{grid-template-columns:1fr}}
 .ph img,.hero-img img,.card .img img,.about-img img,.gal img{width:100%;height:100%;object-fit:cover}
-.card .img{overflow:hidden}
+.card .img{overflow:hidden;display:block}
+.card h3 a{text-decoration:none}
+.card h3 a:hover{color:var(--brown)}
+.card .body>ul a{color:var(--brown)}
+.card p a{color:var(--brown)}
+.more-links{font-size:.85rem;color:var(--nude)}
 .card .img.tan{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;background:radial-gradient(circle at 70% 30%,#f6e3c8,var(--powder) 55%,var(--nude));color:var(--espresso)}
 .tan b{font-family:var(--serif);font-style:italic;font-weight:400;font-size:clamp(1.6rem,3vw,2.2rem);line-height:1.2}
 .tan span{margin-top:10px;font-size:.78rem;letter-spacing:.25em;text-transform:uppercase;color:var(--brown)}
@@ -198,39 +204,39 @@ details ul{margin:12px 0 0 18px;color:var(--muted);font-size:.96rem}
   </div>
   <div class="wrap cards">
     <article class="card">
-      <div class="img"><img src="img/szemoldok-styling.jpg" alt="Szemöldök styling előtte–utána" loading="lazy"></div>
+      <a class="img" href="teljes-szemoldok-styling.html"><img src="img/szemoldok-styling.jpg" alt="Szemöldök styling előtte–utána" loading="lazy"></a>
       <div class="body">
-        <h3>Teljes szemöldök styling</h3>
+        <h3><a href="teljes-szemoldok-styling.html">Teljes szemöldök styling</a></h3>
         <p>Személyre szabott formatervezéssel kezdődik, amely során az arcod adottságaihoz leginkább illő formát alakítom ki. Ezt laminálással rögzítem, festéssel kiemelem a szemöldök természetes karakterét, végül precíz csipeszes és/vagy gyantás formázással tökéletesítem.</p>
         <ul><li>Tervezés, laminálás, festés, szedés</li><li>K18 therapy ápolással</li><li>Ajánlott gyakoriság: 4–6 hét</li></ul>
-        <a href="#arak">Árak →</a>
+        <span class="more-links"><a href="teljes-szemoldok-styling.html">Részletek →</a> · <a href="#arak">Árak</a></span>
       </div>
     </article>
     <article class="card">
-      <div class="img"><img src="img/laminalas.jpg" alt="Szemöldök laminálás előtte–utána" loading="lazy"></div>
+      <a class="img" href="szemoldok-laminalas.html"><img src="img/laminalas.jpg" alt="Szemöldök laminálás előtte–utána" loading="lazy"></a>
       <div class="body">
-        <h3>Szemöldök laminálás</h3>
+        <h3><a href="szemoldok-laminalas.html">Szemöldök laminálás</a></h3>
         <p>A szálakat a kívánt irányba rendezem és tartósan fixálom, így a szemöldök rendezettebb, teltebb és optikailag dúsabb lesz. Formázással kiegészítve az arcodhoz illő, könnyen kezelhető szemöldököt kapsz.</p>
-        <ul><li>Laminálás formázással</li><li>Szemöldök styling (formázás + festés)</li><li>Szedés és festés külön is</li></ul>
-        <a href="#arak">Árak →</a>
+        <ul><li>Laminálás formázással</li><li><a href="szemoldok-styling.html">Szemöldök styling</a> (formázás + festés)</li><li>Szedés és festés külön is</li></ul>
+        <span class="more-links"><a href="szemoldok-laminalas.html">Részletek →</a> · <a href="#arak">Árak</a></span>
       </div>
     </article>
     <article class="card">
-      <div class="img"><img src="img/szempilla-lifting.jpg" alt="Szempilla lifting festéssel" loading="lazy"></div>
+      <a class="img" href="szempilla-lifting.html"><img src="img/szempilla-lifting.jpg" alt="Szempilla lifting festéssel" loading="lazy"></a>
       <div class="body">
-        <h3>Szempilla lifting festéssel</h3>
-        <p>A saját pilláidat kíméletesen megemelem és tartósan ívelt formára alakítom, majd festéssel még hangsúlyosabbá teszem – szempillaspirál és műszempilla nélkül. Újdonság: koreai lifting az ÉLAN Keraveg termékcsaládjával.</p>
+        <h3><a href="szempilla-lifting.html">Szempilla lifting festéssel</a></h3>
+        <p>A saját pilláidat kíméletesen megemelem és tartósan ívelt formára alakítom, majd festéssel még hangsúlyosabbá teszem – szempillaspirál és műszempilla nélkül. Újdonság: <a href="koreai-szempilla-lifting.html">koreai lifting</a> az ÉLAN Keraveg termékcsaládjával.</p>
         <ul><li>Klasszikus vagy koreai (ciszteaminos) technika</li><li>Tápláló szérummal zárva</li><li>Hatás: akár 6–8 hét</li></ul>
-        <a href="#arak">Árak →</a>
+        <span class="more-links"><a href="szempilla-lifting.html">Részletek →</a> · <a href="koreai-szempilla-lifting.html">Koreai lifting →</a> · <a href="#arak">Árak</a></span>
       </div>
     </article>
     <article class="card">
-      <div class="img tan"><b>Ragyogás, önbizalom,<br>természetesen</b><span>UV-mentes barnulás</span></div>
+      <a class="img tan" href="spray-tan.html"><b>Ragyogás, önbizalom,<br>természetesen</b><span>UV-mentes barnulás</span></a>
       <div class="body">
-        <h3>Spray tan <span class="badge">Új</span></h3>
+        <h3><a href="spray-tan.html">Spray tan</a> <span class="badge">Új</span></h3>
         <p>Egyenletes, természetes barnaság szolárium és napégés nélkül. A kezelés professzionális spray tan oldattal történik, amely személyre szabott árnyalatot biztosít a természetes, csíkmentes végeredményért.</p>
         <ul><li>UV-mentes, bőrkímélő barnítás</li><li>Egyéni alkalom vagy 3, 5, 10 alkalmas csomag</li><li>Páros kezelés 2 fő részére</li></ul>
-        <a href="#arak">Árak →</a>
+        <span class="more-links"><a href="spray-tan.html">Részletek →</a> · <a href="#arak">Árak</a></span>
       </div>
     </article>
   </div>
@@ -289,7 +295,7 @@ details ul{margin:12px 0 0 18px;color:var(--muted);font-size:.96rem}
     </div>
   </div>
   <div class="wrap offers">
-    <div class="offer"><h3>Újdonság: koreai lifting</h3><p>Ciszteaminos, kíméletes technika az ÉLAN Keraveg termékcsaládjával, amely a pillák teljes hosszán dolgozva formálja át a szálakat.</p></div>
+    <div class="offer"><h3>Újdonság: koreai lifting</h3><p>Ciszteaminos, kíméletes technika az ÉLAN Keraveg termékcsaládjával, amely a pillák teljes hosszán dolgozva formálja át a szálakat.</p><a href="koreai-szempilla-lifting.html">Részletek →</a></div>
     <div class="offer"><h3>Hűségkártya</h3><p>Az 5. alkalomnál 20% kedvezményt kapsz bármelyik szolgáltatásra, mert a hűség érték.</p></div>
     <div class="offer"><h3>Notino Club</h3><p>Gyűjts pontokat a Notino Club hűségprogramban a szalonban történő foglalások után is, és élvezd a kedvezményeket.</p><a href="https://partner.notino.com/api/b2c/redirect/salons/detail?salonID=79a9c5e1-0c92-4a29-a56f-100e9ac4893e" target="_blank" rel="noopener">Kattints és foglalj →</a></div>
   </div>
