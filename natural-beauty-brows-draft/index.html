@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Natural Beauty Brows – Szempilla lifting, szemöldök styling, UV-mentes barnítás</title>
-<meta name="description" content="Szempilla lifting, szemöldök styling és laminálás, valamint UV-mentes spray tan barnítás. Természetes szépség, személyre szabva.">
+<title>Natural Beauty Brows by Anita – Szemöldök styling és szempilla lifting, Budapest XI.</title>
+<meta name="description" content="Szemöldök styling, laminálás és (koreai) szempilla lifting Budapest XI. kerületében, a Fehérvári út 229. alatt. Természetes hatás, prémium termékek, személyre szabott kezelések.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
@@ -125,6 +125,23 @@ footer a{text-decoration:none}
   section{padding:70px 0}
 }
 @media(max-width:520px){.feats{grid-template-columns:1fr}}
+.ph img,.hero-img img,.card .img img,.about-img img,.gal img{width:100%;height:100%;object-fit:cover}
+.card .img{overflow:hidden}
+.row small{display:block;color:var(--muted);font-size:.82rem}
+.row.hl span:first-child{color:var(--brown);font-weight:500}
+.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:40px}
+.offer{background:var(--sand);border-radius:16px;padding:28px}
+.offer h3{font-size:1.4rem;margin-bottom:.3em}
+.offer p{font-size:.93rem;color:var(--muted)}
+.offer a{display:inline-block;margin-top:12px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:var(--brown);text-decoration:none}
+.quotes{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:46px;text-align:left}
+.quote{background:#fff;border-radius:16px;padding:26px}
+.quote p{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--espresso);line-height:1.4}
+.quote span{display:block;margin-top:14px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brown)}
+details ul{margin:12px 0 0 18px;color:var(--muted);font-size:.96rem}
+.hours{display:grid;grid-template-columns:auto 1fr;gap:2px 16px}
+@media(max-width:900px){.offers{grid-template-columns:1fr}.quotes{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.quotes{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -136,11 +153,11 @@ footer a{text-decoration:none}
       <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
       <li><a href="#arak">Árak</a></li>
       <li><a href="#rolam">Rólam</a></li>
-      <li><a href="#galeria">Galéria</a></li>
-      <li><a href="#gyik">GYIK</a></li>
+      <li><a href="#galeria">Munkáim</a></li>
+      <li><a href="#gyik">GYIK & szabályzat</a></li>
       <li><a href="#kapcsolat">Kapcsolat</a></li>
     </ul>
-    <a href="#kapcsolat" class="btn btn-dark">Időpontfoglalás</a>
+    <a href="https://partner.notino.com/api/b2c/redirect/salons/detail?salonID=79a9c5e1-0c92-4a29-a56f-100e9ac4893e" class="btn btn-dark" target="_blank" rel="noopener">Időpontfoglalás</a>
     <button class="burger" aria-label="Menü" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
   </div>
 </header>
@@ -148,49 +165,49 @@ footer a{text-decoration:none}
 <section class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Szempilla · Szemöldök · Barnítás</span>
-      <h1>Természetes szépség, <em>kiemelve</em></h1>
-      <p>Szempilla lifting, szemöldök styling és UV-mentes spray tan barnítás, hogy smink nélkül is ragyogj. Minden kezelést az arcodhoz és a bőrödhöz igazítok.</p>
+      <span class="eyebrow">Szemöldök styling & szempilla lifting studio</span>
+      <h1>Smink nélkül is <em>magabiztos</em> megjelenés</h1>
+      <p>A tökéletesen formázott szemöldök és a finoman ívelt szempillák természetesen emelik ki a tekinteted, minden alkalomra. A kezelések tartósak, kíméletesek és személyre szabottak, hogy mindig a legjobb formádat hozd.</p>
       <div class="ctas">
-        <a href="#kapcsolat" class="btn btn-dark">Időpontot kérek</a>
+        <a href="https://partner.notino.com/api/b2c/redirect/salons/detail?salonID=79a9c5e1-0c92-4a29-a56f-100e9ac4893e" class="btn btn-dark" target="_blank" rel="noopener">Foglalj most</a>
         <a href="#szolgaltatasok" class="btn btn-line">Szolgáltatások</a>
       </div>
     </div>
-    <div class="hero-img"><div class="ph">Ide jön egy szép portré- vagy munkafotó</div></div>
+    <div class="hero-img"><img src="img/hero.jpg" alt="Szempilla lifting eredménye közelről" width="900" height="1200"></div>
   </div>
 </section>
 
 <section id="szolgaltatasok">
   <div class="wrap center">
     <span class="eyebrow">Szolgáltatások</span>
-    <h2>Amiben segíthetek</h2>
-    <p class="lead">Három kezelés, egy cél: természetes, ápolt megjelenés minden nap.</p>
+    <h2>Üdvözöl a Natural Beauty Brows</h2>
+    <p class="lead">Ahol a természetes szépség új formát ölt. A legnagyobb figyelemmel, prémium termékekkel és személyre szabott kezelésekkel várlak, egy nyugodt és igényes környezetben.</p>
   </div>
   <div class="wrap cards">
     <article class="card">
-      <div class="img"><div class="ph">Szempilla lifting fotó</div></div>
+      <div class="img"><img src="img/szemoldok-styling.jpg" alt="Szemöldök styling előtte–utána" loading="lazy"></div>
       <div class="body">
-        <h3>Szempilla lifting</h3>
-        <p>A saját pilláidat emeljük meg és ívesítjük, így hosszabbnak és dúsabbnak tűnnek – műszempilla nélkül. Festéssel még látványosabb.</p>
-        <ul><li>Hatás: kb. 6–8 hét</li><li>Időtartam: kb. 60 perc</li><li>Festéssel és ápoló kezeléssel</li></ul>
+        <h3>Teljes szemöldök styling</h3>
+        <p>Személyre szabott formatervezéssel kezdődik, amely során az arcod adottságaihoz leginkább illő formát alakítom ki. Ezt laminálással rögzítem, festéssel kiemelem a szemöldök természetes karakterét, végül precíz csipeszes és/vagy gyantás formázással tökéletesítem.</p>
+        <ul><li>Tervezés, laminálás, festés, szedés</li><li>K18 therapy ápolással</li><li>Ajánlott gyakoriság: 4–6 hét</li></ul>
         <a href="#arak">Árak →</a>
       </div>
     </article>
     <article class="card">
-      <div class="img"><div class="ph">Szemöldök styling fotó</div></div>
+      <div class="img"><img src="img/laminalas.jpg" alt="Szemöldök laminálás előtte–utána" loading="lazy"></div>
       <div class="body">
-        <h3>Szemöldök styling</h3>
-        <p>Az arcformádhoz illő szemöldök: formázás, festés vagy henna, és laminálás, amelytől a szálak dúsak és rendezettek lesznek.</p>
-        <ul><li>Formázás és festés / henna</li><li>Szemöldök laminálás</li><li>Hatás: kb. 4–6 hét</li></ul>
+        <h3>Szemöldök laminálás</h3>
+        <p>A szálakat a kívánt irányba rendezem és tartósan fixálom, így a szemöldök rendezettebb, teltebb és optikailag dúsabb lesz. Formázással kiegészítve az arcodhoz illő, könnyen kezelhető szemöldököt kapsz.</p>
+        <ul><li>Laminálás formázással</li><li>Szemöldök styling (formázás + festés)</li><li>Szedés és festés külön is</li></ul>
         <a href="#arak">Árak →</a>
       </div>
     </article>
     <article class="card">
-      <div class="img"><div class="ph">Spray tan fotó</div></div>
+      <div class="img"><img src="img/szempilla-lifting.jpg" alt="Szempilla lifting festéssel" loading="lazy"></div>
       <div class="body">
-        <h3>UV-mentes spray tan</h3>
-        <p>Egyenletes, természetes barnaság szolárium és napégés nélkül. A bőrtónusodhoz választott árnyalattal, gyors és kímélő eljárással.</p>
-        <ul><li>Teljes test vagy részleges</li><li>Hatás: kb. 7–10 nap</li><li>Időtartam: kb. 20–30 perc</li></ul>
+        <h3>Szempilla lifting festéssel</h3>
+        <p>A saját pilláidat kíméletesen megemelem és tartósan ívelt formára alakítom, majd festéssel még hangsúlyosabbá teszem – szempillaspirál és műszempilla nélkül. Újdonság: koreai lifting az ÉLAN Keraveg termékcsaládjával.</p>
+        <ul><li>Klasszikus vagy koreai (ciszteaminos) technika</li><li>Tápláló szérummal zárva</li><li>Hatás: akár 6–8 hét</li></ul>
         <a href="#arak">Árak →</a>
       </div>
     </article>
@@ -200,12 +217,12 @@ footer a{text-decoration:none}
 <section class="why">
   <div class="wrap">
     <span class="eyebrow">Miért engem válassz</span>
-    <h2>A részletekben rejlik a különbség</h2>
+    <h2>Változtasd meg magad – természetesen</h2>
     <div class="feats">
-      <div class="feat"><div class="n">01</div><h3>Természetes hatás</h3><p>Nem átalakítunk, hanem kiemeljük azt, ami már szép benned.</p></div>
-      <div class="feat"><div class="n">02</div><h3>Személyre szabva</h3><p>Minden kezelés előtt átbeszéljük, mit szeretnél, és mi illik hozzád.</p></div>
-      <div class="feat"><div class="n">03</div><h3>Minőségi anyagok</h3><p>Bőrbarát, professzionális termékekkel dolgozom.</p></div>
-      <div class="feat"><div class="n">04</div><h3>Nyugodt légkör</h3><p>Egy óra csak rólad szól – kényelmesen, sietség nélkül.</p></div>
+      <div class="feat"><div class="n">01</div><h3>Természetes hatás</h3><p>A vendégeim szépsége adott, én csak kiemelem azt.</p></div>
+      <div class="feat"><div class="n">02</div><h3>Személyre szabva</h3><p>Minden forma az arc adottságaihoz igazodik, hogy harmonikus összhatást kapj.</p></div>
+      <div class="feat"><div class="n">03</div><h3>Prémium termékek</h3><p>ÉLAN, Bronsun, Boostific és Best Brows. Minden kezelés mélyhidratáló, regeneráló ápolással zárul.</p></div>
+      <div class="feat"><div class="n">04</div><h3>Nyugodt légkör</h3><p>Igényes, hangulatos szalon, ahol az idő csak rólad szól.</p></div>
     </div>
   </div>
 </section>
@@ -214,68 +231,111 @@ footer a{text-decoration:none}
   <div class="wrap center">
     <span class="eyebrow">Árlista</span>
     <h2>Árak</h2>
-    <p class="lead">Átlátható árak, rejtett költségek nélkül. [A pontos összegek hamarosan.]</p>
+    <p class="lead">Minden kezelés mélyhidratáló és regeneráló ápolással egészül ki. A kombinált csomagokkal spórolhatsz is.</p>
   </div>
   <div class="wrap prices">
     <div class="plist">
-      <h3>Szempilla</h3>
-      <div class="row"><span>Szempilla lifting</span><span>__ Ft</span></div>
-      <div class="row"><span>Lifting + festés</span><span>__ Ft</span></div>
-      <div class="row"><span>Szempillafestés</span><span>__ Ft</span></div>
-    </div>
-    <div class="plist">
       <h3>Szemöldök</h3>
-      <div class="row"><span>Formázás</span><span>__ Ft</span></div>
-      <div class="row"><span>Formázás + festés / henna</span><span>__ Ft</span></div>
-      <div class="row"><span>Szemöldök laminálás</span><span>__ Ft</span></div>
-      <div class="row"><span>Lifting + laminálás csomag</span><span>__ Ft</span></div>
+      <div class="row"><span>Szemöldök festés</span><span>4 500 Ft</span></div>
+      <div class="row"><span>Szemöldök szedés</span><span>3 500 Ft</span></div>
+      <div class="row"><span>Szemöldök styling<small>tervezés, szedés, festés</small></span><span>8 000 Ft</span></div>
+      <div class="row"><span>Laminálás formázással<small>+ K18 therapy</small></span><span>10 000 Ft</span></div>
+      <div class="row hl"><span>Full szemöldök styling<small>+ K18 therapy: tervezés, laminálás, festés, szedés</small></span><span>13 000 Ft</span></div>
     </div>
     <div class="plist">
-      <h3>Spray tan</h3>
-      <div class="row"><span>Teljes test</span><span>__ Ft</span></div>
-      <div class="row"><span>Felsőtest / arc</span><span>__ Ft</span></div>
-      <div class="row"><span>Bérlet (3 alkalom)</span><span>__ Ft</span></div>
+      <h3>Szempilla</h3>
+      <div class="row hl"><span>Koreai szempilla lifting + festés</span><span>15 000 Ft</span></div>
+      <div class="row hl"><span>Szempilla lifting + festés</span><span>13 000 Ft</span></div>
+      <div class="row"><span>Szempilla lifting<small>koreai technikával +2 000 Ft</small></span><span>11 000 Ft</span></div>
+      <div class="row"><span>Szempilla festés<small>alsó, felső</small></span><span>4 000 Ft</span></div>
+    </div>
+    <div class="plist">
+      <h3>Beauty csomagok</h3>
+      <div class="row hl"><span>Signature<small>Full szemöldök styling + lifting festéssel · 120–135 perc</small></span><span>23 000 Ft</span></div>
+      <div class="row"><span>Essence<small>Laminálás, formázás + lifting festéssel · 90–105 perc</small></span><span>19 000 Ft</span></div>
+      <div class="row"><span>Pure<small>Szemöldök styling + lifting festéssel · 105–120 perc</small></span><span>18 000 Ft</span></div>
+      <div class="row"><span>Soft<small>Full szemöldök styling + szempilla festés · 105 perc</small></span><span>15 000 Ft</span></div>
+      <div class="row"><span>Koreai technika bármelyik liftinghez</span><span>+2 000 Ft</span></div>
     </div>
   </div>
-  <p class="wrap note center">Az árak forintban értendők. Időpontot legalább 24 órával előtte lehet lemondani.</p>
+  <div class="wrap offers">
+    <div class="offer"><h3>Újdonság: koreai lifting</h3><p>Ciszteaminos, kíméletes technika az ÉLAN Keraveg termékcsaládjával, amely a pillák teljes hosszán dolgozva formálja át a szálakat.</p></div>
+    <div class="offer"><h3>Hűségkártya</h3><p>Az 5. alkalomnál 20% kedvezményt kapsz bármelyik szolgáltatásra, mert a hűség érték.</p></div>
+    <div class="offer"><h3>Notino Club</h3><p>Gyűjts pontokat a Notino Club hűségprogramban a szalonban történő foglalások után is, és élvezd a kedvezményeket.</p><a href="https://partner.notino.com/api/b2c/redirect/salons/detail?salonID=79a9c5e1-0c92-4a29-a56f-100e9ac4893e" target="_blank" rel="noopener">Kattints és foglalj →</a></div>
+  </div>
+  <p class="wrap note center">Az árak forintban értendők. Lemondás vagy módosítás legalább 24 órával előtte.</p>
 </section>
 
 <section class="about" id="rolam">
   <div class="wrap">
-    <div class="about-img"><div class="ph">Portréfotó</div></div>
+    <div class="about-img"><img src="img/anita.jpg" alt="Bartók Anita szemöldök stylist" loading="lazy"></div>
     <div>
       <span class="eyebrow">Rólam</span>
-      <h2>Szia, [Név] vagyok</h2>
-      <p>[Rövid bemutatkozás: mióta foglalkozol szempillával, szemöldökkel és barnítással, milyen képzéseket végeztél, mi a filozófiád.]</p>
-      <p>Hiszek abban, hogy a szépség a természetességben rejlik. A célom, hogy minden reggel könnyebben és magabiztosabban indulj el.</p>
-      <p class="sig">[Név]</p>
+      <h2>Szia, Anita vagyok</h2>
+      <p>Szenvedélyem a természetes szépség kiemelése. Szemöldök stylistként minden vendégemnél a harmóniát és az egyediséget helyezem előtérbe, hogy a tükörbe nézve magabiztos mosoly ragyogjon vissza.</p>
+      <p>Minden kezelést precízióval, modern technikákkal és professzionális termékekkel végzek, legyen szó formázásról, festésről, liftingről vagy laminálásról. Célom, hogy a szemöldök és a szempilla ne csak ápolt és szép legyen, hanem hosszú távon is kiemelje az arc természetes karakterét.</p>
+      <p class="sig">Bartók Anita</p>
+      <p style="font-size:.85rem;color:var(--muted)">Tulajdonos és szemöldök stylist</p>
     </div>
   </div>
 </section>
 
 <section id="galeria" style="padding-top:0">
   <div class="wrap center">
-    <span class="eyebrow">Galéria</span>
-    <h2>Munkáim</h2>
-    <p class="lead">Előtte–utána képek a valódi vendégeimről. Még több az Instagramon.</p>
+    <span class="eyebrow">Munkáim</span>
+    <h2>Előtte – utána</h2>
+    <p class="lead">A vendégeim szépsége adott, én csak kiemelem azt. Nézd meg, milyen apró változtatások jelenthetnek óriási különbséget. Még több az <a href="https://www.instagram.com/natural_beautybrowsbyanita/" target="_blank" rel="noopener">Instagramon</a>.</p>
     <div class="gal">
-      <div><div class="ph">Fotó 1</div></div><div><div class="ph">Fotó 2</div></div>
-      <div><div class="ph">Fotó 3</div></div><div><div class="ph">Fotó 4</div></div>
+      <div><img src="img/munka-1.jpg" alt="Szempilla lifting eredmény" loading="lazy"></div>
+      <div><img src="img/munka-2.jpg" alt="Szemöldök styling előtte–utána" loading="lazy"></div>
+      <div><img src="img/munka-3.jpg" alt="Szemöldök styling és szempilla lifting" loading="lazy"></div>
+      <div><img src="img/munka-4.jpg" alt="Szempilla lifting előtte–utána" loading="lazy"></div>
+      <div><img src="img/munka-5.jpg" alt="Szempilla lifting előtte–utána" loading="lazy"></div>
+      <div><img src="img/munka-6.jpg" alt="Szemöldök laminálás előtte–utána" loading="lazy"></div>
+      <div><img src="img/munka-7.jpg" alt="Szemöldök styling eredmény" loading="lazy"></div>
+      <div><img src="img/munka-8.jpg" alt="Szempilla lifting előtte–utána" loading="lazy"></div>
+    </div>
+  </div>
+  <div class="wrap center" style="margin-top:80px">
+    <span class="eyebrow">Fotó galéria</span>
+    <h2>A szalon</h2>
+    <p class="lead">Betekintés a szalon életébe: pillants bele, hogyan dolgozom nap mint nap.</p>
+    <div class="gal">
+      <div><img src="img/szalon-1.jpg" alt="A szalon kezelőágya" loading="lazy"></div>
+      <div><img src="img/szalon-2.jpg" alt="Anita munka közben" loading="lazy"></div>
+      <div><img src="img/szalon-3.jpg" alt="A szalon belső tere" loading="lazy"></div>
+      <div><img src="img/szalon-4.jpg" alt="Polcok és dekoráció a szalonban" loading="lazy"></div>
+    </div>
+  </div>
+</section>
+
+<section class="center" style="padding-top:0">
+  <div class="wrap">
+    <span class="eyebrow">Ajánlások</span>
+    <h2>Rólam mondták</h2>
+    <p class="lead">Minden visszajelzés számít nekem! Köszönöm, hogy megosztjátok velem az élményeiteket.</p>
+    <div class="quotes">
+      <div class="quote"><p>„Nagyon elégedett vagyok az eredménnyel, türelmes és figyel minden apró részletre.”</p><span>Edina Nagy</span></div>
+      <div class="quote"><p>„Anita nagyon kíméletesen és szépen kiszedte a szemöldökömet.”</p><span>Marcell Juhász</span></div>
+      <div class="quote"><p>„Szemöldöklamináláson voltam Anitánál, és csodás lett a végeredmény. Szépen, precízen dolgozik, a szalon is nagyon igényes és hangulatos.”</p><span>Csilla Jungwirth</span></div>
+      <div class="quote"><p>„Anita fantasztikus munkát végzett, minden mozdulata precíz volt. A hangulat végig kellemes és nyugodt, az eredmény pedig egyszerűen tökéletes!”</p><span>Dóra Lévai-Oláh</span></div>
     </div>
   </div>
 </section>
 
 <section class="faq" id="gyik">
   <div class="wrap center">
-    <span class="eyebrow">Gyakori kérdések</span>
+    <span class="eyebrow">Kérdések és válaszok</span>
     <h2>Mielőtt jössz</h2>
   </div>
   <div class="wrap faq-list">
-    <details><summary>Fáj a szempilla lifting?</summary><p>Nem. A kezelés alatt csukott szemmel pihensz, legfeljebb enyhe hűvösséget vagy bizsergést érezhetsz.</p></details>
-    <details><summary>Mire figyeljek a lifting után?</summary><p>Az első 24 órában ne érje víz, gőz és smink a pillákat, és ne dörzsöld a szemed.</p></details>
-    <details><summary>Hogyan készüljek a spray tanre?</summary><p>Előző nap radírozz és borotválj, a kezelés napján ne használj testápolót, dezodort vagy parfümöt. Laza, sötét ruhában érkezz.</p></details>
-    <details><summary>Mennyi ideig nem zuhanyozhatok barnítás után?</summary><p>Az általam használt termék típusától függően általában 6–8 órát érdemes várni. A pontos időt a kezelésnél elmondom.</p></details>
-    <details><summary>Miért jobb az UV-mentes barnítás?</summary><p>Nem ér UV-sugárzás, így nincs napégés és nincs bőröregedés, a szín mégis egyenletes és természetes.</p></details>
+    <details><summary>Mire figyeljek a teljes szemöldök styling után?</summary><p>24–48 órán belül:</p><ul><li>Ne érje víz, gőz vagy smink</li><li>Ne használj olajos lemosót</li><li>Ne szedd ki a szálakat otthon</li><li>Ne dörzsöld, ne kapard</li></ul></details>
+    <details><summary>Mire figyeljek a szempilla lifting után?</summary><p>24–48 órán belül:</p><ul><li>Ne érje víz vagy gőz</li><li>Kerüld az olajos termékeket legalább 48 óráig</li><li>Ne dörzsöld, ne aludj rajta</li><li>Ne spirálozd</li></ul></details>
+    <details><summary>Milyen gyakran ajánlott a kezelés?</summary><p>Szemöldök styling esetén 4–6 hetente, szempilla lifting esetén 6–8 hetente.</p></details>
+    <details><summary>Szabályzat: érkezés</summary><p>Kérlek, érkezz pontosan, legfeljebb 10 perccel az időpontod előtt. Smink nélküli szemöldökkel és/vagy szempillával gyere, hogy a legjobb eredményt érjük el. A nyugodt légkör miatt kérlek, ne hozz kísérőt.</p></details>
+    <details><summary>Szabályzat: egészségi állapot</summary><p>Ha bármilyen bőrproblémád van a kezelendő területen (pl. gyulladás, seb, ekcéma), kérlek, jelezd előre, mert bizonyos esetekben a kezelés nem végezhető el. Glabella botox után 2 hétig nem végzek szemöldök stylingot.</p></details>
+    <details><summary>Szabályzat: késés</summary><p>Minden esetben jelezd előre, ha késel, és hogy mennyit. Ha a késés meghaladja a 10–15 percet, nem tudom elvégezni a teljes szolgáltatást, mert ez befolyásolja a nap további beosztását.</p></details>
+    <details><summary>Szabályzat: lemondás, időpont módosítás</summary><p>Az időpont lemondását vagy módosítását legalább 24 órával korábban jelezd. Késői lemondás vagy meg nem jelenés esetén a lefoglalt szolgáltatás teljes összege kiszámlázásra kerül.</p></details>
   </div>
 </section>
 
@@ -284,18 +344,18 @@ footer a{text-decoration:none}
     <div class="info">
       <span class="eyebrow">Kapcsolat</span>
       <h2>Foglalj időpontot</h2>
-      <p style="margin-bottom:30px;color:var(--muted)">Hívj, írj üzenetet, vagy töltsd ki az űrlapot, és hamarosan visszajelzek.</p>
-      <div><b>Telefon</b><a href="tel:+36000000000">+36 __ ___ ____</a></div>
-      <div><b>E-mail</b><a href="mailto:info@naturalbeautybrows.com">info@naturalbeautybrows.com</a></div>
-      <div><b>Cím</b>[Irányítószám, város, utca, házszám]</div>
-      <div><b>Nyitvatartás</b>Előzetes bejelentkezéssel</div>
-      <div><b>Közösség</b><a href="#">Instagram</a> · <a href="#">Facebook</a> · <a href="#">TikTok</a></div>
+      <p style="margin-bottom:30px;color:var(--muted)">Foglalj online a Notinón, írj Instagramon, hívj, vagy töltsd ki az űrlapot, és hamarosan visszajelzek.</p>
+      <div><b>Telefon</b><a href="tel:+36305928142">+36 30 592 8142</a></div>
+      <div><b>E-mail</b><a href="mailto:bartok.anit@gmail.com">bartok.anit@gmail.com</a></div>
+      <div><b>Cím</b>1116 Budapest, Fehérvári út 229. (XI. kerület) · <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Budapest+XI.+Feh%C3%A9rv%C3%A1ri+%C3%BAt+229" target="_blank" rel="noopener">Útvonalterv</a></div>
+      <div><b>Nyitvatartás</b><span class="hours"><span>Hétfő–Péntek</span><span>10:00–20:00</span><span>Szombat</span><span>10:00–14:00</span><span>Vasárnap</span><span>Zárva</span></span></div>
+      <div><b>Online foglalás</b><a href="https://partner.notino.com/api/b2c/redirect/salons/detail?salonID=79a9c5e1-0c92-4a29-a56f-100e9ac4893e" target="_blank" rel="noopener">Notino</a> · <a href="https://www.instagram.com/natural_beautybrowsbyanita/" target="_blank" rel="noopener">Instagram</a></div>
     </div>
     <form onsubmit="event.preventDefault();alert('Az űrlap küldését a végleges verzióban kötjük be.')">
       <label for="n">Név</label><input id="n" required>
       <label for="t">Telefonszám</label><input id="t" type="tel" required>
       <label for="s">Szolgáltatás</label>
-      <select id="s"><option>Szempilla lifting</option><option>Szemöldök styling</option><option>Szemöldök laminálás</option><option>UV-mentes spray tan</option><option>Csomag / egyéb</option></select>
+      <select id="s"><option>Full szemöldök styling</option><option>Szemöldök laminálás formázással</option><option>Szemöldök styling</option><option>Szemöldök szedés / festés</option><option>Szempilla lifting festéssel</option><option>Koreai szempilla lifting festéssel</option><option>Szempilla festés</option><option>Beauty csomag</option></select>
       <label for="m">Üzenet, kért időpont</label><textarea id="m" rows="4"></textarea>
       <button class="btn btn-dark">Küldés</button>
     </form>
@@ -304,7 +364,7 @@ footer a{text-decoration:none}
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Natural Beauty Brows</span>
+    <span>© 2026 Natural Beauty Brows by Anita</span>
     <span><a href="#">Adatkezelési tájékoztató</a> · <a href="#">Impresszum</a></span>
   </div>
 </footer>
