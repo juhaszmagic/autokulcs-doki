@@ -206,3 +206,4 @@ footer .logo{font-size:1.05rem}
   .logo{font-size:1.05rem}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.tile img{transition:none}}
+footer .appt{margin-top:10px;font-style:italic;color:var(--brown)}
