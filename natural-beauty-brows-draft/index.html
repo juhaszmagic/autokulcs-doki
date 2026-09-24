@@ -143,6 +143,7 @@ footer a{text-decoration:none}
 .quote p{font-family:var(--serif);font-style:italic;font-size:1.15rem;color:var(--espresso);line-height:1.4}
 .quote span{display:block;margin-top:14px;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--brown)}
 details ul{margin:12px 0 0 18px;color:var(--muted);font-size:.96rem}
+.gbtns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:40px}
 .hours{display:grid;grid-template-columns:auto 1fr;gap:2px 16px}
 @media(max-width:900px){.offers{grid-template-columns:1fr}.quotes{grid-template-columns:1fr 1fr}}
 @media(max-width:520px){.quotes{grid-template-columns:1fr}}
@@ -334,12 +335,16 @@ details ul{margin:12px 0 0 18px;color:var(--muted);font-size:.96rem}
   <div class="wrap">
     <span class="eyebrow">Ajánlások</span>
     <h2>Rólam mondták</h2>
-    <p class="lead">Minden visszajelzés számít nekem! Köszönöm, hogy megosztjátok velem az élményeiteket.</p>
+    <p class="lead">Minden visszajelzés számít nekem! Köszönöm, hogy megosztjátok velem az élményeiteket. Még több értékelést a Google-on találsz.</p>
     <div class="quotes">
       <div class="quote"><p>„Nagyon elégedett vagyok az eredménnyel, türelmes és figyel minden apró részletre.”</p><span>Edina Nagy</span></div>
       <div class="quote"><p>„Anita nagyon kíméletesen és szépen kiszedte a szemöldökömet.”</p><span>Marcell Juhász</span></div>
       <div class="quote"><p>„Szemöldöklamináláson voltam Anitánál, és csodás lett a végeredmény. Szépen, precízen dolgozik, a szalon is nagyon igényes és hangulatos.”</p><span>Csilla Jungwirth</span></div>
       <div class="quote"><p>„Anita fantasztikus munkát végzett, minden mozdulata precíz volt. A hangulat végig kellemes és nyugodt, az eredmény pedig egyszerűen tökéletes!”</p><span>Dóra Lévai-Oláh</span></div>
+    </div>
+    <div class="gbtns">
+      <a href="https://search.google.com/local/reviews?placeid=ChIJ37Rk8ArdQUcRMbGtdKJhwy0" class="btn btn-dark" target="_blank" rel="noopener">★ Értékelések a Google-on</a>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJ37Rk8ArdQUcRMbGtdKJhwy0" class="btn btn-line" target="_blank" rel="noopener">Írj értékelést</a>
     </div>
   </div>
 </section>
@@ -372,7 +377,7 @@ details ul{margin:12px 0 0 18px;color:var(--muted);font-size:.96rem}
       <div><b>E-mail</b><a href="mailto:bartok.anit@gmail.com">bartok.anit@gmail.com</a></div>
       <div><b>Cím</b>1116 Budapest, Fehérvári út 229. (XI. kerület) · <a href="https://www.google.com/maps/dir/?api=1&amp;destination=Budapest+XI.+Feh%C3%A9rv%C3%A1ri+%C3%BAt+229" target="_blank" rel="noopener">Útvonalterv</a></div>
       <div><b>Nyitvatartás</b><span class="hours"><span>Hétfő–Péntek</span><span>10:00–20:00</span><span>Szombat</span><span>10:00–14:00</span><span>Vasárnap</span><span>Zárva</span></span></div>
-      <div><b>Online foglalás</b><a href="https://partner.notino.com/api/b2c/redirect/salons/detail?salonID=79a9c5e1-0c92-4a29-a56f-100e9ac4893e" target="_blank" rel="noopener">Notino</a> · <a href="https://www.instagram.com/natural_beautybrowsbyanita/" target="_blank" rel="noopener">Instagram</a></div>
+      <div><b>Online foglalás</b><a href="https://partner.notino.com/api/b2c/redirect/salons/detail?salonID=79a9c5e1-0c92-4a29-a56f-100e9ac4893e" target="_blank" rel="noopener">Notino</a> · <a href="https://www.instagram.com/natural_beautybrowsbyanita/" target="_blank" rel="noopener">Instagram</a> · <a href="https://www.google.com/maps/place/?q=place_id:ChIJ37Rk8ArdQUcRMbGtdKJhwy0" target="_blank" rel="noopener">Google Térkép</a></div>
     </div>
     <form onsubmit="event.preventDefault();alert('Az űrlap küldését a végleges verzióban kötjük be.')">
       <label for="n">Név</label><input id="n" required>
