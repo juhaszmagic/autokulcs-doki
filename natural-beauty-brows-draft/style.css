@@ -211,6 +211,6 @@ img[src$="szempilla-lifting-uj.jpg"]{object-position:68% 55%}
 img[src$="szemoldok-laminalas-uj.jpg"]{object-position:50% 42%}
 img[src$="spray-tan.jpg"]{object-position:right 62%}
 .tile img[src$="koreai-lifting-uj.jpg"]{object-position:50% 24%}
-#munkaim .gal{grid-template-columns:repeat(5,1fr)}
-#munkaim .gal img{aspect-ratio:4/5}
-@media(max-width:960px){#munkaim .gal{grid-template-columns:1fr 1fr}}
+#munkaim .gal{display:flex;flex-wrap:wrap;justify-content:center}
+#munkaim .gal img{aspect-ratio:4/5;width:calc((100% - 56px)/5)}
+@media(max-width:960px){#munkaim .gal img{width:calc((100% - 14px)/2)}}
