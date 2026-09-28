@@ -97,7 +97,7 @@ const priceFaqs = [
     a:
       "Úgy, hogy nem várja meg, amíg az utolsó kulcs is elvész. Amíg van egy működő kulcsa, a " +
       "másolás egyszerű és gyors. Elveszett kulcs esetén előbb ki kell nyitni az autót és ki kell " +
-      "olvasni a zár paramétereit, ez több munka és magasabb költség.",
+      "olvasni a szükséges adatokat, ez több munka és magasabb költség.",
   },
 ];
 
@@ -413,7 +413,7 @@ export default function PricingPage() {
               Ha most egyetlen kulcsa van, érdemes mellé egy tartalékot
               készíttetni. Amíg van működő kulcs, a másolás egyszerű művelet. Ha
               viszont az az egy is elvész, előbb ki kell nyitni az autót, ki kell
-              olvasni a zár paramétereit és nulláról kell felépíteni az autókulcsot,
+              olvasni a szükséges adatokat és nulláról kell felépíteni az autókulcsot,
               ez lényegesen több munka és magasabb költség.
             </p>
             <div className="mt-7 flex flex-col justify-center gap-3 sm:flex-row">

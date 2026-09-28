@@ -49,9 +49,10 @@ export const homeFaqs: ServiceFaq[] = [
     q: "Elveszett az összes autókulcsom, mit tegyek?",
     a:
       "Ez megoldható, akkor is, ha egyetlen kulcs sem maradt. Először sérülésmentesen kinyitjuk " +
-      "az autót, majd kiolvassuk a zár paramétereit, elkészítjük az új kulcsot és " +
-      "beprogramozzuk az autóhoz. Ehhez nem kell a járművet elvontatni. Készítse elő a forgalmi " +
-      "engedélyt és a személyazonosító okmányát.",
+      "az autót, majd kiolvassuk azokat az adatokat, amelyekből az új kulcs elkészíthető, végül " +
+      "beprogramozzuk az autóhoz. Hogy ez pontosan hogyan zajlik, az a jármű típusától függ. " +
+      "Elvontatni nem kell a járművet. Készítse elő a forgalmi engedélyt és a személyazonosító " +
+      "okmányát.",
   },
   {
     q: "Helyszínre is kiszállnak?",
@@ -83,7 +84,7 @@ export const faqGroups: Array<{ title: string; faqs: ServiceFaq[] }> = [
           "utána pedig már mehet is tovább. Kiszállásnál, ha van " +
           "meglévő működő kulcs, a másolás és a programozás jellemzően egy kiszállás alatt, a " +
           "helyszínen elvégezhető. Ha egyetlen autókulcs sem maradt, a folyamat hosszabb: nyitás, " +
-          "a zár paramétereinek kiolvasása, kulcskészítés, majd programozás. A reális időt a jármű " +
+          "az adatok kiolvasása, kulcskészítés, próba, majd programozás. A reális időt a jármű " +
           "típusa és évjárata alapján a telefonban tudjuk megmondani.",
       },
       {
@@ -158,7 +159,7 @@ export const faqGroups: Array<{ title: string; faqs: ServiceFaq[] }> = [
         q: "Miért olcsóbb a pótkulcs, amíg van működő kulcsom?",
         a:
           "Mert akkor a meglévő kulcsról tudunk másolni és nem kell kinyitni az autót, illetve " +
-          "kiolvasni a zár paramétereit. Ha csak egyetlen kulcsa van, érdemes most csináltatni " +
+          "kiolvasni a kulcs elkészítéséhez szükséges adatokat. Ha csak egyetlen kulcsa van, érdemes most csináltatni " +
           "mellé egy tartalékot, jóval olcsóbb, mint később, elveszett kulcs után pótolni.",
       },
       {
@@ -176,9 +177,11 @@ export const faqGroups: Array<{ title: string; faqs: ServiceFaq[] }> = [
       {
         q: "Tudják programozni az autókulcsot?",
         a:
-          "Igen. A programozás az autó OBD-csatlakozóján keresztül, diagnosztikai eszközzel " +
-          "történik: a kulcsban lévő chip és a jármű indításgátlója „megtanulják” egymást. " +
-          "Ezután beállítjuk a távirányító funkciókat is és a helyszínen ki is próbáljuk.",
+          "Igen. A legtöbb autónál a programozás az OBD-csatlakozón keresztül, diagnosztikai " +
+          "eszközzel történik: a kulcsban lévő chip és a jármű indításgátlója „megtanulják” " +
+          "egymást. Van olyan típus, ahol ettől eltérő eljárás kell, ezt az autó ismeretében " +
+          "mondjuk meg. Ezután beállítjuk a távirányító funkciókat is és a helyszínen ki is " +
+          "próbáljuk.",
       },
       {
         q: "A kulcs elfordul, de az autó nem indul. Mi lehet a baj?",

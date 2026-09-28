@@ -1032,7 +1032,7 @@ export const articles: Article[] = [
         list: [
           "A kiolvasott adatokból elkészül az új kulcsszár.",
           "Kipróbáljuk, hogy elfordul-e az ajtóban és a gyújtáskapcsolóban.",
-          "Az OBD-csatlakozón keresztül megtanítjuk a kulcsot az autó indításgátlójához.",
+          "A jármű rendszerének megfelelő eljárással, jellemzően az OBD-csatlakozón keresztül megtanítjuk a kulcsot az autó indításgátlójához.",
           "Beállítjuk a távirányító gombjait a központi zárhoz.",
           "Végül közösen kipróbáljuk, hogy minden funkció működik-e.",
         ],
@@ -1198,8 +1198,10 @@ export const articles: Article[] = [
       {
         heading: "Hogyan lehet megoldani?",
         paragraphs: [
-          "A programozás az autó OBD-csatlakozóján keresztül, diagnosztikai eszközzel történik. " +
-            "A művelet során a kulcsban lévő chip és a jármű indításgátlója „megtanulják” egymást.",
+          "A programozás a legtöbb autónál az OBD-csatlakozón keresztül, diagnosztikai eszközzel " +
+            "történik. Van olyan típus, ahol más eljárás kell, ezt az autó ismeretében tudjuk " +
+            "megmondani. A művelet során a kulcsban lévő chip és a jármű indításgátlója " +
+            "„megtanulják” egymást.",
           "Ezután állítjuk be a távirányító funkciókat is. A munka végén nem elég, hogy a szoftver " +
             "sikert jelez: kipróbáljuk, hogy a kulcs elfordul-e az ajtóban, beindítja-e a motort " +
             "és működik-e vele a központi zár.",

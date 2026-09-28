@@ -137,10 +137,10 @@ export const services: Service[] = [
         heading: "Hogyan készül új kulcs meglévő kulcs nélkül, lépésről lépésre",
         list: [
           "1. Nyitás: először sérülésmentesen kinyitjuk a járművet, hogy hozzáférjünk.",
-          "2. Kiolvasás: kiolvassuk az autó zárjának paramétereit, amelyekből a kulcs elkészíthető.",
+          "2. Kiolvasás: kiolvassuk azokat az adatokat, amelyekből az új kulcs elkészíthető. Hogy ez pontosan honnan történik, az a jármű típusától függ.",
           "3. Kulcskészítés: a legmodernebb gépeinkkel, akár a helyszínen, elkészítjük az új kulcsszárat.",
           "4. Próba: ellenőrizzük, hogy a kulcs gond nélkül elfordul-e az ajtóban és a gyújtáskapcsolóban.",
-          "5. Programozás: az OBD-csatlakozón keresztül megtanítjuk a kulcsot és az immobilizert, majd beállítjuk a távirányítót.",
+          "5. Programozás: a jármű rendszerének megfelelő eljárással, a legtöbb autónál az OBD-csatlakozón keresztül megtanítjuk a kulcsot az immobilizerhez, majd beállítjuk a távirányítót.",
         ],
       },
       {
@@ -165,8 +165,8 @@ export const services: Service[] = [
       {
         q: "Elveszett az összes autókulcsom. Tényleg megoldható a helyszínen?",
         a:
-          "Az esetek nagy részében igen. Kinyitjuk az autót sérülésmentesen, kiolvassuk a zár " +
-          "paramétereit, elkészítjük az új kulcsot, majd beprogramozzuk. Ehhez nem kell az autót " +
+          "Az esetek nagy részében igen. Kinyitjuk az autót sérülésmentesen, kiolvassuk a " +
+          "szükséges adatokat, elkészítjük az új kulcsot, majd beprogramozzuk. Ehhez nem kell az autót " +
           "elvontatni. A pontos menetet a jármű típusa és évjárata alapján a telefonban tisztázzuk.",
       },
       {
@@ -230,7 +230,7 @@ export const services: Service[] = [
           "Ez a legfontosabb tanácsunk és pénzben is ez a legnagyobb különbség. Amíg van egy " +
             "működő kulcsa, a másolás egyszerű, gyors és jóval olcsóbb művelet.",
           "Ha viszont az utolsó kulcs is elvész, előbb ki kell nyitni az autót, ki kell olvasni a " +
-            "zár paramétereit és nulláról kell felépíteni a kulcsot, ez több munka, több idő és " +
+            "szükséges adatokat és nulláról kell felépíteni a kulcsot, ez több munka, több idő és " +
             "magasabb költség. Ha csak egyetlen kulcsa van, érdemes most csináltatni mellé egy pótkulcsot.",
         ],
       },
@@ -363,7 +363,8 @@ export const services: Service[] = [
         q: "Szükség van a régi kulcsra az újhoz?",
         a:
           "Nem feltétlenül. Ha van meglévő kulcs, a folyamat gyorsabb és olcsóbb. Ha nincs, akkor a " +
-          "zár paramétereinek kiolvasásából készítjük el az új kulcsot.",
+          "járműből kiolvasott adatokból készítjük el az új kulcsot. Hogy ez pontosan hogyan " +
+          "zajlik, az a típustól függ.",
       },
       {
         q: "A kulcsházat is tudják cserélni, ha eltört?",
@@ -395,13 +396,13 @@ export const services: Service[] = [
     lead:
       "Ha a kulcs mechanikusan elfordul, de az autó nem indul, vagy a gombok nem nyitják a " +
       "központi zárat, akkor rendszerint nem a kulcsszárral, hanem az elektronikával van baj. " +
-      "Ezt OBD-csatlakozón keresztül, diagnosztikai eszközzel lehet rendezni.",
+      "Ezt a legtöbb autónál az OBD-csatlakozón keresztül, diagnosztikai eszközzel lehet rendezni.",
     bullets: [
       "Immobilizer (indításgátló) tanítása",
       "Új és meglévő kulcsok programozása az autóhoz",
       "Távirányító gombok tanítása a központi zárhoz",
       "Kulcsház elemcsere",
-      "Programozás az autó OBD-csatlakozóján keresztül",
+      "Programozás OBD-csatlakozón vagy a típusnak megfelelő eljárással",
       "A zár paramétereinek kiolvasása",
     ],
     sections: [
@@ -418,9 +419,10 @@ export const services: Service[] = [
       {
         heading: "Hogyan zajlik?",
         paragraphs: [
-          "A programozás az autó OBD-csatlakozóján keresztül történik, diagnosztikai eszközzel. " +
-            "A művelet során a kulcsban lévő chip és a jármű indításgátlója „megtanulják” egymást, " +
-            "majd beállítjuk a távirányító funkciókat is.",
+          "A programozás a legtöbb autónál az OBD-csatlakozón keresztül történik, diagnosztikai " +
+            "eszközzel. Van olyan típus, ahol ettől eltérő eljárás szükséges, ezt az autó " +
+            "ismeretében mondjuk meg. A művelet során a kulcsban lévő chip és a jármű " +
+            "indításgátlója „megtanulják” egymást, majd beállítjuk a távirányító funkciókat is.",
           "A munka végén nem elégszünk meg annyival, hogy a szoftver sikert jelez: kipróbáljuk, " +
             "hogy a kulcs elfordul-e az ajtóban, beindítja-e a motort és működik-e vele a központi zár.",
         ],
@@ -751,7 +753,7 @@ export const services: Service[] = [
         heading: "A nyitás gyakran csak az első lépés",
         paragraphs: [
           "Ha a kulcs nem egyszerűen bent maradt, hanem elveszett vagy eltört, a nyitás után " +
-            "jön a munka érdemi része: a zár paramétereinek kiolvasása, az új kulcs elkészítése " +
+            "jön a munka érdemi része: a szükséges adatok kiolvasása, az új kulcs elkészítése " +
             "és programozása. Ezt jellemzően ugyanott, ugyanabban a kiszállásban meg tudjuk oldani.",
         ],
       },
