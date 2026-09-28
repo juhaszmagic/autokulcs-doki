@@ -204,17 +204,34 @@ export const services: Service[] = [
   {
     slug: "autokulcs-masolas",
     nav: "Autókulcs másolás",
-    h1: "Autókulcs másolás Budapesten: pótkulcs a helyszínen",
-    metaTitle: "Autókulcs másolás Budapest: pótkulcs helyszínen",
+    /**
+     * ⚠️ EZ AZ OLDAL SZÁNDÉKOSAN A MŰHELYRE TEREL.
+     *
+     * A pótkulcs és az elveszett kulcs két különböző vásárlási szándék,
+     * ezért a két oldal más irányba tereli az ügyfelet:
+     *   • pótkulcs (ez az oldal)  → hozza el az autót a XI. kerületbe
+     *   • elveszett összes kulcs  → kimegyünk a helyszínre
+     *
+     * Korábban itt a címsorban is az szerepelt, hogy „pótkulcs a
+     * helyszínen". Az a tulajdonos üzleti céljával ment szembe: a
+     * pótkulcsos munkát a műhelyben szeretné elvégezni, mert ott
+     * gyorsabb és olcsóbb. A „helyszín" szó nem tűnt el az oldalról,
+     * mert valódi keresőszó és a kiszállás tényleg létező lehetőség,
+     * csak már nem ez a fő üzenet.
+     */
+    h1: "Autókulcs másolás Budapesten: pótkulcs 20–25 perc alatt",
+    metaTitle: "Autókulcs másolás Budapest: pótkulcs 20–25 perc",
     metaDescription:
-      "Autókulcs másolás és pótkulcs készítés Budapesten, akár a helyszínen, immobilizer-programozással és távirányító-tanítással.",
+      "Autókulcs másolás és pótkulcs készítés Budapesten. Hozza el az autót a XI. kerületi műhelyünkbe, általában 20–25 perc alatt elkészül, ingyenes parkolással.",
     icon: "key",
     cardText:
-      "Van még működő kulcsa? Készítünk róla másolatot, a programozással együtt.",
+      "Van még működő kulcsa? Hozza el és általában 20–25 perc alatt elkészítjük a pótkulcsot.",
     lead:
       "A legolcsóbb és leggyorsabb eset az, amikor még van egy működő kulcsa. Ilyenkor a meglévő " +
       "kulcsról tudunk másolatot készíteni: kimarjuk a kulcsszárat és felprogramozzuk a benne lévő " +
-      "chipet, hogy az autó valóban elinduljon vele.",
+      "chipet, hogy az autó valóban elinduljon vele. Ehhez a legjobb, ha elhozza az autót a " +
+      "XI. kerületi műhelyünkbe: itt általában 20–25 perc alatt elkészül, meg is tudja várni, " +
+      "a parkolás pedig ingyenes.",
     bullets: [
       "Pótkulcs készítése meglévő kulcs alapján",
       "Kulcsszár marása modern kulcsmásoló géppel",
@@ -260,9 +277,9 @@ export const services: Service[] = [
       {
         q: "Mennyi idő alatt készül el egy pótkulcs?",
         a:
-          "Ha van meglévő működő kulcs, a másolás és a programozás jellemzően a helyszínen, " +
-          "egy kiszállás alatt elvégezhető. A pontos időt a kulcs típusa és az autó márkája " +
-          "határozza meg, hívjon és megmondjuk.",
+          "Ha elhozza az autót a XI. kerületi műhelyünkbe, a másolás és a programozás általában " +
+          "20–25 perc alatt elkészül, tehát meg is tudja várni. A pontos időt a kulcs típusa és " +
+          "az autó márkája határozza meg, hívjon és megmondjuk.",
       },
       {
         q: "Mennyibe kerül az autókulcs másolás?",
@@ -276,7 +293,9 @@ export const services: Service[] = [
         q: "A helyszínen is tudnak kulcsot másolni?",
         a:
           "Igen, a kiszálló felszereléssel a másolás és a programozás jelentős része a helyszínen " +
-          "elvégezhető, így Önnek nem kell az autót sehová elvinnie.",
+          "is elvégezhető. Pótkulcsnál mégis azt javasoljuk, hogy hozza el az autót: a műhelyben " +
+          "gyorsabb és nincs kiszállási felár. Ha egyetlen kulcsa sem maradt, akkor természetesen " +
+          "megyünk mi.",
       },
       {
         q: "A távirányító gombjait is beprogramozzák?",

@@ -258,9 +258,17 @@ export default function PricingPage() {
                 Ez a jobb választás
               </span>
               <h3 className="mt-4 text-[1.125rem] font-bold text-ink-900">
-                Elhozza hozzánk az autót
+                Van még működő kulcsa? Hozza el az autót
               </h3>
-              <p className="mt-2 text-[1.75rem] font-extrabold leading-none text-ink-900">
+              {/*
+                A két blokk nem csak logisztikát mond, hanem azt is, hogy
+                melyik HELYZETBE tartozik a látogató. Így egy pillantásra
+                eldönti, hogy jönnie kell-e, vagy mi megyünk.
+              */}
+              <p className="mt-1.5 text-[0.9375rem] leading-relaxed text-ink-600">
+                Pótkulcs, autókulcs másolás, kulcsház csere
+              </p>
+              <p className="mt-3 text-[1.75rem] font-extrabold leading-none text-ink-900">
                 A fenti árak
               </p>
               <ul className="mt-4 space-y-2.5 text-[0.9375rem] leading-relaxed text-ink-700">
@@ -282,9 +290,12 @@ export default function PricingPage() {
                 Ha nem tud jönni
               </span>
               <h3 className="mt-4 text-[1.125rem] font-bold text-ink-900">
-                Kimegyünk Önhöz
+                Elveszett az összes kulcs? Megyünk Önhöz
               </h3>
-              <p className="mt-2 flex items-baseline gap-2">
+              <p className="mt-1.5 text-[0.9375rem] leading-relaxed text-ink-600">
+                Autónyitás, kulcskészítés, programozás a helyszínen
+              </p>
+              <p className="mt-3 flex items-baseline gap-2">
                 <span className="text-[1.75rem] font-extrabold leading-none text-ink-900">
                   + {business.pricing.onSite.feeDisplay}
                 </span>

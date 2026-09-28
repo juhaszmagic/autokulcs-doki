@@ -113,9 +113,17 @@ export default async function ServicePage({ params }: Params) {
               </span>
 
               <h2 className="text-h2">Amiben segíteni tudunk</h2>
+              {/*
+                Ez a mondat minden szolgáltatás-oldalon megjelenik, ezért
+                nem mondhatja azt, hogy „a legtöbbjét a helyszínen".
+                A pótkulcsos oldalak szándékosan a műhelybe terelnek, az
+                elveszett kulcs oldal pedig a kiszállásra, tehát a közös
+                szöveg csak semleges lehet.
+              */}
               <p className="mt-4 leading-relaxed text-ink-600">
-                Ezeket a feladatokat végezzük el ennél a szolgáltatásnál, a
-                legtöbbjét a helyszínen, a jármű elszállítása nélkül.
+                Ezeket a feladatokat végezzük el ennél a szolgáltatásnál. Hogy a
+                XI. kerületi műhelyünkben vagy kiszállással, azt a telefonban
+                beszéljük meg.
               </p>
 
               <CheckList className="mt-8" items={service.bullets} />
