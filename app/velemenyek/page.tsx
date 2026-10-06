@@ -51,23 +51,20 @@ export default function ReviewsPage() {
           <div className="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
             <div className="rounded-card bg-ink-50 p-7 ring-1 ring-ink-200">
               <StarIcon className="h-8 w-8 text-star" />
+              {/*
+                ⚠️ Itt SZÁNDÉKOSAN nincs értékelésíró gomb.
+                Lásd a `config/business.ts` → google.reviewUrl megjegyzését:
+                a tulajdonos maga küldi el a linket a munka után.
+              */}
               <h2 className="mt-4 text-xl font-bold">
-                Dolgoztunk már Önnek? Írjon értékelést
+                Dolgoztunk már Önnek?
               </h2>
               <p className="mt-3 leading-relaxed text-ink-600">
                 Ha elégedett volt a munkánkkal, egy rövid Google-értékelés
                 sokat segít és másoknak is támpontot ad, akik épp az autójuk
-                mellett állnak és nem tudják, kit hívjanak.
+                mellett állnak és nem tudják, kit hívjanak. Szóljon nekünk és
+                elküldjük hozzá a közvetlen linket.
               </p>
-              <Button
-                href={business.google.reviewUrl}
-                variant="secondary"
-                className="mt-5"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Értékelés írása
-              </Button>
             </div>
 
             <div className="rounded-card bg-ink-50 p-7 ring-1 ring-ink-200">

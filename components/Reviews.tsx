@@ -154,6 +154,11 @@ export function ReviewsSection({
             />
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+              {/*
+                ⚠️ Itt SZÁNDÉKOSAN csak a MEGTEKINTÉS gomb van, értékelésíró
+                nincs. Lásd a `config/business.ts` → google.reviewUrl
+                megjegyzését.
+              */}
               <Button
                 href={business.google.mapsUrl}
                 variant="primary"
@@ -162,15 +167,6 @@ export function ReviewsSection({
                 rel="noopener noreferrer"
               >
                 Összes értékelés megtekintése
-              </Button>
-              <Button
-                href={business.google.reviewUrl}
-                variant="onDark"
-                size="lg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Írjon értékelést
               </Button>
             </div>
           </div>

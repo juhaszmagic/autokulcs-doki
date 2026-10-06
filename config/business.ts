@@ -355,8 +355,23 @@ export const business = {
 
     /**
      * Értékelésíráshoz vezető link.
-     * ℹ️ Ha megvan a Place ID, ez lecserélhető a közvetlen űrlapra:
-     *    https://search.google.com/local/writereview?placeid=PLACE_ID
+     *
+     * ⚠️ 2026-10-06 ÓTA AZ OLDALON SEHOL NINCS RÁ KATTINTHATÓ GOMB.
+     *    Ezt a tulajdonos kérte, megalapozottan:
+     *
+     *    • Az oldalról eddig EGYETLEN vélemény sem érkezett. Az elégedett
+     *      ügyfél a munka után nem jön vissza a weboldalra, nincs rá oka.
+     *    • Aki viszont épp elégedetlen, az keresi a csatornát. Egy
+     *      egykattintásos gomb neki spórolja meg a munkát.
+     *    • A véleményt a tulajdonos úgy kéri, hogy a munka után személyesen
+     *      elküldi ezt a linket. Ez működik, a weboldali gomb nem.
+     *
+     *    A link azért marad itt, mert a tulajdonos ezt küldi ki kézzel.
+     *    NE tegyél rá gombot az oldalon anélkül, hogy megkérdeznéd.
+     *
+     * ℹ️ A Google-profilra MUTATÓ linkek (lásd `mapsUrl`) ettől függetlenül
+     *    maradnak: azok nem értékelésírásra visznek, hanem a 4,9 csillag és
+     *    a vélemények ellenőrzésére, ami bizalmi elem.
      */
     reviewUrl: "https://maps.app.goo.gl/v2dNXvHvq22YWfMK8",
 
