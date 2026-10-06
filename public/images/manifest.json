@@ -195,6 +195,46 @@
     ],
     "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoQAAkABABoJbACdADE/ZYAAP71f3UCfte697mo3NXe2+96CvVGwDRGOT8lIky660WtcVYJoAA="
   },
+  "/images/blog/passat-elveszett-autokulcs-konyvek.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAACwAQCdASoQAAkABABoJZwAAv6ND3egAP2pXnB+kYykfWyQmMoSZ+XEXA3Mih0JZ8JvFBQGLLRAq3149Qq+xq4QAAA="
+  },
+  "/images/blog/passat-elveszett-autokulcs-konyveken.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAAAQAgCdASoQAAkABABoJQAO0dBjvMy41SOAAP7at+f5b7EIuWqK1CxKVS/gxEdt6Y6iOZ8lP6bqlm8zNKeQCiSuwPlFByC2AAA="
+  },
+  "/images/blog/passat-elveszett-autokulcs-kormany.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAkABABoJYgCdAYtpZotbX8AAP6HyITbj1V9pdyIs8RJEHyl0u8sVk3ZKceKPzTT8T3BDxI6qxie8JYVXaKmzYHR4PIoF9T2QAAA"
+  },
+  "/images/blog/passat-elveszett-autokulcs-uj-kulcs.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABQAgCdASoQAAkABABoJZACdAYrdnAQDcToPgAA/Z1OqbSO7bcIj6YMB0ovjsIygyO3riWLMjcrzzTNQTJQG4qFBO/9sXodbCWExnin3+4KAs4JTzgAAA=="
+  },
   "/images/blog/potkulcs-keszites.jpg": {
     "width": 1672,
     "height": 941,

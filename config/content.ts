@@ -86,6 +86,148 @@ export interface Article {
 
 export const articles: Article[] = [
   /**
+   * A szöveget és a négy fotót a tulajdonos adta, egy valódi munkáról.
+   * A tartalmi állításokhoz nem nyúltunk.
+   *
+   * ⚠️ ADATVÉDELEM: mind a négy fotó bekerült, vágáson kívül nem kellett
+   *    rajtuk módosítani. Ellenőrizve teljes felbontáson: nincs rajtuk
+   *    rendszám (a Passat hátulja a képkivágáson kívül esik), a háttérben
+   *    álló autókon sem látszik tábla, és az utastéri fotón lévő épületen
+   *    nincs utcanévtábla vagy házszám.
+   *
+   * Megfogalmazás: a beküldött szöveg tegezett és két hangulatjelet is
+   *    tartalmazott. Az oldal végig magázódik és sehol nincs hangulatjel,
+   *    ezért mindkettőt az oldal stílusához igazítottuk. A könyvek címe
+   *    (Szabó Ervin történeti írásai) a fotóról olvasható le, nem találtuk ki.
+   *
+   * ⚠️ Amit a tulajdonos NEM állított, azt nem írtuk bele: nem szerepel,
+   *    hogy az autót ki kellett volna nyitni, mert erről nem beszélt.
+   */
+  {
+    slug: "passat-elveszett-autokulcs-konyveken",
+    title: "Könyveken állt a Passat: elveszett az egyetlen autókulcs",
+    excerpt:
+      "Egy Volkswagen Passat tulajdonosa elvesztette az autó egyetlen kulcsát és attól tartott, hogy valaki megtalálta. Leszerelte a hátsó kerekeket, az autót pedig könyvekre állította. Az új autókulcs még aznap este elkészült.",
+    category: "elveszett-kulcs",
+    date: "2026-10-06",
+    image: {
+      src: "/images/blog/passat-elveszett-autokulcs-konyveken.jpg",
+      alt: "Volkswagen Passat leszerelt hátsó kerékkel, az autó egy halom könyvre felpolcolva",
+    },
+    metaTitle: "Elveszett Passat autókulcs pótlása a helyszínen",
+    metaDescription:
+      "Egy Passat tulajdonosa elvesztette az egyetlen autókulcsát és félt, hogy megtalálják. Leszerelte a kerekeket, könyvekre állította az autót. Új kulcs aznap este.",
+    readingMinutes: 3,
+    lead:
+      "Esténként ritkán ér minket meglepetés, ezt a hívást viszont nem felejtjük el egyhamar. " +
+      "Egy Volkswagen Passat tulajdonosa elvesztette az autó egyetlen kulcsát. Nem csak azért " +
+      "keresett minket, mert nem tudta használni az autót, hanem mert attól tartott, hogy a " +
+      "kulcsot valaki megtalálta és később visszajön vele a kocsiért.",
+    sections: [
+      {
+        heading: "Mi a baj azzal, ha elveszett az egyetlen autókulcs?",
+        paragraphs: [
+          "Az első gond kézenfekvő: nem lehet elindulni. Van viszont egy második is, amire " +
+            "kevesebben gondolnak. Ha nem tudja, hol és milyen körülmények között tűnt el a " +
+            "kulcs, akkor azt sem tudhatja biztosan, kinek a kezébe került.",
+          "Ebben az esetben pontosan ez nyugtalanította a tulajdonost. A Passat az utcán állt, " +
+            "a kulcs pedig valahol odakint volt. Nem akart arra ébredni, hogy az autó már nincs " +
+            "ott, ahol hagyta.",
+        ],
+      },
+      {
+        heading: "Leszerelt kerekek, könyvekre állított Passat",
+        paragraphs: [
+          "A megoldás, amit választott, nem szerepel egyetlen kézikönyvben sem. Leszerelte a " +
+            "Passat hátsó kerekeit, az autót pedig jobb híján könyvekkel polcolta fel. Így hiába " +
+            "lett volna meg valakinek a kulcs, elhajtani nem tudott volna az autóval.",
+          "Mire kiérkeztünk, elég különleges látvány fogadott minket. A féktárcsa alatt gondosan " +
+            "egymásra pakolt könyvek, köztük Szabó Ervin történeti írásai. Mondjuk ki: aki ezt " +
+            "kitalálta, az nem tétlenül várta, hogy történjen valami.",
+        ],
+        image: {
+          src: "/images/blog/passat-elveszett-autokulcs-konyvek.jpg",
+          alt: "A Passat féktárcsája egy gondosan egymásra pakolt könyvhalmon pihen a kerék helyén",
+        },
+      },
+      {
+        heading: "Új autókulcs a helyszínen, még aznap este",
+        paragraphs: [
+          "A munka innen a szokásos menetet követte, csak épp este és egy felpolcolt autó " +
+            "mellett. A helyszínen elkészítettük az új autókulcsot a Volkswagen Passathoz, majd " +
+            "betanítottuk a jármű rendszerébe, hogy ne csak nyissa az autót, hanem el is " +
+            "indítsa.",
+          "Így a tulajdonosnak nem kellett autómentőt hívnia és nem kellett szervizbe " +
+            "szállíttatnia a Passatot. Az autó ott maradt, ahol állt, a munkát pedig ugyanott " +
+            "elvégeztük.",
+        ],
+        image: {
+          src: "/images/blog/passat-elveszett-autokulcs-uj-kulcs.jpg",
+          alt: "Az elkészült új Volkswagen autókulcs a régi mellett, a háttérben a felpolcolt Passat",
+        },
+      },
+      {
+        heading: "A kerekek visszakerültek, a könyvek a polcra",
+        paragraphs: [
+          "Amikor az új autókulcs elkészült és működött, az autó újra indítható lett. A " +
+            "tulajdonos visszaszerelhette a hátsó kerekeket, a könyvek pedig visszakerülhettek " +
+            "oda, ahová valók.",
+          "A tanulság nem az, hogy mindenki szerelje le a kerekeit. Az viszont igen, hogy ha " +
+            "egyetlen autókulcsa van, akkor annak elvesztése egyszerre két problémát okoz. " +
+            "Mindkettőt érdemes még aznap megoldani.",
+        ],
+        image: {
+          src: "/images/blog/passat-elveszett-autokulcs-kormany.jpg",
+          alt: "Az új és a régi Volkswagen autókulcs a Passat kormánya előtt, a munka végeztével",
+        },
+      },
+      {
+        heading: "Elveszett az autókulcsa? Ne várjon vele",
+        paragraphs: [
+          "Ha elveszett az egyetlen autókulcsa, sok esetben a helyszínen is tudunk segíteni. Nem " +
+            "feltétlenül kell az autót márkaszervizbe vinni vagy autómentővel elszállíttatni.",
+          "Érdemes viszont minél hamarabb intézkedni, különösen akkor, ha nem tudja, hol és " +
+            "milyen körülmények között tűnt el a kulcs. Volkswagen Passat kulcskészítés, " +
+            "autókulcs programozás és elveszett autókulcs pótlása Budapesten és környékén, a hét " +
+            "minden napján, a nap 24 órájában.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Elveszett az egyetlen autókulcsom, ki tudnak jönni a helyszínre?",
+        a:
+          "Sok esetben igen. Ebben a munkában is a helyszínen készült el az új autókulcs és ott " +
+          "tanítottuk be a jármű rendszerébe, az autót nem kellett elszállíttatni.",
+      },
+      {
+        q: "Mit tegyek, ha attól tartok, hogy valaki megtalálta a kulcsomat?",
+        a:
+          "Ilyenkor érdemes minél hamarabb intézkedni, főleg ha nem tudja, hol és milyen " +
+          "körülmények között tűnt el a kulcs. Hívjon minket és beszéljük át a lehetőségeket, " +
+          "az elveszett autókulcs a legtöbb járműnél törölhető is az autó rendszeréből.",
+      },
+      {
+        q: "El kell szállíttatni az autót szervizbe?",
+        a:
+          "A legtöbb esetben nem. Ebben az esetben sem kellett: a Passat ott maradt, ahol állt, " +
+          "az új autókulcs pedig a helyszínen készült el, még aznap este.",
+      },
+      {
+        q: "Mennyibe kerül egy elveszett Passat autókulcs pótlása?",
+        a:
+          "Az ár az autó márkájától, típusától, évjáratától és a kulcs fajtájától függ. A pontos " +
+          "árat telefonon, WhatsAppon vagy Viberen egyeztetjük, még a kiszállás előtt.",
+      },
+    ],
+    relatedServices: [
+      "elveszett-autokulcs",
+      "autokulcs-keszites",
+      "autokulcs-programozas",
+    ],
+  },
+
+  /**
    * A szöveget és a fotókat a tulajdonos adta, egy 2026 szeptemberi valódi
    * munkáról. A tartalmi állításokhoz nem nyúltunk.
    *
