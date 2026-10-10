@@ -121,6 +121,7 @@ git fetch origin main && git checkout main
 | `config/faq.ts` | gyakori kérdések |
 | `config/media.ts` | fotók, galéria, TikTok-videók |
 | `config/content.ts` | tudásbázis cikkek |
+| `config/brands.ts` | márkaoldalak (Volkswagen, később több) |
 | `config/legal.ts` | impresszum, adatkezelési adatok |
 
 Konkrét értékeket (telefonszám, árak, értékelésszám) **ne másolj ide
@@ -131,6 +132,20 @@ kerülnek minden oldalra, nincs kézi végigvezetés.
 Az oldal szerkezete: `app/` (route-onként egy `page.tsx`, záró perjeles
 URL-ek), `components/` (újrahasznált elemek), `lib/schema.ts` (JSON-LD
 strukturált adat a Google-nek).
+
+### Márkaoldalak: csak három valódi munka felett
+
+⚠️ **Márkaoldal (`config/brands.ts`) CSAK akkor készülhet, ha legalább
+három valódi, saját fotós munkánk van az adott márkára a tudásbázisban.**
+Enélkül üres váz lenne, amit a Google és az olvasó is kiszúr.
+
+Állapot 2026-10-10-én: Volkswagen 3 cikk (elkészült), Kia 2, Peugeot 1,
+Fiat 1. A többi akkor jön, ha összegyűlik hozzá az anyag.
+
+A márkaoldal és a cikkek **oda-vissza hivatkoznak.** A márkaoldal
+felsorolja a cikkeket, a cikkoldal alján pedig megjelenik egy átvezető
+blokk, ha a cikk szerepel valamelyik márka listájában. Ehhez elég a
+`brands.ts`-ben felvenni a cikk slugját, a cikkben nincs teendő.
 
 ## Build és ellenőrzés
 

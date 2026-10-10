@@ -14,6 +14,7 @@
  * ============================================================================
  */
 
+import Link from "next/link";
 import { business, formattedRating } from "@/config/business";
 import { Container, Section, SectionHeading, Button } from "./ui";
 import { StarIcon } from "./Icons";
@@ -213,10 +214,9 @@ export function ReviewsSection({
 export function RatingBadge({ className = "" }: { className?: string }) {
   const { reviewCount } = business.google;
   return (
-    <a
-      href={business.google.mapsUrl}
-      target="_blank"
-      rel="noopener noreferrer"
+    /* A saját Vélemények oldalra visz, nem ki a Google-be. */
+    <Link
+      href="/velemenyek"
       className={`inline-flex items-center gap-3 rounded-full bg-white px-4 py-2.5 shadow-sm ring-1 ring-ink-200 transition-shadow hover:shadow-md ${className}`}
     >
       <GoogleLogo className="h-4" withWordmark={false} />
@@ -227,7 +227,7 @@ export function RatingBadge({ className = "" }: { className?: string }) {
       <span className="text-sm text-ink-600">
         {reviewCount ? `${reviewCount} értékelés` : "Google értékelés"}
       </span>
-    </a>
+    </Link>
   );
 }
 

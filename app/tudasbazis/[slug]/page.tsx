@@ -10,6 +10,7 @@ import {
   formatDate,
 } from "@/config/content";
 import { getService } from "@/config/services";
+import { brandForArticle } from "@/config/brands";
 import { business, absoluteUrl, site } from "@/config/business";
 import { Container, Section, CallButton, Button, Tag } from "@/components/ui";
 import { AssetImage } from "@/components/AssetImage";
@@ -67,6 +68,7 @@ export default async function ArticlePage({ params }: Params) {
   ];
 
   const related = relatedArticles(article);
+  const brand = brandForArticle(article.slug);
   const linkedServices = article.relatedServices
     .map((s) => getService(s))
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
@@ -161,6 +163,28 @@ export default async function ArticlePage({ params }: Params) {
                   )}
                 </section>
               ))}
+
+              {/* ---- Átvezetés a márkaoldalra ----
+                  Csak ott jelenik meg, ahol a cikk szerepel egy márkaoldal
+                  felsorolásában. Így a márkaoldal és a cikkek oda-vissza
+                  hivatkoznak egymásra, nem marad egyik sem magára. */}
+              {brand && (
+                <div className="mt-14 rounded-feature bg-brand-50 p-7 ring-1 ring-brand-600/20 sm:p-8">
+                  <h2 className="text-h3">
+                    Több {brand.name} munkánk és tudnivaló
+                  </h2>
+                  <p className="mt-3 leading-relaxed text-ink-700">
+                    {brand.cardText}
+                  </p>
+                  <Button
+                    href={`/markak/${brand.slug}`}
+                    variant="secondary"
+                    className="mt-5"
+                  >
+                    {brand.name} autókulcs oldal
+                  </Button>
+                </div>
+              )}
 
               {/* ---- Kapcsolódó szolgáltatások ---- */}
               {linkedServices.length > 0 && (

@@ -223,10 +223,9 @@ export function TrustStrip() {
       <Container>
         <div className="grid gap-8 py-10 lg:grid-cols-[auto_1fr] lg:items-center lg:gap-12 lg:py-8">
           {/* ---- Google értékelés: vizuálisan a legerősebb elem ---- */}
-          <a
-            href={business.google.mapsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* A saját Vélemények oldalra visz, nem ki a Google-be. */}
+          <Link
+            href="/velemenyek"
             className="group flex items-center gap-5 rounded-2xl bg-white/[0.06] p-5 ring-1 ring-white/10 transition-colors hover:bg-white/[0.10] lg:pr-8"
           >
             <span className="flex items-baseline gap-1.5">
@@ -241,7 +240,7 @@ export function TrustStrip() {
                 Google értékelés
               </span>
             </span>
-          </a>
+          </Link>
 
           {/* ---- További bizalmi pontok ---- */}
           <ul className="grid grid-cols-2 gap-x-6 gap-y-7 lg:grid-cols-4 lg:border-l lg:border-white/10 lg:pl-12">
@@ -640,10 +639,9 @@ export function RecentWork() {
             id="legutobbi-cim"
             lead="Nem stockfotók: ezek a saját képeink elvégzett munkákról. A dátum minden képnél a felvétel valódi ideje."
           />
-          <a
-            href={business.google.mapsUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+          {/* A saját Vélemények oldalra visz, nem ki a Google-be. */}
+          <Link
+            href="/velemenyek"
             className="flex shrink-0 items-center gap-3 self-start rounded-2xl bg-white px-4 py-3 shadow-card ring-1 ring-ink-200 transition-shadow hover:shadow-card-hover sm:self-auto"
           >
             <GoogleLogo className="h-6" withWordmark={false} />
@@ -660,7 +658,7 @@ export function RecentWork() {
                 </span>
               )}
             </span>
-          </a>
+          </Link>
         </div>
 
         {/* Nyolc kártya = két teli sor, nem marad árva kép a sor végén. */}
@@ -729,11 +727,9 @@ export function RealWorkGallery({
             lead="Elvégzett munkák saját fotóinkon. A dátum minden képnél a felvétel valódi ideje, a csillagok pedig a munkára kapott Google-értékelést mutatják. Kattintson bármelyik képre a nagyításhoz."
           />
           <div className="flex shrink-0 flex-col items-start gap-4 pb-1 sm:items-end">
-            {/* Valódi Google-adat, nem díszítés. */}
-            <a
-              href={business.google.mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+            {/* Valódi Google-adat, nem díszítés. A saját Vélemények oldalra visz. */}
+            <Link
+              href="/velemenyek"
               className="flex items-center gap-3 rounded-2xl bg-white px-4 py-3 shadow-card ring-1 ring-ink-200 transition-shadow hover:shadow-card-hover"
             >
               <GoogleLogo className="h-6" withWordmark={false} />
@@ -750,7 +746,7 @@ export function RealWorkGallery({
                   </span>
                 )}
               </span>
-            </a>
+            </Link>
             {showAllLink && <TextLink href="/galeria">Teljes galéria</TextLink>}
           </div>
         </div>

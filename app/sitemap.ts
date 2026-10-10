@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { absoluteUrl } from "@/config/business";
 import { services } from "@/config/services";
 import { articles } from "@/config/content";
+import { brands } from "@/config/brands";
 
 /**
  * XML sitemap.
@@ -36,6 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/rolunk", changeFrequency: "yearly", priority: 0.6 },
     { path: "/velemenyek", changeFrequency: "monthly", priority: 0.6 },
     { path: "/galeria", changeFrequency: "monthly", priority: 0.5 },
+    { path: "/markak", changeFrequency: "monthly", priority: 0.6 },
     { path: "/tudasbazis", changeFrequency: "weekly", priority: 0.7 },
     /* Jogi oldalak: kereshetőnek kell lenniük, de alacsony prioritással —
        nem ezekre akarunk rangsorolni. */
@@ -55,7 +57,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...staticPages, ...servicePages, ...articlePages].map((page) => ({
+  /* Márkaoldalak — a config/brands.ts-ből, ugyanúgy automatikusan. */
+  const brandPages = brands.map((brand) => ({
+    path: `/markak/${brand.slug}`,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...servicePages, ...brandPages, ...articlePages].map((page) => ({
     url: absoluteUrl(page.path),
     lastModified: now,
     changeFrequency: page.changeFrequency,

@@ -17,6 +17,7 @@ const mainNav = [
   { href: "/arak", label: "Árak" },
   { href: "/rolunk", label: "Rólunk" },
   { href: "/galeria", label: "Galéria" },
+  { href: "/velemenyek", label: "Vélemények" },
   { href: "/tudasbazis", label: "Tudásbázis" },
   { href: "/gyik", label: "GYIK" },
   { href: "/kapcsolat", label: "Kapcsolat" },
@@ -58,10 +59,14 @@ export function Header() {
                 <span>· {business.serviceArea.primary}</span>
               </span>
               <span aria-hidden className="h-3.5 w-px bg-white/15" />
-              <a
-                href={business.google.mapsUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+              {/*
+                A csillagos jelvény a SAJÁT Vélemények oldalra visz, nem ki a
+                Google-be. Így a látogató az oldalon marad, a Vélemények oldal
+                pedig minden aloldalról kap egy belső hivatkozást. Ellenőrizni
+                továbbra is lehet: onnan egy kattintás a Google Cégprofil.
+              */}
+              <Link
+                href="/velemenyek"
                 className="flex items-center gap-1.5 transition-colors hover:text-white"
               >
                 <StarIcon className="h-4 w-4 text-star" />
@@ -69,7 +74,7 @@ export function Header() {
                   {formattedRating()}
                 </strong>
                 <span>Google értékelés</span>
-              </a>
+              </Link>
             </p>
           </div>
         </Container>
