@@ -86,6 +86,169 @@ export interface Article {
 
 export const articles: Article[] = [
   /**
+   * A szöveget és öt fotót a tulajdonos adott, egy valódi munkáról.
+   * A tartalmi állításokhoz nem nyúltunk.
+   *
+   * ⚠️ ADATVÉDELEM: az öt fotóból négy került be, kettőn takarással.
+   *    1. A programozó képernyőjén OLVASHATÓAN látszott az ügyfél
+   *       járművének ALVÁZSZÁMA (VIN), alatta a készülék sorszámával.
+   *       A kép úgy van vágva, hogy ez a sáv teljesen kimarad, az
+   *       „Add Smart Key” menü viszont látszik.
+   *    2. Az új kulcson lévő sárga gyári matricán „Identifier AES”
+   *       felirat, cikkszámok és egy beolvasható kód volt. Ez a kulcs
+   *       azonosítója, nyilvános oldalra nem való, ezért elmosással
+   *       ki van takarva. Teljes felbontáson ellenőrizve: olvashatatlan.
+   *    3. Az ötödik fotó (maróba fogott kulcsszár) tartalmilag ugyanazt
+   *       mutatja, mint a bent maradt marós kép, ezért kimaradt.
+   *
+   * Megfogalmazás: a beküldött szöveg végén a weboldal címe és egy
+   *    hangulatjel szerepelt. Mindkettő kimaradt, mert ez maga a
+   *    weboldal, és az oldalon sehol nincs hangulatjel.
+   *
+   * ⚠️ A versenytársakról szóló állítás a tulajdonos saját tapasztalata,
+   *    és ugyanúgy feltételes módban maradt, ahogy ő írta („kérhetnek”).
+   *    Konkrét céget nem nevezünk meg.
+   */
+  {
+    slug: "peugeot-5008-keyless-kulcsprogramozas",
+    title: "Peugeot 5008 gyári keyless pótkulcs 25 perc alatt",
+    excerpt:
+      "Egy 2022-es Peugeot 5008 tulajdonosa gyári keyless pótkulcsot szeretett volna. A kulcs programozása és a benne lévő mechanikus szervizkulcs marása együtt körülbelül 25 perc alatt elkészült.",
+    category: "programozas",
+    date: "2026-10-10",
+    image: {
+      src: "/images/blog/peugeot-5008-keyless-kulcsprogramozas.jpg",
+      alt: "Két Peugeot keyless autókulcs a 2022-es Peugeot 5008 kormánya előtt, az elkészült munka után",
+    },
+    metaTitle: "Peugeot 5008 kulcsprogramozás, keyless pótkulcs",
+    metaDescription:
+      "Egy 2022-es Peugeot 5008-hoz készítettünk gyári keyless pótkulcsot. A programozás és a mechanikus szervizkulcs marása együtt 25 perc alatt elkészült.",
+    readingMinutes: 4,
+    lead:
+      "Egy 2022-es Peugeot 5008 tulajdonosa keresett meg minket, aki gyári keyless " +
+      "pótkulcsot szeretett volna az autójához. A munka elkészült, a teljes " +
+      "kulcskészítés és programozás körülbelül 25 percet vett igénybe, beleértve a " +
+      "mechanikus szervizkulcs marását is.",
+    sections: [
+      {
+        heading: "Miért más egy modern Peugeot keyless kulcsa?",
+        paragraphs: [
+          "A 2022-es Peugeot 5008 korszerű indításgátlóval és intelligens kulcsrendszerrel " +
+            "működik. Az ilyen autóknál a kulcskészítés már jóval többet jelent annál, mint " +
+            "hogy lemásolunk egy kulcsszárat.",
+          "A megfelelő kulcs kiválasztása mellett az új kulcsot elektronikusan illeszteni " +
+            "kell a járműhöz, utána pedig le kell ellenőrizni, hogy minden funkciója " +
+            "működik-e. Ebben az esetben eredeti, gyári Peugeot keyless kulcsot programoztunk " +
+            "az autóhoz.",
+        ],
+        image: {
+          src: "/images/blog/peugeot-5008-gyari-keyless-potkulcs.jpg",
+          alt: "Az elkészült gyári Peugeot keyless pótkulcs a meglévő kulcs mellett",
+        },
+      },
+      {
+        heading: "Így készült a Peugeot 5008 gyári keyless pótkulcsa",
+        paragraphs: [
+          "A munkát a típushoz való céleszközökkel végeztük el, az autó elektronikai " +
+            "rendszerének felesleges megbontása nélkül. A programozó készülék a jármű saját " +
+            "rendszerén keresztül vette fel az új kulcsot.",
+          "A kulcsprogramozás sikeresen lezárult, a tulajdonos pedig körülbelül 25 perc " +
+            "elteltével már át is vehette az új pótkulcsát.",
+        ],
+        image: {
+          src: "/images/blog/peugeot-5008-kulcsprogramozas-keszulek.jpg",
+          alt: "A programozó készülék a Peugeot 5008 utasterében, az új keyless kulcs felvétele közben",
+        },
+      },
+      {
+        heading: "A szervizkulcs marása nálunk benne van a munkában",
+        paragraphs: [
+          "Sokan nem tudják, hogy a modern Peugeot keyless kulcsokban egy hagyományos, " +
+            "mechanikus kulcsszár is lapul. Ezt hívják szervizkulcsnak vagy vészkulcsnak.",
+          "Akkor lesz belőle fontos darab, amikor lemerül az autó akkumulátora és az " +
+            "elektronikus központi zár nem működik. Ilyenkor a mechanikus kulccsal lehet " +
+            "kinyitni a járművet.",
+          "Nálunk a szervizkulcsot is elkészítjük és méretre marjuk az új kulcshoz. Ez nem " +
+            "magától értetődő: a mechanikus kulcsszár marásáért máshol külön díjat is " +
+            "kérhetnek. Mi nem szeretünk félkész megoldást átadni, ezért ennél a Peugeot " +
+            "5008-nál sem számoltunk fel érte külön marási díjat.",
+        ],
+        image: {
+          src: "/images/blog/peugeot-5008-szervizkulcs-marasa.jpg",
+          alt: "A Peugeot kulcs mechanikus szervizkulcsának marása a kulcsmásoló gépen",
+        },
+      },
+      {
+        heading: "Modern autóhoz is készíthető pótkulcs",
+        paragraphs: [
+          "Sokan tartanak attól, hogy az újabb autók kulcsprogramozása bonyolult vagy " +
+            "kockázatos beavatkozás. A modern járművek elektronikája valóban körültekintést " +
+            "igényel, ezért számít a megfelelő eszközpark, a típusismeret és a szakszerű " +
+            "munkavégzés.",
+          "A régebbi autók mellett keyless rendszerrel felszerelt, modern járművek " +
+            "kulcskészítésével is foglalkozunk. Ez a Peugeot 5008 is jól mutatja, hogy " +
+            "megfelelő felszereléssel egy korszerű autóhoz is elkészíthető az új pótkulcs, " +
+            "rövid idő alatt.",
+        ],
+      },
+      {
+        heading: "Peugeot pótkulcsra van szüksége?",
+        paragraphs: [
+          "Peugeot 5008 kulcsmásolás, Peugeot keyless pótkulcs készítés vagy más modern autó " +
+            "kulcsprogramozása: forduljon hozzánk bizalommal. Gyári és megfelelő utángyártott " +
+            "autókulcsok készítése, programozása, mechanikus kulcsszárak marása, modern " +
+            "eszközökkel.",
+          "Mondja meg telefonon az autó típusát és évjáratát, mi pedig még a munka megkezdése " +
+            "előtt konkrét árat mondunk. Budapesten és környékén, a hét minden napján, a nap " +
+            "24 órájában.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Mennyi idő alatt készül el egy Peugeot 5008 pótkulcs?",
+        a:
+          "Ebben a munkában körülbelül 25 perc volt. Ebbe a mechanikus szervizkulcs " +
+          "marása is beletartozott. A reális időt a jármű típusa és évjárata alapján " +
+          "telefonon tudjuk megmondani.",
+      },
+      {
+        q: "Mi az a szervizkulcs és mire jó?",
+        a:
+          "A modern Peugeot keyless kulcsokban van egy hagyományos, mechanikus kulcsszár is, " +
+          "ezt hívják szervizkulcsnak vagy vészkulcsnak. Akkor van rá szükség, ha lemerül az " +
+          "autó akkumulátora és az elektronikus központi zár nem működik.",
+      },
+      {
+        q: "Külön kell fizetni a mechanikus kulcsszár marásáért?",
+        a:
+          "Nálunk nem. A szervizkulcsot elkészítjük és méretre marjuk az új kulcshoz, külön " +
+          "marási díj nélkül. Máshol ezért kérhetnek külön díjat, ezért érdemes rákérdezni, " +
+          "hogy az ajánlatban benne van-e.",
+      },
+      {
+        q: "Gyári kulcsot használnak vagy utángyártottat?",
+        a:
+          "Mindkettő előfordul. Ennél a Peugeot 5008-nál eredeti, gyári keyless kulcsot " +
+          "programoztunk. Hogy az adott autóhoz melyik a jó megoldás, azt a típus és az " +
+          "évjárat alapján mondjuk meg.",
+      },
+      {
+        q: "Mennyibe kerül egy Peugeot keyless pótkulcs?",
+        a:
+          "Az ár az autó márkájától, típusától, évjáratától és a kulcs fajtájától függ. " +
+          "A pontos árat telefonon, WhatsAppon vagy Viberen egyeztetjük, még a munka " +
+          "megkezdése előtt.",
+      },
+    ],
+    relatedServices: [
+      "autokulcs-programozas",
+      "autokulcs-keszites",
+      "autokulcs-masolas",
+    ],
+  },
+
+  /**
    * A szöveget és a négy fotót a tulajdonos adta, egy valódi munkáról.
    * A tartalmi állításokhoz nem nyúltunk.
    *

@@ -235,6 +235,46 @@
     ],
     "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAABQAgCdASoQAAkABABoJZACdAYrdnAQDcToPgAA/Z1OqbSO7bcIj6YMB0ovjsIygyO3riWLMjcrzzTNQTJQG4qFBO/9sXodbCWExnin3+4KAs4JTzgAAA=="
   },
+  "/images/blog/peugeot-5008-gyari-keyless-potkulcs.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRmgAAABXRUJQVlA4IFwAAAAQAgCdASoQAAkABABoJbACdH8AFlmh5gQAAP7QcVD2FeULMobWeRO27u/qhlAyfYJPZ+oq9PGDwDLIvWQalBnOw8hcmVo+IZ84FnEJf2CBJICSWqWe5/bvxnAAAA=="
+  },
+  "/images/blog/peugeot-5008-keyless-kulcsprogramozas.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAAAQAgCdASoQAAkABABoJQBdgCP7nAzfO/8AAP7N3AbLnoJ+qWc7j2pYGz7LlZyOG5aTTNTi3eyi1kacakfj38QSE8EHVEMKQa9ds2NKllwLJL5JdD0ksKCAAAA="
+  },
+  "/images/blog/peugeot-5008-kulcsprogramozas-keszulek.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAkABABoJQBOgCLHunD8eIqAAP67VH02olyFtszzn2T387MpoEP7mkMUIT5w6/hwcs78pQQDXlEMTHS0scGvyhuoHxz39l4KdsgA"
+  },
+  "/images/blog/peugeot-5008-szervizkulcs-marasa.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADQAQCdASoQAAkABABoJQBOgBe42Q1NwAD+3xyxWaSvKra9y5AoEG++sThSeGRGgQAyxYqsmAwIdZL87SHps4HPIpsFZ1CUUTxzvKKrgAA="
+  },
   "/images/blog/potkulcs-keszites.jpg": {
     "width": 1672,
     "height": 941,
