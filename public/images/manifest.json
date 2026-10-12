@@ -165,6 +165,26 @@
     ],
     "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQAAkABABoJQBOgBxFhxutcAD8K0FuE820hAEvbBhmfI9gT/y/HambaVzAHl5bjfgAAA=="
   },
+  "/images/blog/opel-bicskakulcs-javitas.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAAAQAgCdASoQAAkABABoJbACdH8AEmX107/4AP3V2RfjEZhkTtlvO0ivGj132NF6hIybAZ2y/rrjAqhmIbBt+9IAXaMkWG84e1rnbHTSquJwAA=="
+  },
+  "/images/blog/opel-bicskakulcs-kulcsszar.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAADQAQCdASoQAAkABABoJbACdADNpXU8AAD+Z4R8Zy9VrZwvJrcKxiy2CGAD265TCLljJ+5/Pg73odRlZMIAdbRXbX8AMXWvsho8fd8liina1IussP4AAA=="
+  },
   "/images/blog/passat-b6-kulcsprogramozas.jpg": {
     "width": 1932,
     "height": 1087,

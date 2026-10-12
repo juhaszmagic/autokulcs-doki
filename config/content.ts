@@ -28,6 +28,20 @@
  * ============================================================================
  */
 
+import { business } from "./business";
+
+/**
+ * Az árat SOHA ne írjuk ide kézzel. A `config/business.ts` az egyetlen
+ * igazságforrás, onnan kell hivatkozni, különben két helyen kellene
+ * karbantartani és az egyik előbb-utóbb elavulna.
+ */
+const kulcshazArResz = business.pricing.repairs.find(
+  (r) => r.name === "Kulcsház csere",
+);
+const kulcshazAr = kulcshazArResz
+  ? `${kulcshazArResz.amount.toLocaleString("hu-HU")}–${kulcshazArResz.to?.toLocaleString("hu-HU")} Ft`
+  : "";
+
 export const contentCategories = [
   { id: "elveszett-kulcs", label: "Elveszett kulcs" },
   { id: "kulcsmasolas", label: "Autókulcs másolás" },
@@ -85,6 +99,150 @@ export interface Article {
    ================================================================== */
 
 export const articles: Article[] = [
+  /**
+   * A szöveget és a két fotót a tulajdonos adta, egy valódi munkáról.
+   * A tartalmi állításokhoz nem nyúltunk.
+   *
+   * ⚠️ ADATVÉDELEM: mindkét fotó vágáson kívül módosítás nélkül bekerült.
+   *    Ellenőrizve teljes felbontáson: nincs rajtuk rendszám, alvázszám
+   *    vagy kulcsazonosító. A kulcsszáron lévő „3579” a nyers kulcs gyári
+   *    profilkódja, nem az ügyfélhez köthető adat. A háttérben a saját
+   *    alkatrésztárolói látszanak.
+   *
+   * Megfogalmazás: a beküldött szöveg végéről lekerült a weboldal címe és
+   *    a hangulatjel, mert ez maga a weboldal.
+   *
+   * ⚠️ Ez a cikk a KULCSHÁZ CSERE szolgáltatás oldalát támasztja alá, ezért
+   *    oda linkel elsőként. Az ár a `business.ts`-ből jön, nincs kézzel
+   *    beírva sehol.
+   */
+  {
+    slug: "opel-bicskakulcs-javitas",
+    title: "Kitört az Opel bicskakulcs szára? Nem kell új kulcs",
+    excerpt:
+      "Egy Opel tulajdonosának bicskakulcsából kitört a fém kulcsszár. Nem új kulcs készült: az eredeti elektronika átkerült egy új házba, a kulcsszárat pedig a régi mintájára marta ki.",
+    category: "kulcsmasolas",
+    date: "2026-10-12",
+    image: {
+      src: "/images/blog/opel-bicskakulcs-javitas.jpg",
+      alt: "Az elkészült Opel bicskakulcs új házban, mellette a régi mintájára elkészített kulcsszár",
+    },
+    metaTitle: "Opel bicskakulcs javítás, kulcsház csere Budapest",
+    metaDescription:
+      `Kitört a kulcsszár az Opel bicskakulcsból? Sok esetben elég a kulcsház csere: az eredeti elektronika marad, nem kell újraprogramozni. ${kulcshazAr}.`,
+    readingMinutes: 4,
+    lead:
+      "Az Opel bicskakulcsoknál gyakori, hogy a fém kulcsszár idővel meglazul, " +
+      "megsérül, vagy teljesen kitörik a kulcsházból. Ilyenkor a kulcs " +
+      "használhatatlanná válik, hiába működik benne az elektronika tökéletesen. " +
+      "Egy ilyen kulccsal keresett meg minket egy Opel tulajdonosa.",
+    sections: [
+      {
+        heading: "Kitört a kulcsszár, akkor most új kulcs kell?",
+        paragraphs: [
+          "A legtöbben erre számítanak, pedig a válasz általában nem. A bicskakulcs " +
+            "két külön dologból áll. Az egyik a ház a kulcsszárral, a másik a benne " +
+            "lévő elektronika, ami az autóval kommunikál.",
+          "Amikor a szár kitörik, a ház ment tönkre, nem az elektronika. Ha az " +
+            "utóbbi ép, akkor nem kell új autókulcsot készíteni és programozni, elég " +
+            "a házat kicserélni alatta. Ez lényegesen olcsóbb.",
+        ],
+      },
+      {
+        heading: "Így javítottuk meg a törött Opel bicskakulcsot",
+        paragraphs: [
+          "Először átnéztük a sérült kulcsot, majd óvatosan felnyitottuk a gyárilag " +
+            "összeillesztett kulcsházat. Az eredeti elektronikai panelt sérülésmentesen " +
+            "kiemeltük belőle és áthelyeztük egy vadonatúj Opel bicskakulcsházba.",
+          "Ezután az eredeti kulcsszár mintájára elkészítettük az új szárat, ami " +
+            "pontosan illeszkedik az autó zárszerkezetéhez.",
+          "A végeredmény kívülről egy teljesen új Opel bicskakulcs, amiben továbbra " +
+            "is az autóhoz tartozó eredeti elektronika dolgozik. Mivel ez megmaradt, " +
+            "nem kellett sem immobilizer-tanítás, sem távirányító-programozás.",
+        ],
+        image: {
+          src: "/images/blog/opel-bicskakulcs-kulcsszar.jpg",
+          alt: "Az új kulcsszár beillesztése az Opel bicskakulcs új házába",
+        },
+      },
+      {
+        heading: "Miért ne szedje szét otthon az Opel bicskakulcsot?",
+        paragraphs: [
+          "Sokan azt gondolják, hogy egy törött kulcsház cseréje egyszerű otthoni " +
+            "feladat. Az Opel gyári bicskakulcsainál ez komoly kockázat.",
+          "Bizonyos Opel kulcsházak gyárilag össze vannak hegesztve, ezért nem lehet " +
+            "őket egyszerűen szétpattintani. A felnyitáshoz megfelelő szerszám, " +
+            "precizitás és gyakorlat kell.",
+          "Gyakran kerül hozzánk olyan kulcs, amit a tulajdonos előtte otthon próbált " +
+            "szétszedni. A késsel vagy csavarhúzóval való feszegetés közben könnyen " +
+            "megsérül a belső elektronikai panel. Egy egyszerű házcseréből így lesz " +
+            "teljes kulcscsere, utána pedig újraprogramozás, ami lényegesen többe kerül.",
+        ],
+      },
+      {
+        heading: "Mikor elég a kulcsház csere?",
+        paragraphs: [
+          "Ha az autókulcs elektronikája rendben működik, sok esetben nincs szükség " +
+            "teljesen új kulcsra. Házcserével jellemzően ezek javíthatók:",
+        ],
+        list: [
+          "A bicskakulcsból kitört vagy kiesett kulcsszár",
+          "A törött, repedt vagy szétnyílt kulcsház",
+          "A kopott, beszakadt nyomógombok",
+          "A sérült vagy nehezen működő bicskamechanika",
+          "Az elhasználódott, esztétikailag rossz állapotú kulcsburkolat",
+        ],
+      },
+      {
+        heading: "Eltört az Opel bicskakulcsa? Keressen minket",
+        paragraphs: [
+          "Ha az Opel autókulcsából kitört a kulcsszár, megsérült a kulcsház, vagy " +
+            "akadozik a bicskamechanika, nem feltétlenül kell drága új autókulcsot " +
+            "csináltatnia.",
+          "A célunk az, hogy lehetőség szerint megőrizzük az eredeti, működő " +
+            "elektronikát, Ön pedig egy újszerű, megbízható autókulcsot kapjon vissza. " +
+            "Opel bicskakulcs javítás, kulcsház csere és kulcsszár marás Budapesten, " +
+            "a hét minden napján.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Kitört a kulcsszár, kell új autókulcsot csináltatni?",
+        a:
+          "A legtöbb esetben nem. Ha az elektronika ép, elég a kulcsházat kicserélni " +
+          "alatta és a kulcsszárat a régi mintájára kimarni. Ez lényegesen olcsóbb " +
+          "egy új, felprogramozott autókulcsnál.",
+      },
+      {
+        q: "Újra kell programozni a kulcsot a házcsere után?",
+        a:
+          "Nem. A régi kulcs elektronikája kerül át az új házba, tehát az autó " +
+          "ugyanazt a kulcsot látja, mint eddig. Ennél az Opelnél sem kellett sem " +
+          "immobilizer-tanítás, sem távirányító-programozás.",
+      },
+      {
+        q: "Miért nem lehet otthon szétszedni az Opel bicskakulcsot?",
+        a:
+          "Bizonyos Opel kulcsházak gyárilag össze vannak hegesztve, ezért nem " +
+          "pattinthatók szét. Otthoni feszegetésnél könnyen megsérül a belső " +
+          "elektronikai panel, onnantól pedig már új kulcsot kell készíteni.",
+      },
+      {
+        q: "Mennyibe kerül egy Opel kulcsház csere?",
+        a:
+          `A kulcsház csere ${kulcshazAr}, amiben benne van a munkadíj, az új ` +
+          "kulcsház és az új kulcsszár marása is. A pontos árat telefonon, " +
+          "WhatsAppon vagy Viberen egyeztetjük, még a munka megkezdése előtt.",
+      },
+    ],
+    relatedServices: [
+      "kulcshaz-csere",
+      "autokulcs-masolas",
+      "autokulcs-keszites",
+    ],
+  },
+
   /**
    * A szöveget és öt fotót a tulajdonos adott, egy valódi munkáról.
    * A tartalmi állításokhoz nem nyúltunk.
