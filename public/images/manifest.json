@@ -75,6 +75,36 @@
     ],
     "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoQAAkABABoJQBOgB7DIh4AAP7swIqLXZJ3AbdDrtHrygo02opMJyWjwLvAR3rPrK2KVDYAAAA="
   },
+  "/images/blog/audi-a4-mlb-kulcs-programozas-keszulek.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAAAQAgCdASoQAAkABABoJYwC7AED9405JShAAP7jhYHIG6q/a2PnIqCD4Jjdrg2hTLMtejPZAI/0LVfT65BbwGPvvEGZBxeDVfK+pkoqXN6JjaAA"
+  },
+  "/images/blog/audi-a4-mlb-kulcsprogramozas.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAAAQAgCdASoQAAkABABoJYwAAxUp8QA61NEAAP7y4mArM9CS5kSZmQajdS0Lx1sDlvWjx0Kno7RU63Uf2JgDDZ7nW1raJY7ij3wAAA=="
+  },
+  "/images/blog/audi-a4-virtualis-muszerfal.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADQAQCdASoQAAkABABoJZwAAn2SPBBdAAD+7PgFRDw7ns2QcHj4Jd8X6aOaiYDBTgiqtwDx0CCOM05xcOcfSYCxoCvP8AAA"
+  },
   "/images/blog/elveszett-autokulcs.jpg": {
     "width": 1672,
     "height": 941,

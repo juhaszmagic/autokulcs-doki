@@ -100,6 +100,182 @@ export interface Article {
 
 export const articles: Article[] = [
   /**
+   * A szöveget és négy fotót a tulajdonos adott, egy valódi munkáról.
+   * A tartalmi állításokhoz nem nyúltunk.
+   *
+   * ⚠️ FOTÓK: a tulajdonos kifejezett kérése, hogy a beküldött képekből
+   *    semmit ne vágjunk le, mert nincs rajtuk zavaró adat. Ezért mind a
+   *    három kép TELJES EGÉSZÉBEN látszik: az álló fotó a 16:9 helyre
+   *    illesztve, a mellette maradó sávban ugyanannak a képnek az elmosott,
+   *    sötétített nagyítása. Így semmi nem esik ki a képből.
+   *
+   * ⚠️ ADATVÉDELEM: két helyen van finom elmosás, vágás nincs.
+   *    1. A fejlécképen a navigáció célpont-listája látszott, olvasható
+   *       otthoni távolsággal. Ez az ügyfél lakhelyére utal, ezért a
+   *       kártya el van mosva. Teljes felbontáson ellenőrizve:
+   *       olvashatatlan, a kijelző maga és a térkép megmaradt.
+   *    2. A programozó készülék saját sorszáma elmosva, szintén
+   *       olvashatatlan.
+   *    A negyedik fotó (közeli a fedélzeti számítógép memóriájáról)
+   *    kimaradt: a kulcsmunkáról nem mutat semmit, az adatai pedig a
+   *    műszerfalas képen amúgy is látszanak.
+   *
+   * Megfogalmazás: a beküldött szöveg végéről lekerült a weboldal neve és
+   *    címe, mert ez maga a weboldal. Audiból egyelőre EZ AZ EGYETLEN
+   *    cikkünk, ezért márkaoldal nem készült hozzá (a szabály három
+   *    valódi munka, lásd `config/brands.ts`).
+   */
+  {
+    slug: "audi-a4-mlb-kulcsprogramozas",
+    title: "Audi A4 MLB kulcsprogramozás, gyári kulcs egy óra alatt",
+    excerpt:
+      "Egy 2019-es Audi A4 érkezett hozzánk új autókulcsért. Az autó MLB immobilizer rendszerrel működik, ahol a programozáshoz szükséges adatok a meglévő kulcsban is ott vannak. Az ügyfél gyári kulcsot kapott, a munka egy órát vett igénybe.",
+    category: "programozas",
+    date: "2026-10-13",
+    image: {
+      src: "/images/blog/audi-a4-mlb-kulcsprogramozas.jpg",
+      alt: "A 2019-es Audi A4 két gyári kulcsa a kész munka után, az autó utasterében",
+    },
+    metaTitle: "Audi A4 MLB kulcsprogramozás, gyári kulcs Budapest",
+    metaDescription:
+      "Egy 2019-es Audi A4 MLB immobilizer rendszeréhez készítettünk gyári pótkulcsot, egy óra alatt. Miért érdemes pótkulcsot csináltatni, amíg van működő kulcs?",
+    readingMinutes: 5,
+    lead:
+      "Egy 2019-es Audi A4 érkezett hozzánk új autókulcs készítésére. Az autó a " +
+      "Volkswagen és Audi csoport egyik korszerű, MLB immobilizer rendszerével " +
+      "működik, ahol a kulcsprogramozás komoly szakértelmet és megfelelő " +
+      "diagnosztikai eszközöket igényel. Az ügyfél eredeti, gyári Audi kulcsot " +
+      "kapott, amit sikeresen hozzátanítottunk a járműhöz. A teljes folyamat " +
+      "mindössze egy órát vett igénybe.",
+    sections: [
+      {
+        heading: "Miért más egy MLB rendszerű Audi autókulcsa?",
+        paragraphs: [
+          "Az MLB rendszer egyik sajátossága, hogy a kulcsprogramozáshoz szükséges " +
+            "fontos immobilizeradatok nem csak a jármű elektronikájában vannak meg, " +
+            "hanem a működő kulcsban is.",
+          "Ez a gyakorlatban azt jelenti, hogy amíg legalább egy jó kulcs megvan, a " +
+            "pótkulcs készítése kiszámítható, jól végigvihető munka. Ennél az A4-esnél " +
+            "is pontosan ez volt a helyzet, ezért sikerült egy óra alatt végezni.",
+          "Ha viszont egyetlen működő kulcs sem marad, akkor a munka nehezebbé válik, " +
+            "mert az az adatforrás is eltűnik, ami a kulcsban volt.",
+        ],
+      },
+      {
+        heading: "Mi történik, ha az utolsó Audi kulcs is elveszik?",
+        paragraphs: [
+          "Ilyenkor a kulcskészítés rendkívül bonyolulttá válhat. A megszokott " +
+            "autókulcs-programozási eljárások már nem feltétlenül alkalmazhatók. " +
+            "Akár márkaszervizes megoldásra is szükség lehet.",
+          "Ez pedig jellemzően együtt jár ezekkel:",
+        ],
+        list: [
+          "Az autó nem indítható, ezért tréleres szállításra lehet szükség",
+          "A márkaszervizes kulcspótlás jelentős költséget jelenthet",
+          "Az ügyintézés és a kulcs beszerzése hosszabb időt vehet igénybe",
+        ],
+      },
+      {
+        heading: "Ezért érdemes időben pótkulcsot csináltatni",
+        paragraphs: [
+          "Az ilyen típusú Audiknál különösen ajánlott pótkulcsot készíttetni, amíg " +
+            "legalább egy működő kulcs rendelkezésre áll. Ez a legegyszerűbb és " +
+            "legolcsóbb eset, nem sürgősségi helyzetben, hanem kényelmesen, előre " +
+            "egyeztetett időpontban.",
+          "A legtöbb ügyfél akkor jön, amikor már baj van. Az MLB rendszerű " +
+            "autóknál viszont pont az a különbség a nyugodt és a nehéz eset között, " +
+            "hogy a meglévő kulcs megvan-e még.",
+        ],
+        image: {
+          src: "/images/blog/audi-a4-virtualis-muszerfal.jpg",
+          alt: "A 2019-es Audi A4 műszerfala a kulcsprogramozás alatt",
+        },
+      },
+      {
+        heading: "Gyári Audi kulcs, nem utángyártott",
+        paragraphs: [
+          "Az ügyfél nem utángyártott, hanem eredeti Audi kulcsot kapott. A gyári " +
+            "kulcs előnye a kiváló minőség, a megbízható működés és az, hogy a jármű " +
+            "rendszeréhez tervezték.",
+          "A kulcsot a saját programozó készülékünkkel tanítottuk hozzá az autóhoz. " +
+            "A képen látható lépésnél adjuk meg, hány kulcsot tanítunk be a járműbe: " +
+            "ennél az Audinál kettőt, a meglévőt és az újat.",
+        ],
+        image: {
+          src: "/images/blog/audi-a4-mlb-kulcs-programozas-keszulek.jpg",
+          alt: "Az MLB kulcsprogramozás a programozó készülék képernyőjén, az Audi A4 utasterében",
+        },
+      },
+      {
+        heading: "Az MLB kulcsprogramozás nem egyszerű feladat",
+        paragraphs: [
+          "Ezeknél a modern Audi modelleknél a kulcsprogramozás jóval összetettebb, " +
+            "mint a régebbi járműveknél. Egy hibásan elvégzett művelet akár az " +
+            "immobilizer működésképtelenségét is okozhatja, aminek a következménye " +
+            "az, hogy az autó nem indul.",
+          "Ezért dolgozunk ezeken a rendszereken megfelelő szakmai tapasztalattal, " +
+            "professzionális eszközökkel és körültekintően, hogy a beavatkozás " +
+            "kockázata a lehető legkisebb legyen.",
+        ],
+      },
+      {
+        heading: "Audi pótkulcs Budapesten",
+        paragraphs: [
+          "A 2019-es Audi A4 tulajdonosa mindössze egy óra alatt, sikeresen " +
+            "felprogramozott, eredeti gyári kulccsal távozott.",
+          "Ne várja meg, amíg az utolsó Audi kulcsa is elveszik. Egy időben " +
+            "elkészített pótkulccsal jelentős költséget, időt és kellemetlenséget " +
+            "takaríthat meg. Mondja meg telefonon a pontos típust és az évjáratot, " +
+            "ebből derül ki, mennyi idő a munka és mibe kerül.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Mi az az MLB rendszer?",
+        a:
+          "A Volkswagen és Audi csoport egyik korszerű immobilizer rendszere. A " +
+          "kulcsprogramozáshoz szükséges fontos adatok itt a működő kulcsban is " +
+          "megtalálhatók, ezért más eljárás kell hozzá, mint a régebbi autóknál.",
+      },
+      {
+        q: "Mennyi idő egy Audi pótkulcs elkészítése?",
+        a:
+          "Ennél a 2019-es A4-esnél a teljes munka egy óra volt, a meglévő kulcs " +
+          "mellett. A pontos időt a típus és az évjárat dönti el, ezért ezt telefonon " +
+          "egyeztetjük, még a munka megkezdése előtt.",
+      },
+      {
+        q: "Elveszett az összes Audi kulcsom, van megoldás?",
+        a:
+          "Ez a nehezebb eset, mert az MLB rendszernél a meglévő kulcs is adatforrás. " +
+          "Ilyenkor a megoldás a típustól és az évjárattól függ. Akár " +
+          "márkaszervizes útra is szükség lehet. Hívjon minket, mondja el, milyen " +
+          "autóról van szó és megmondjuk, mit tudunk tenni.",
+      },
+      {
+        q: "Gyári vagy utángyártott kulcsot kapok?",
+        a:
+          "Ennél az Audinál eredeti, gyári kulcs került az autóhoz. A gyári kulcs " +
+          "minősége és a jármű rendszeréhez tervezett illeszkedése megbízhatóbb " +
+          "működést ad.",
+      },
+      {
+        q: "Mennyibe kerül egy Audi autókulcs programozása?",
+        a:
+          "Az ár a típustól, az évjárattól és a kulcs fajtájától függ, ezért " +
+          "felelősen csak az autó ismeretében lehet megmondani. Telefonon, " +
+          "WhatsAppon vagy Viberen konkrét árat mondunk, még a munka megkezdése előtt.",
+      },
+    ],
+    relatedServices: [
+      "autokulcs-programozas",
+      "autokulcs-keszites",
+      "autokulcs-masolas",
+    ],
+  },
+
+  /**
    * A szöveget és a két fotót a tulajdonos adta, egy valódi munkáról.
    * A tartalmi állításokhoz nem nyúltunk.
    *
