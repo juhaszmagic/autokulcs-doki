@@ -195,6 +195,46 @@
     ],
     "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQAAkABABoJQBOgBxFhxutcAD8K0FuE820hAEvbBhmfI9gT/y/HambaVzAHl5bjfgAAA=="
   },
+  "/images/blog/nissan-cabstar-elveszett-kulcs.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlgAAABXRUJQVlA4IEwAAADQAQCdASoQAAkABABoJQBdgB97EXGiUAD+5iIHur+wCZteChv8s+lD7YOFOQPRJ1XoibrIxr9NzGvGvp1AZ//pUrpphgOKn+cS+PAA"
+  },
+  "/images/blog/nissan-cabstar-kulcs-betanitas-kesz.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkoAAABXRUJQVlA4ID4AAACwAQCdASoQAAkABABoJZQCdADtfNqAAP2jS/c6vqb1FodnAp7C35ni8m7sBKwZHLI8Md+8q6a8FHgcC/0YAA=="
+  },
+  "/images/blog/nissan-cabstar-kulcsprogramozas-helyszinen.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAwAgCdASoQAAkABABoJQBdkCYit4u9Q0DrAAD+rJLM35ZaSVWcGZMQh9rDcO8wmktbqxpzN6swa2xZy3lh9gwDszNqsF4ZZ+W5AYzIjuvEKjcIrBAAAA=="
+  },
+  "/images/blog/nissan-cabstar-uj-kulcs-kormanynal.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRloAAABXRUJQVlA4IE4AAADwAQCdASoQAAkABABoJQBdgCLt/8s9muAA/uyajsBKS3IpPOfHwEe1apRs/Nqpzr+cyYA2UPajTGKw7L5ccAgZDWIpMkW4RjAlQxKAAAA="
+  },
   "/images/blog/opel-bicskakulcs-javitas.jpg": {
     "width": 1932,
     "height": 1087,

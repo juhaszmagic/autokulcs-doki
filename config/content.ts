@@ -100,6 +100,180 @@ export interface Article {
 
 export const articles: Article[] = [
   /**
+   * A négy fotót a tulajdonos adta, egy valódi munkáról. Hozzá szöveget
+   * nem küldött, csak annyit, hogy egy 2007-es Nissan Cabstar összes
+   * kulcsa elveszett. A cikk ezért CSAK azt állítja, ami a fotókon
+   * látszik vagy általános szakmai tudnivaló: nincs benne kitalált
+   * időtartam, ár vagy olyan lépés, amit nem tudunk alátámasztani.
+   *
+   * A fotókról leolvasható és felhasznált tények:
+   *   • Nissan Cabstar, a diagnosztikai készülék kijelzőjén
+   *     „Nissan/CABSTAR/2006/09-2009/02”
+   *   • a munka a jármű vezetőülésében, a helyszínen zajlott
+   *   • a készülék lépései: PIN kiolvasás, PIN ellenőrzés, kulcstanítás
+   *   • a visszaigazolás: „Learning completed”
+   *   • az elkészült kulcs kihajtható, bicskakulcs kivitelű
+   *
+   * ⚠️ FOTÓK: a tulajdonos kifejezett kérése, hogy CSAK az első képen
+   *    lévő rendszámot takarjuk ki, a többi képen semmit. Így is van:
+   *    a rendszám elmosva, teljes felbontáson ellenőrizve olvashatatlan,
+   *    minden más változatlan. Vágás egyik képen sincs, az álló fotók
+   *    teljes egészükben látszanak a 16:9 helyen, mellettük ugyanannak
+   *    a képnek az elmosott, sötétített nagyítása.
+   */
+  {
+    slug: "nissan-cabstar-elveszett-osszes-kulcs",
+    title: "Nissan Cabstar, elveszett az összes kulcs: új kulcs a helyszínen",
+    excerpt:
+      "Egy 2007-es Nissan Cabstar teherautóhoz hívtak minket, miután az összes kulcs elveszett. Nem kellett elvontatni: a helyszínen készült el az új autókulcs és a jármű be is tanulta.",
+    category: "elveszett-kulcs",
+    date: "2026-10-29",
+    image: {
+      src: "/images/blog/nissan-cabstar-elveszett-kulcs.jpg",
+      alt: "Az elkészült új autókulcs a 2007-es Nissan Cabstar teherautó előtt",
+    },
+    metaTitle: "Nissan Cabstar kulcs: elveszett az összes kulcs",
+    metaDescription:
+      "Egy 2007-es Nissan Cabstar összes kulcsa elveszett. Új autókulcs készült a helyszínen, a jármű rendszerébe betanítva, vontatás nélkül. Így zajlik egy ilyen munka.",
+    readingMinutes: 5,
+    lead:
+      "Egy 2007-es Nissan Cabstar tulajdonosa keresett meg minket: a " +
+      "teherautóhoz egyetlen használható autókulcs sem maradt. Ez a legrosszabb " +
+      "eset, amivel találkozni lehet, mégsem zsákutca. Az autót nem kellett " +
+      "elvontatni, a helyszínen készült el az új kulcs és a jármű be is " +
+      "tanulta. Megmutatjuk, mi történik ilyenkor lépésről lépésre.",
+    sections: [
+      {
+        heading: "Egy haszongépjárműnél az állás a legnagyobb költség",
+        paragraphs: [
+          "Egy magánautónál az elveszett kulcs bosszantó. Egy dolgozó " +
+            "teherautónál viszont minden óra pénzbe kerül: állnak a fuvarok, áll a " +
+            "rakomány és áll a munka.",
+          "Ezért az ilyen hívásokat soron kívül kezeljük. A cél az, hogy a jármű " +
+            "ott induljon el, ahol áll, ne tréleren kelljen elvinni.",
+        ],
+      },
+      {
+        heading: "Mit jelent az, hogy elveszett az összes autókulcs?",
+        paragraphs: [
+          "Ha van még egy működő kulcs, a munka egyszerűbb: arról készül másolat. " +
+            "Ha viszont egy sem maradt, nincs miről másolni, tehát mindent a " +
+            "járműből kell előállítani.",
+          "Ilyenkor két dolgot kell megoldani. Az egyik a mechanikus rész: olyan " +
+            "kulcsszárat kell készíteni, ami nyitja az autó zárját. A másik az " +
+            "elektronika: a Cabstar indításhoz nem elég a jó kulcsszár, a jármű " +
+            "rendszerének fel is kell ismernie a kulcsot.",
+          "Ha az autó zárva van, akkor előbb sérülésmentesen ki kell nyitni, hogy " +
+            "a járműhöz hozzá lehessen férni. Az autó ebből nem sérül meg.",
+        ],
+        image: {
+          src: "/images/blog/nissan-cabstar-uj-kulcs-kormanynal.jpg",
+          alt: "Az új, kihajtható autókulcs a Nissan Cabstar kormányánál",
+        },
+      },
+      {
+        heading: "Így készült el az új kulcs a Nissan Cabstarhoz",
+        paragraphs: [
+          "A munkát a helyszínen végeztük, a jármű vezetőülésében. A készülékünket " +
+            "a Cabstar diagnosztikai csatlakozójára kötöttük, ezután következett a " +
+            "kulcs betanítása a jármű rendszerébe.",
+          "Az eljárás három lépésből állt: előbb a járműhöz tartozó biztonsági kód " +
+            "kiolvasása, majd annak ellenőrzése, végül maga a kulcstanítás. Ez a " +
+            "sorrend nem átugorható, ettől fogadja el a jármű az új autókulcsot.",
+          "A végén a készülék visszaigazolta, hogy a tanítás befejeződött. Ilyenkor " +
+            "minden kulcsot kipróbálunk az autóban, hogy biztosan induljon vele a " +
+            "jármű, mielőtt elpakolunk.",
+        ],
+        image: {
+          src: "/images/blog/nissan-cabstar-kulcsprogramozas-helyszinen.jpg",
+          alt: "Autókulcs programozás a Nissan Cabstar vezetőülésében, diagnosztikai készülékkel",
+        },
+      },
+      {
+        heading: "Az évjárat többet számít, mint a típusnév",
+        paragraphs: [
+          "A Cabstar hosszú ideig készült, több kulcs és indításgátló megoldással. " +
+            "Ezért a típusnév önmagában kevés: a megoldást az évjárat és a jármű " +
+            "felszereltsége dönti el.",
+          "Ez a konkrét autó a 2006 és 2009 közötti sorozatból való. Egy korábbi " +
+            "vagy későbbi Cabstarnál más eljárás kellhet, ugyanúgy, ahogy a " +
+            "személyautóknál is.",
+          "Ezért kérdezzük meg telefonon a pontos típust és az évjáratot. Ebből " +
+            "derül ki, mi a megoldás, mennyi idő a munka és mibe kerül.",
+        ],
+        image: {
+          src: "/images/blog/nissan-cabstar-kulcs-betanitas-kesz.jpg",
+          alt: "A diagnosztikai készülék visszaigazolja, hogy a Nissan Cabstar betanulta az új kulcsot",
+        },
+      },
+      {
+        heading: "Amíg van kulcsa, addig olcsóbb",
+        paragraphs: [
+          "Az ilyen munkákból mindig ugyanaz a tanulság. Amíg van egy működő " +
+            "autókulcs, addig a pótkulcs készítése egyszerűbb, gyorsabb és " +
+            "olcsóbb. Amikor az utolsó kulcs is elveszik, akkor már sürgősségi " +
+            "helyzet van, ami többe kerül.",
+          "Ez a haszongépjárműveknél hatványozottan igaz, mert ott a jármű állása " +
+            "is pénzbe kerül. Ha a cégénél egyetlen kulcs van egy autóhoz, érdemes " +
+            "idejében tartalékot csináltatni hozzá.",
+        ],
+      },
+      {
+        heading: "Elveszett az összes autókulcsa? Hívjon minket",
+        paragraphs: [
+          "Személyautóhoz és haszongépjárműhöz egyaránt készítünk autókulcsot, " +
+            "akkor is, ha egyetlen kulcs sem maradt. A hét minden napján elérhetők " +
+            "vagyunk, Budapesten és a környékén.",
+          "Mondja meg telefonon a jármű típusát és évjáratát, megmondjuk, mi a " +
+            "megoldás és mibe kerül, még a kiszállás előtt.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "El kell vontatni az autót, ha az összes kulcs elveszett?",
+        a:
+          "A legtöbb esetben nem. Ennél a Nissan Cabstarnál is a helyszínen " +
+          "készült el az új autókulcs és ott is tanítottuk be a jármű " +
+          "rendszerébe. A vontatás így megspórolható.",
+      },
+      {
+        q: "Teherautóhoz, haszongépjárműhöz is készítenek kulcsot?",
+        a:
+          "Igen. A Nissan Cabstarhoz hasonló haszongépjárművekhez ugyanúgy " +
+          "készítünk új autókulcsot és programozzuk be, mint a személyautókhoz. " +
+          "A megoldás a típustól és az évjárattól függ.",
+      },
+      {
+        q: "Honnan tudják, milyen kulcs kell a járműhöz?",
+        a:
+          "A típus és az évjárat alapján. Ezekből derül ki, milyen kulcs tartozik " +
+          "a járműhöz, milyen indításgátló rendszerrel működik és milyen eljárással " +
+          "tanítható be az új autókulcs.",
+      },
+      {
+        q: "Kinyitják az autót, ha a kulcs bent maradt vagy elveszett?",
+        a:
+          "Igen, sérülésmentes autónyitással. A zárat és a nyílászárót nem " +
+          "roncsoljuk, így az autó a nyitás után ugyanúgy használható, mint előtte.",
+      },
+      {
+        q: "Mennyibe kerül, ha az összes autókulcs elveszett?",
+        a:
+          "Ez a legösszetettebb eset, ezért drágább, mint egy sima pótkulcs. A " +
+          "pontos ár a járműtől függ, ezért telefonon, WhatsAppon vagy Viberen " +
+          "mondunk konkrét árat, még a munka megkezdése előtt.",
+      },
+    ],
+    relatedServices: [
+      "elveszett-autokulcs",
+      "autokulcs-keszites",
+      "autokulcs-programozas",
+      "serulesmentes-autonyitas",
+    ],
+  },
+
+  /**
    * A szöveget és négy fotót a tulajdonos adott, egy valódi munkáról.
    * A tartalmi állításokhoz nem nyúltunk.
    *
