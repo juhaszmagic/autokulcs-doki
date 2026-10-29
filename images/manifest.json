@@ -195,6 +195,56 @@
     ],
     "blur": "data:image/webp;base64,UklGRkQAAABXRUJQVlA4IDgAAADQAQCdASoQAAkABABoJQBOgBxFhxutcAD8K0FuE820hAEvbBhmfI9gT/y/HambaVzAHl5bjfgAAA=="
   },
+  "/images/blog/mazda-cx5-ket-gyari-kulcs.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAABwAQCdASoQAAkABABoJaQAAWKabAD9IegxotF6RGK5twRutiMzjA8+4RRARlMTy4U2aIOPNZOYWeeAAAA="
+  },
+  "/images/blog/mazda-cx5-keyless-system-malfunction.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRkgAAABXRUJQVlA4IDwAAACwAQCdASoQAAkABABoJZwAAjPkBEfAAP7qITmwcf0yLfNhsHIKQh1TuHE9XI/wQHTRWxdEh9gI7jOBAAA="
+  },
+  "/images/blog/mazda-cx5-kulcs-betanitas-sikeres.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoQAAkABABoJZQAAuzXhrSRgAD+eSqVrUq1pTPEDbhOLUXHkIhCSBJBxL6uSLI8RuXt8me6XayvnzsS8AAAAA=="
+  },
+  "/images/blog/mazda-cx5-kulcsprogramozas-helyszinen.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlYAAABXRUJQVlA4IEoAAADwAQCdASoQAAkABABoJQBOj+ACywR5LJAA/uxHhlmkPOZg1sjxzbQ+Dm5Lh9odFsBTw7buRy6GWjHJuViEBnyjFiVH/z9B1B4gAA=="
+  },
+  "/images/blog/mazda-cx5-muszerfal-hiba-nelkul.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlIAAABXRUJQVlA4IEYAAADwAQCdASoQAAkABABoJZQAAwBd4TmsykAA/vNEI+Pv5YdXJYRSwejRv0Unu6DqrIxYB4X6Jqnd/hH0b2oYY9AYuY+CigAA"
+  },
   "/images/blog/nissan-cabstar-elveszett-kulcs.jpg": {
     "width": 1932,
     "height": 1087,
