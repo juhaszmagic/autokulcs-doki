@@ -193,8 +193,15 @@ export function Hero() {
                     </span>
                     <Stars rating={business.google.rating} className="h-4 w-4" />
                   </div>
+                  {/*
+                    A darabszám ide is kell: ez a kártya a legerősebb bizalmi
+                    elem az oldalon, és a 4,9 önmagában lehet pár értékelésből
+                    is. Ha a szám ismeretlen (null), marad a sima felirat.
+                  */}
                   <p className="mt-1 text-[0.8125rem] text-ink-600">
-                    Google értékelés
+                    {business.google.reviewCount
+                      ? `${business.google.reviewCount} Google értékelés`
+                      : "Google értékelés"}
                   </p>
                 </div>
               </div>
@@ -237,7 +244,9 @@ export function TrustStrip() {
             <span className="border-l border-white/15 pl-5">
               <GoogleLogo className="h-5" tone="dark" />
               <span className="mt-1.5 block text-[0.8125rem] text-ink-400">
-                Google értékelés
+                {business.google.reviewCount
+                  ? `${business.google.reviewCount} Google értékelés`
+                  : "Google értékelés"}
               </span>
             </span>
           </Link>

@@ -73,7 +73,16 @@ export function Header() {
                 <strong className="font-semibold text-white">
                   {formattedRating()}
                 </strong>
-                <span>Google értékelés</span>
+                {/*
+                  A darabszám is kiírjuk, mert az mond többet: a 4,9 önmagában
+                  lehet három értékelésből is. Ha a szám ismeretlen (null),
+                  marad a sima felirat.
+                */}
+                <span>
+                  {business.google.reviewCount
+                    ? `· ${business.google.reviewCount} Google értékelés`
+                    : "Google értékelés"}
+                </span>
               </Link>
             </p>
           </div>
