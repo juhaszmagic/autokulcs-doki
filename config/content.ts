@@ -121,15 +121,21 @@ export const articles: Article[] = [
    *    megfogalmazással szerepel. Külön szakasz szól arról, mikor
    *    nem a kulcs a hibás.
    *
-   * ⚠️ FOTÓK: a tulajdonos kifejezett kérése, hogy a képeken semmit ne
-   *    változtassunk és semmit ne takarjunk ki. Így is van: mind az öt
-   *    kép vágás és takarás nélkül került fel, az álló fotók teljes
-   *    egészükben látszanak a 16:9 helyen, mellettük ugyanannak a
-   *    képnek az elmosott, sötétített nagyítása.
-   *    Megjegyzés a későbbi munkához: a programozó képernyőjén látszik
-   *    a jármű alvázszáma (VIN). A tulajdonos tudtával maradt rajta,
-   *    jelezve lett neki. Ha egyszer mégis takarni kell, a negyedik kép
-   *    bal alsó sarkában van.
+   * ⚠️ FOTÓK: mind az öt kép vágás nélkül került fel, az álló fotók
+   *    teljes egészükben látszanak a 16:9 helyen, mellettük ugyanannak
+   *    a képnek az elmosott, sötétített nagyítása.
+   *
+   *    Egyetlen takarás van rajtuk, a tulajdonos döntése alapján:
+   *    a programozó képernyőjén olvasható volt a jármű ALVÁZSZÁMA
+   *    (VIN), ezt vékony csík fedi két képen. A „helyszínen” képen
+   *    a sor ferdén áll, ezért a csík is elforgatva került rá. A
+   *    készülék sorszáma és a típussor szándékosan látszik.
+   *
+   *    ⚠️ A kulcsokon lévő Mazda logó SZÁNDÉKOSAN maradt rajta.
+   *       2026-10-29-én megpróbáltuk az egyik kulcsról retusálással
+   *       eltüntetni (a logó helyére ugyanannak a kulcsnak a felülete
+   *       került), de a tulajdonosnak nem tetszett az eredmény, ezért
+   *       visszaállt a logó. Ne próbáld újra, csak ha ő kéri.
    */
   {
     slug: "mazda-keyless-system-malfunction",
