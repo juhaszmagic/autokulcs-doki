@@ -385,9 +385,9 @@ export const business = {
 
     /**
      * Értékelések száma.
-     * ✅ FRISSÍTVE 2026-10-10-én, a tulajdonos tájékoztatása alapján: 86 vélemény.
-     *    (Korábban: 80 (2026-09-17), még korábban 77, a Google Cégprofilból
-     *    ellenőrizve 2026-09-07-én.)
+     * ✅ FRISSÍTVE 2026-10-29-én, a tulajdonos tájékoztatása alapján:
+     *    100 vélemény. (Korábban: 86 (2026-10-10), 80 (2026-09-17), még
+     *    korábban 77, a Google Cégprofilból ellenőrizve 2026-09-07-én.)
      *
      *    Ez az érték NEM frissül magától: az oldal statikus, nincs
      *    élő kapcsolat a Google-lel. Ha a Google-ben változik, ide kell
@@ -396,7 +396,7 @@ export const business = {
      *    állítsd vissza null-ra: akkor a darabszám sehol nem jelenik meg,
      *    és az aggregateRating is kimarad a strukturált adatokból.
      */
-    reviewCount: 86 as number | null,
+    reviewCount: 100 as number | null,
 
     /**
      * VALÓDI Google-vélemények.
