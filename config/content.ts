@@ -100,6 +100,225 @@ export interface Article {
 
 export const articles: Article[] = [
   /**
+   * Az esetet és az öt fotót a tulajdonos adta, egy valódi munkáról:
+   * egy 2017-es Mazda CX-5-re korábban valaki nem megfelelő kulcsot
+   * programozott, ettől maradt bent a „Keyless system malfunction”
+   * figyelmeztetés. A 25-30 perces időtartam a tulajdonos saját
+   * állítása a saját munkájáról, ezért szerepelhet a cikkben.
+   *
+   * ⚠️ A cikkhez utánanéztünk, mert a tulajdonos kérte. Amit a külső
+   *    forrásokból felhasználtunk:
+   *      • a gyári kezelési útmutató szerint az üzenet akkor jelenik
+   *        meg, ha a kulcs nélküli nyitás és indítás rendszerében hiba
+   *        van. Ilyenkor ki kell vizsgáltatni (előfordulhat, hogy a motor
+   *        nem indul el)
+   *      • szakmai leírásokban és fórumokon visszatérő eset, hogy a
+   *        figyelmeztetés egy nem pontosan a járműhöz illő (eltérő
+   *        azonosítójú vagy gombszámú) kulcs betanítása után jelenik
+   *        meg, miközben a kulcsok egyébként működnek
+   *    Ez utóbbi nem gyári állásfoglalás, ezért a cikk sem állítja
+   *    kizárólagos okként: „gyakori ok” és „nem az egyetlen ok”
+   *    megfogalmazással szerepel. Külön szakasz szól arról, mikor
+   *    nem a kulcs a hibás.
+   *
+   * ⚠️ FOTÓK: a tulajdonos kifejezett kérése, hogy a képeken semmit ne
+   *    változtassunk és semmit ne takarjunk ki. Így is van: mind az öt
+   *    kép vágás és takarás nélkül került fel, az álló fotók teljes
+   *    egészükben látszanak a 16:9 helyen, mellettük ugyanannak a
+   *    képnek az elmosott, sötétített nagyítása.
+   *    Megjegyzés a későbbi munkához: a programozó képernyőjén látszik
+   *    a jármű alvázszáma (VIN). A tulajdonos tudtával maradt rajta,
+   *    jelezve lett neki. Ha egyszer mégis takarni kell, a negyedik kép
+   *    bal alsó sarkában van.
+   */
+  {
+    slug: "mazda-keyless-system-malfunction",
+    title: "Keyless system malfunction a Mazdán: mi a hiba oka?",
+    excerpt:
+      "A Mazda műszerfalán megjelenő „Keyless system malfunction” felirat mögött gyakran egy nem megfelelő, korábban betanított autókulcs áll. Egy 2017-es CX-5-nél pontosan ez történt. Megmutatjuk, mi a megoldás.",
+    category: "programozas",
+    date: "2026-10-29",
+    image: {
+      src: "/images/blog/mazda-cx5-keyless-system-malfunction.jpg",
+      alt: "A Mazda CX-5 műszerfalán a Keyless system malfunction figyelmeztetés",
+    },
+    metaTitle: "Keyless system malfunction Mazda: mi a megoldás?",
+    metaDescription:
+      "Kiírja a Mazda, hogy Keyless system malfunction? Gyakran egy nem megfelelő, korábban betanított kulcs okozza. Így szüntethető meg, egy valódi CX-5 esetén.",
+    readingMinutes: 6,
+    lead:
+      "Egy 2017-es Mazda CX-5 műszerfalán ott világított a „Keyless system " +
+      "malfunction” felirat. Az autó közben mindent tudott: nyílt, indult, " +
+      "ment. A hibát egy korábbi kulcsprogramozás hagyta maga után, amikor " +
+      "nem a járműhöz való kulcs került az autóba. Az ilyen figyelmeztetés " +
+      "magától nem tűnik el, de megszüntethető.",
+    sections: [
+      {
+        heading: "Mit jelent a „Keyless system malfunction” felirat?",
+        paragraphs: [
+          "A felirat magyarul annyit tesz: hiba a kulcs nélküli rendszerben. A " +
+            "gyári kezelési útmutató szerint akkor jelenik meg, ha a kulcs nélküli " +
+            "nyitás és indítás rendszerében a jármű valamit nem talál rendben. " +
+            "Ilyenkor ki kell vizsgáltatni, mert olyan hiba is előfordulhat, aminél a " +
+            "motor nem indul el.",
+          "Az üzenet tehát nem mondja meg, mi a baj, csak azt, hogy a rendszerrel " +
+            "van valami. Ezért ugyanaz a felirat nagyon különböző okokra is " +
+            "megjelenhet, a lemerült kulcselemtől a betanított kulcsok hibájáig.",
+          "Egy dolog viszont közös bennük: a figyelmeztetés magától nem tűnik el. " +
+            "Addig marad, amíg a kiváltó okot meg nem szüntetik.",
+        ],
+      },
+      {
+        heading: "A gyakori ok, amire kevesen gondolnak: nem megfelelő kulcs",
+        paragraphs: [
+          "Ha valaki olyan autókulcsot programoz a járműre, ami nem pontosan ahhoz " +
+            "az autóhoz való, a kulcs akár működhet is: nyit, zár, indít. A jármű " +
+            "viszont látja, hogy a memóriájában lévő kulcs nem olyan, amilyet várna, " +
+            "és ezt hibaként jelzi.",
+          "A különbség sokszor apróság: más gombszám, más azonosító, más cikkszám. " +
+            "Az autó ezt mégis észreveszi. Ez a Mazda modelleknél visszatérő eset, " +
+            "szakmai leírásokban és külföldi tulajdonosi fórumokon is ugyanezt írják " +
+            "le: a kulcsok működnek, a figyelmeztetés mégis ott marad.",
+          "A lényeg ebben az, hogy a hiba oka nem valamelyik alkatrész, hanem az, " +
+            "ami a jármű kulcsmemóriájában van. Amíg a nem odavaló kulcs benne van, " +
+            "addig a felirat sem megy sehova.",
+        ],
+      },
+      {
+        heading: "Így nézett ki ez a 2017-es Mazda CX-5",
+        paragraphs: [
+          "Ennél az autónál korábban valaki felprogramozott egy kulcsot, ami nem " +
+            "ehhez a járműhöz való. A tulajdonos ebből annyit látott, hogy a " +
+            "műszerfalon megjelent a figyelmeztetés és ott is maradt.",
+          "A jármű működését ez nem akadályozta: a kocsi ugyanúgy nyílt és indult, " +
+            "mint azelőtt. Ettől még nem szerencsés így hagyni, mert a jelzés " +
+            "elfedi a valódi hibákat is: ha később tényleg baj lenne a rendszerrel, " +
+            "a tulajdonos ugyanezt a feliratot látná és nem tudná, hogy ez már egy " +
+            "másik gond.",
+          "Hibakód törlésével ilyenkor nem lehet elintézni a dolgot. A törlés után " +
+            "a figyelmeztetés visszajön, mert az ok változatlanul ott van az autó " +
+            "memóriájában.",
+        ],
+        image: {
+          src: "/images/blog/mazda-cx5-kulcsprogramozas-helyszinen.jpg",
+          alt: "Mazda CX-5 kulcsprogramozás a helyszínen, a két kulccsal és a diagnosztikai készülékkel",
+        },
+      },
+      {
+        heading: "A megoldás: a kulcsmemória törlése és a jó kulcsok betanítása",
+        paragraphs: [
+          "A helyes megoldás az, hogy a jármű kulcsmemóriáját töröljük. Ezzel a nem " +
+            "odavaló kulcs is kikerül az autóból, nem marad utána semmi. Ezután a " +
+            "járműhöz illő kulcsokat tanítjuk be.",
+          "Fontos tudni, hogy a törlés minden korábbi kulcsot érvénytelenít. Ezért " +
+            "minden kulcsot be kell tanítani, amit a tulajdonos használni szeretne. " +
+            "Ennél a CX-5-nél két kulcs került vissza az autóba, mindkettő a " +
+            "járműhöz való.",
+          "A folyamatot a programozó készülék vezeti végig, a végén pedig vissza is " +
+            "igazolja, hogy a tanítás sikerült. Ez nálunk jellemzően 25-30 perc.",
+        ],
+        image: {
+          src: "/images/blog/mazda-cx5-ket-gyari-kulcs.jpg",
+          alt: "A Mazda CX-5-höz való két kulcs a betanítás után",
+        },
+      },
+      {
+        heading: "A munka után nincs több figyelmeztetés",
+        paragraphs: [
+          "A betanítás után a műszerfalon nincs ott többé a felirat, az autó pedig " +
+            "mindkét kulccsal ugyanúgy működik. A hiba nem elrejtve van, hanem " +
+            "megszűnt, mert a kiváltó oka került ki az autóból.",
+          "Mindig ki is próbáljuk az összes kulcsot, mielőtt elpakolunk: nyit, zár, " +
+            "indít, a műszerfalon pedig nem marad semmi.",
+        ],
+        image: {
+          src: "/images/blog/mazda-cx5-kulcs-betanitas-sikeres.jpg",
+          alt: "A diagnosztikai készülék visszaigazolja, hogy a Mazda CX-5 betanulta a kulcsot",
+        },
+      },
+      {
+        heading: "Mikor nem a kulcs a hibás?",
+        paragraphs: [
+          "Nem minden „Keyless system malfunction” felirat mögött rossz kulcs van. " +
+            "A leggyakoribb ártalmatlan ok a kulcsban lévő lemerült elem, de okozhatja " +
+            "sérült kulcs vagy a rendszer valamelyik másik eleme is.",
+          "Az sem mindegy, hogy az autó közben működik-e. Ha minden rendben megy és " +
+            "csak a felirat zavaró, az más eset, mint amikor a jármű nem indul el. " +
+            "Az utóbbi komolyabb eset, a gyári útmutató is kivizsgálást javasol.",
+          "Ezért telefonban nem mondunk rá biztosat. Mondja el, mikor jelent meg a " +
+            "felirat, történt-e előtte kulcsprogramozás és hogyan viselkedik az autó. " +
+            "Ebből már jó eséllyel megmondjuk, mire számítson.",
+        ],
+        image: {
+          src: "/images/blog/mazda-cx5-muszerfal-hiba-nelkul.jpg",
+          alt: "A Mazda CX-5 műszerfala a munka után, figyelmeztetés nélkül",
+        },
+      },
+      {
+        heading: "Kiírja a Mazdája, hogy Keyless system malfunction?",
+        paragraphs: [
+          "Ha a műszerfalon megjelent ez a felirat és korábban készült az autóhoz " +
+            "kulcs valahol máshol, jó eséllyel pont ez a helyzet áll fent. Ezt meg " +
+            "tudjuk oldani.",
+          "Mondja meg telefonon a pontos típust, az évjáratot és azt, hogy hány " +
+            "kulcsa van. Megmondjuk, mi a megoldás és mibe kerül, még a munka " +
+            "megkezdése előtt.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Mit jelent a Keyless system malfunction felirat a Mazdán?",
+        a:
+          "Azt jelzi, hogy a kulcs nélküli nyitás és indítás rendszerében a jármű " +
+          "talált valamit, ami nem megfelelő. A felirat magától nem tűnik el, a " +
+          "kiváltó okot kell megszüntetni.",
+      },
+      {
+        q: "Okozhatja ezt egy rosszul felprogramozott autókulcs?",
+        a:
+          "Igen, ez a gyakori esetek egyike. Ha olyan kulcs került az autóba, ami " +
+          "nem pontosan ahhoz a járműhöz való, a kulcs működhet, a jármű mégis " +
+          "hibát jelez. Ennél a Mazda CX-5-nél is ez volt a háttérben.",
+      },
+      {
+        q: "Elég, ha letörlik a hibakódot?",
+        a:
+          "Nem. A törlés után a figyelmeztetés visszajön, mert az ok ott marad a " +
+          "jármű kulcsmemóriájában. A megoldás az, hogy a nem odavaló kulcs kikerül " +
+          "az autóból és a megfelelő kulcsok kerülnek be helyette.",
+      },
+      {
+        q: "Vezethetem addig az autót?",
+        a:
+          "Ennél a CX-5-nél a jármű mindent tudott, a felirat a működését nem " +
+          "akadályozta. A gyári útmutató viszont kivizsgálást javasol, mert a " +
+          "rendszer hibájának más oka is lehet. Olyan eset is előfordul, amikor " +
+          "a motor nem indul el. Ezért érdemes megnézetni.",
+      },
+      {
+        q: "Mennyi idő megszüntetni ezt a hibát?",
+        a:
+          "Ha a nem megfelelő kulcs okozza, nálunk jellemzően 25-30 perc. Ennyi " +
+          "idő alatt kikerül az autóból a rossz kulcs, betanulnak a jó kulcsok és " +
+          "a figyelmeztetés is eltűnik a műszerfalról.",
+      },
+      {
+        q: "Az összes kulcsomat újra kell tanítani?",
+        a:
+          "Igen. A kulcsmemória törlése minden korábbi kulcsot érvénytelenít, ezért " +
+          "minden kulcsot be kell tanítani, amit használni szeretne. Hozza magával " +
+          "az összes meglévő kulcsot.",
+      },
+    ],
+    relatedServices: [
+      "autokulcs-programozas",
+      "autokulcs-keszites",
+      "autokulcs-masolas",
+    ],
+  },
+
+  /**
    * A négy fotót a tulajdonos adta, egy valódi munkáról. Hozzá szöveget
    * nem küldött, csak annyit, hogy egy 2007-es Nissan Cabstar összes
    * kulcsa elveszett. A cikk ezért CSAK azt állítja, ami a fotókon
