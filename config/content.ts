@@ -129,7 +129,7 @@ export const articles: Article[] = [
     slug: "volvo-xc70-potkulcs-cem-modul",
     title: "Volvo XC70 pótkulcs, amikor a CEM modulhoz kell nyúlni",
     excerpt:
-      "Egy Volvo XC70 tulajdonosa már több szakembernél járt pótkulcsért, mire hozzánk került. A megoldáshoz ki kellett szerelni a CEM modult. Egy órán belül elkészült, az autó sértetlen maradt.",
+      "Egy Volvo XC70 tulajdonosa sorra kapta az elutasításokat: több helyen sem vállalták el a pótkulcs elkészítését. Nálunk megoldódott, a CEM modul kiszerelésével, egy órán belül.",
     category: "programozas",
     date: "2026-11-01",
     image: {
@@ -138,12 +138,13 @@ export const articles: Article[] = [
     },
     metaTitle: "Volvo XC70 pótkulcs, CEM modul: Budapest",
     metaDescription:
-      "Volvo XC70 pótkulcs készítés a CEM modul kiszerelésével, egy órán belül. Miért nehezebb eset a Volvo és mit lehet tenni, ha máshol azt mondták, nem megoldható?",
+      "Volvo XC70 pótkulcs több elutasítás után: nálunk megoldódott, a CEM modul kiszerelésével, egy órán belül. Mit tegyen, ha máshol nem vállalták el a munkát?",
     readingMinutes: 5,
     lead:
       "Egy Volvo XC70 tulajdonosa pótkulcsot szeretett volna. Elmondása " +
-      "szerint már több szakembernél járt vele, de nem tudtak neki " +
-      "segíteni. Nálunk megoldódott: a munkához ki kellett szerelni a jármű " +
+      "szerint több helyen is járt vele, mindenhol ugyanazt a választ " +
+      "kapta: ezt nem vállalják. Hozzánk már a sokadik elutasítás után " +
+      "érkezett. Nálunk megoldódott: a munkához ki kellett szerelni a jármű " +
       "központi elektronikai modulját, a CEM-et. Az új kulcs körülbelül egy " +
       "órán belül elkészült.",
     sections: [
@@ -167,16 +168,22 @@ export const articles: Article[] = [
         },
       },
       {
-        heading: "Ezért mondják sok helyen, hogy nem megoldható",
+        heading: "A sokadik elutasítás után jött hozzánk",
         paragraphs: [
-          "Az ügyfél elmondása szerint már több szakembernél járt, mire hozzánk " +
-            "került. Ez ezeknél az autóknál nem ritka. Aki csak a csatlakozón " +
-            "keresztül dolgozik, annak itt tényleg elfogynak a lehetőségei.",
+          "Ez a tulajdonos nem elsőre talált meg minket. Elmondása szerint " +
+            "több helyen is próbálkozott a pótkulccsal, sorra kapta a " +
+            "nemleges válaszokat: nem vállalták el a munkát. Mire hozzánk " +
+            "ért, már abban sem volt biztos, hogy egyáltalán megoldható.",
+          "Ez ezeknél az autóknál nem ritka. Aki csak a diagnosztikai " +
+            "csatlakozón keresztül dolgozik, annak itt tényleg elfogynak a " +
+            "lehetőségei, mert a kulcsadatokhoz úgy nem lehet hozzáférni.",
           "Nem arról van szó, hogy az előzőek nem értettek hozzá. Arról van szó, " +
             "hogy ez a feladat szereléssel jár. Nem mindenki vállalja, hogy " +
-            "hozzányúl egy ilyen autó műszerfalához és elektronikájához.",
+            "hozzányúl egy ilyen autó műszerfalához és elektronikájához. Ez a " +
+            "döntésük teljesen érthető, mi viszont elvállaljuk.",
           "Ha Önnek is azt mondták máshol, hogy a Volvójához nem lehet kulcsot " +
-            "csinálni, attól még lehet, hogy lehet. Érdemes megkérdezni minket is.",
+            "csinálni, attól még lehet, hogy lehet. Hívjon minket és mondja el, " +
+            "milyen autóról van szó.",
         ],
       },
       {
@@ -214,8 +221,8 @@ export const articles: Article[] = [
           "A teljes munka, a szereléssel együtt, körülbelül egy órán belül " +
             "elkészült. Minden rendben ment, az autó sértetlen maradt, a kulcs " +
             "pedig működik.",
-          "Az ügyfél elégedetten távozott. Láthatóan megkönnyebbült, hogy " +
-            "végre talált megoldást arra, amire addig több helyen nemet kapott. " +
+          "Az ügyfél elégedetten távozott. Láthatóan megkönnyebbült: amire " +
+            "addig több helyen is nemet kapott, az itt egy óra alatt megoldódott. " +
             "Ezek a munkák a legjobbak.",
         ],
       },
@@ -254,12 +261,13 @@ export const articles: Article[] = [
           "el, ezért ezt telefonon egyeztetjük.",
       },
       {
-        q: "Máshol azt mondták, hogy a Volvómhoz nem lehet kulcsot csinálni. Mit tegyek?",
+        q: "Máshol nem vállalták el a Volvóm pótkulcsát. Mit tegyek?",
         a:
-          "Hívjon minket és mondja el, milyen autóról van szó. Ezeknél a " +
-          "modelleknél gyakori, hogy a megoldás szereléssel jár. Aki ezt nem " +
-          "vállalja, annak tényleg nem megoldható. Attól még lehet, hogy van rá " +
-          "mód.",
+          "Hívjon minket és mondja el, milyen autóról van szó. Ennél az XC70-nél " +
+          "is több elutasítás után jött hozzánk a tulajdonos, mégis megoldódott. " +
+          "Ezeknél a modelleknél gyakori, hogy a megoldás szereléssel jár: aki " +
+          "ezt nem vállalja, annak tényleg nem megoldható. Attól még lehet, hogy " +
+          "van rá mód.",
       },
       {
         q: "Mennyibe kerül egy Volvo pótkulcs?",
