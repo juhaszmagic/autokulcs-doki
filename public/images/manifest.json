@@ -445,6 +445,46 @@
     ],
     "blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAADwAQCdASoQAAkABABoJQBdgCK3nuXdlIAA/oODY9KEvnyYaPc6n/Qnrqa3VYQYOt1aZPAqyB2Qp8B6Sa2A3x8AAAA="
   },
+  "/images/blog/volvo-xc70-cem-adatkiolvasas.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADwAQCdASoQAAkABABoJQBOgCB/8mWmfsAA/u8gQrWf1m9kF1eKs+nIkgy9xvJKDTRgubyDImggKH0+XY0CJS7SMCwAAA=="
+  },
+  "/images/blog/volvo-xc70-cem-modul-helye.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAADQAQCdASoQAAkABABoJZQC7AEWDDJjMAD+5jv0Nfbijq/QQEstZQbzqvSLTnB90PUmZ1NRqyQJyPH4ZECVpoh2/LtPnUteAAA="
+  },
+  "/images/blog/volvo-xc70-cem-modul.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAACwAQCdASoQAAkABABoJZQAAn/YYciQAP70bbnJ41y3gNppp6Rgtc1kfpufs59AdiIPV0jEo447wbjSYP/xEoARhsKgAA=="
+  },
+  "/images/blog/volvo-xc70-potkulcs.jpg": {
+    "width": 1932,
+    "height": 1087,
+    "widths": [
+      640,
+      1024,
+      1600
+    ],
+    "blur": "data:image/webp;base64,UklGRlQAAABXRUJQVlA4IEgAAACwAQCdASoQAAkABABoJQAAU/9SqS6AAP7mbmkgkOtBJpVWQpb3NL92XaOsBc9EMA2ctZ2d1TC1lufZ37YlXZvpTfhVHoUkMAA="
+  },
   "/images/cta.jpg": {
     "width": 1672,
     "height": 941,

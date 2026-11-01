@@ -100,6 +100,184 @@ export interface Article {
 
 export const articles: Article[] = [
   /**
+   * Az esetet és a négy fotót a tulajdonos adta, egy valódi munkáról.
+   * Amit ő mondott el, tehát szerepelhet a cikkben:
+   *   • Volvo XC70, pótkulcs készítés
+   *   • az ügyfél elmondása szerint már több szakembernél járt, nem
+   *     tudtak segíteni (konkrét céget NEM nevezünk meg)
+   *   • a CEM modult ki kellett szerelni, komoly szerelési munka
+   *   • körülbelül egy órán belül elkészült
+   *   • minden rendben ment, az ügyfél elégedetten távozott
+   *
+   * A fotókról leolvasható és felhasznált tények:
+   *   • a modul Volvo gyári darab, a műszerfal alól szerelve ki
+   *   • a készülék kijelzőjén „IMMO DATA, CEM Type A (2009-2016)”,
+   *     tehát ehhez az évjárathoz tartozó eljárás
+   *   • a kiolvasás a kiszerelt modulon, munkapadon zajlott
+   *   • a végén két kulcs van a kézben
+   *
+   * ⚠️ FOTÓK: semmit nem takartunk ki és nem vágtunk le. Teljes
+   *    felbontáson ellenőrizve: alvázszám és rendszám nincs rajtuk, a
+   *    modul matricáján csak gyári alkatrészszámok vannak, az nem
+   *    köthető az ügyfélhez. A légzsák-címke olvashatatlanul életlen.
+   *
+   * ⚠️ Nem állítjuk, hogy minden Volvónál ki kell szerelni a modult: a
+   *    cikk végig „ezeknél a modelleknél” és „gyakran” megfogalmazást
+   *    használ, mert a megoldás típustól és évjárattól függ.
+   */
+  {
+    slug: "volvo-xc70-potkulcs-cem-modul",
+    title: "Volvo XC70 pótkulcs, amikor a CEM modulhoz kell nyúlni",
+    excerpt:
+      "Egy Volvo XC70 tulajdonosa már több szakembernél járt pótkulcsért, mire hozzánk került. A megoldáshoz ki kellett szerelni a CEM modult. Egy órán belül elkészült, az autó sértetlen maradt.",
+    category: "programozas",
+    date: "2026-11-01",
+    image: {
+      src: "/images/blog/volvo-xc70-potkulcs.jpg",
+      alt: "A Volvo XC70 két kulcsa a kész munka után, a jármű utasterében",
+    },
+    metaTitle: "Volvo XC70 pótkulcs, CEM modul: Budapest",
+    metaDescription:
+      "Volvo XC70 pótkulcs készítés a CEM modul kiszerelésével, egy órán belül. Miért nehezebb eset a Volvo és mit lehet tenni, ha máshol azt mondták, nem megoldható?",
+    readingMinutes: 5,
+    lead:
+      "Egy Volvo XC70 tulajdonosa pótkulcsot szeretett volna. Elmondása " +
+      "szerint már több szakembernél járt vele, de nem tudtak neki " +
+      "segíteni. Nálunk megoldódott: a munkához ki kellett szerelni a jármű " +
+      "központi elektronikai modulját, a CEM-et. Az új kulcs körülbelül egy " +
+      "órán belül elkészült.",
+    sections: [
+      {
+        heading: "Miért nehezebb eset egy Volvo pótkulcs?",
+        paragraphs: [
+          "A legtöbb autónál a pótkulcs készítése a diagnosztikai csatlakozón " +
+            "keresztül megy: a készüléket rákötjük, kiolvassuk a szükséges " +
+            "adatokat, betanítjuk az új kulcsot.",
+          "Ezeknél a Volvo modelleknél ez gyakran nem elég. A kulcsokhoz tartozó " +
+            "adatok a jármű központi elektronikai moduljában, a CEM-ben vannak, " +
+            "és ahhoz sok esetben csak úgy lehet hozzáférni, ha a modult " +
+            "kiszereljük a kocsiból és közvetlenül azon dolgozunk.",
+          "Ez már nem csak programozás, hanem szerelés is. Kell hozzá szerszám, " +
+            "gyakorlat és türelem, mert a modul a műszerfal alatt ül, több " +
+            "csatlakozóval és kábelköteggel körülvéve.",
+        ],
+        image: {
+          src: "/images/blog/volvo-xc70-cem-modul-helye.jpg",
+          alt: "A Volvo XC70 CEM modulja a műszerfal alatt, a kábelkötegek között",
+        },
+      },
+      {
+        heading: "Ezért mondják sok helyen, hogy nem megoldható",
+        paragraphs: [
+          "Az ügyfél elmondása szerint már több szakembernél járt, mire hozzánk " +
+            "került. Ez ezeknél az autóknál nem ritka. Aki csak a csatlakozón " +
+            "keresztül dolgozik, annak itt tényleg elfogynak a lehetőségei.",
+          "Nem arról van szó, hogy az előzőek nem értettek hozzá. Arról van szó, " +
+            "hogy ez a feladat szereléssel jár. Nem mindenki vállalja, hogy " +
+            "hozzányúl egy ilyen autó műszerfalához és elektronikájához.",
+          "Ha Önnek is azt mondták máshol, hogy a Volvójához nem lehet kulcsot " +
+            "csinálni, attól még lehet, hogy lehet. Érdemes megkérdezni minket is.",
+        ],
+      },
+      {
+        heading: "Így készült el: a modul kiszerelése",
+        paragraphs: [
+          "Először hozzáfértünk a modulhoz. Ehhez a műszerfal alsó részét kellett " +
+            "megbontani, óvatosan, hogy a burkolat és a kábelezés ne sérüljön. " +
+            "A modul ezután kiemelhető volt a helyéről.",
+          "Ez a munka nagyobb része. A programozás maga gyorsabb, mint ahogy " +
+            "hozzá lehet férni a járműben.",
+        ],
+        image: {
+          src: "/images/blog/volvo-xc70-cem-modul.jpg",
+          alt: "A kiszerelt Volvo CEM modul, a gyári alkatrészszámokkal",
+        },
+      },
+      {
+        heading: "Az adatok kiolvasása és az új kulcs",
+        paragraphs: [
+          "A kiszerelt modulon már közvetlenül dolgoztunk: kiolvastuk belőle az " +
+            "indításgátlóhoz tartozó adatokat, amikből az új autókulcs " +
+            "elkészíthető. A készülék a kiolvasás alatt végig mutatja, hol tart a " +
+            "folyamat.",
+          "Ezután a modul visszakerült a helyére, mindent visszaszereltünk, az új " +
+            "kulcsot pedig betanítottuk a járműbe.",
+        ],
+        image: {
+          src: "/images/blog/volvo-xc70-cem-adatkiolvasas.jpg",
+          alt: "Adatkiolvasás a kiszerelt Volvo CEM modulról a munkapadon",
+        },
+      },
+      {
+        heading: "Egy órán belül kész, az autó sértetlen",
+        paragraphs: [
+          "A teljes munka, a szereléssel együtt, körülbelül egy órán belül " +
+            "elkészült. Minden rendben ment, az autó sértetlen maradt, a kulcs " +
+            "pedig működik.",
+          "Az ügyfél elégedetten távozott. Láthatóan megkönnyebbült, hogy " +
+            "végre talált megoldást arra, amire addig több helyen nemet kapott. " +
+            "Ezek a munkák a legjobbak.",
+        ],
+      },
+      {
+        heading: "Volvo pótkulcsra van szüksége?",
+        paragraphs: [
+          "Volvóhoz is készítünk autókulcsot, akkor is, ha a megoldáshoz " +
+            "szerelni kell. Mondja meg telefonon a pontos típust, az évjáratot " +
+            "és azt, hogy van-e még működő kulcsa.",
+          "Ebből megmondjuk, mi a megoldás, mennyi idő és mibe kerül, még a " +
+            "munka megkezdése előtt.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Miért kell kiszerelni a modult egy Volvónál?",
+        a:
+          "Mert ezeknél a modelleknél a kulcsokhoz tartozó adatok a jármű " +
+          "központi elektronikai moduljában (CEM) vannak, sok esetben pedig csak " +
+          "közvetlenül azon lehet hozzájuk férni. A diagnosztikai csatlakozó " +
+          "ilyenkor nem elég.",
+      },
+      {
+        q: "Nem sérül meg az autó a szereléstől?",
+        a:
+          "Nem. A burkolatot a rögzítési pontjainál bontjuk meg, a modult pedig " +
+          "a saját helyéről emeljük ki. A munka végén minden visszakerül a " +
+          "helyére. Ennél az XC70-nél is sértetlen maradt az autó.",
+      },
+      {
+        q: "Mennyi idő egy ilyen Volvo pótkulcs?",
+        a:
+          "Ennél az XC70-nél a teljes munka, a szereléssel együtt, körülbelül " +
+          "egy órán belül elkészült. A pontos időt a típus és az évjárat dönti " +
+          "el, ezért ezt telefonon egyeztetjük.",
+      },
+      {
+        q: "Máshol azt mondták, hogy a Volvómhoz nem lehet kulcsot csinálni. Mit tegyek?",
+        a:
+          "Hívjon minket és mondja el, milyen autóról van szó. Ezeknél a " +
+          "modelleknél gyakori, hogy a megoldás szereléssel jár. Aki ezt nem " +
+          "vállalja, annak tényleg nem megoldható. Attól még lehet, hogy van rá " +
+          "mód.",
+      },
+      {
+        q: "Mennyibe kerül egy Volvo pótkulcs?",
+        a:
+          "Az ár a típustól, az évjárattól és attól függ, hogy kell-e hozzá " +
+          "szerelés. Pontos árat telefonon, WhatsAppon vagy Viberen mondunk, " +
+          "még a munka megkezdése előtt.",
+      },
+    ],
+    relatedServices: [
+      "autokulcs-keszites",
+      "autokulcs-programozas",
+      "autokulcs-masolas",
+      "elveszett-autokulcs",
+    ],
+  },
+
+  /**
    * Az esetet és az öt fotót a tulajdonos adta, egy valódi munkáról:
    * egy 2017-es Mazda CX-5-re korábban valaki nem megfelelő kulcsot
    * programozott, ettől maradt bent a „Keyless system malfunction”
