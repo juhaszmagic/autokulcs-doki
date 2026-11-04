@@ -102,6 +102,180 @@ export const articles: Article[] = [
   /**
    * Az esetet és a négy fotót a tulajdonos adta, egy valódi munkáról.
    * Amit ő mondott el, tehát szerepelhet a cikkben:
+   *   • 2021-es Toyota, pótkulcs készítés a HELYSZÍNEN
+   *   • hibátlanul, biztonságosan ment
+   *   • a kulcsban lévő kis szervizkulcs is elkészült
+   *
+   * ⚠️ TÍPUSNÉV: a tulajdonos Aurisként írta, a fotón lévő készülék
+   *    viszont „Toyota/COROLLA/Smart Key/2019-2022” kiírást mutat. A
+   *    2021-es évjáratban ez a típus már Corolla néven futott (2019-ben
+   *    nevezték át, addig volt Auris). Ezért a cikk Corollaként
+   *    hivatkozik rá, az Auris nevet pedig külön szakasz és egy gyakori
+   *    kérdés hozza be, mert sokan még így keresnek rá. A tulajdonos
+   *    jelezve lett: ha mégis Auris, át kell írni.
+   *
+   * ⚠️ FOTÓK: a tulajdonos kifejezett kérése, hogy semmit ne töröljünk
+   *    és ne homályosítsunk, maradjon minden úgy, ahogy van. Így is van:
+   *    vágás, takarás és elmosás nélkül kerültek fel.
+   *    Megjegyzés: a programozó képernyőjén OLVASHATÓ a jármű
+   *    alvázszáma (VIN). A tulajdonos tudtával maradt rajta, jelezve
+   *    lett neki. (A Mazda cikknél ő kérte a letakarását, itt viszont
+   *    azt kérte, hogy maradjon minden érintetlenül.) Ha egyszer mégis
+   *    takarni kell, a betanítást mutató képen van, a bal alsó sarokban.
+   */
+  {
+    slug: "toyota-corolla-potkulcs-helyszinen",
+    title: "Toyota Corolla pótkulcs a helyszínen, szervizkulccsal együtt",
+    excerpt:
+      "Egy 2021-es Toyota Corollához készítettünk pótkulcsot ott, ahol az autó állt. A smart key betanítása mellett a kulcsban lévő kis mechanikus szervizkulcs is elkészült.",
+    category: "programozas",
+    date: "2026-11-04",
+    image: {
+      src: "/images/blog/toyota-corolla-potkulcs.jpg",
+      alt: "A 2021-es Toyota Corolla két kulcsa a kész munka után, az autó előtt",
+    },
+    metaTitle: "Toyota Corolla, Auris pótkulcs a helyszínen",
+    metaDescription:
+      "Toyota Corolla pótkulcs a helyszínen, a kulcsban lévő kis szervizkulcs marásával együtt. Mire figyeljen egy kulcs nélküli indítású Toyota pótkulcsánál?",
+    readingMinutes: 5,
+    lead:
+      "Egy 2021-es Toyota Corollához kellett pótkulcs. A munkát ott végeztük " +
+      "el, ahol az autó állt: a smart key betanítása mellett a kulcsban lévő " +
+      "kis mechanikus szervizkulcsot is elkészítettük. Minden rendben ment, " +
+      "az autó pedig a helyén maradt.",
+    sections: [
+      {
+        heading: "Mit jelent a pótkulcs egy kulcs nélküli indítású Toyotánál?",
+        paragraphs: [
+          "Ezeknél a modelleknél nincs hagyományos kulcs, amit el kell fordítani. " +
+            "A kulcsot elég a zsebben tartani: az autó felismeri, kinyit, az " +
+            "indítás pedig gombnyomásra megy.",
+          "A pótkulcs ezért nem egy egyszerű másolat. Az új kulcsot be kell " +
+            "tanítani a jármű rendszerébe, hogy az autó a sajátjaként fogadja el. " +
+            "Ez az, amit a készülékkel, a jármű elektronikájához csatlakozva " +
+            "végzünk el.",
+          "A jó hír az, hogy amíg van működő kulcs, ez kiszámítható munka. A " +
+            "nehéz eset az, amikor már egyetlen kulcs sem maradt.",
+        ],
+      },
+      {
+        heading: "A munka ott zajlott, ahol az autó állt",
+        paragraphs: [
+          "Az autót nem kellett sehova vinni. A szükséges eszköz nálunk van, a " +
+            "munkához pedig elég volt beülni a vezetőülésbe.",
+          "Ez főleg akkor számít, ha a jármű nem tud elindulni, vagy ha a " +
+            "tulajdonosnak nincs ideje bevinni valahova és megvárni. Ilyenkor a " +
+            "kiszállás nem kényelmi kérdés, hanem azért kell, mert az autó ott " +
+            "van, ahol van.",
+        ],
+        image: {
+          src: "/images/blog/toyota-corolla-kulcsprogramozas-helyszinen.jpg",
+          alt: "Toyota Corolla kulcsprogramozás a helyszínen, a vezetőülésből",
+        },
+      },
+      {
+        heading: "A smart key betanítása",
+        paragraphs: [
+          "A készüléket a jármű diagnosztikai csatlakozójára kötöttük, majd " +
+            "kiolvastuk azokat az adatokat, amik az új kulcs betanításához " +
+            "kellenek. Ezután következett maga a tanítás.",
+          "A végén a készülék visszaigazolta, hogy sikerült. Ilyenkor mindig " +
+            "kipróbáljuk az összes kulcsot: nyit, zár, indít. Csak akkor " +
+            "pakolunk el, ha mindegyik hibátlanul működik.",
+        ],
+        image: {
+          src: "/images/blog/toyota-corolla-smart-key-betanitas.jpg",
+          alt: "A készülék visszaigazolja, hogy a Toyota Corolla betanulta az új smart key kulcsot",
+        },
+      },
+      {
+        heading: "A kis szervizkulcs is elkészült, ez pedig fontosabb, mint hinné",
+        paragraphs: [
+          "A kulcs nélküli indítású Toyota kulcsában van egy kis mechanikus " +
+            "kulcs is. Ezt a legtöbben soha nem veszik elő, sokan nem is tudják, " +
+            "hogy ott lapul.",
+          "Pedig ez nyitja ki az autót akkor, ha a kulcs eleme lemerül, vagy ha " +
+            "a kulcs valamiért nem kommunikál a járművel. Ha a pótkulcsba ez nem " +
+            "készül el, akkor a pótkulcs csak félig pótkulcs: amíg minden " +
+            "működik, jó, de pont a bajban nem segít.",
+          "Ennél a Corollánál ezért a kis szervizkulcsot is kimartuk, tehát a " +
+            "két kulcs mindenben egyenértékű.",
+        ],
+        image: {
+          src: "/images/blog/toyota-corolla-ket-kulcs-kesz.jpg",
+          alt: "A Toyota Corolla két kulcsa a kész munka után, az autó utasterében",
+        },
+      },
+      {
+        heading: "Auris vagy Corolla? Ugyanaz az autó",
+        paragraphs: [
+          "Sokan Aurisként keresik ezt a típust, jogosan: 2019-ig így hívták. " +
+            "A modellváltás óta ugyanez az autó Corolla néven fut.",
+          "A kulcs szempontjából a név nem számít, az évjárat és a felszereltség " +
+            "annál inkább. Ezért kérdezzük meg telefonon a pontos típust és az " +
+            "évjáratot, mert ebből derül ki, milyen kulcs tartozik a járműhöz.",
+        ],
+      },
+      {
+        heading: "Toyota pótkulcsra van szüksége?",
+        paragraphs: [
+          "Toyotához is készítünk pótkulcsot, a kulcs nélküli indítású " +
+            "modellekhez is. Ha van még működő kulcsa, ez a legegyszerűbb és " +
+            "legolcsóbb eset, érdemes nem megvárni, amíg az is elvész.",
+          "Mondja meg telefonon a pontos típust, az évjáratot és azt, hogy hány " +
+            "kulcsa van. Megmondjuk, mi a megoldás, mennyi idő és mibe kerül, " +
+            "még a munka megkezdése előtt.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: "Be kell vinnem valahova az autót a Toyota pótkulcshoz?",
+        a:
+          "A legtöbb esetben nem. Ennél a Corollánál is ott készült el a kulcs, " +
+          "ahol az autó állt. Ha Önnek a műhelyünk a kényelmesebb, az is jó, ezt " +
+          "telefonon beszéljük meg.",
+      },
+      {
+        q: "Mire jó a kulcsban lévő kis szervizkulcs?",
+        a:
+          "Ezzel lehet kinyitni az autót akkor, ha a kulcs eleme lemerül, vagy " +
+          "ha a kulcs nem kommunikál a járművel. Ezért érdemes a pótkulcsba is " +
+          "elkészíttetni, különben pont a bajban nem tud vele ajtót nyitni.",
+      },
+      {
+        q: "Az Auris és a Corolla kulcsa ugyanaz?",
+        a:
+          "Ez a típus 2019-ig Auris néven futott, azóta Corolla. A kulcs " +
+          "szempontjából nem a név számít, hanem az évjárat és a felszereltség. " +
+          "A pontos típus és évjárat alapján mondjuk meg, milyen kulcs kell.",
+      },
+      {
+        q: "Mennyi idő egy kulcs nélküli indítású Toyota pótkulcsa?",
+        a:
+          "Ez a típustól és az évjárattól függ, ezért telefonon egyeztetjük. " +
+          "Amíg van működő kulcs, a munka kiszámítható. Az autót nem kell " +
+          "hozzá elvinni.",
+      },
+      {
+        q: "Mi van akkor, ha már egyetlen Toyota kulcsom sincs meg?",
+        a:
+          "Az összetettebb eset, de nem zsákutca. Ilyenkor a járműből kell " +
+          "előállítani mindent, ami az új kulcshoz kell. Hívjon minket és mondja " +
+          "el, milyen autóról van szó, megmondjuk, mire számítson.",
+      },
+    ],
+    relatedServices: [
+      "autokulcs-masolas",
+      "autokulcs-programozas",
+      "autokulcs-keszites",
+      "elveszett-autokulcs",
+    ],
+  },
+
+  /**
+   * Az esetet és a négy fotót a tulajdonos adta, egy valódi munkáról.
+   * Amit ő mondott el, tehát szerepelhet a cikkben:
    *   • Volvo XC70, pótkulcs készítés
    *   • az ügyfél elmondása szerint már több szakembernél járt, nem
    *     tudtak segíteni (konkrét céget NEM nevezünk meg)
