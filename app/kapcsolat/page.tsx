@@ -5,6 +5,7 @@ import { Container, Section, CallButton, Button } from "@/components/ui";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { PageHero, CtaBand } from "@/components/sections";
 import { ContactForm } from "@/components/ContactForm";
+import { ClosureNotice } from "@/components/Closure";
 import { RatingBadge } from "@/components/Reviews";
 import { JsonLd } from "@/components/JsonLd";
 import { jsonLdGraph, breadcrumbSchema, type Crumb } from "@/lib/schema";
@@ -26,10 +27,29 @@ export default function ContactPage() {
     <>
       <Breadcrumbs crumbs={crumbs} />
 
+      {/*
+        Ez az az oldal, ahol a látogató a telefonszámot keresi, ezért a
+        szabadság jelzése MINDEN más elé kerül. Gomb nincs rajta: az
+        üzenetküldő űrlap lejjebb amúgy is ott van ezen az oldalon.
+      */}
+      <ClosureNotice withLink={false} />
+
+      {/*
+        Szabadság alatt a főcím nem hívhat telefonálásra, mert nem
+        vesszük fel. Ha a `closure.active` hamis, visszaáll az eredeti.
+      */}
       <PageHero
         eyebrow="Kapcsolat"
-        title="Hívjon minket a nap 24 órájában"
-        lead="A leggyorsabb út a megoldáshoz a telefonhívás. Mondja meg az autó típusát és évjáratát, egyeztessünk időpontot, és hozza el az autót a XI. kerületi telephelyünkre. Ha nem tud jönni, kimegyünk Önhöz."
+        title={
+          business.closure.active
+            ? "Elérhetőségeink"
+            : "Hívjon minket a nap 24 órájában"
+        }
+        lead={
+          business.closure.active
+            ? "A szabadság ideje alatt telefonon nem tudjuk fogadni a hívásokat. Az üzenetét viszont elolvassuk: írja meg lent az űrlapon, mi történt és milyen autóról van szó. A visszatérés után sorban jelentkezünk."
+            : "A leggyorsabb út a megoldáshoz a telefonhívás. Mondja meg az autó típusát és évjáratát, egyeztessünk időpontot, és hozza el az autót a XI. kerületi telephelyünkre. Ha nem tud jönni, kimegyünk Önhöz."
+        }
       >
         <div className="flex flex-col gap-3 sm:flex-row">
           <CallButton size="lg" label="Egyeztessünk telefonon" />

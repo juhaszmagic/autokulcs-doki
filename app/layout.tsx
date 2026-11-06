@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { business, site } from "@/config/business";
 import { Header } from "@/components/Header";
+import { ClosureStrip } from "@/components/Closure";
 import { Footer } from "@/components/Footer";
 import { StickyCallBar } from "@/components/StickyCallBar";
 import { JsonLd } from "@/components/JsonLd";
@@ -121,6 +122,12 @@ export default function RootLayout({
         <a href="#tartalom" className="skip-link">
           Ugrás a tartalomra
         </a>
+
+        {/*
+          Szabadság idején ez a sáv ül MINDEN oldal legtetején, a fejléc
+          fölött. Ha a `closure.active` hamis, semmit nem jelenít meg.
+        */}
+        <ClosureStrip />
 
         <Header />
 

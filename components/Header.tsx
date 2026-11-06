@@ -30,14 +30,27 @@ export function Header() {
       <div className="hidden bg-ink-900 lg:block">
         <Container>
           <div className="flex h-10 items-center justify-between text-[0.8125rem] text-ink-400">
+            {/*
+              Szabadság idején itt NEM írhatjuk ki, hogy 0-24 non-stop,
+              mert az ilyenkor nem igaz. Ha a `closure.active` hamis,
+              minden visszaáll magától.
+            */}
             <p className="flex items-center gap-2">
-              <ClockIcon className="h-4 w-4 text-brand-400" />
-              <span>
-                <strong className="font-semibold text-white">
-                  {business.hours.short}
-                </strong>{" "}
-                · {business.hours.display}
-              </span>
+              <ClockIcon
+                className={`h-4 w-4 ${business.closure.active ? "text-accent-400" : "text-brand-400"}`}
+              />
+              {business.closure.active ? (
+                <span className="font-semibold text-white">
+                  {business.closure.headerShort}
+                </span>
+              ) : (
+                <span>
+                  <strong className="font-semibold text-white">
+                    {business.hours.short}
+                  </strong>{" "}
+                  · {business.hours.display}
+                </span>
+              )}
             </p>
             <p className="flex items-center gap-5">
               <a

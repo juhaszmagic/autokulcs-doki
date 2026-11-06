@@ -14,14 +14,26 @@ import { business } from "@/config/business";
 import { PhoneIcon, ClockIcon } from "./Icons";
 
 export function StickyCallBar() {
+  /*
+    Szabadság alatt ez a sáv nem hívásra visz, mert a telefont nem
+    vesszük fel: a látogató üzenetet tud hagyni helyette. A telefonszám
+    látszik, hogy a visszatérés után is megvan. Ha a `closure.active`
+    hamis, minden visszaáll a megszokott hívás gombra.
+  */
+  const zarva = business.closure.active;
+
   return (
     <div className="no-print fixed inset-x-0 bottom-0 z-50 bg-ink-900/97 px-3 pb-[env(safe-area-inset-bottom)] pt-3 shadow-[0_-6px_24px_rgb(18_21_15/0.35)] backdrop-blur-sm md:hidden">
       <div className="flex items-center gap-3 pb-3">
         <div className="min-w-0 flex-1">
-          <p className="flex items-center gap-1.5 text-[0.6875rem] font-semibold text-brand-300">
+          <p
+            className={`flex items-center gap-1.5 text-[0.6875rem] font-semibold ${zarva ? "text-accent-400" : "text-brand-300"}`}
+          >
             <ClockIcon className="h-3.5 w-3.5 shrink-0" />
             <span className="truncate">
-              {business.hours.short} · non-stop ügyelet
+              {zarva
+                ? business.closure.headerShort
+                : `${business.hours.short} · non-stop ügyelet`}
             </span>
           </p>
           <p className="truncate text-[1.0625rem] font-bold text-white">
@@ -29,15 +41,24 @@ export function StickyCallBar() {
           </p>
         </div>
 
-        <a
-          href={business.phone.primary.href}
-          data-cta="call-sticky"
-          className="flex shrink-0 items-center gap-2 rounded-xl bg-accent-600 px-6 py-3.5 text-base font-bold text-white shadow-sm transition-colors active:bg-accent-800"
-          aria-label={`Hívás most: ${business.phone.primary.display}`}
-        >
-          <PhoneIcon className="h-5 w-5" />
-          Hívás most
-        </a>
+        {zarva ? (
+          <a
+            href="/kapcsolat/"
+            className="flex shrink-0 items-center gap-2 rounded-xl bg-accent-600 px-5 py-3.5 text-base font-bold text-white shadow-sm transition-colors active:bg-accent-800"
+          >
+            Üzenetet írok
+          </a>
+        ) : (
+          <a
+            href={business.phone.primary.href}
+            data-cta="call-sticky"
+            className="flex shrink-0 items-center gap-2 rounded-xl bg-accent-600 px-6 py-3.5 text-base font-bold text-white shadow-sm transition-colors active:bg-accent-800"
+            aria-label={`Hívás most: ${business.phone.primary.display}`}
+          >
+            <PhoneIcon className="h-5 w-5" />
+            Hívás most
+          </a>
+        )}
       </div>
     </div>
   );

@@ -144,6 +144,54 @@ export const business = {
   },
 
   // ——————————————————————————————————————————————————————————————
+  //  IDŐSZAKOS ZÁRVA TARTÁS (szabadság)
+  // ——————————————————————————————————————————————————————————————
+  /**
+   * ⚠️ EZ AZ EGYETLEN KAPCSOLÓ. Ha az `active` igaz, az egész oldalon
+   *    megjelenik a zárva tartás jelzése:
+   *      • minden oldal tetején egy narancs sáv
+   *      • a fejléc felső sávjában a „0–24” helyett a szabadság
+   *      • a kezdőlapon és a kapcsolat oldalon egy nagy, feltűnő doboz
+   *
+   *    A szabadság végén EGYETLEN dolog a teendő: `active: false`,
+   *    majd build és élesítés. Semmi mást nem kell visszaírni, az
+   *    oldal magától visszaáll a megszokott 0-24-es állapotra.
+   *
+   *    Beállítva 2026-11-06-án, a tulajdonos kérésére: november 22-ig
+   *    szabadság, az első munkanap november 23., hétfő.
+   *
+   *    A dátumokat szövegesen tartjuk, mert az oldal statikus: nincs
+   *    benne JavaScript, ami a mai dátumot nézné. Tehát a kikapcsolás
+   *    NEM történik meg magától.
+   */
+  closure: {
+    active: true,
+
+    /** A felső sávba, egy sorban. Rövid legyen. */
+    short: "Szabadság miatt zárva",
+
+    /** A fejléc felső sávjában a „0–24” helyett. */
+    headerShort: "Szabadság, nov. 23-tól újra",
+
+    /** A nagy doboz címe. */
+    headline: "Szabadság miatt zárva tartunk",
+
+    /** A nagy doboz szövege. */
+    body:
+      "November 22-ig szabadságon vagyunk, ez alatt telefonon nem tudjuk " +
+      "fogadni a hívásokat. Az első munkanap november 23., hétfő, attól a " +
+      "naptól újra a megszokott módon, a hét minden napján elérhetők vagyunk.",
+
+    /** Mit tegyen addig a látogató. */
+    action:
+      "Ha ráér a munkával, írja meg üzenetben, mi történt és milyen autóról " +
+      "van szó. A visszatérés után sorban jelentkezünk.",
+
+    /** A sávban és a doboz alján is ez a kiemelt dátum. */
+    reopen: "november 23., hétfő",
+  },
+
+  // ——————————————————————————————————————————————————————————————
   //  SZOLGÁLTATÁSI TERÜLET
   // ——————————————————————————————————————————————————————————————
   serviceArea: {

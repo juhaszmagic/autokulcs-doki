@@ -16,6 +16,7 @@ import {
   ServiceAreaSection,
   CtaBand,
 } from "@/components/sections";
+import { ClosureNotice } from "@/components/Closure";
 import { ReviewsSection } from "@/components/Reviews";
 import { FaqList } from "@/components/Faq";
 import { JsonLd } from "@/components/JsonLd";
@@ -44,6 +45,14 @@ export default function HomePage() {
     <>
       {/* 1–2. Hero + bizalmi sáv */}
       <Hero />
+
+      {/*
+        Szabadság idején ide kerül a nagy, feltűnő jelzés: rögtön a hero
+        alá, mielőtt bárki a telefonszámot keresné. Ha nincs szabadság,
+        semmit nem jelenít meg.
+      */}
+      <ClosureNotice />
+
       <TrustStrip />
 
       {/* A legértékesebb munka rögtön a bizalmi sáv után. */}

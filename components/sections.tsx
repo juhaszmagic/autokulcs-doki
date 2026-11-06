@@ -119,7 +119,10 @@ export function Hero() {
                 { icon: CarIcon, text: "Hozza el: 20–25 perc alatt kész" },
                 { icon: SearchIcon, text: "Új kulcs meglévő kulcs nélkül" },
                 { icon: ChipIcon, text: "Immobilizer programozás" },
-                { icon: ClockIcon, text: "Non-stop, 0–24" },
+                /* Szabadság idején itt sem állíthatjuk, hogy 0-24 vagyunk. */
+                business.closure.active
+                  ? { icon: ClockIcon, text: "Nov. 23-tól újra nyitva" }
+                  : { icon: ClockIcon, text: "Non-stop, 0–24" },
               ].map((item) => (
                 <li key={item.text} className="flex items-center gap-3">
                   <span
@@ -219,7 +222,14 @@ export function Hero() {
 
 export function TrustStrip() {
   const items = [
-    { icon: ClockIcon, value: "0–24", label: "Non-stop elérhetőség" },
+    /*
+      Szabadság idején nem írjuk ki, hogy non-stop elérhetők vagyunk,
+      mert ez a sáv közvetlenül a zárva tartás jelzése alatt ül. Ha a
+      `closure.active` hamis, magától visszaáll a 0-24.
+    */
+    business.closure.active
+      ? { icon: ClockIcon, value: "Nov. 23.", label: "Az első munkanap" }
+      : { icon: ClockIcon, value: "0–24", label: "Non-stop elérhetőség" },
     { icon: CarIcon, value: "20–25 perc", label: "Műhelyünkben átlagosan" },
     { icon: ToolsIcon, value: "Helyszínen", label: "Ahol megoldható" },
     { icon: SearchIcon, value: "Kulcs nélkül is", label: "Új kulcs nulláról" },
