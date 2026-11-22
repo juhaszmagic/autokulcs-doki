@@ -165,7 +165,15 @@ export const business = {
    *    NEM történik meg magától.
    */
   closure: {
-    active: true,
+    /**
+     * ✅ KIKAPCSOLVA 2026-11-22-én, a tulajdonos kérésére: a szabadság
+     *    véget ért, november 23-tól újra dolgozik. Ezzel az egész
+     *    oldal visszaállt a megszokott 0-24-es állapotra.
+     *
+     *    A következő szabadságnál csak ezt kell `true`-ra állítani,
+     *    majd az alatta lévő szövegekben a dátumokat átírni.
+     */
+    active: false,
 
     /** A felső sávba, egy sorban. Rövid legyen. */
     short: "Szabadság miatt zárva",
