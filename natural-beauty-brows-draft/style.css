@@ -326,3 +326,34 @@ img[src$="spray-tan.jpg"]{object-position:right 62%}
 .lb button{z-index:2}
 @media(max-width:600px){.lb-c{bottom:22px}}
 .tile img[src$="spray-tan-3.jpg"]{object-position:45% 55%}
+/* Blog */
+.post-meta{font-size:.85rem;opacity:.75;margin-top:-8px}
+.post{max-width:820px}
+.post-img{width:100%;max-height:520px;object-fit:cover;border-radius:26px;margin-bottom:34px}
+.post .lead-p{font-size:1.08rem}
+.post h2{font-size:clamp(1.5rem,2.6vw,1.9rem);color:var(--brown);margin:44px 0 14px}
+.post ul,.post ol{margin:8px 0 16px 22px}
+.post li{margin-bottom:8px}
+.post p+p{margin-top:.9em}
+.post a{color:var(--brown)}
+.post .btn{color:inherit}
+.post .btn-taupe{color:var(--bg)}
+.post .cmp{margin-top:18px}
+.post .cmp-note{margin-top:24px}
+.post .tlist .item{margin-bottom:14px}
+.post-links{margin-top:26px;font-size:.92rem}
+.post-cta{background:var(--alt);border-radius:26px;padding:34px;margin-top:50px}
+.post-cta h2{margin:0 0 6px;color:var(--ink)}
+.post-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.post-card{display:flex;flex-direction:column;background:var(--bg);border-radius:26px;overflow:hidden;text-decoration:none;transition:transform .25s}
+.post-card:hover{transform:translateY(-3px)}
+.post-card img{width:100%;aspect-ratio:16/10;object-fit:cover}
+.pc-cat{font-family:var(--head);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--brown);margin:22px 26px 6px}
+.post-card h3{font-size:1.3rem;margin:0 26px 8px;color:var(--ink)}
+.post-card p{font-size:.92rem;margin:0 26px;flex:1}
+.post-card .link-arrow{margin:16px 26px 26px}
+@media(max-width:760px){.post-grid{grid-template-columns:1fr}.post-cta{padding:26px 22px}}
+@media(max-width:1180px) and (min-width:961px){.menu{gap:20px}.menu a{letter-spacing:.12em}}
+.logo,.menu a{white-space:nowrap}
+@media(max-width:1180px) and (min-width:961px){.menu{gap:16px}.menu a{letter-spacing:.08em;font-size:.76rem}.logo{font-size:1.05rem}.menu .btn{padding:10px 16px}}
+.nav{gap:28px}
